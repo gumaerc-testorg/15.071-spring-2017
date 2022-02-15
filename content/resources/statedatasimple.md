@@ -1,8 +1,13 @@
 ---
 content_type: resource
 description: 'Resource:'
-file: /media/https%3A/open-learning-course-data-rc.s3.amazonaws.com/15-071-the-analytics-edge-spring-2017/188d21c275a21a4ad828e6014675f5d4_statedataSimple.csv
+file: /media/courses/15-071-the-analytics-edge-spring-2017/188d21c275a21a4ad828e6014675f5d4_statedataSimple.csv
 file_type: text/comma-separated-values
+learning_resource_types:
+- Assignments
+ocw_type: OCWFile
+parent_title: 4.5 Assignment 4
+parent_type: CourseSection
 resourcetype: Other
 title: statedataSimple.csv
 uid: 188d21c2-75a2-1a4a-d828-e6014675f5d4

@@ -1,8 +1,12 @@
 ---
 content_type: resource
 description: 'Resource:'
-file: /media/https%3A/open-learning-course-data-rc.s3.amazonaws.com/15-071-the-analytics-edge-spring-2017/f5d06b43b7c6dffc27552d12924b69ee_ClusterMeans.ods
+file: /media/courses/15-071-the-analytics-edge-spring-2017/f5d06b43b7c6dffc27552d12924b69ee_ClusterMeans.ods
 file_type: application/vnd.oasis.opendocument.spreadsheet
+learning_resource_types: []
+ocw_type: OCWFile
+parent_title: '6.2 Recommendations Worth a Million: An Introduction to Clustering '
+parent_type: CourseSection
 resourcetype: Other
 title: ClusterMeans.ods
 uid: f5d06b43-b7c6-dffc-2755-2d12924b69ee

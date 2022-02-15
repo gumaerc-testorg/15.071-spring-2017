@@ -1,8 +1,13 @@
 ---
 content_type: resource
 description: 'Resource:'
-file: /media/https%3A/open-learning-course-data-rc.s3.amazonaws.com/15-071-the-analytics-edge-spring-2017/9567137abd96e74164d4a4d90245c561_PollingData_Imputed.csv
+file: /media/courses/15-071-the-analytics-edge-spring-2017/9567137abd96e74164d4a4d90245c561_PollingData_Imputed.csv
 file_type: text/comma-separated-values
+learning_resource_types: []
+ocw_type: OCWFile
+parent_title: '3.4 Election Forecasting: Predicting the Winner Before any Votes are
+  Cast  (Recitation)'
+parent_type: CourseSection
 resourcetype: Other
 title: PollingData_Imputed.csv
 uid: 9567137a-bd96-e741-64d4-a4d90245c561

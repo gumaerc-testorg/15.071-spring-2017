@@ -1,6 +1,9 @@
 ---
 content_type: page
+learning_resource_types: []
+ocw_type: CourseSection
 parent_title: '4.2 Judge, Jury, and Classifier: An Introduction to Trees '
+parent_type: CourseSection
 parent_uid: 11f9b44d-c296-0689-414b-8c313764a18d
 title: '4.2 Judge, Jury, and Classifier: An Introduction to Trees '
 uid: ff7dc49d-2cde-fc1a-c3e5-d01f07046ac1

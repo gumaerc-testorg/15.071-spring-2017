@@ -1,8 +1,12 @@
 ---
 content_type: resource
 description: ''
-file: /media/https%3A/open-learning-course-data-rc.s3.amazonaws.com/15-071-the-analytics-edge-spring-2017/4f6d186d9fc17569453471da9b7336d1_MIT15_071S17_Unit2_WineRegression.pdf
+file: /media/courses/15-071-the-analytics-edge-spring-2017/4f6d186d9fc17569453471da9b7336d1_MIT15_071S17_Unit2_WineRegression.pdf
 file_type: application/pdf
+learning_resource_types: []
+ocw_type: OCWFile
+parent_title: Lecture and Recitation Notes
+parent_type: CourseSection
 resourcetype: Document
 title: Week 2 Wine Regression Video 1 - 15.071 Spring 2017
 uid: 4f6d186d-9fc1-7569-4534-71da9b7336d1

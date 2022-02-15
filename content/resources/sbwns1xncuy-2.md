@@ -1,8 +1,10 @@
 ---
 content_type: resource
 description: ''
-file: /media/https%3A/open-learning-course-data-rc.s3.amazonaws.com/15-071-the-analytics-edge-spring-2017/82c277f7b2115b26a2a6891219175245_SBWns1XNcuY.vtt
+file: /media/courses/15-071-the-analytics-edge-spring-2017/82c277f7b2115b26a2a6891219175245_SBWns1XNcuY.vtt
 file_type: application/x-subrip
+learning_resource_types: []
+ocw_type: OCWFile
 resourcetype: Other
 title: 3play caption file
 uid: 82c277f7-b211-5b26-a2a6-891219175245

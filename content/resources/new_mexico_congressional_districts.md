@@ -1,12 +1,17 @@
 ---
 content_type: resource
 description: 'Image: '
-file: /media/https%3A/open-learning-course-data-rc.s3.amazonaws.com/15-071-the-analytics-edge-spring-2017/a716bfa776b2be85f666b0a4e6877f69_New_Mexico_Congressional_Districts.png
+file: /media/courses/15-071-the-analytics-edge-spring-2017/a716bfa776b2be85f666b0a4e6877f69_New_Mexico_Congressional_Districts.png
 file_type: image/png
 image_metadata:
   caption: ''
   credit: ''
   image-alt: Colored map showing New Mexico's congressional districts.
+learning_resource_types:
+- Assignments
+ocw_type: OCWImage
+parent_title: 9.5 Assignment 9
+parent_type: CourseSection
 resourcetype: Image
 title: New_Mexico_Congressional_Districts.png
 uid: a716bfa7-76b2-be85-f666-b0a4e6877f69

@@ -1,8 +1,12 @@
 ---
 content_type: resource
 description: 'Resource:'
-file: /media/https%3A/open-learning-course-data-rc.s3.amazonaws.com/15-071-the-analytics-edge-spring-2017/d4332a3056f44e1a1dec9600a31f21c8_boston.csv
+file: /media/courses/15-071-the-analytics-edge-spring-2017/d4332a3056f44e1a1dec9600a31f21c8_boston.csv
 file_type: text/comma-separated-values
+learning_resource_types: []
+ocw_type: OCWFile
+parent_title: '4.4 Location, Location, Location: Regression Trees for Housing Data  (Recitation)'
+parent_type: CourseSection
 resourcetype: Other
 title: boston.csv
 uid: d4332a30-56f4-4e1a-1dec-9600a31f21c8

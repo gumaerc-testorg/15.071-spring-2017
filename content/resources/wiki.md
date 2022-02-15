@@ -1,8 +1,13 @@
 ---
 content_type: resource
 description: 'Resource:'
-file: /media/https%3A/open-learning-course-data-rc.s3.amazonaws.com/15-071-the-analytics-edge-spring-2017/689509df0b6105e6af7ea0b866825c45_wiki.csv
+file: /media/courses/15-071-the-analytics-edge-spring-2017/689509df0b6105e6af7ea0b866825c45_wiki.csv
 file_type: text/comma-separated-values
+learning_resource_types:
+- Assignments
+ocw_type: OCWFile
+parent_title: 5.5 Assignment 5
+parent_type: CourseSection
 resourcetype: Other
 title: wiki.csv
 uid: 689509df-0b61-05e6-af7e-a0b866825c45

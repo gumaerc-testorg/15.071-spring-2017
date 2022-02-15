@@ -1,6 +1,9 @@
 ---
 content_type: page
+learning_resource_types: []
+ocw_type: CourseSection
 parent_title: 2 Linear Regression
+parent_type: CourseSection
 parent_uid: c846ced6-fc6d-3bc9-64e0-47324e251a98
 title: 2.5 Assignment 2
 uid: d3823600-300c-0300-0e79-696e835f8f2f

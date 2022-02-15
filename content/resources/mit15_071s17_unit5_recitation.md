@@ -1,8 +1,12 @@
 ---
 content_type: resource
 description: ''
-file: /media/https%3A/open-learning-course-data-rc.s3.amazonaws.com/15-071-the-analytics-edge-spring-2017/61edcfb6bda8e2146cc2e5e293e7a042_MIT15_071S17_Unit5_Recitation.pdf
+file: /media/courses/15-071-the-analytics-edge-spring-2017/61edcfb6bda8e2146cc2e5e293e7a042_MIT15_071S17_Unit5_Recitation.pdf
 file_type: application/pdf
+learning_resource_types: []
+ocw_type: OCWFile
+parent_title: Lecture and Recitation Notes
+parent_type: CourseSection
 resourcetype: Document
 title: Week 5 Recitation Video 1 - 15.071 Spring 2017
 uid: 61edcfb6-bda8-e214-6cc2-e5e293e7a042

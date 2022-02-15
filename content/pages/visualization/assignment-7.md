@@ -1,6 +1,9 @@
 ---
 content_type: page
+learning_resource_types: []
+ocw_type: CourseSection
 parent_title: 7 Visualization
+parent_type: CourseSection
 parent_uid: ab87d151-cf8c-fe95-c873-e816df164d38
 title: 7.5 Assignment 7
 uid: 056c6914-368d-638a-59e4-cebbc43acfe5

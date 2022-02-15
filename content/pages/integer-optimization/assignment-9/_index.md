@@ -1,6 +1,9 @@
 ---
 content_type: page
+learning_resource_types: []
+ocw_type: CourseSection
 parent_title: 9 Integer Optimization
+parent_type: CourseSection
 parent_uid: db42b40a-d705-f431-a7e2-3a1d11cec341
 title: 9.5 Assignment 9
 uid: 2dbce7a6-bb37-17df-55b4-be0179616ad6

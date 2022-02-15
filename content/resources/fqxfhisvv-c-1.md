@@ -1,8 +1,10 @@
 ---
 content_type: resource
 description: ''
-file: /media/https%3A/open-learning-course-data-rc.s3.amazonaws.com/15-071-the-analytics-edge-spring-2017/803fdb47b9180a02f9622473bb1f1a04_fQXFHIsvV-c.pdf
+file: /media/courses/15-071-the-analytics-edge-spring-2017/803fdb47b9180a02f9622473bb1f1a04_fQXFHIsvV-c.pdf
 file_type: application/pdf
+learning_resource_types: []
+ocw_type: OCWFile
 resourcetype: Document
 title: 3play pdf file
 uid: 803fdb47-b918-0a02-f962-2473bb1f1a04

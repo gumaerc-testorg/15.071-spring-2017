@@ -1,8 +1,12 @@
 ---
 content_type: resource
 description: 'Resource:'
-file: /media/https%3A/open-learning-course-data-rc.s3.amazonaws.com/15-071-the-analytics-edge-spring-2017/507c8b9a3622aa007f2f8966bc4c401e_AirlineRM_Connecting_Complete.ods
+file: /media/courses/15-071-the-analytics-edge-spring-2017/507c8b9a3622aa007f2f8966bc4c401e_AirlineRM_Connecting_Complete.ods
 file_type: application/vnd.oasis.opendocument.spreadsheet
+learning_resource_types: []
+ocw_type: OCWFile
+parent_title: '8.2 Airline Revenue Management: An Introduction to Linear Optimization '
+parent_type: CourseSection
 resourcetype: Other
 title: AirlineRM_Connecting_Complete.ods
 uid: 507c8b9a-3622-aa00-7f2f-8966bc4c401e

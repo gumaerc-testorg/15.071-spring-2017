@@ -1,6 +1,9 @@
 ---
 content_type: page
+learning_resource_types: []
+ocw_type: CourseSection
 parent_title: 6 Clustering
+parent_type: CourseSection
 parent_uid: 6e343503-94a0-f948-51f4-8f324b5f657f
 title: 6.5 Assignment 6
 uid: 940f7353-62c6-3a66-1b04-174a40036c29

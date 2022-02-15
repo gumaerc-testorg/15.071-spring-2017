@@ -1,6 +1,9 @@
 ---
 content_type: page
+learning_resource_types: []
+ocw_type: CourseSection
 parent_title: 1 An Introduction to Analytics
+parent_type: CourseSection
 parent_uid: bebdc8ab-5b1f-9682-d6b7-62b671b5cf25
 title: 1.5 Assignment 1
 uid: 0af41c2f-ca68-84fa-b36c-0a31155319b9

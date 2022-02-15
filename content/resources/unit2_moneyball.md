@@ -1,8 +1,12 @@
 ---
 content_type: resource
 description: 'Resource:'
-file: /media/https%3A/open-learning-course-data-rc.s3.amazonaws.com/15-071-the-analytics-edge-spring-2017/12e92ec2937a917cf288db31d2d27450_Unit2_Moneyball.R
+file: /media/courses/15-071-the-analytics-edge-spring-2017/12e92ec2937a917cf288db31d2d27450_Unit2_Moneyball.R
 file_type: application/octet-stream
+learning_resource_types: []
+ocw_type: OCWFile
+parent_title: '2.3 Moneyball: The Power of Sports Analytics '
+parent_type: CourseSection
 resourcetype: Other
 title: Unit2_Moneyball.R
 uid: 12e92ec2-937a-917c-f288-db31d2d27450

@@ -1,6 +1,9 @@
 ---
 content_type: page
+learning_resource_types: []
+ocw_type: CourseSection
 parent_title: '4.3 Keeping an Eye on Healthcare Costs: The D2Hawkeye Story '
+parent_type: CourseSection
 parent_uid: 52a221dd-c011-90a4-45b1-a393b15cb810
 title: '4.3 Keeping an Eye on Healthcare Costs: The D2Hawkeye Story '
 uid: 09222225-3a2b-5d3f-b68d-5398ca2111a9

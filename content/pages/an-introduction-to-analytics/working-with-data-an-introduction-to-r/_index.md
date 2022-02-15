@@ -1,6 +1,9 @@
 ---
 content_type: page
+learning_resource_types: []
+ocw_type: CourseSection
 parent_title: 1 An Introduction to Analytics
+parent_type: CourseSection
 parent_uid: bebdc8ab-5b1f-9682-d6b7-62b671b5cf25
 title: '1.3 Working with Data: An Introduction to R '
 uid: 1ac933da-13d1-3dfa-2e38-03abf2d6971f

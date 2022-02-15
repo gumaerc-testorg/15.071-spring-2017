@@ -1,6 +1,9 @@
 ---
 content_type: page
+learning_resource_types: []
+ocw_type: CourseSection
 parent_title: '3.2 Modeling the Expert: An Introduction to Logistic Regression'
+parent_type: CourseSection
 parent_uid: 3063320a-4175-6b8a-4fa9-892f61b52c0d
 title: '3.2 Modeling the Expert: An Introduction to Logistic Regression'
 uid: 9cb7a258-ad19-0f7f-84e5-89aad47092b1
