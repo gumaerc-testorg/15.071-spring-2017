@@ -8,6 +8,7 @@ learning_resource_types:
 ocw_type: OCWFile
 parent_title: 9.5 Assignment 9
 parent_type: CourseSection
+parent_uid: 2dbce7a6-bb37-17df-55b4-be0179616ad6
 resourcetype: Other
 title: EvenStarFarmRevisited.xlsx
 uid: 040348f2-170d-8719-fb18-74e9a3e484ce

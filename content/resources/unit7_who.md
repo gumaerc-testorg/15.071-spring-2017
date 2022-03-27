@@ -7,6 +7,7 @@ learning_resource_types: []
 ocw_type: OCWFile
 parent_title: '7.2 Visualizing the World: An Introduction to Visualization'
 parent_type: CourseSection
+parent_uid: bcd276c5-4387-e04d-4149-dfe97b763b3f
 resourcetype: Other
 title: Unit7_WHO.R
 uid: 27fb60c9-5b98-51db-4983-1751f9ccf614

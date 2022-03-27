@@ -7,6 +7,7 @@ learning_resource_types: []
 ocw_type: OCWFile
 parent_title: '6.4 Seeing the Big Picture: Segmenting Images to Create Data  (Recitation)'
 parent_type: CourseSection
+parent_uid: 63f40bde-98fd-3fdc-8c2d-df21ec19f21f
 resourcetype: Other
 title: Unit6_Recitation.R
 uid: baa13510-25fe-4c21-bb35-c33fd297e11b

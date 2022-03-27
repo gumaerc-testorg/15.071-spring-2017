@@ -7,6 +7,7 @@ learning_resource_types: []
 ocw_type: OCWFile
 parent_title: Lecture and Recitation Notes
 parent_type: CourseSection
+parent_uid: 6d991d2d-9834-a247-946a-f6ed255c2dcf
 resourcetype: Document
 title: Week 9 Sports Scheduling Video 1 - 15.071 Spring 2017
 uid: 50d4360f-d1a6-bbe4-0fc0-e0bc694963ce

@@ -7,6 +7,7 @@ learning_resource_types: []
 ocw_type: OCWFile
 parent_title: Lecture and Recitation Notes
 parent_type: CourseSection
+parent_uid: 6d991d2d-9834-a247-946a-f6ed255c2dcf
 resourcetype: Document
 title: Week 4 Supreme Court Video 1 - 15.071 Spring 2017
 uid: fcf915a4-9a9c-d842-9328-2f66a1d255f4

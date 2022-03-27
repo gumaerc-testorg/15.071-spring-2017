@@ -7,6 +7,7 @@ learning_resource_types: []
 ocw_type: OCWFile
 parent_title: '9.2 Sports Scheduling: An Introduction to Integer Optimization '
 parent_type: CourseSection
+parent_uid: 611ff2e2-25d3-1291-5c17-05e9cd35ede7
 resourcetype: Other
 title: SportsScheduling_Complete.xlsx
 uid: d5726d48-8330-a204-0e3e-775ea23cc824

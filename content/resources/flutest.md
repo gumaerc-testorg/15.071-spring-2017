@@ -8,6 +8,7 @@ learning_resource_types:
 ocw_type: OCWFile
 parent_title: 2.5 Assignment 2
 parent_type: CourseSection
+parent_uid: d64b9247-3ae1-fb23-50f1-b27dc8fbde0b
 resourcetype: Other
 title: FluTest.csv
 uid: 7dab7b06-43ff-fe3c-6034-0a93323d2a0a

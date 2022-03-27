@@ -7,6 +7,7 @@ learning_resource_types: []
 ocw_type: OCWFile
 parent_title: '4.2 Judge, Jury, and Classifier: An Introduction to Trees '
 parent_type: CourseSection
+parent_uid: a0af0b83-fff4-3d63-4dfe-02e15106f92d
 resourcetype: Other
 title: stevens.csv
 uid: 1fae15ec-e611-9c72-496a-a45be0f4b024

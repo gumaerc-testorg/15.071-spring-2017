@@ -8,6 +8,7 @@ learning_resource_types:
 ocw_type: OCWFile
 parent_title: 5.5 Assignment 5
 parent_type: CourseSection
+parent_uid: f9baad34-7f95-6b6f-8608-66551433d510
 resourcetype: Other
 title: clinical_trial.csv
 uid: b16ce1e8-d533-ce40-3f36-2639be9f03a8

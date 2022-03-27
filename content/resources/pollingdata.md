@@ -8,6 +8,7 @@ ocw_type: OCWFile
 parent_title: '3.4 Election Forecasting: Predicting the Winner Before any Votes are
   Cast  (Recitation)'
 parent_type: CourseSection
+parent_uid: 43791d3a-19ab-d5be-3491-37c83ceb6676
 resourcetype: Other
 title: PollingData.csv
 uid: 2e5e305f-5deb-1aee-9679-c33cf303484b

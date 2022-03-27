@@ -8,6 +8,7 @@ learning_resource_types:
 ocw_type: OCWFile
 parent_title: 6.5 Assignment 6
 parent_type: CourseSection
+parent_uid: 940f7353-62c6-3a66-1b04-174a40036c29
 resourcetype: Other
 title: dailykos.csv
 uid: 543653c0-7a59-7591-b020-24d3658f8d07

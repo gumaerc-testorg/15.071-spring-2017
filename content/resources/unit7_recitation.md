@@ -7,6 +7,7 @@ learning_resource_types: []
 ocw_type: OCWFile
 parent_title: '7.4 The Good, the Bad, and the Ugly: Visualization Recitation  (Recitation)'
 parent_type: CourseSection
+parent_uid: b69a45f6-aacc-80e9-37f4-661dbb5bb822
 resourcetype: Other
 title: Unit7_Recitation.R
 uid: 666aaa7f-2146-df6e-575d-ac0b0c89a8e8

@@ -7,6 +7,7 @@ learning_resource_types: []
 ocw_type: OCWFile
 parent_title: Lecture and Recitation Notes
 parent_type: CourseSection
+parent_uid: 6d991d2d-9834-a247-946a-f6ed255c2dcf
 resourcetype: Document
 title: Week 7 Recitation Video 1 - 15.071 Spring 2017
 uid: e2772a67-1376-cfd3-3a44-edea7e17ebd8

@@ -8,6 +8,7 @@ learning_resource_types:
 ocw_type: OCWFile
 parent_title: 3.5 Assignment 3
 parent_type: CourseSection
+parent_uid: d4a650ea-930c-2c8c-0f98-9b353a5a342e
 resourcetype: Other
 title: songs.csv
 uid: 0657f55b-10c0-9785-3d2b-ee6e5186764d

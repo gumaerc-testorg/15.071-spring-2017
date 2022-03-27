@@ -8,6 +8,7 @@ learning_resource_types:
 ocw_type: OCWFile
 parent_title: 1.5 Assignment 1
 parent_type: CourseSection
+parent_uid: d628845f-dc26-781b-fce4-c58e39e14746
 resourcetype: Other
 title: CountryCodes.csv
 uid: 6f7b5571-5ac9-f503-2af8-e507af05e87b

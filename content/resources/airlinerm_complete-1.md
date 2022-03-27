@@ -7,6 +7,7 @@ learning_resource_types: []
 ocw_type: OCWFile
 parent_title: '8.2 Airline Revenue Management: An Introduction to Linear Optimization '
 parent_type: CourseSection
+parent_uid: 86a033cc-e142-d448-a8bb-9112a73f89db
 resourcetype: Other
 title: AirlineRM_Complete.xlsx
 uid: 393dd38b-7a41-2ece-7f81-60892c18f1f1

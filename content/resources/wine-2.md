@@ -7,6 +7,7 @@ learning_resource_types: []
 ocw_type: OCWFile
 parent_title: '2.2 The Statistical Sommelier: An Introduction to Linear Regression'
 parent_type: CourseSection
+parent_uid: bef58e98-6cee-f682-d32a-bfab033deaf6
 resourcetype: Other
 title: wine.csv
 uid: b7caee99-307e-b87b-00b3-d3e80055b116

@@ -7,6 +7,7 @@ learning_resource_types: []
 ocw_type: OCWFile
 parent_title: '4.3 Keeping an Eye on Healthcare Costs: The D2Hawkeye Story '
 parent_type: CourseSection
+parent_uid: b189783b-0ca7-287f-248b-0339ea5afbeb
 resourcetype: Other
 title: Unit4_D2Hawkeye.R
 uid: 38db138e-5600-92bd-669a-8916a3b8b4d7

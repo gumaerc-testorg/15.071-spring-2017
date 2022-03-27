@@ -8,6 +8,7 @@ learning_resource_types:
 ocw_type: OCWFile
 parent_title: 1.5 Assignment 1
 parent_type: CourseSection
+parent_uid: 89ce47d2-7edc-dd9b-8a8c-be641a59b520
 resourcetype: Other
 title: GEStock.csv
 uid: 0e654677-e28d-932d-10fc-d75f3884636d

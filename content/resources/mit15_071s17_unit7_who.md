@@ -7,6 +7,7 @@ learning_resource_types: []
 ocw_type: OCWFile
 parent_title: Lecture and Recitation Notes
 parent_type: CourseSection
+parent_uid: 6d991d2d-9834-a247-946a-f6ed255c2dcf
 resourcetype: Document
 title: Week 7 WHO Video 1 - 15.071 Spring 2017
 uid: 81c92311-a4e6-844e-148e-18a58d7e3c49

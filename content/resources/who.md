@@ -7,6 +7,7 @@ learning_resource_types: []
 ocw_type: OCWFile
 parent_title: '1.3 Working with Data: An Introduction to R '
 parent_type: CourseSection
+parent_uid: 70fe7ef6-c257-30ef-b982-22eac766dbc4
 resourcetype: Other
 title: WHO.csv
 uid: da18dfa4-b6c1-e1ea-f6f6-602203b8c4a3

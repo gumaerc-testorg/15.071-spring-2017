@@ -12,6 +12,7 @@ learning_resource_types: []
 ocw_type: OCWImage
 parent_title: '7.3 The Analytical Policeman: Visualization for Law and Order'
 parent_type: CourseSection
+parent_uid: 6bc1ec1e-1262-c5a1-28e1-f822404bb0ba
 resourcetype: Image
 title: Week7_Crime_QQ4_2.png
 uid: be57802c-07c0-cabb-ef69-146663aaec19

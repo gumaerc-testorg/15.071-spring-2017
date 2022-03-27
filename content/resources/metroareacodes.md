@@ -8,6 +8,7 @@ learning_resource_types:
 ocw_type: OCWFile
 parent_title: 1.5 Assignment 1
 parent_type: CourseSection
+parent_uid: d628845f-dc26-781b-fce4-c58e39e14746
 resourcetype: Other
 title: MetroAreaCodes.csv
 uid: 0eeba3bf-0732-485a-5a3e-2eb6594f4482

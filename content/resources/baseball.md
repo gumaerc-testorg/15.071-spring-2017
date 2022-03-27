@@ -7,6 +7,7 @@ learning_resource_types: []
 ocw_type: OCWFile
 parent_title: '2.3 Moneyball: The Power of Sports Analytics '
 parent_type: CourseSection
+parent_uid: 9a181e98-9a2d-c6e2-1d6b-813dfdbf8d9f
 resourcetype: Other
 title: baseball.csv
 uid: beba5070-dddb-f0bf-3000-02d82564c3e7

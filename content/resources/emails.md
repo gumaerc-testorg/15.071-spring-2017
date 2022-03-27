@@ -8,6 +8,7 @@ learning_resource_types:
 ocw_type: OCWFile
 parent_title: 5.5 Assignment 5
 parent_type: CourseSection
+parent_uid: 81eae0fd-28f2-8733-6b79-2210ba33dfbb
 resourcetype: Other
 title: emails.csv
 uid: 67f7be24-1f1b-459d-7fdb-8e9031384338

@@ -7,6 +7,7 @@ learning_resource_types: []
 ocw_type: OCWFile
 parent_title: '8.4 Google AdWords: Optimizing Online Advertising  (Recitation)'
 parent_type: CourseSection
+parent_uid: ba7cbf9c-8693-f7f0-73ab-2fc26c0c9b2d
 resourcetype: Other
 title: GoogleAdWords_Greedy.xlsx
 uid: c997e21b-74c2-9484-3e0a-373d782046ac

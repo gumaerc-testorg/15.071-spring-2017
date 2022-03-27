@@ -8,6 +8,7 @@ learning_resource_types:
 ocw_type: OCWFile
 parent_title: 1.5 Assignment 1
 parent_type: CourseSection
+parent_uid: d628845f-dc26-781b-fce4-c58e39e14746
 resourcetype: Other
 title: CPSData.csv
 uid: b7aa3ea7-d1fc-b58d-70b8-9ae225669588

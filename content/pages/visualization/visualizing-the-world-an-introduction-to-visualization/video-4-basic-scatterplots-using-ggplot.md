@@ -36,7 +36,9 @@ Colors and shapes in R
 
 If you want to see all of the available colors in R, type in your R console:
 
+```
 colors()
+```
 
 All of the available shapes are described in the following image:
 

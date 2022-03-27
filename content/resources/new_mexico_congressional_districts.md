@@ -12,6 +12,7 @@ learning_resource_types:
 ocw_type: OCWImage
 parent_title: 9.5 Assignment 9
 parent_type: CourseSection
+parent_uid: 1ab3f4de-f050-7a6b-6327-b8e7dfa4fb69
 resourcetype: Image
 title: New_Mexico_Congressional_Districts.png
 uid: a716bfa7-76b2-be85-f666-b0a4e6877f69

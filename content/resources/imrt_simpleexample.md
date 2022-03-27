@@ -7,6 +7,7 @@ learning_resource_types: []
 ocw_type: OCWFile
 parent_title: '8.3 Radiation Therapy: An Application of Linear Optimization '
 parent_type: CourseSection
+parent_uid: 45f16175-2649-6ba1-fed2-d4528a0cc423
 resourcetype: Other
 title: IMRT_SimpleExample.ods
 uid: 4b6d3e73-dd08-ac4f-47d0-9fd11b42adb6

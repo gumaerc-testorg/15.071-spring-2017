@@ -7,6 +7,7 @@ learning_resource_types: []
 ocw_type: OCWFile
 parent_title: 2.4 Playing Moneyball in the NBA  (Recitation)
 parent_type: CourseSection
+parent_uid: 23ccd624-abaa-0c05-9f5a-54029d4225b6
 resourcetype: Other
 title: NBA_test.csv
 uid: be8dc71f-6970-d601-eb46-714a8bed540d

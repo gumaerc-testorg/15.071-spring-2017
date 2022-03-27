@@ -7,6 +7,7 @@ learning_resource_types: []
 ocw_type: OCWFile
 parent_title: Lecture and Recitation Notes
 parent_type: CourseSection
+parent_uid: 6d991d2d-9834-a247-946a-f6ed255c2dcf
 resourcetype: Document
 title: Week 4 D2Hawkeye Video 1 - 15.071 Spring 2017
 uid: ec5a43ac-3d08-1b10-0bf8-040eb63c7b02

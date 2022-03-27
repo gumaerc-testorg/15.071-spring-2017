@@ -7,6 +7,7 @@ learning_resource_types: []
 ocw_type: OCWFile
 parent_title: Lecture and Recitation Notes
 parent_type: CourseSection
+parent_uid: 6d991d2d-9834-a247-946a-f6ed255c2dcf
 resourcetype: Document
 title: MIT15_071S17_Unit6_Recitation.pdf
 uid: 9258e775-e0bf-57ee-47b6-ddabe1834003

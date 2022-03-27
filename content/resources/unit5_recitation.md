@@ -7,6 +7,7 @@ learning_resource_types: []
 ocw_type: OCWFile
 parent_title: '5.4 Predictive Coding: Bringing Text Analytics to the Courtroom  (Recitation)'
 parent_type: CourseSection
+parent_uid: d2b6e4bc-cf8f-0017-b1fc-3de36e683c9a
 resourcetype: Other
 title: Unit5_Recitation.R
 uid: 011d033b-3863-7b57-5bcd-f6a154a3fcf6

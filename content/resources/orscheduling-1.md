@@ -7,6 +7,7 @@ learning_resource_types: []
 ocw_type: OCWFile
 parent_title: '9.4 Operating Room Scheduling: Making Hospitals Run Smoothly  (Recitation)'
 parent_type: CourseSection
+parent_uid: 162e5921-904a-9507-80e7-596c005168c3
 resourcetype: Other
 title: ORscheduling.xlsx
 uid: c2d77b4a-52ea-41b7-fbbd-a781bfb50ed0

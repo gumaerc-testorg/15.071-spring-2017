@@ -12,6 +12,7 @@ learning_resource_types: []
 ocw_type: OCWImage
 parent_title: '7.2 Visualizing the World: An Introduction to Visualization'
 parent_type: CourseSection
+parent_uid: afc1a35a-1de0-dfbe-71d4-6f725359bcfc
 resourcetype: Image
 title: Scatterplot_Week7.jpg
 uid: 2dfcddaf-9155-38a5-1d30-28359bbd2fcb

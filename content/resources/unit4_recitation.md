@@ -7,6 +7,7 @@ learning_resource_types: []
 ocw_type: OCWFile
 parent_title: '4.4 Location, Location, Location: Regression Trees for Housing Data  (Recitation)'
 parent_type: CourseSection
+parent_uid: fe8e6610-7427-85e9-e33b-488d454628d9
 resourcetype: Other
 title: Unit4_Recitation.R
 uid: 07abfd3f-d112-a229-c1bf-1dbe9f454d98

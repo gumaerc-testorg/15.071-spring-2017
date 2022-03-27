@@ -7,6 +7,7 @@ learning_resource_types: []
 ocw_type: OCWFile
 parent_title: '7.3 The Analytical Policeman: Visualization for Law and Order'
 parent_type: CourseSection
+parent_uid: 50eab6cd-164e-035d-9470-dc118924f686
 resourcetype: Other
 title: murders.csv
 uid: 36129924-d80a-cf17-557e-e219a6c3c79c

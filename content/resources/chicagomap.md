@@ -13,6 +13,7 @@ learning_resource_types:
 ocw_type: OCWImage
 parent_title: 1.5 Assignment 1
 parent_type: CourseSection
+parent_uid: 0af41c2f-ca68-84fa-b36c-0a31155319b9
 resourcetype: Image
 title: ChicagoMap.png
 uid: 1b011894-db06-d27c-0885-ce6c8f1afa60

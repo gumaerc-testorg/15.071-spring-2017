@@ -7,6 +7,7 @@ learning_resource_types: []
 ocw_type: OCWFile
 parent_title: '8.4 Google AdWords: Optimizing Online Advertising  (Recitation)'
 parent_type: CourseSection
+parent_uid: 2d0a67f4-94dc-2dad-f750-4c69427d6a55
 resourcetype: Other
 title: GoogleAdWords_LO_Sensitivity.xlsx
 uid: af052305-afa7-6155-0c99-0aec992b7b14

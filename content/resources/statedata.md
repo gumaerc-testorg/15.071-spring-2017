@@ -8,6 +8,7 @@ learning_resource_types:
 ocw_type: OCWFile
 parent_title: 2.5 Assignment 2
 parent_type: CourseSection
+parent_uid: 609cf352-3750-f69e-cb54-c706f04a68c5
 resourcetype: Other
 title: statedata.csv
 uid: b1ac404f-54b7-a091-4b83-2e21afcb2fac

@@ -7,6 +7,7 @@ learning_resource_types: []
 ocw_type: OCWFile
 parent_title: '6.4 Seeing the Big Picture: Segmenting Images to Create Data  (Recitation)'
 parent_type: CourseSection
+parent_uid: 63f40bde-98fd-3fdc-8c2d-df21ec19f21f
 resourcetype: Other
 title: tumor.csv
 uid: 35a3c061-1bd9-6c7b-50dd-1da39f0d61fc

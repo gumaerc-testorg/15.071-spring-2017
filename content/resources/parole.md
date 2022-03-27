@@ -8,6 +8,7 @@ learning_resource_types:
 ocw_type: OCWFile
 parent_title: 7.5 Assignment 7
 parent_type: CourseSection
+parent_uid: 056c6914-368d-638a-59e4-cebbc43acfe5
 resourcetype: Other
 title: parole.csv
 uid: ee9b52a2-0d6e-bf59-44fb-3da9171fa3e0

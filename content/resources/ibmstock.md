@@ -8,6 +8,7 @@ learning_resource_types:
 ocw_type: OCWFile
 parent_title: 1.5 Assignment 1
 parent_type: CourseSection
+parent_uid: 89ce47d2-7edc-dd9b-8a8c-be641a59b520
 resourcetype: Other
 title: IBMStock.csv
 uid: 08d083a5-1725-af8b-9880-dca1198098a7

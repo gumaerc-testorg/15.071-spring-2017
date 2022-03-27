@@ -8,6 +8,7 @@ learning_resource_types:
 ocw_type: OCWFile
 parent_title: 3.5 Assignment 3
 parent_type: CourseSection
+parent_uid: 3b462833-7389-a83d-6609-7f7597856e56
 resourcetype: Other
 title: baseball.csv
 uid: 20168d0d-ad9b-53e0-7239-6f5168dc5290

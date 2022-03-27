@@ -8,6 +8,7 @@ learning_resource_types:
 ocw_type: OCWFile
 parent_title: 9.5 Assignment 9
 parent_type: CourseSection
+parent_uid: 1ab3f4de-f050-7a6b-6327-b8e7dfa4fb69
 resourcetype: Other
 title: Gerrymandering.ods
 uid: e584a070-e342-e7b6-3366-3ac538a60f69

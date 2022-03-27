@@ -7,6 +7,7 @@ learning_resource_types: []
 ocw_type: OCWFile
 parent_title: '6.2 Recommendations Worth a Million: An Introduction to Clustering '
 parent_type: CourseSection
+parent_uid: c0ef063d-c722-b998-a530-922a135bd19e
 resourcetype: Other
 title: ClusterMeans.ods
 uid: f5d06b43-b7c6-dffc-2755-2d12924b69ee

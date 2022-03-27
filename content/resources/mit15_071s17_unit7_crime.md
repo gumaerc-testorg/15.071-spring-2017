@@ -7,6 +7,7 @@ learning_resource_types: []
 ocw_type: OCWFile
 parent_title: Lecture and Recitation Notes
 parent_type: CourseSection
+parent_uid: 6d991d2d-9834-a247-946a-f6ed255c2dcf
 resourcetype: Document
 title: Week 7 Crime Video 1 - 15.071 Spring 2017
 uid: 4d30ffe0-9756-f141-a716-feac14a582c8

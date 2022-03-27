@@ -8,6 +8,7 @@ learning_resource_types:
 ocw_type: OCWFile
 parent_title: 1.5 Assignment 1
 parent_type: CourseSection
+parent_uid: 89ce47d2-7edc-dd9b-8a8c-be641a59b520
 resourcetype: Other
 title: CocaColaStock.csv
 uid: 4e0afebb-6ca9-c80d-80e6-30e8e9872585

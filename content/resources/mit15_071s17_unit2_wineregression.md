@@ -7,6 +7,7 @@ learning_resource_types: []
 ocw_type: OCWFile
 parent_title: Lecture and Recitation Notes
 parent_type: CourseSection
+parent_uid: 6d991d2d-9834-a247-946a-f6ed255c2dcf
 resourcetype: Document
 title: Week 2 Wine Regression Video 1 - 15.071 Spring 2017
 uid: 4f6d186d-9fc1-7569-4534-71da9b7336d1

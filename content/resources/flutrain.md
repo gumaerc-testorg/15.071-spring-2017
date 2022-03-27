@@ -8,6 +8,7 @@ learning_resource_types:
 ocw_type: OCWFile
 parent_title: 2.5 Assignment 2
 parent_type: CourseSection
+parent_uid: d64b9247-3ae1-fb23-50f1-b27dc8fbde0b
 resourcetype: Other
 title: FluTrain.csv
 uid: 0148593d-1ffa-6dfd-c89b-468c796b52f3

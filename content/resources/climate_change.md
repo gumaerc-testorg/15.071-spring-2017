@@ -8,6 +8,7 @@ learning_resource_types:
 ocw_type: OCWFile
 parent_title: 2.5 Assignment 2
 parent_type: CourseSection
+parent_uid: d3823600-300c-0300-0e79-696e835f8f2f
 resourcetype: Other
 title: climate_change.csv
 uid: 3b53e75d-1ddb-97bd-98f4-0ae5bbee2475

@@ -11,6 +11,7 @@ learning_resource_types: []
 ocw_type: OCWImage
 parent_title: '7.2 Visualizing the World: An Introduction to Visualization'
 parent_type: CourseSection
+parent_uid: bcd276c5-4387-e04d-4149-dfe97b763b3f
 resourcetype: Image
 title: Shapes.jpg
 uid: 6a88ce72-b6c9-709c-c7bd-95550e3cd349
