@@ -1,17 +1,17 @@
 ---
 content_type: resource
 description: ''
-end_time: ''
 file: null
 learning_resource_types: []
+ocw_type: ''
 optional_tab_title: ''
 optional_text: ''
 parent_title: '8.4 Google AdWords: Optimizing Online Advertising  (Recitation)'
 parent_type: CourseSection
+parent_uid: null
 related_resources_text: ''
 resource_index_text: ''
 resourcetype: Video
-start_time: ''
 title: 'Video 6: A Greedy Approach'
 uid: 5e81f6b0-d5e1-92dc-02ad-402842933989
 video_files:

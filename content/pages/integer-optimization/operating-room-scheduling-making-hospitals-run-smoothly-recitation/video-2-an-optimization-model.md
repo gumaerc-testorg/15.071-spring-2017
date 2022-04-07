@@ -9,18 +9,18 @@ title: '9.4 Operating Room Scheduling: Making Hospitals Run Smoothly  (Recitatio
 uid: 8a92070b-71b9-513e-35b1-c9854c1ef91c
 ---
 
-*   [\<Video 1: The Problem]({{< baseurl >}}/pages/integer-optimization/operating-room-scheduling-making-hospitals-run-smoothly-recitation/video-1-the-problem)
-*   [9.4.1Welcome to Recitation 9]({{< baseurl >}}/pages/integer-optimization/operating-room-scheduling-making-hospitals-run-smoothly-recitation)
-*   [9.4.2Video 1: The Problem]({{< baseurl >}}/pages/integer-optimization/operating-room-scheduling-making-hospitals-run-smoothly-recitation/video-1-the-problem)
-*   [9.4.3Video 2: An Optimization Model]({{< baseurl >}}/pages/integer-optimization/operating-room-scheduling-making-hospitals-run-smoothly-recitation/video-2-an-optimization-model)
-*   [9.4.4Video 3: Solving the Problem]({{< baseurl >}}/pages/integer-optimization/operating-room-scheduling-making-hospitals-run-smoothly-recitation/video-3-solving-the-problem-5)
-*   [9.4.5Video 4: The Solution]({{< baseurl >}}/pages/integer-optimization/operating-room-scheduling-making-hospitals-run-smoothly-recitation/video-4-the-solution)
-*   [\>Video 3: Solving the Problem]({{< baseurl >}}/pages/integer-optimization/operating-room-scheduling-making-hospitals-run-smoothly-recitation/video-3-solving-the-problem-5)
+*   {{< resource_link 5e9398f5-808e-614e-c06f-e6634bc50d7e "\<Video 1: The Problem" >}}
+*   {{< resource_link 1ebaa9f0-a112-c161-92d9-1227cd28b727 "9.4.1Welcome to Recitation 9" >}}
+*   {{< resource_link 5e9398f5-808e-614e-c06f-e6634bc50d7e "9.4.2Video 1: The Problem" >}}
+*   {{< resource_link 8a92070b-71b9-513e-35b1-c9854c1ef91c "9.4.3Video 2: An Optimization Model" >}}
+*   {{< resource_link 162e5921-904a-9507-80e7-596c005168c3 "9.4.4Video 3: Solving the Problem" >}}
+*   {{< resource_link 6e8bdbce-3ea9-e644-0e2b-66d90a657d47 "9.4.5Video 4: The Solution" >}}
+*   {{< resource_link 162e5921-904a-9507-80e7-596c005168c3 "\>Video 3: Solving the Problem" >}}
 
 Video 2: An Optimization Model
 ------------------------------
 
 {{< resource e8273e64-04dd-14bc-3de0-f9646b82c0de >}}
 
-*   [BackVideo 1: The Problem]({{< baseurl >}}/pages/integer-optimization/operating-room-scheduling-making-hospitals-run-smoothly-recitation/video-1-the-problem)
-*   [ContinueVideo 3: Solving the Problem]({{< baseurl >}}/pages/integer-optimization/operating-room-scheduling-making-hospitals-run-smoothly-recitation/video-3-solving-the-problem-5)
+*   {{< resource_link 5e9398f5-808e-614e-c06f-e6634bc50d7e "BackVideo 1: The Problem" >}}
+*   {{< resource_link 162e5921-904a-9507-80e7-596c005168c3 "ContinueVideo 3: Solving the Problem" >}}

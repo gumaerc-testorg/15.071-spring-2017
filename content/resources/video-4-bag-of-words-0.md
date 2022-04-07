@@ -1,17 +1,17 @@
 ---
 content_type: resource
 description: ''
-end_time: ''
 file: null
 learning_resource_types: []
+ocw_type: ''
 optional_tab_title: ''
 optional_text: ''
 parent_title: '5.2 Turning Tweets into Knowledge: An Introduction to Text Analytics'
 parent_type: CourseSection
+parent_uid: null
 related_resources_text: ''
 resource_index_text: ''
 resourcetype: Video
-start_time: ''
 title: 'Video 4: Bag of Words'
 uid: c3bb194a-a241-1c6d-3118-cd7a0056bb05
 video_files:

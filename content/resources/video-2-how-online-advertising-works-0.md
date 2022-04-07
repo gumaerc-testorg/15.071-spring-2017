@@ -1,17 +1,17 @@
 ---
 content_type: resource
 description: ''
-end_time: ''
 file: null
 learning_resource_types: []
+ocw_type: ''
 optional_tab_title: ''
 optional_text: ''
 parent_title: '8.4 Google AdWords: Optimizing Online Advertising  (Recitation)'
 parent_type: CourseSection
+parent_uid: null
 related_resources_text: ''
 resource_index_text: ''
 resourcetype: Video
-start_time: ''
 title: 'Video 2: How Online Advertising Works'
 uid: f3d72bd8-87cb-d1fb-9bdc-b833863152a6
 video_files:

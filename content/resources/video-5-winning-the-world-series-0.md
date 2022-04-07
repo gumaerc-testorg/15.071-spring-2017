@@ -1,17 +1,17 @@
 ---
 content_type: resource
 description: ''
-end_time: ''
 file: null
 learning_resource_types: []
+ocw_type: ''
 optional_tab_title: ''
 optional_text: ''
 parent_title: '2.3 Moneyball: The Power of Sports Analytics '
 parent_type: CourseSection
+parent_uid: null
 related_resources_text: ''
 resource_index_text: ''
 resourcetype: Video
-start_time: ''
 title: 'Video 5: Winning the World Series'
 uid: 3184bdd3-937f-729b-dd8c-57d39cef9a32
 video_files:

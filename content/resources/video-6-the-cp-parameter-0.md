@@ -1,17 +1,17 @@
 ---
 content_type: resource
 description: ''
-end_time: ''
 file: null
 learning_resource_types: []
+ocw_type: ''
 optional_tab_title: ''
 optional_text: ''
 parent_title: '4.4 Location, Location, Location: Regression Trees for Housing Data  (Recitation)'
 parent_type: CourseSection
+parent_uid: null
 related_resources_text: ''
 resource_index_text: ''
 resourcetype: Video
-start_time: ''
 title: 'Video 6: The CP Parameter'
 uid: f9cbbfc8-e555-67a7-e230-811e9fd7c2e6
 video_files:

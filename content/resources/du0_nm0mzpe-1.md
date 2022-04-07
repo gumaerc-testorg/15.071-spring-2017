@@ -5,6 +5,7 @@ file: /media/courses/15-071-the-analytics-edge-spring-2017/2e47c52d771cbca493953
 file_type: application/pdf
 learning_resource_types: []
 ocw_type: OCWFile
+parent_uid: null
 resourcetype: Document
 title: 3play pdf file
 uid: 2e47c52d-771c-bca4-9395-3ebccd62607d

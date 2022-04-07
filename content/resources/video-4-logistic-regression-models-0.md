@@ -1,18 +1,18 @@
 ---
 content_type: resource
 description: ''
-end_time: ''
 file: null
 learning_resource_types: []
+ocw_type: ''
 optional_tab_title: ''
 optional_text: ''
 parent_title: '3.4 Election Forecasting: Predicting the Winner Before any Votes are
   Cast  (Recitation)'
 parent_type: CourseSection
+parent_uid: null
 related_resources_text: ''
 resource_index_text: ''
 resourcetype: Video
-start_time: ''
 title: 'Video 4: Logistic Regression Models'
 uid: a006fb50-9ea4-6226-329f-9975623c0c25
 video_files:

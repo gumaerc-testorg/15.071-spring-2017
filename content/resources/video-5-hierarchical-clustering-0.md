@@ -1,17 +1,17 @@
 ---
 content_type: resource
 description: ''
-end_time: ''
 file: null
 learning_resource_types: []
+ocw_type: ''
 optional_tab_title: ''
 optional_text: ''
 parent_title: '6.2 Recommendations Worth a Million: An Introduction to Clustering '
 parent_type: CourseSection
+parent_uid: null
 related_resources_text: ''
 resource_index_text: ''
 resourcetype: Video
-start_time: ''
 title: 'Video 5: Hierarchical Clustering'
 uid: 4cf9eee4-79fa-dbf5-23c7-c7504abc0c3e
 video_files:

@@ -1,17 +1,17 @@
 ---
 content_type: resource
 description: ''
-end_time: ''
 file: null
 learning_resource_types: []
+ocw_type: ''
 optional_tab_title: ''
 optional_text: ''
 parent_title: '6.3 Predictive Diagnosis: Discovering Patterns for Disease Detection '
 parent_type: CourseSection
+parent_uid: null
 related_resources_text: ''
 resource_index_text: ''
 resourcetype: Video
-start_time: ''
 title: 'Video 1: Heart Attacks'
 uid: 8584b4b2-b658-d77d-6c10-3cfdec5b2e86
 video_files:

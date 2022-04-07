@@ -1,17 +1,17 @@
 ---
 content_type: resource
 description: ''
-end_time: ''
 file: null
 learning_resource_types: []
+ocw_type: ''
 optional_tab_title: ''
 optional_text: ''
 parent_title: '6.2 Recommendations Worth a Million: An Introduction to Clustering '
 parent_type: CourseSection
+parent_uid: null
 related_resources_text: ''
 resource_index_text: ''
 resourcetype: Video
-start_time: ''
 title: 'Video 2: Recommendation Systems'
 uid: b97c54af-921f-f794-71b6-7d5e5ee70456
 video_files:

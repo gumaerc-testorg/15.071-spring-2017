@@ -9,11 +9,11 @@ title: 8.1 Welcome to Unit 8
 uid: 8556ba9c-76cf-a0d6-4a07-e442426c65bf
 ---
 
-*   [\<Welcome to Unit 8]({{< baseurl >}}/pages/linear-optimization/welcome-to-unit-8)
-*   [8.1.1Welcome to Unit 8]({{< baseurl >}}/pages/linear-optimization/welcome-to-unit-8)
-*   [8.1.2Installing LibreOffice or OpenOffice]({{< baseurl >}}/pages/linear-optimization/welcome-to-unit-8/installing-libreoffice-or-openoffice)
-*   [8.1.3Spreadsheet Tutorial]({{< baseurl >}}/pages/linear-optimization/welcome-to-unit-8/spreadsheet-tutorial)
-*   [\>Spreadsheet Tutorial]({{< baseurl >}}/pages/linear-optimization/welcome-to-unit-8/spreadsheet-tutorial)
+*   {{< resource_link 006d219b-4918-0234-3c9c-2e5dce950c20 "\<Welcome to Unit 8" >}}
+*   {{< resource_link 006d219b-4918-0234-3c9c-2e5dce950c20 "8.1.1Welcome to Unit 8" >}}
+*   {{< resource_link 8556ba9c-76cf-a0d6-4a07-e442426c65bf "8.1.2Installing LibreOffice or OpenOffice" >}}
+*   {{< resource_link f7583f86-6400-a48c-ea21-c46483b728b2 "8.1.3Spreadsheet Tutorial" >}}
+*   {{< resource_link f7583f86-6400-a48c-ea21-c46483b728b2 "\>Spreadsheet Tutorial" >}}
 
 Installing LibreOffice or OpenOffice
 ------------------------------------
@@ -34,5 +34,5 @@ We recommend using OpenOffice (or Microsoft Excel) if you have a Mac. To install
 
 Once you have installed LibreOffice or OpenOffice (or you are planning to just use Microsoft Excel), you are ready to start the first Lecture Sequence this week. If you have any questions or if you ran into any problems, please search in the Dicussion Forum for people with similar problems, or create a new post below.
 
-*   [BackWelcome to Unit 8]({{< baseurl >}}/pages/linear-optimization/welcome-to-unit-8)
-*   [ContinueSpreadsheet Tutorial]({{< baseurl >}}/pages/linear-optimization/welcome-to-unit-8/spreadsheet-tutorial)
+*   {{< resource_link 006d219b-4918-0234-3c9c-2e5dce950c20 "BackWelcome to Unit 8" >}}
+*   {{< resource_link f7583f86-6400-a48c-ea21-c46483b728b2 "ContinueSpreadsheet Tutorial" >}}

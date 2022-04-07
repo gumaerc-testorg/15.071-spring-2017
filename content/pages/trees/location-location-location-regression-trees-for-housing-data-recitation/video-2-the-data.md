@@ -9,25 +9,25 @@ title: '4.4 Location, Location, Location: Regression Trees for Housing Data  (Re
 uid: fe8e6610-7427-85e9-e33b-488d454628d9
 ---
 
-*   [\<Video 1: Boston Housing Data]({{< baseurl >}}/pages/trees/location-location-location-regression-trees-for-housing-data-recitation/video-1-boston-housing-data)
-*   [4.4.1Welcome to Recitation 4]({{< baseurl >}}/pages/trees/location-location-location-regression-trees-for-housing-data-recitation)
-*   [4.4.2Video 1: Boston Housing Data]({{< baseurl >}}/pages/trees/location-location-location-regression-trees-for-housing-data-recitation/video-1-boston-housing-data)
-*   [4.4.3Video 2: The Data]({{< baseurl >}}/pages/trees/location-location-location-regression-trees-for-housing-data-recitation/video-2-the-data)
-*   [4.4.4Video 3: Geographical Predictions]({{< baseurl >}}/pages/trees/location-location-location-regression-trees-for-housing-data-recitation/video-3-geographical-predictions)
-*   [4.4.5Video 4: Regression Trees]({{< baseurl >}}/pages/trees/location-location-location-regression-trees-for-housing-data-recitation/video-4-regression-trees)
-*   [4.4.6Video 5: Putting it all Together]({{< baseurl >}}/pages/trees/location-location-location-regression-trees-for-housing-data-recitation/video-5-putting-it-all-together)
-*   [4.4.7Video 6: The CP Parameter]({{< baseurl >}}/pages/trees/location-location-location-regression-trees-for-housing-data-recitation/video-6-the-cp-parameter)
-*   [4.4.8Video 7: Cross-Validation]({{< baseurl >}}/pages/trees/location-location-location-regression-trees-for-housing-data-recitation/video-7-cross-validation)
-*   [\>Video 3: Geographical Predictions]({{< baseurl >}}/pages/trees/location-location-location-regression-trees-for-housing-data-recitation/video-3-geographical-predictions)
+*   {{< resource_link 8741d74c-b086-3663-cea9-0529b643e153 "\<Video 1: Boston Housing Data" >}}
+*   {{< resource_link aef27920-c51c-efd1-88ed-937539251bd9 "4.4.1Welcome to Recitation 4" >}}
+*   {{< resource_link 8741d74c-b086-3663-cea9-0529b643e153 "4.4.2Video 1: Boston Housing Data" >}}
+*   {{< resource_link fe8e6610-7427-85e9-e33b-488d454628d9 "4.4.3Video 2: The Data" >}}
+*   {{< resource_link 0e5da8a5-6da7-e6bd-45cd-2c10c9e313cd "4.4.4Video 3: Geographical Predictions" >}}
+*   {{< resource_link df4bdc23-f257-ab70-73f9-70896028e009 "4.4.5Video 4: Regression Trees" >}}
+*   {{< resource_link aad83d53-78a1-ef15-e27f-e7684e1f8761 "4.4.6Video 5: Putting it all Together" >}}
+*   {{< resource_link 14da7d12-ae8a-4e88-6ad3-ec1166945b9c "4.4.7Video 6: The CP Parameter" >}}
+*   {{< resource_link 6fc7a0e4-7d44-d24e-fd6c-876af7f8e2de "4.4.8Video 7: Cross-Validation" >}}
+*   {{< resource_link 0e5da8a5-6da7-e6bd-45cd-2c10c9e313cd "\>Video 3: Geographical Predictions" >}}
 
 Video 2: The Data
 -----------------
 
-In this recitation, Iain will be using the dataset [boston (CSV)]({{< baseurl >}}/resources/boston) to predict housing prices in Boston. Please download this dataset to follow along in this recitation. This data comes from the [UCI Machine Learning Repository](http://archive.ics.uci.edu/ml/index.php).
+In this recitation, Iain will be using the dataset {{< resource_link d4332a30-56f4-4e1a-1dec-9600a31f21c8 "boston (CSV)" >}} to predict housing prices in Boston. Please download this dataset to follow along in this recitation. This data comes from the [UCI Machine Learning Repository](http://archive.ics.uci.edu/ml/index.php).
 
-An R script file with all of the R commands used in this recitation can be downloaded here: [Resource Unit4\_Recitation (R)]({{< baseurl >}}/resources/unit4_recitation).
+An R script file with all of the R commands used in this recitation can be downloaded here: {{< resource_link 07abfd3f-d112-a229-c1bf-1dbe9f454d98 "Resource Unit4\_Recitation (R)" >}}.
 
 {{< resource ed82049f-677a-8dce-6959-83b3a25e0bb4 >}}
 
-*   [BackVideo 1: Boston Housing Data]({{< baseurl >}}/pages/trees/location-location-location-regression-trees-for-housing-data-recitation/video-1-boston-housing-data)
-*   [ContinueVideo 3: Geographical Predictions]({{< baseurl >}}/pages/trees/location-location-location-regression-trees-for-housing-data-recitation/video-3-geographical-predictions)
+*   {{< resource_link 8741d74c-b086-3663-cea9-0529b643e153 "BackVideo 1: Boston Housing Data" >}}
+*   {{< resource_link 0e5da8a5-6da7-e6bd-45cd-2c10c9e313cd "ContinueVideo 3: Geographical Predictions" >}}

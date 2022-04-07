@@ -1,17 +1,17 @@
 ---
 content_type: resource
 description: ''
-end_time: ''
 file: null
 learning_resource_types: []
+ocw_type: ''
 optional_tab_title: ''
 optional_text: ''
 parent_title: '8.2 Airline Revenue Management: An Introduction to Linear Optimization '
 parent_type: CourseSection
+parent_uid: null
 related_resources_text: ''
 resource_index_text: ''
 resourcetype: Video
-start_time: ''
 title: 'Video 5: Visualizing the Problem'
 uid: 7049189f-24cf-e5e0-b7a7-8b4c6f748eb7
 video_files:

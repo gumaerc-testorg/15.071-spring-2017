@@ -9,19 +9,19 @@ title: '5.3 Man vs. Machine: How IBM Built a Jeopardy Champion '
 uid: d45e2c9f-7b3a-704d-918d-9b04749cbccb
 ---
 
-*   [\<Video 4: How Watson Works - Steps 1 and 2]({{< baseurl >}}/pages/text-analytics/man-vs-machine-how-ibm-built-a-jeopardy-champion/video-4-how-watson-works-steps-1-and-2)
-*   [5.3.1Video 1: IBM Watson]({{< baseurl >}}/pages/text-analytics/man-vs-machine-how-ibm-built-a-jeopardy-champion)
-*   [5.3.2Quick Question]({{< baseurl >}}/pages/text-analytics/man-vs-machine-how-ibm-built-a-jeopardy-champion/quick-question-405)
-*   [5.3.3Video 2: The Game of Jeopardy]({{< baseurl >}}/pages/text-analytics/man-vs-machine-how-ibm-built-a-jeopardy-champion/video-2-the-game-of-jeopardy)
-*   [5.3.4Quick Question]({{< baseurl >}}/pages/text-analytics/man-vs-machine-how-ibm-built-a-jeopardy-champion/quick-question-410)
-*   [5.3.5Video 3: Watson's Database and Tools]({{< baseurl >}}/pages/text-analytics/man-vs-machine-how-ibm-built-a-jeopardy-champion/video-3-watson-s-database-and-tools)
-*   [5.3.6Quick Question]({{< baseurl >}}/pages/text-analytics/man-vs-machine-how-ibm-built-a-jeopardy-champion/quick-question-415)
-*   [5.3.7Video 4: How Watson Works - Steps 1 and 2]({{< baseurl >}}/pages/text-analytics/man-vs-machine-how-ibm-built-a-jeopardy-champion/video-4-how-watson-works-steps-1-and-2)
-*   [5.3.8Quick Question]({{< baseurl >}}/pages/text-analytics/man-vs-machine-how-ibm-built-a-jeopardy-champion/quick-question-420)
-*   [5.3.9Video 5: How Watson Works - Steps 3 and 4]({{< baseurl >}}/pages/text-analytics/man-vs-machine-how-ibm-built-a-jeopardy-champion/video-5-how-watson-works-steps-3-and-4)
-*   [5.3.10Quick Question]({{< baseurl >}}/pages/text-analytics/man-vs-machine-how-ibm-built-a-jeopardy-champion/quick-question-428)
-*   [5.3.11Video 6: The Results]({{< baseurl >}}/pages/text-analytics/man-vs-machine-how-ibm-built-a-jeopardy-champion/video-6-the-results)
-*   [\>Video 5: How Watson Works - Steps 3 and 4]({{< baseurl >}}/pages/text-analytics/man-vs-machine-how-ibm-built-a-jeopardy-champion/video-5-how-watson-works-steps-3-and-4)
+*   {{< resource_link 10a0455f-0a4b-69f3-568b-887aeec88323 "\<Video 4: How Watson Works - Steps 1 and 2" >}}
+*   {{< resource_link 0c9bd7c2-6f88-e1f3-72bb-45bfb1705096 "5.3.1Video 1: IBM Watson" >}}
+*   {{< resource_link cf2f9551-18a1-2a65-f12e-76866e4e7c82 "5.3.2Quick Question" >}}
+*   {{< resource_link 8e417dbe-e235-1e2e-fc59-f87409ee7506 "5.3.3Video 2: The Game of Jeopardy" >}}
+*   {{< resource_link 9b0cd8f6-762e-c9ed-9908-449798eb47f2 "5.3.4Quick Question" >}}
+*   {{< resource_link 0b633aaf-8e34-b984-7755-c8976cde3db6 "5.3.5Video 3: Watson's Database and Tools" >}}
+*   {{< resource_link 40172c50-6b5c-7c5f-9589-beb963f4adf1 "5.3.6Quick Question" >}}
+*   {{< resource_link 10a0455f-0a4b-69f3-568b-887aeec88323 "5.3.7Video 4: How Watson Works - Steps 1 and 2" >}}
+*   {{< resource_link d45e2c9f-7b3a-704d-918d-9b04749cbccb "5.3.8Quick Question" >}}
+*   {{< resource_link fb311ba7-2cf6-92ff-ca87-557089c126b1 "5.3.9Video 5: How Watson Works - Steps 3 and 4" >}}
+*   {{< resource_link 6f8e99cf-30af-3889-c6c0-9803e769c268 "5.3.10Quick Question" >}}
+*   {{< resource_link 53740d71-c3da-1250-dc60-6f279043dd3b "5.3.11Video 6: The Results" >}}
+*   {{< resource_link fb311ba7-2cf6-92ff-ca87-557089c126b1 "\>Video 5: How Watson Works - Steps 3 and 4" >}}
 
 Quick Question
 --------------
@@ -41,5 +41,5 @@ The LAT in the first question is "THIS ROYAL FAMILY" and the LAT in the second q
 
 The LAT in the first question is "THIS ROYAL FAMILY" and the LAT in the second question is "THIS DEVICE". Remember that if you replace the LAT with the correct answer, the sentence should make sense.{{< /quiz_solution >}}{{< /quiz_multiple_choice >}}
 
-*   [BackVideo 4: How Watson Works - Steps 1 and 2]({{< baseurl >}}/pages/text-analytics/man-vs-machine-how-ibm-built-a-jeopardy-champion/video-4-how-watson-works-steps-1-and-2)
-*   [ContinueVideo 5: How Watson Works - Steps 3 and 4]({{< baseurl >}}/pages/text-analytics/man-vs-machine-how-ibm-built-a-jeopardy-champion/video-5-how-watson-works-steps-3-and-4)
+*   {{< resource_link 10a0455f-0a4b-69f3-568b-887aeec88323 "BackVideo 4: How Watson Works - Steps 1 and 2" >}}
+*   {{< resource_link fb311ba7-2cf6-92ff-ca87-557089c126b1 "ContinueVideo 5: How Watson Works - Steps 3 and 4" >}}

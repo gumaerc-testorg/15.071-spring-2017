@@ -9,30 +9,30 @@ title: '2.2 The Statistical Sommelier: An Introduction to Linear Regression'
 uid: 4495fb48-3934-3c33-23b2-2ef2104af559
 ---
 
-*   [\<Welcome to Unit 2]({{< baseurl >}}/pages/linear-regression/welcome-to-unit-2)
-*   [2.2.1Video 1: Predicting the Quality of Wine]({{< baseurl >}}/pages/linear-regression/the-statistical-sommelier-an-introduction-to-linear-regression)
-*   [2.2.2Quick Question]({{< baseurl >}}/pages/linear-regression/the-statistical-sommelier-an-introduction-to-linear-regression/quick-question-46)
-*   [2.2.3Video 2: One-Variable Linear Regression]({{< baseurl >}}/pages/linear-regression/the-statistical-sommelier-an-introduction-to-linear-regression/video-2-one-variable-linear-regression)
-*   [2.2.4Quick Question]({{< baseurl >}}/pages/linear-regression/the-statistical-sommelier-an-introduction-to-linear-regression/quick-question-54)
-*   [2.2.5Video 3: Multiple Linear Regression]({{< baseurl >}}/pages/linear-regression/the-statistical-sommelier-an-introduction-to-linear-regression/video-3-multiple-linear-regression)
-*   [2.2.6Quick Question]({{< baseurl >}}/pages/linear-regression/the-statistical-sommelier-an-introduction-to-linear-regression/quick-question-73)
-*   [2.2.7Video 4: Linear Regression in R]({{< baseurl >}}/pages/linear-regression/the-statistical-sommelier-an-introduction-to-linear-regression/video-4-linear-regression-in-r)
-*   [2.2.8Quick Question]({{< baseurl >}}/pages/linear-regression/the-statistical-sommelier-an-introduction-to-linear-regression/quick-question-78)
-*   [2.2.9Video 5: Understanding the Model]({{< baseurl >}}/pages/linear-regression/the-statistical-sommelier-an-introduction-to-linear-regression/video-5-understanding-the-model)
-*   [2.2.10Quick Question]({{< baseurl >}}/pages/linear-regression/the-statistical-sommelier-an-introduction-to-linear-regression/quick-question-88)
-*   [2.2.11Video 6: Correlation and Multicollinearity]({{< baseurl >}}/pages/linear-regression/the-statistical-sommelier-an-introduction-to-linear-regression/video-6-correlation-and-multicollinearity)
-*   [2.2.12Quick Question]({{< baseurl >}}/pages/linear-regression/the-statistical-sommelier-an-introduction-to-linear-regression/quick-question-96)
-*   [2.2.13Video 7: Making Predictions]({{< baseurl >}}/pages/linear-regression/the-statistical-sommelier-an-introduction-to-linear-regression/video-7-making-predictions)
-*   [2.2.14Quick Question]({{< baseurl >}}/pages/linear-regression/the-statistical-sommelier-an-introduction-to-linear-regression/quick-question-101)
-*   [2.2.15Video 8: Comparing the Model to the Experts]({{< baseurl >}}/pages/linear-regression/the-statistical-sommelier-an-introduction-to-linear-regression/video-8-comparing-the-model-to-the-experts)
-*   [\>Quick Question]({{< baseurl >}}/pages/linear-regression/the-statistical-sommelier-an-introduction-to-linear-regression/quick-question-46)
+*   {{< resource_link 4f0a4b24-64cb-eba3-50fe-fae41b407cd6 "\<Welcome to Unit 2" >}}
+*   {{< resource_link 4495fb48-3934-3c33-23b2-2ef2104af559 "2.2.1Video 1: Predicting the Quality of Wine" >}}
+*   {{< resource_link ef446456-afa1-894f-834f-a9ae8908c9a2 "2.2.2Quick Question" >}}
+*   {{< resource_link 1f0b61bb-a29b-5ee7-5d26-5ed940cc2d1d "2.2.3Video 2: One-Variable Linear Regression" >}}
+*   {{< resource_link a15d356c-50bc-b55a-2cbd-e1c66378ef25 "2.2.4Quick Question" >}}
+*   {{< resource_link 505bba75-964b-7b2c-74d8-ebcee23c8259 "2.2.5Video 3: Multiple Linear Regression" >}}
+*   {{< resource_link d97e0bd0-54ac-d9a6-df59-9f1b2e2daf73 "2.2.6Quick Question" >}}
+*   {{< resource_link 9f456e81-561b-ed0d-7c0a-516cd7739d20 "2.2.7Video 4: Linear Regression in R" >}}
+*   {{< resource_link dba3745d-05fd-fdd2-c5cc-f0b06194ed26 "2.2.8Quick Question" >}}
+*   {{< resource_link 6111ddea-9e02-70be-a097-8feb66c8bf60 "2.2.9Video 5: Understanding the Model" >}}
+*   {{< resource_link 20a0ee2d-c563-bbc1-243a-facac65c21f3 "2.2.10Quick Question" >}}
+*   {{< resource_link 1ab830be-7abc-5468-421c-996f95e8e252 "2.2.11Video 6: Correlation and Multicollinearity" >}}
+*   {{< resource_link bef58e98-6cee-f682-d32a-bfab033deaf6 "2.2.12Quick Question" >}}
+*   {{< resource_link 9b500b6f-7f1d-17af-5de0-ab9946895858 "2.2.13Video 7: Making Predictions" >}}
+*   {{< resource_link 04ad6920-c418-b28f-1259-8538cd8136cf "2.2.14Quick Question" >}}
+*   {{< resource_link df5ef364-59d3-2e3f-98ec-9d920d6c5e1d "2.2.15Video 8: Comparing the Model to the Experts" >}}
+*   {{< resource_link ef446456-afa1-894f-834f-a9ae8908c9a2 "\>Quick Question" >}}
 
 Video 1: Predicting the Quality of Wine
 ---------------------------------------
 
 {{< resource 9ada3bb8-c53b-2df2-c2a3-2ee4dbef04b0 >}}
 
-The slides from all videos in this Lecture Sequence can be downloaded here: [Introduction to Linear Regression (PDF - 1.3MB)]({{< baseurl >}}/resources/mit15_071s17_unit2_wineregression).
+The slides from all videos in this Lecture Sequence can be downloaded here: {{< resource_link 4f6d186d-9fc1-7569-4534-71da9b7336d1 "Introduction to Linear Regression (PDF - 1.3MB)" >}}.
 
-*   [BackWelcome to Unit 2]({{< baseurl >}}/pages/linear-regression/welcome-to-unit-2)
-*   [ContinueQuick Question]({{< baseurl >}}/pages/linear-regression/the-statistical-sommelier-an-introduction-to-linear-regression/quick-question-46)
+*   {{< resource_link 4f0a4b24-64cb-eba3-50fe-fae41b407cd6 "BackWelcome to Unit 2" >}}
+*   {{< resource_link ef446456-afa1-894f-834f-a9ae8908c9a2 "ContinueQuick Question" >}}

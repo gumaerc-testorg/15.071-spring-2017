@@ -9,27 +9,27 @@ title: '8.2 Airline Revenue Management: An Introduction to Linear Optimization '
 uid: 0cd767eb-f8c6-279f-86f2-16e785139b90
 ---
 
-*   [\<Quick Question]({{< baseurl >}}/pages/linear-optimization/airline-revenue-management-an-introduction-to-linear-optimization/quick-question-620)
-*   [8.2.1Video 1: Introduction]({{< baseurl >}}/pages/linear-optimization/airline-revenue-management-an-introduction-to-linear-optimization)
-*   [8.2.2Video 2: A Single Flight]({{< baseurl >}}/pages/linear-optimization/airline-revenue-management-an-introduction-to-linear-optimization/video-2-a-single-flight)
-*   [8.2.3Quick Question]({{< baseurl >}}/pages/linear-optimization/airline-revenue-management-an-introduction-to-linear-optimization/quick-question-581)
-*   [8.2.4Video 3: The Problem Formulation]({{< baseurl >}}/pages/linear-optimization/airline-revenue-management-an-introduction-to-linear-optimization/video-3-the-problem-formulation)
-*   [8.2.5Quick Question]({{< baseurl >}}/pages/linear-optimization/airline-revenue-management-an-introduction-to-linear-optimization/quick-question-590)
-*   [8.2.6Video 4: Solving the Problem]({{< baseurl >}}/pages/linear-optimization/airline-revenue-management-an-introduction-to-linear-optimization/video-4-solving-the-problem)
-*   [8.2.7Quick Question]({{< baseurl >}}/pages/linear-optimization/airline-revenue-management-an-introduction-to-linear-optimization/quick-question-598)
-*   [8.2.8Video 5: Visualizing the Problem]({{< baseurl >}}/pages/linear-optimization/airline-revenue-management-an-introduction-to-linear-optimization/video-5-visualizing-the-problem)
-*   [8.2.9Quick Question]({{< baseurl >}}/pages/linear-optimization/airline-revenue-management-an-introduction-to-linear-optimization/quick-question-606)
-*   [8.2.10Video 6: Sensitivity Analysis]({{< baseurl >}}/pages/linear-optimization/airline-revenue-management-an-introduction-to-linear-optimization/video-6-sensitivity-analysis)
-*   [8.2.11Quick Question]({{< baseurl >}}/pages/linear-optimization/airline-revenue-management-an-introduction-to-linear-optimization/quick-question-614)
-*   [8.2.12Video 7: Connecting Flights]({{< baseurl >}}/pages/linear-optimization/airline-revenue-management-an-introduction-to-linear-optimization/video-7-connecting-flights)
-*   [8.2.13Quick Question]({{< baseurl >}}/pages/linear-optimization/airline-revenue-management-an-introduction-to-linear-optimization/quick-question-620)
-*   [8.2.14Video 8: The Edge of Revenue Management]({{< baseurl >}}/pages/linear-optimization/airline-revenue-management-an-introduction-to-linear-optimization/video-8-the-edge-of-revenue-management)
-*   [\>Radiation Therapy: An Application of Linear Optimization]({{< baseurl >}}/pages/linear-optimization/radiation-therapy-an-application-of-linear-optimization)
+*   {{< resource_link 866b08a8-38d4-f694-786a-619e9ebff44b "\<Quick Question" >}}
+*   {{< resource_link 2900efa7-1aff-756d-feba-74c6d16f2d3d "8.2.1Video 1: Introduction" >}}
+*   {{< resource_link 1a99f51a-66ac-8af1-43ed-d5efdd454605 "8.2.2Video 2: A Single Flight" >}}
+*   {{< resource_link 3a0381df-ab5e-b38d-f338-52ce8d57f81b "8.2.3Quick Question" >}}
+*   {{< resource_link e9725d1b-f88e-acdd-5ae8-cd5e31dbe7cc "8.2.4Video 3: The Problem Formulation" >}}
+*   {{< resource_link b7f0594b-3047-a305-cb8a-f6815a526173 "8.2.5Quick Question" >}}
+*   {{< resource_link 86a033cc-e142-d448-a8bb-9112a73f89db "8.2.6Video 4: Solving the Problem" >}}
+*   {{< resource_link 52678524-d9df-c344-6fc9-97eed6c5a010 "8.2.7Quick Question" >}}
+*   {{< resource_link f7f2a67c-b479-6f7b-313d-a3b222582c72 "8.2.8Video 5: Visualizing the Problem" >}}
+*   {{< resource_link bcd5d3fe-6076-3847-5182-4e5ef3218335 "8.2.9Quick Question" >}}
+*   {{< resource_link f20e206f-20f7-9b3c-410b-c053183afdbb "8.2.10Video 6: Sensitivity Analysis" >}}
+*   {{< resource_link 71d3d9d3-2435-5e5d-1972-5596dcc0bf78 "8.2.11Quick Question" >}}
+*   {{< resource_link 80f150bc-38fd-0f84-75f7-ccfe876f7744 "8.2.12Video 7: Connecting Flights" >}}
+*   {{< resource_link 866b08a8-38d4-f694-786a-619e9ebff44b "8.2.13Quick Question" >}}
+*   {{< resource_link 0cd767eb-f8c6-279f-86f2-16e785139b90 "8.2.14Video 8: The Edge of Revenue Management" >}}
+*   {{< resource_link 7a59278a-134c-5085-244c-381fc6090890 "\>Radiation Therapy: An Application of Linear Optimization" >}}
 
 Video 8: The Edge of Revenue Management
 ---------------------------------------
 
 {{< resource 05888959-6f88-3ebc-9a5c-4db7413eae9e >}}
 
-*   [BackQuick Question]({{< baseurl >}}/pages/linear-optimization/airline-revenue-management-an-introduction-to-linear-optimization/quick-question-620)
-*   [ContinueRadiation Therapy: An Application of Linear Optimization]({{< baseurl >}}/pages/linear-optimization/radiation-therapy-an-application-of-linear-optimization)
+*   {{< resource_link 866b08a8-38d4-f694-786a-619e9ebff44b "BackQuick Question" >}}
+*   {{< resource_link 7a59278a-134c-5085-244c-381fc6090890 "ContinueRadiation Therapy: An Application of Linear Optimization" >}}

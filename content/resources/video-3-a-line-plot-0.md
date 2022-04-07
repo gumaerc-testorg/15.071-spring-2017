@@ -1,17 +1,17 @@
 ---
 content_type: resource
 description: ''
-end_time: ''
 file: null
 learning_resource_types: []
+ocw_type: ''
 optional_tab_title: ''
 optional_text: ''
 parent_title: '7.3 The Analytical Policeman: Visualization for Law and Order'
 parent_type: CourseSection
+parent_uid: null
 related_resources_text: ''
 resource_index_text: ''
 resourcetype: Video
-start_time: ''
 title: 'Video 3: A Line Plot'
 uid: 336eebae-e5e6-8533-c8be-4f7ffd6a66c0
 video_files:

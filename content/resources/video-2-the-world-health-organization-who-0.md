@@ -1,17 +1,17 @@
 ---
 content_type: resource
 description: ''
-end_time: ''
 file: null
 learning_resource_types: []
+ocw_type: ''
 optional_tab_title: ''
 optional_text: ''
 parent_title: '7.2 Visualizing the World: An Introduction to Visualization'
 parent_type: CourseSection
+parent_uid: null
 related_resources_text: ''
 resource_index_text: ''
 resourcetype: Video
-start_time: ''
 title: 'Video 2: The World Health Organization (WHO)'
 uid: 4016c7d2-71f2-addd-d23d-e4877f380659
 video_files:

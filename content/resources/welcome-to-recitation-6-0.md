@@ -1,17 +1,17 @@
 ---
 content_type: resource
 description: ''
-end_time: ''
 file: null
 learning_resource_types: []
+ocw_type: ''
 optional_tab_title: ''
 optional_text: ''
 parent_title: '6.4 Seeing the Big Picture: Segmenting Images to Create Data  (Recitation)'
 parent_type: CourseSection
+parent_uid: null
 related_resources_text: ''
 resource_index_text: ''
 resourcetype: Video
-start_time: ''
 title: Welcome to Recitation 6
 uid: d03bdd3e-8dc2-fe30-8528-106d28a1bd4f
 video_files:

@@ -1,17 +1,17 @@
 ---
 content_type: resource
 description: ''
-end_time: ''
 file: null
 learning_resource_types: []
+ocw_type: ''
 optional_tab_title: ''
 optional_text: ''
 parent_title: '9.3 eHarmony: Maximizing the Probability of Love '
 parent_type: CourseSection
+parent_uid: null
 related_resources_text: ''
 resource_index_text: ''
 resourcetype: Video
-start_time: ''
 title: 'Video 4: The Analytics Edge'
 uid: b2c338b4-b9ee-6e7d-3532-0ce66e52ba0c
 video_files:

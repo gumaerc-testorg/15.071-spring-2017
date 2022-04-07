@@ -1,17 +1,17 @@
 ---
 content_type: resource
 description: ''
-end_time: ''
 file: null
 learning_resource_types: []
+ocw_type: ''
 optional_tab_title: ''
 optional_text: ''
 parent_title: '6.3 Predictive Diagnosis: Discovering Patterns for Disease Detection '
 parent_type: CourseSection
+parent_uid: null
 related_resources_text: ''
 resource_index_text: ''
 resourcetype: Video
-start_time: ''
 title: 'Video 3: Predicting Heart Attacks using Clustering'
 uid: 58197ebb-100f-5b91-8181-cb8202497dfb
 video_files:

@@ -1,17 +1,17 @@
 ---
 content_type: resource
 description: ''
-end_time: ''
 file: null
 learning_resource_types: []
+ocw_type: ''
 optional_tab_title: ''
 optional_text: ''
 parent_title: '2.3 Moneyball: The Power of Sports Analytics '
 parent_type: CourseSection
+parent_uid: null
 related_resources_text: ''
 resource_index_text: ''
 resourcetype: Video
-start_time: ''
 title: 'Video 4: Using the Models to Make Predictions'
 uid: bc7fa05d-0334-caed-00ad-fb3a9dc65c8d
 video_files:

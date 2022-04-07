@@ -1,18 +1,18 @@
 ---
 content_type: resource
 description: ''
-end_time: ''
 file: null
 learning_resource_types: []
+ocw_type: ''
 optional_tab_title: ''
 optional_text: ''
 parent_title: '1.2 The Analytics Edge: Intelligence, Happiness, and Health  (Lecture
   Sequence)'
 parent_type: CourseSection
+parent_uid: null
 related_resources_text: ''
 resource_index_text: ''
 resourcetype: Video
-start_time: ''
 title: 'Video 2: Example 1 - IBM Watson'
 uid: cf2300f9-46cb-bdd1-1fd2-412911fdac2e
 video_files:

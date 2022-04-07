@@ -1,17 +1,17 @@
 ---
 content_type: resource
 description: ''
-end_time: ''
 file: null
 learning_resource_types: []
+ocw_type: ''
 optional_tab_title: ''
 optional_text: ''
 parent_title: '4.3 Keeping an Eye on Healthcare Costs: The D2Hawkeye Story '
 parent_type: CourseSection
+parent_uid: null
 related_resources_text: ''
 resource_index_text: ''
 resourcetype: Video
-start_time: ''
 title: 'Video 1: The Story of D2Hawkeye'
 uid: 594ee19b-332f-6b1a-7f2d-f85bdf2638c5
 video_files:

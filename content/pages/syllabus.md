@@ -2,6 +2,7 @@
 content_type: page
 learning_resource_types: []
 ocw_type: CourseSection
+parent_uid: null
 title: Syllabus
 uid: 4ff3236d-bb77-bc34-6022-6ad4dce64b50
 ---
@@ -47,7 +48,7 @@ Recitations will cover additional examples of the analytics methods presented in
 Assignments
 -----------
 
-There will be nine individual homework assignments and a ﬁnal project that should be done in teams of two. See the [Assignments section]({{< baseurl >}}/pages/assignments) for more details about the assignments and the final project.
+There will be nine individual homework assignments and a ﬁnal project that should be done in teams of two. See the {{< resource_link 790693dd-03fa-16d8-62fd-02407cfcb455 "Assignments section" >}} for more details about the assignments and the final project.
 
 Readings
 --------

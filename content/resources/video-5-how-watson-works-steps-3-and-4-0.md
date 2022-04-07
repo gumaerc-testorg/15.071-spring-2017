@@ -1,17 +1,17 @@
 ---
 content_type: resource
 description: ''
-end_time: ''
 file: null
 learning_resource_types: []
+ocw_type: ''
 optional_tab_title: ''
 optional_text: ''
 parent_title: '5.3 Man vs. Machine: How IBM Built a Jeopardy Champion '
 parent_type: CourseSection
+parent_uid: null
 related_resources_text: ''
 resource_index_text: ''
 resourcetype: Video
-start_time: ''
 title: 'Video 5: How Watson Works - Steps 3 and 4'
 uid: 3071997b-afd4-1b1e-f9ee-57383ae819c4
 video_files:

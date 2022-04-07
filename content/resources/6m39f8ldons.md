@@ -5,6 +5,7 @@ file: /media/courses/15-071-the-analytics-edge-spring-2017/104b3ef4fda69948c75e6
 file_type: application/x-subrip
 learning_resource_types: []
 ocw_type: OCWFile
+parent_uid: null
 resourcetype: Other
 title: 3play caption file
 uid: 104b3ef4-fda6-9948-c75e-6761ff0af44c

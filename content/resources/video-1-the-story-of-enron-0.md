@@ -1,17 +1,17 @@
 ---
 content_type: resource
 description: ''
-end_time: ''
 file: null
 learning_resource_types: []
+ocw_type: ''
 optional_tab_title: ''
 optional_text: ''
 parent_title: '5.4 Predictive Coding: Bringing Text Analytics to the Courtroom  (Recitation)'
 parent_type: CourseSection
+parent_uid: null
 related_resources_text: ''
 resource_index_text: ''
 resourcetype: Video
-start_time: ''
 title: 'Video 1: The Story of Enron'
 uid: 78bf586e-906b-7d1a-3d90-4f3f1f51c210
 video_files:

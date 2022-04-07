@@ -1,17 +1,17 @@
 ---
 content_type: resource
 description: ''
-end_time: ''
 file: null
 learning_resource_types: []
+ocw_type: ''
 optional_tab_title: ''
 optional_text: ''
 parent_title: '8.2 Airline Revenue Management: An Introduction to Linear Optimization '
 parent_type: CourseSection
+parent_uid: null
 related_resources_text: ''
 resource_index_text: ''
 resourcetype: Video
-start_time: ''
 title: 'Video 8: The Edge of Revenue Management'
 uid: 05888959-6f88-3ebc-9a5c-4db7413eae9e
 video_files:

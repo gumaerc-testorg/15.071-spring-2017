@@ -1,17 +1,17 @@
 ---
 content_type: resource
 description: ''
-end_time: ''
 file: null
 learning_resource_types: []
+ocw_type: ''
 optional_tab_title: ''
 optional_text: ''
 parent_title: '9.2 Sports Scheduling: An Introduction to Integer Optimization '
 parent_type: CourseSection
+parent_uid: null
 related_resources_text: ''
 resource_index_text: ''
 resourcetype: Video
-start_time: ''
 title: 'Video 3: Solving the Problem'
 uid: a5473f86-598a-1d2d-f4c9-d8966f1c024c
 video_files:
