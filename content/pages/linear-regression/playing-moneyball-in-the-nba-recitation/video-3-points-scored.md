@@ -1,23 +1,20 @@
 ---
 content_type: page
+description: ''
+draft: false
+learning_resource_types: []
+ocw_type: CourseSection
 parent_title: 2.4 Playing Moneyball in the NBA  (Recitation)
+parent_type: CourseSection
 parent_uid: 3d4f0b49-ab63-6ab4-200c-8f27a219c0dc
 title: 2.4 Playing Moneyball in the NBA  (Recitation)
 uid: 117ccde2-d58f-68e2-13ef-c11a6b2848fb
+video_metadata:
+  youtube_id: null
 ---
+## Video 3: Points Scored
 
-*   [<Video 2: Playoffs and Wins]({{< baseurl >}}/pages/linear-regression/playing-moneyball-in-the-nba-recitation/video-2-playoffs-and-wins)
-*   [2.4.1Welcome to Recitation 2]({{< baseurl >}}/pages/linear-regression/playing-moneyball-in-the-nba-recitation)
-*   [2.4.2Video 1: The Data]({{< baseurl >}}/pages/linear-regression/playing-moneyball-in-the-nba-recitation/video-1-the-data)
-*   [2.4.3Video 2: Playoffs and Wins]({{< baseurl >}}/pages/linear-regression/playing-moneyball-in-the-nba-recitation/video-2-playoffs-and-wins)
-*   [2.4.4Video 3: Points Scored]({{< baseurl >}}/pages/linear-regression/playing-moneyball-in-the-nba-recitation/video-3-points-scored)
-*   [2.4.5Video 4: Making Predictions]({{< baseurl >}}/pages/linear-regression/playing-moneyball-in-the-nba-recitation/video-4-making-predictions)
-*   [\>Video 4: Making Predictions]({{< baseurl >}}/pages/linear-regression/playing-moneyball-in-the-nba-recitation/video-4-making-predictions)
+{{< resource uuid="24430922-b686-2545-d3f6-74970e1b3a09" >}}
 
-Video 3: Points Scored
-----------------------
-
-{{< resource 24430922-b686-2545-d3f6-74970e1b3a09 >}}
-
-*   [BackVideo 2: Playoffs and Wins]({{< baseurl >}}/pages/linear-regression/playing-moneyball-in-the-nba-recitation/video-2-playoffs-and-wins)
-*   [ContinueVideo 4: Making Predictions]({{< baseurl >}}/pages/linear-regression/playing-moneyball-in-the-nba-recitation/video-4-making-predictions)
+- {{% resource_link "5ac291e9-f7cb-6b8e-19b1-740753e96bf6" "Back: Video 2: Playoffs and Wins" %}}
+- {{% resource_link "4a72056c-6bbe-0c01-489f-b7068637be07" "Continue: Video 4: Making Predictions" %}}

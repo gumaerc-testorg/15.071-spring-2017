@@ -1,31 +1,24 @@
 ---
 content_type: page
+description: ''
+draft: false
+learning_resource_types: []
+ocw_type: CourseSection
 parent_title: '5.4 Predictive Coding: Bringing Text Analytics to the Courtroom  (Recitation)'
+parent_type: CourseSection
 parent_uid: d4b1a3b9-42ed-98d1-94fe-b3777ba22595
 title: '5.4 Predictive Coding: Bringing Text Analytics to the Courtroom  (Recitation)'
 uid: d2b6e4bc-cf8f-0017-b1fc-3de36e683c9a
+video_metadata:
+  youtube_id: null
 ---
+## Video 2: The Data
 
-*   [<Video 1: The Story of Enron]({{< baseurl >}}/pages/text-analytics/predictive-coding-bringing-text-analytics-to-the-courtroom-recitation/video-1-the-story-of-enron)
-*   [5.4.1Welcome to Recitation 5]({{< baseurl >}}/pages/text-analytics/predictive-coding-bringing-text-analytics-to-the-courtroom-recitation)
-*   [5.4.2Video 1: The Story of Enron]({{< baseurl >}}/pages/text-analytics/predictive-coding-bringing-text-analytics-to-the-courtroom-recitation/video-1-the-story-of-enron)
-*   [5.4.3Video 2: The Data]({{< baseurl >}}/pages/text-analytics/predictive-coding-bringing-text-analytics-to-the-courtroom-recitation/video-2-the-data-2)
-*   [5.4.4Video 3: Pre-Processing]({{< baseurl >}}/pages/text-analytics/predictive-coding-bringing-text-analytics-to-the-courtroom-recitation/video-3-pre-processing)
-*   [5.4.5Video 4: Bag of Words]({{< baseurl >}}/pages/text-analytics/predictive-coding-bringing-text-analytics-to-the-courtroom-recitation/video-4-bag-of-words-2)
-*   [5.4.6Video 5: Building Models]({{< baseurl >}}/pages/text-analytics/predictive-coding-bringing-text-analytics-to-the-courtroom-recitation/video-5-building-models)
-*   [5.4.7Video 6: Evaluating the Model]({{< baseurl >}}/pages/text-analytics/predictive-coding-bringing-text-analytics-to-the-courtroom-recitation/video-6-evaluating-the-model)
-*   [5.4.8Video 7: The ROC Curve]({{< baseurl >}}/pages/text-analytics/predictive-coding-bringing-text-analytics-to-the-courtroom-recitation/video-7-the-roc-curve)
-*   [5.4.9Video 8: Predictive Coding Today]({{< baseurl >}}/pages/text-analytics/predictive-coding-bringing-text-analytics-to-the-courtroom-recitation/video-8-predictive-coding-today)
-*   [\>Video 3: Pre-Processing]({{< baseurl >}}/pages/text-analytics/predictive-coding-bringing-text-analytics-to-the-courtroom-recitation/video-3-pre-processing)
+In this recitation, we'll be using the dataset {{% resource_link "6d2b07bf-20cc-af83-c396-d465e5b7574d" "energy_bids (CSV - 2.0MB)" %}}. Please download and save this dataset to your computer so that you can follow along. This data comes from the 2010 [TREC Legal Track](http://trec-legal.umiacs.umd.edu/).
 
-Video 2: The Data
------------------
+An R script file with all of the commands we will be using in this recitation can be downloaded here: {{% resource_link "011d033b-3863-7b57-5bcd-f6a154a3fcf6" "Resource Unit5_Recitation (R)" %}}.
 
-In this recitation, we'll be using the dataset [energy\_bids (CSV - 2.0MB)]({{< baseurl >}}/resources/energy_bids). Please download and save this dataset to your computer so that you can follow along. This data comes from the 2010 [TREC Legal Track](http://trec-legal.umiacs.umd.edu/).
+{{< resource uuid="8abd4863-8cc0-8b37-9da7-7662cae86d88" >}}
 
-An R script file with all of the commands we will be using in this recitation can be downloaded here: [Resource Unit5\_Recitation (R)]({{< baseurl >}}/resources/unit5_recitation).
-
-{{< resource 8abd4863-8cc0-8b37-9da7-7662cae86d88 >}}
-
-*   [BackVideo 1: The Story of Enron]({{< baseurl >}}/pages/text-analytics/predictive-coding-bringing-text-analytics-to-the-courtroom-recitation/video-1-the-story-of-enron)
-*   [ContinueVideo 3: Pre-Processing]({{< baseurl >}}/pages/text-analytics/predictive-coding-bringing-text-analytics-to-the-courtroom-recitation/video-3-pre-processing)
+- {{% resource_link "035dbca4-1240-1abd-0c08-bb9c1c3c233d" "Back: Video 1: The Story of Enron" %}}
+- {{% resource_link "1924c416-bffb-7319-6622-8542170e6c66" "Continue: Video 3: Pre-Processing" %}}

@@ -1,31 +1,28 @@
 ---
 content_type: page
+description: ''
+draft: false
+learning_resource_types: []
+ocw_type: CourseSection
 parent_title: '9.3 eHarmony: Maximizing the Probability of Love '
+parent_type: CourseSection
 parent_uid: 11e612d8-9845-c6c9-6a73-07cebaa24191
-title: '9.3 eHarmony: Maximizing the Probability of Love '
+title: '9.3 eHarmony: Maximizing the Probability of Love'
 uid: c616e1a8-4cbe-f628-f458-bec9f000bbaf
+video_metadata:
+  youtube_id: null
 ---
+## Quick Question
 
-*   [<eHarmony: Maximizing the Probability of Love]({{< baseurl >}}/pages/integer-optimization/eharmony-maximizing-the-probability-of-love)
-*   [9.3.1Video 1: The Goal of eHarmony]({{< baseurl >}}/pages/integer-optimization/eharmony-maximizing-the-probability-of-love)
-*   [9.3.2Quick Question]({{< baseurl >}}/pages/integer-optimization/eharmony-maximizing-the-probability-of-love/quick-question-698)
-*   [9.3.3Video 2: Using Integer Optimization]({{< baseurl >}}/pages/integer-optimization/eharmony-maximizing-the-probability-of-love/video-2-using-integer-optimization)
-*   [9.3.4Quick Question]({{< baseurl >}}/pages/integer-optimization/eharmony-maximizing-the-probability-of-love/quick-question-703)
-*   [9.3.5Video 3: Predicting Compatibility Scores]({{< baseurl >}}/pages/integer-optimization/eharmony-maximizing-the-probability-of-love/video-3-predicting-compatibility-scores)
-*   [9.3.6Quick Question]({{< baseurl >}}/pages/integer-optimization/eharmony-maximizing-the-probability-of-love/quick-question-711)
-*   [9.3.7Video 4: The Analytics Edge]({{< baseurl >}}/pages/integer-optimization/eharmony-maximizing-the-probability-of-love/video-4-the-analytics-edge)
-*   [\>Video 2: Using Integer Optimization]({{< baseurl >}}/pages/integer-optimization/eharmony-maximizing-the-probability-of-love/video-2-using-integer-optimization)
+eHarmony has a distinguishing feature, that makes it stand out from other online dating websites? What is this?
 
-Quick Question
---------------
-
-{{< quiz_multiple_choice questionId="Q1_div" >}}{{< quiz_choices >}}{{< quiz_choice isCorrect="false" >}}&nbsp;eHarmony was the first online dating site.&nbsp;{{< /quiz_choice >}}
-{{< quiz_choice isCorrect="false" >}}&nbsp;eHarmony asks users for personal information.&nbsp;{{< /quiz_choice >}}
-{{< quiz_choice isCorrect="false" >}}&nbsp;eHarmony charges a fee to users.&nbsp;{{< /quiz_choice >}}
-{{< quiz_choice isCorrect="true" >}}&nbsp;eHarmony only suggests matches to users, instead of allowing users to browse. &nbsp;{{< /quiz_choice >}}{{< /quiz_choices >}}
+{{< quiz_multiple_choice questionId="Q1_div" >}}{{< quiz_choices >}}{{< quiz_choice isCorrect="false" >}} eHarmony was the first online dating site. {{< /quiz_choice >}}  
+{{< quiz_choice isCorrect="false" >}} eHarmony asks users for personal information. {{< /quiz_choice >}}  
+{{< quiz_choice isCorrect="false" >}} eHarmony charges a fee to users. {{< /quiz_choice >}}  
+{{< quiz_choice isCorrect="true" >}} eHarmony only suggests matches to users, instead of allowing users to browse.  {{< /quiz_choice >}}{{< /quiz_choices >}}  
 {{< quiz_solution >}}Explanation
 
 eHarmony was not the first online dating site, and while they ask users for personal information and charge a fee, other online dating sites do that as well. What distinguishes eHarmony is that they only suggest matches to users, instead of allowing users to browse other users' profiles.{{< /quiz_solution >}}{{< /quiz_multiple_choice >}}
 
-*   [BackeHarmony: Maximizing the Probability of Love]({{< baseurl >}}/pages/integer-optimization/eharmony-maximizing-the-probability-of-love)
-*   [ContinueVideo 2: Using Integer Optimization]({{< baseurl >}}/pages/integer-optimization/eharmony-maximizing-the-probability-of-love/video-2-using-integer-optimization)
+- {{% resource_link "11e612d8-9845-c6c9-6a73-07cebaa24191" "Back: eHarmony: Maximizing the Probability of Love" %}}
+- {{% resource_link "53b49e57-bb91-291a-c131-759296912fa6" "Continue: Video 2: Using Integer Optimization" %}}

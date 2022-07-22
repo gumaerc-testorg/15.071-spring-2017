@@ -1,7 +1,14 @@
 ---
 content_type: page
+description: This section details the assignments in the residential version of the
+  course.
+learning_resource_types:
+- Assignments
+ocw_type: CourseSection
 title: Assignments
 uid: 790693dd-03fa-16d8-62fd-02407cfcb455
+video_metadata:
+  youtube_id: null
 ---
 
 Individual Work Assignments
@@ -31,13 +38,13 @@ Assignment 1
 {{< tdopen >}}
 
 
-[An Analytical Detective]({{< baseurl >}}/pages/an-introduction-to-analytics/assignment-1)
+{{% resource_link 0af41c2f-ca68-84fa-b36c-0a31155319b9 "An Analytical Detective" %}}
 
-[Stock Dynamics]({{< baseurl >}}/pages/an-introduction-to-analytics/assignment-1/stock-dynamics)
+{{% resource_link 89ce47d2-7edc-dd9b-8a8c-be641a59b520 "Stock Dynamics" %}}
 
-[Demographics and Employment in the United States]({{< baseurl >}}/pages/an-introduction-to-analytics/assignment-1/demographics-and-employment-in-the-united-states)
+{{% resource_link d628845f-dc26-781b-fce4-c58e39e14746 "Demographics and Employment in the United States" %}}
 
-[Internet Privacy Poll]({{< baseurl >}}/pages/an-introduction-to-analytics/assignment-1/internet-privacy-poll)
+{{% resource_link e7021f06-ce2f-36d6-b3f8-3d333dfef935 "Internet Privacy Poll" %}}
 
 
 {{< tdclose >}}
@@ -54,13 +61,13 @@ Assignment 2
 {{< tdopen >}}
 
 
-[Climate Change]({{< baseurl >}}/pages/linear-regression/assignment-2)
+{{% resource_link d3823600-300c-0300-0e79-696e835f8f2f "Climate Change" %}}
 
-[Reading Test Scores]({{< baseurl >}}/pages/linear-regression/assignment-2/reading-test-scores)
+{{% resource_link f590aa02-4205-ae29-1d85-5ec56a16b4a4 "Reading Test Scores" %}}
 
-[Detecting Flu Epidemics via Search Engine Query Data]({{< baseurl >}}/pages/linear-regression/assignment-2/detecting-flu-epidemics-via-search-engine-query-data)
+{{% resource_link d64b9247-3ae1-fb23-50f1-b27dc8fbde0b "Detecting Flu Epidemics via Search Engine Query Data" %}}
 
-[State Data]({{< baseurl >}}/pages/linear-regression/assignment-2/state-data)
+{{% resource_link 609cf352-3750-f69e-cb54-c706f04a68c5 "State Data" %}}
 
 
 {{< tdclose >}}
@@ -77,9 +84,9 @@ Assignment 3
 {{< tdopen >}}
 
 
-[Popularity of Music Records]({{< baseurl >}}/pages/logistic-regression/assignment-3)
+{{% resource_link d4a650ea-930c-2c8c-0f98-9b353a5a342e "Popularity of Music Records" %}}
 
-[Predicting the Baseball World Series Champion]({{< baseurl >}}/pages/logistic-regression/assignment-3/predicting-the-baseball-world-series-champion)
+{{% resource_link 3b462833-7389-a83d-6609-7f7597856e56 "Predicting the Baseball World Series Champion" %}}
 
 
 {{< tdclose >}}
@@ -96,11 +103,11 @@ Assignment 4
 {{< tdopen >}}
 
 
-[Predicting Earnings from Census Data]({{< baseurl >}}/pages/trees/assignment-4)
+{{% resource_link 11ad34c8-1083-2b18-6afa-cd57f2616109 "Predicting Earnings from Census Data" %}}
 
-[Understanding Why People Vote]({{< baseurl >}}/pages/trees/assignment-4/understanding-why-people-vote)
+{{% resource_link e4031315-c29e-d0c6-413f-d2bd77d67b94 "Understanding Why People Vote" %}}
 
-[State Data Revisted]({{< baseurl >}}/pages/trees/assignment-4/state-data-revisted)
+{{% resource_link 1ec4de19-6088-678e-c051-d69160bc733a "State Data Revisted" %}}
 
 
 {{< tdclose >}}
@@ -117,11 +124,11 @@ Assignment 5
 {{< tdopen >}}
 
 
-[Separating Spam from Ham]({{< baseurl >}}/pages/text-analytics/assignment-5)
+{{% resource_link 81eae0fd-28f2-8733-6b79-2210ba33dfbb "Separating Spam from Ham" %}}
 
-[Detecting Vandalism on Wikipedia]({{< baseurl >}}/pages/text-analytics/assignment-5/detecting-vandalism-on-wikipedia)
+{{% resource_link 2e4c9dd9-6d08-4e8f-d1d8-111a5affc5a4 "Detecting Vandalism on Wikipedia" %}}
 
-[Automating Reviews in Medicine]({{< baseurl >}}/pages/text-analytics/assignment-5/automating-reviews-in-medicine)
+{{% resource_link f9baad34-7f95-6b6f-8608-66551433d510 "Automating Reviews in Medicine" %}}
 
 
 {{< tdclose >}}
@@ -138,7 +145,7 @@ Assignment 6
 {{< tdopen >}}
 
 
-[Document Clustering with Daily Kos]({{< baseurl >}}/pages/clustering/assignment-6)
+{{% resource_link 940f7353-62c6-3a66-1b04-174a40036c29 "Document Clustering with Daily Kos" %}}
 
 
 {{< tdclose >}}
@@ -155,7 +162,7 @@ Assignment 7
 {{< tdopen >}}
 
 
-[Visualizing Attributes of Parole Violators]({{< baseurl >}}/pages/visualization/assignment-7)
+{{% resource_link 056c6914-368d-638a-59e4-cebbc43acfe5 "Visualizing Attributes of Parole Violators" %}}
 
 
 {{< tdclose >}}
@@ -172,7 +179,7 @@ Assignment 8
 {{< tdopen >}}
 
 
-[Even' Star Organic Farm]({{< baseurl >}}/pages/linear-optimization/assignment-8)
+{{% resource_link 6a5d4bdb-70f4-48f5-8697-82dbaa8537a8 "Even' Star Organic Farm" %}}
 
 
 {{< tdclose >}}
@@ -189,9 +196,9 @@ Assignment 9
 {{< tdopen >}}
 
 
-[Even' Star Organic Farm Revisited]({{< baseurl >}}/pages/integer-optimization/assignment-9)
+{{% resource_link 2dbce7a6-bb37-17df-55b4-be0179616ad6 "Even' Star Organic Farm Revisited" %}}
 
-[Gerrymandering New Mexico]({{< baseurl >}}/pages/integer-optimization/assignment-9/gerrymandering-new-mexico)
+{{% resource_link 1ab3f4de-f050-7a6b-6327-b8e7dfa4fb69 "Gerrymandering New Mexico" %}}
 
 
 {{< tdclose >}}

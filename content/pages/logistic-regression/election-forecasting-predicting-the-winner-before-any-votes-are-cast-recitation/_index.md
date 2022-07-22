@@ -1,24 +1,20 @@
 ---
 content_type: page
+description: ''
+draft: false
+learning_resource_types: []
+ocw_type: CourseSection
 parent_title: 3 Logistic Regression
+parent_type: CourseSection
 parent_uid: c4464cf4-9ddb-1a4b-c78c-faa6f93b74de
 title: '3.4 Election Forecasting: Predicting the Winner Before any Votes are Cast  (Recitation)'
 uid: cd55cbba-60f6-d5d3-7320-e05f520c4cf1
+video_metadata:
+  youtube_id: null
 ---
+## Welcome to Recitation 3
 
-*   [<Video 6: Overall Impact]({{< baseurl >}}/pages/logistic-regression/the-framingham-heart-study-evaluating-risk-factors-to-save-lives/video-6-overall-impact)
-*   [3.4.1Welcome to Recitation 3]({{< baseurl >}}/pages/logistic-regression/election-forecasting-predicting-the-winner-before-any-votes-are-cast-recitation)
-*   [3.4.2Video 1: Election Prediction]({{< baseurl >}}/pages/logistic-regression/election-forecasting-predicting-the-winner-before-any-votes-are-cast-recitation/video-1-election-prediction)
-*   [3.4.3Video 2: Dealing with Missing Data]({{< baseurl >}}/pages/logistic-regression/election-forecasting-predicting-the-winner-before-any-votes-are-cast-recitation/video-2-dealing-with-missing-data)
-*   [3.4.4Video 3: A Sophisticated Baseline Method]({{< baseurl >}}/pages/logistic-regression/election-forecasting-predicting-the-winner-before-any-votes-are-cast-recitation/video-3-a-sophisticated-baseline-method)
-*   [3.4.5Video 4: Logistic Regression Models]({{< baseurl >}}/pages/logistic-regression/election-forecasting-predicting-the-winner-before-any-votes-are-cast-recitation/video-4-logistic-regression-models)
-*   [3.4.6Video 5: Test Set Predictions]({{< baseurl >}}/pages/logistic-regression/election-forecasting-predicting-the-winner-before-any-votes-are-cast-recitation/video-5-test-set-predictions)
-*   [\>Video 1: Election Prediction]({{< baseurl >}}/pages/logistic-regression/election-forecasting-predicting-the-winner-before-any-votes-are-cast-recitation/video-1-election-prediction)
+{{< resource uuid="657289be-a6c0-ce52-2af6-015c21064521" >}}
 
-Welcome to Recitation 3
------------------------
-
-{{< resource 657289be-a6c0-ce52-2af6-015c21064521 >}}
-
-*   [BackVideo 6: Overall Impact]({{< baseurl >}}/pages/logistic-regression/the-framingham-heart-study-evaluating-risk-factors-to-save-lives/video-6-overall-impact)
-*   [ContinueVideo 1: Election Prediction]({{< baseurl >}}/pages/logistic-regression/election-forecasting-predicting-the-winner-before-any-votes-are-cast-recitation/video-1-election-prediction)
+- {{% resource_link "001f5747-862d-2259-93bf-38e6c5e9227e" "Back: Video 6: Overall Impact" %}}
+- {{% resource_link "1b20fb75-340f-2769-7ffe-9d500a06dad9" "Continue: Video 1: Election Prediction" %}}

@@ -1,31 +1,20 @@
 ---
 content_type: page
+description: ''
+draft: false
+learning_resource_types: []
+ocw_type: CourseSection
 parent_title: '7.3 The Analytical Policeman: Visualization for Law and Order'
+parent_type: CourseSection
 parent_uid: 716f78f6-1fe6-c5f4-7370-d7a3c4127827
 title: '7.3 The Analytical Policeman: Visualization for Law and Order'
 uid: 7a8ce8b6-91e9-92d1-00a8-3e4b86041a1a
+video_metadata:
+  youtube_id: null
 ---
+## Video 4: A Heatmap
 
-*   [<Quick Question]({{< baseurl >}}/pages/visualization/the-analytical-policeman-visualization-for-law-and-order/quick-question-550)
-*   [7.3.1Video 1: Predictive Policing]({{< baseurl >}}/pages/visualization/the-analytical-policeman-visualization-for-law-and-order)
-*   [7.3.2Quick Question]({{< baseurl >}}/pages/visualization/the-analytical-policeman-visualization-for-law-and-order/quick-question-540)
-*   [7.3.3Video 2: Visualizing Crime Over Time]({{< baseurl >}}/pages/visualization/the-analytical-policeman-visualization-for-law-and-order/video-2-visualizing-crime-over-time)
-*   [7.3.4Quick Question]({{< baseurl >}}/pages/visualization/the-analytical-policeman-visualization-for-law-and-order/quick-question-545)
-*   [7.3.5Video 3: A Line Plot]({{< baseurl >}}/pages/visualization/the-analytical-policeman-visualization-for-law-and-order/video-3-a-line-plot)
-*   [7.3.6Quick Question]({{< baseurl >}}/pages/visualization/the-analytical-policeman-visualization-for-law-and-order/quick-question-550)
-*   [7.3.7Video 4: A Heatmap]({{< baseurl >}}/pages/visualization/the-analytical-policeman-visualization-for-law-and-order/video-4-a-heatmap)
-*   [7.3.8Quick Question]({{< baseurl >}}/pages/visualization/the-analytical-policeman-visualization-for-law-and-order/quick-question-559)
-*   [7.3.9Video 5: A Geographical Hot Spot Map]({{< baseurl >}}/pages/visualization/the-analytical-policeman-visualization-for-law-and-order/video-5-a-geographical-hot-spot-map)
-*   [7.3.10Quick Question]({{< baseurl >}}/pages/visualization/the-analytical-policeman-visualization-for-law-and-order/quick-question-567)
-*   [7.3.11Video 6: A Heatmap on the United States]({{< baseurl >}}/pages/visualization/the-analytical-policeman-visualization-for-law-and-order/video-6-a-heatmap-on-the-united-states)
-*   [7.3.12Quick Question]({{< baseurl >}}/pages/visualization/the-analytical-policeman-visualization-for-law-and-order/quick-question-575)
-*   [7.3.13Video 7: The Analytics Edge]({{< baseurl >}}/pages/visualization/the-analytical-policeman-visualization-for-law-and-order/video-7-the-analytics-edge)
-*   [\>Quick Question]({{< baseurl >}}/pages/visualization/the-analytical-policeman-visualization-for-law-and-order/quick-question-559)
+{{< resource uuid="4ed777ef-e89a-7ba8-862e-8441c0bc4ea5" >}}
 
-Video 4: A Heatmap
-------------------
-
-{{< resource 4ed777ef-e89a-7ba8-862e-8441c0bc4ea5 >}}
-
-*   [BackQuick Question]({{< baseurl >}}/pages/visualization/the-analytical-policeman-visualization-for-law-and-order/quick-question-550)
-*   [ContinueQuick Question]({{< baseurl >}}/pages/visualization/the-analytical-policeman-visualization-for-law-and-order/quick-question-559)
+- {{% resource_link "e685ba71-8462-a41f-dc85-159d8c6cd469" "Back: Quick Question" %}}
+- {{% resource_link "6bc1ec1e-1262-c5a1-28e1-f822404bb0ba" "Continue: Quick Question" %}}
