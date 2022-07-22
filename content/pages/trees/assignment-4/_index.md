@@ -1,5 +1,7 @@
 ---
 content_type: page
+description: ''
+draft: false
 learning_resource_types: []
 ocw_type: CourseSection
 parent_title: 4 Trees
@@ -7,41 +9,36 @@ parent_type: CourseSection
 parent_uid: 19c8cf92-e31d-034a-1ea1-5ad53194d892
 title: 4.5 Assignment 4
 uid: 11ad34c8-1083-2b18-6afa-cd57f2616109
+video_metadata:
+  youtube_id: null
 ---
-
-*   [\<Video 7: Cross-Validation]({{< baseurl >}}/pages/trees/location-location-location-regression-trees-for-housing-data-recitation/video-7-cross-validation)
-*   [4.5.1Predicting Earnings from Census Data]({{< baseurl >}}/pages/trees/assignment-4)
-*   [4.5.2Understanding Why People Vote]({{< baseurl >}}/pages/trees/assignment-4/understanding-why-people-vote)
-*   [4.5.3State Data Revisted]({{< baseurl >}}/pages/trees/assignment-4/state-data-revisted)
-*   [\>Understanding Why People Vote]({{< baseurl >}}/pages/trees/assignment-4/understanding-why-people-vote)
-
-Predicting Earnings from Census Data
-------------------------------------
+## Predicting Earnings from Census Data
 
 The United States government periodically collects demographic information by conducting a census.
 
 In this problem, we are going to use census information about an individual to predict how much a person earns -- in particular, whether the person earns more than $50,000 per year. This data comes from the [UCI Machine Learning Repository](http://archive.ics.uci.edu/ml/datasets/Adult).
 
-The file [census (CSV - 3.3MB)]({{< baseurl >}}/resources/census) contains 1994 census data for 31,978 individuals in the United States.
+The file [census (CSV - 3.3MB)](./resolveuid/23bdcd0033c04ce7b2ea204f161b30e0) contains 1994 census data for 31,978 individuals in the United States.
 
 The dataset includes the following 13 variables:
 
-*   _age =_ the age of the individual in years
-*   _workclass =_ the classification of the individual's working status (does the person work for the federal government, work for the local government, work without pay, and so on)
-*   _education =_ the level of education of the individual (e.g., 5th-6th grade, high school graduate, PhD, so on)
-*   _maritalstatus =_ the marital status of the individual
-*   _occupation =_ the type of work the individual does (e.g., administrative/clerical work, farming/fishing, sales and so on)
-*   _relationship =_ relationship of individual to his/her household
-*   _race =_ the individual's race
-*   _sex =_ the individual's sex
-*   _capitalgain =_ the capital gains of the individual in 1994 (from selling an asset such as a stock or bond for more than the original purchase price)
-*   _capitalloss =_ the capital losses of the individual in 1994 (from selling an asset such as a stock or bond for less than the original purchase price)
-*   _hoursperweek =_ the number of hours the individual works per week
-*   _nativecountry =_ the native country of the individual
-*   _over50k =_ whether or not the individual earned more than $50,000 in 1994
+ 
 
-Problem 1.1 - A Logistic Regression Model
------------------------------------------
+- *age =* the age of the individual in years
+- *workclass =* the classification of the individual's working status (does the person work for the federal government, work for the local government, work without pay, and so on)
+- *education =* the level of education of the individual (e.g., 5th-6th grade, high school graduate, PhD, so on)
+- *maritalstatus =* the marital status of the individual
+- *occupation =* the type of work the individual does (e.g., administrative/clerical work, farming/fishing, sales and so on)
+- *relationship =* relationship of individual to his/her household
+- *race =* the individual's race
+- *sex =* the individual's sex
+- *capitalgain =* the capital gains of the individual in 1994 (from selling an asset such as a stock or bond for more than the original purchase price)
+- *capitalloss =* the capital losses of the individual in 1994 (from selling an asset such as a stock or bond for less than the original purchase price)
+- *hoursperweek =* the number of hours the individual works per week
+- *nativecountry =* the native country of the individual
+- *over50k =* whether or not the individual earned more than $50,000 in 1994
+
+## Problem 1.1 - A Logistic Regression Model
 
 Let's begin by building a logistic regression model to predict whether an individual's earnings are above $50,000 (the variable "over50k") using all of the other variables as independent variables. First, read the dataset census.csv into R.
 
@@ -49,19 +46,37 @@ Then, split the data randomly into a training set and a testing set, setting the
 
 Next, build a logistic regression model to predict the dependent variable "over50k", using all of the other variables in the dataset as independent variables. Use the training set to build the model.
 
-{{< quiz_multiple_choice questionId="Q1_div" >}}{{< quiz_choices >}}{{< quiz_choice isCorrect="true" >}}&nbsp;age&nbsp;{{< /quiz_choice >}}
-{{< quiz_choice isCorrect="true" >}}&nbsp;workclass&nbsp;{{< /quiz_choice >}}
-{{< quiz_choice isCorrect="true" >}}&nbsp;education&nbsp;{{< /quiz_choice >}}
-{{< quiz_choice isCorrect="true" >}}&nbsp;maritalstatus&nbsp;{{< /quiz_choice >}}
-{{< quiz_choice isCorrect="true" >}}&nbsp;occupation&nbsp;{{< /quiz_choice >}}
-{{< quiz_choice isCorrect="true" >}}&nbsp;relationship&nbsp;{{< /quiz_choice >}}
-{{< quiz_choice isCorrect="false" >}}&nbsp;race&nbsp;{{< /quiz_choice >}}
-{{< quiz_choice isCorrect="true" >}}&nbsp;sex&nbsp;{{< /quiz_choice >}}
-{{< quiz_choice isCorrect="true" >}}&nbsp;capitalgain&nbsp;{{< /quiz_choice >}}
-{{< quiz_choice isCorrect="true" >}}&nbsp;capitalloss&nbsp;{{< /quiz_choice >}}
-{{< quiz_choice isCorrect="true" >}}&nbsp;hoursperweek&nbsp;{{< /quiz_choice >}}
-{{< quiz_choice isCorrect="false" >}}&nbsp;nativecountry&nbsp;{{< /quiz_choice >}}{{< /quiz_choices >}}
-{{< quiz_solution >}}Explanation
+Which variables are significant, or have factors that have at least one significant dummy variable? (Use 0.1 as your significance threshold, so variables with a period or dot in the stars column should be counted too. You might see a warning message here - you can ignore it and proceed. This message is a warning that we might be overfitting our model to the training set.) Select all that apply.
+
+Exercise 1
+
+ age 
+
+ workclass 
+
+ education 
+
+ maritalstatus 
+
+ occupation 
+
+ relationship 
+
+ race 
+
+ sex 
+
+ capitalgain 
+
+ capitalloss 
+
+ ¨C10Choursperweek 
+
+ ¨C11Cnativecountry 
+
+ 
+
+Explanation
 
 To read census.csv, set your working directory to the same directory that census.csv is in, and run the following command:
 
@@ -83,43 +98,87 @@ censusTrain = census %>% filter(spl == TRUE)
 
 censusTest = census %>% filter(spl == FALSE)
 
-We are now ready to run logistic regression. Build the logistic regression model:
+¨C76C ¨C77C ¨C78C ¨C79C
 
-censusglm = glm( over50k ~ . , family="binomial", data = censusTrain)
+CheckShow Answer
 
-Finally, look at the model summary to identify the significant factors:
-
-summary(censusglm){{< /quiz_solution >}}{{< /quiz_multiple_choice >}}
-
-Problem 1.2 - A Logistic Regression Model
------------------------------------------
+## Problem 1.2 - A Logistic Regression Model
 
 What is the accuracy of the model on the testing set? Use a threshold of p = 0.5. (You might see a warning message when you make predictions on the test set - you can safely ignore it.)
 
 Exercise 2
 
-&nbsp;Numerical Response&nbsp;
+ Numerical Response 
 
-Problem 1.3 - A Logistic Regression Model
------------------------------------------
+ 
+
+Explanation
+
+Generate the predictions for the test set:
+
+predictTest = predict(censusglm, newdata = censusTest, type = "response")
+
+Then we can generate the confusion matrix:
+
+table(censusTest$over50k, predictTest >= 0.5)
+
+If we divide the sum of the main diagonal by the sum of all of the entries in the matrix, we obtain the accuracy:
+
+(9051+1888)/(9051+662+1190+1888) = 0.8552107
+
+CheckShow Answer
+
+## Problem 1.3 - A Logistic Regression Model
 
 What is the accuracy of the baseline model on the testing set?
 
 Exercise 3
 
-&nbsp;Numerical Response&nbsp;
+ Numerical Response 
 
-Problem 1.4 - A Logistic Regression Model
------------------------------------------
+ 
+
+Explanation
+
+We need to first determine the most frequent outcome in the training set. To do that, we table the dependent variable in the training set:
+
+table(censusTrain$over50k)
+
+"\<=50K" is the more frequent outcome (14570 observations), so this is what the baseline predicts. To generate the accuracy of the baseline on the test set, we can table the dependent variable in the test set:
+
+table(censusTest$over50k)
+
+The baseline accuracy is
+
+9713/(9713+3078) = 0.7593621.
+
+CheckShow Answer
+
+## Problem 1.4 - A Logistic Regression Model
 
 What is the area under the curve (AUC) for the logistic regression model on the test set?
 
 Exercise 4
 
-&nbsp;Numerical Response&nbsp;
+ Numerical Response 
 
-Problem 2.1 - A CART Model
---------------------------
+ 
+
+Explanation
+
+First, load the ROCR package:
+
+library(ROCR)
+
+Then you can use the following commands to compute the AUC (assuming your test set predictions are called "predictTest"):
+
+ROCRpred = prediction(predictTest, censusTest$over50k)
+
+as.numeric(performance(ROCRpred, "auc")@y.values)
+
+CheckShow Answer
+
+## Problem 2.1 - A CART Model
 
 We have just seen how a logistic regression model for this data achieves a high accuracy. Moreover, the significances of the variables give us a way to gauge which variables are relevant for this prediction task. However, it is not immediately clear which variables are more important than the others, especially due to the large number of factor variables in this problem.
 
@@ -129,67 +188,141 @@ How many splits does the tree have in total?
 
 Exercise 5
 
-&nbsp;Numerical Response&nbsp;
+ Numerical Response 
 
-Problem 2.2 - A CART Model
---------------------------
+ 
 
-{{< quiz_multiple_choice questionId="Q6_div" >}}{{< quiz_choices >}}{{< quiz_choice isCorrect="false" >}}&nbsp;age&nbsp;{{< /quiz_choice >}}
-{{< quiz_choice isCorrect="false" >}}&nbsp;workclass&nbsp;{{< /quiz_choice >}}
-{{< quiz_choice isCorrect="false" >}}&nbsp;education&nbsp;{{< /quiz_choice >}}
-{{< quiz_choice isCorrect="false" >}}&nbsp;maritalstatus&nbsp;{{< /quiz_choice >}}
-{{< quiz_choice isCorrect="false" >}}&nbsp;occupation&nbsp;{{< /quiz_choice >}}
-{{< quiz_choice isCorrect="true" >}}&nbsp;relationship&nbsp;{{< /quiz_choice >}}
-{{< quiz_choice isCorrect="false" >}}&nbsp;race&nbsp;{{< /quiz_choice >}}
-{{< quiz_choice isCorrect="false" >}}&nbsp;sex&nbsp;{{< /quiz_choice >}}
-{{< quiz_choice isCorrect="false" >}}&nbsp;capitalgain&nbsp;{{< /quiz_choice >}}
-{{< quiz_choice isCorrect="false" >}}&nbsp;capitalloss&nbsp;{{< /quiz_choice >}}
-{{< quiz_choice isCorrect="false" >}}&nbsp;hoursperweek&nbsp;{{< /quiz_choice >}}
-{{< quiz_choice isCorrect="false" >}}&nbsp;nativecountry&nbsp;{{< /quiz_choice >}}{{< /quiz_choices >}}
-{{< quiz_solution >}}Explanation
+Explanation
+
+To get started, load the rpart and rpart.plot packages:
+
+library(rpart)
+
+library(rpart.plot)
+
+Estimate the CART tree:
+
+censustree = rpart( over50k ~ . , method="class", data = censusTrain)
+
+Plot the tree:
+
+prp(censustree)
+
+There are four splits in total.
+
+CheckShow Answer
+
+## Problem 2.2 - A CART Model
+
+Which variable does the tree split on at the first level (the very first split of the tree)?
+
+Exercise 6
+
+ age 
+
+ workclass 
+
+ education 
+
+ maritalstatus 
+
+ occupation 
+
+ relationship 
+
+ race 
+
+ sex 
+
+ capitalgain 
+
+ capitalloss 
+
+ ¨C34Choursperweek 
+
+ ¨C35Cnativecountry 
+
+Explanation
 
 Plot the tree and examine the first split:
 
 prp(censustree)
 
-The first split uses the variable relationship.{{< /quiz_solution >}}{{< /quiz_multiple_choice >}}
+The first split uses the variable relationship.
 
-Problem 2.3 - A CART Model
---------------------------
+CheckShow Answer
 
-{{< quiz_multiple_choice questionId="Q7_div" >}}{{< quiz_choices >}}{{< quiz_choice isCorrect="false" >}}&nbsp;age&nbsp;{{< /quiz_choice >}}
-{{< quiz_choice isCorrect="false" >}}&nbsp;workclass&nbsp;{{< /quiz_choice >}}
-{{< quiz_choice isCorrect="true" >}}&nbsp;education&nbsp;{{< /quiz_choice >}}
-{{< quiz_choice isCorrect="false" >}}&nbsp;maritalstatus&nbsp;{{< /quiz_choice >}}
-{{< quiz_choice isCorrect="false" >}}&nbsp;occupation&nbsp;{{< /quiz_choice >}}
-{{< quiz_choice isCorrect="false" >}}&nbsp;relationship&nbsp;{{< /quiz_choice >}}
-{{< quiz_choice isCorrect="false" >}}&nbsp;race&nbsp;{{< /quiz_choice >}}
-{{< quiz_choice isCorrect="false" >}}&nbsp;sex&nbsp;{{< /quiz_choice >}}
-{{< quiz_choice isCorrect="true" >}}&nbsp;capitalgain&nbsp;{{< /quiz_choice >}}
-{{< quiz_choice isCorrect="false" >}}&nbsp;capitalloss&nbsp;{{< /quiz_choice >}}
-{{< quiz_choice isCorrect="false" >}}&nbsp;hoursperweek&nbsp;{{< /quiz_choice >}}
-{{< quiz_choice isCorrect="false" >}}&nbsp;nativecountry&nbsp;{{< /quiz_choice >}}{{< /quiz_choices >}}
-{{< quiz_solution >}}Explanation
+## Problem 2.3 - A CART Model
+
+Which variables does the tree split on at the second level (immediately after the first split of the tree)? Select all that apply.
+
+Exercise 7
+
+ age 
+
+ workclass 
+
+ education 
+
+ maritalstatus 
+
+ occupation 
+
+ relationship 
+
+ race 
+
+ sex 
+
+ capitalgain 
+
+ capitalloss 
+
+ ¨C46Choursperweek 
+
+ ¨C47Cnativecountry 
+
+ 
+
+Explanation
 
 Plot the tree and examine the second splits:
 
 prp(censustree)
 
-The second splits are on capitalgains and education.{{< /quiz_solution >}}{{< /quiz_multiple_choice >}}
+The second splits are on capitalgains and education.
 
-Problem 2.4 - A CART Model
---------------------------
+CheckShow Answer
+
+## Problem 2.4 - A CART Model
 
 What is the accuracy of the model on the testing set?
 
 Exercise 8
 
-&nbsp;Numerical Response&nbsp;
+ Numerical Response 
+
+ 
 
 This highlights a very regular phenomenon when comparing CART and logistic regression. CART often performs a little worse than logistic regression in out-of-sample accuracy. However, as is the case here, the CART model is often much simpler to describe and understand.
 
-Problem 3.1 - A Random Forest Model
------------------------------------
+Explanation
+
+First, generate predictions on the test set using the CART tree:
+
+predictTest = predict(censustree, newdata = censusTest, type = "class")
+
+Then create the confusion matrix:
+
+table(censusTest$over50k, predictTest)
+
+To compute the accuracy, sum the diagonal entries and divide by the sum of all of the terms:
+
+(9243+1596)/(9243+470+1482+1596) = 0.8473927
+
+CheckShow Answer
+
+## Problem 3.1 - A Random Forest Model
 
 Before building a random forest model, we'll down-sample our training set. While some modern personal computers can build a random forest model on the entire training set, others might run out of memory when trying to train the model since random forests is much more computationally intensive than CART or Logistic Regression. For this reason, before continuing we will define a new training set to be used when building our random forest model, that contains 2000 randomly selected obervations from the original training set. Do this by running the following commands in your R console (assuming your training set is called "censusTrain"):
 
@@ -203,12 +336,37 @@ Then, make predictions using this model on the entire test set. What is the accu
 
 Exercise 9
 
-&nbsp;Numerical Response&nbsp;
+ Numerical Response 
+
+ 
+
+Explanation
+
+To generate the random forest model with all of the variables, just run:
+
+library(randomForest)
+
+set.seed(1)
+
+censusrf = randomForest(over50k ~ . , data = trainSmall)
+
+And then you can make predictions on the test set by using the following command:
+
+predictTest = predict(censusrf, newdata=censusTest)
+
+And to compute the accuracy, you can create the confusion matrix:
+
+table(censusTest$over50k, predictTest)
+
+The accuracy of the model should be around
+
+(9614+1050)/nrow(censusTest) = 0.8337112
 
 You may be surprised that the test-set accuracy of the random forest model is lower than the test-set accuracies of some of the other, simpler models we've trained. This can occur when the parameters of the random forest have not been tuned via cross-validation and the default parameters are ill suited for the dataset.
 
-Problem 4.1 - Selecting cp by Cross-Validation
-----------------------------------------------
+CheckShow Answer
+
+## Problem 4.1 - Selecting cp by Cross-Validation
 
 We now conclude our study of this data set by looking at how CART behaves with different choices of its parameters.
 
@@ -224,10 +382,37 @@ Which value of cp does the train function recommend?
 
 Exercise 10
 
-&nbsp;Numerical Response&nbsp;
+ Numerical Response 
 
-Problem 4.2 - Selecting cp by Cross-Validation
-----------------------------------------------
+ 
+
+Explanation
+
+Before doing anything, load the caret package:
+
+library(caret)
+
+Set the seed to 2:
+
+set.seed(2)
+
+Specify that we are going to use k-fold cross validation with 10 folds:
+
+fitControl = trainControl( method = "cv", number = 10 )
+
+Specify the grid of cp values that we wish to evaluate:
+
+cartGrid = data.frame( .cp = seq(0.002,0.092,0.01))
+
+Finally, run the train function and view the result:
+
+cartCV = train( over50k ~ . , data = censusTrain, method = "rpart", trControl = fitControl, tuneGrid = cartGrid )
+
+¨C155C ¨C156C ¨C157C ¨C158C ¨C159C
+
+CheckShow Answer
+
+## Problem 4.2 - Selecting cp by Cross-Validation
 
 Recall that the caret package causes categorical independent variables to be split into factor levels. To generate a version of the test set with dummy variables, please run the following command (which assumes your test set is stored in variable "censusTest"):
 
@@ -237,18 +422,47 @@ Use the final model selected via cross-validation to make predictions on censusT
 
 Exercise 11
 
-&nbsp;Numerical Response&nbsp;
+ Numerical Response 
 
-Problem 4.3 - Selecting cp by Cross-Validation
-----------------------------------------------
+ 
+
+Explanation
+
+Assuming you stored the cross-validation results in a variable called "cartCV", you can access the final selected model with the following command:
+
+model = cartCV$finalModel
+
+You can make predictions on the test set using the following commands:
+
+censusTestMM = as.data.frame(model.matrix(~.+0, data=censusTest))
+
+predictTest = predict(model, newdata=censusTestMM, type="class")
+
+Then you can generate the confusion matrix with the command
+
+table(censusTest$over50k, predictTest)
+
+The accuracy is (9167+1821)/(9167+546+1257+1821) = 0.8590415.
+
+CheckShow Answer
+
+## Problem 4.3 - Selecting cp by Cross-Validation
 
 Compared to the original accuracy using the default value of cp, this new CART model is an improvement, and so we should clearly favor this new model over the old one -- or should we? Plot the CART tree for this model. How many splits are there?
 
 Exercise 12
 
-&nbsp;Numerical Response&nbsp;
+ Numerical Response 
+
+ 
 
 This highlights one important tradeoff in building predictive models. By tuning cp, we improved our accuracy, but our tree became significantly more complex. In some applications, such an improvement in accuracy would be worth the loss in interpretability. In others, we may prefer a less accurate model that is simpler to understand and describe over a more accurate -- but more complicated -- model.
 
-*   [BackVideo 7: Cross-Validation]({{< baseurl >}}/pages/trees/location-location-location-regression-trees-for-housing-data-recitation/video-7-cross-validation)
-*   [ContinueUnderstanding Why People Vote]({{< baseurl >}}/pages/trees/assignment-4/understanding-why-people-vote)
+Explanation
+
+If you plot the tree with prp(model), where "model" is the name of your CART tree, you should see that there are 17 splits.
+
+CheckShow Answer
+
+- [Back: Video 7: Cross-Validation](./resolveuid/6fc7a0e47d44d24efd6c876af7f8e2de)
+- [Continue: Understanding Why People Vote](./resolveuid/e4031315c29ed0c6413fd2bd77d67b94)

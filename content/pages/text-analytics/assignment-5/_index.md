@@ -1,5 +1,7 @@
 ---
 content_type: page
+description: ''
+draft: false
 learning_resource_types: []
 ocw_type: CourseSection
 parent_title: 5 Text Analytics
@@ -7,16 +9,10 @@ parent_type: CourseSection
 parent_uid: 5847ad87-9afe-cf3e-9b93-c20cffe87acf
 title: 5.5 Assignment 5
 uid: 81eae0fd-28f2-8733-6b79-2210ba33dfbb
+video_metadata:
+  youtube_id: null
 ---
-
-*   [\<Video 8: Predictive Coding Today]({{< baseurl >}}/pages/text-analytics/predictive-coding-bringing-text-analytics-to-the-courtroom-recitation/video-8-predictive-coding-today)
-*   [5.5.1Separating Spam from Ham (Part 1)]({{< baseurl >}}/pages/text-analytics/assignment-5)
-*   [5.5.2Detecting Vandalism on Wikipedia]({{< baseurl >}}/pages/text-analytics/assignment-5/detecting-vandalism-on-wikipedia)
-*   [5.5.3Automating Reviews in Medicine]({{< baseurl >}}/pages/text-analytics/assignment-5/automating-reviews-in-medicine)
-*   [\>Detecting Vandalism on Wikipedia]({{< baseurl >}}/pages/text-analytics/assignment-5/detecting-vandalism-on-wikipedia)
-
-Separating Spam From Ham
-------------------------
+## Separating Spam From Ham
 
 Nearly every email user has at some point encountered a "spam" email, which is an unsolicited message often advertising a product, containing links to malware, or attempting to scam the recipient. Roughly 80-90% of more than 100 billion emails sent each day are spam emails, most being sent from botnets of malware-infected computers. The remainder of emails are called "ham" emails.
 
@@ -26,13 +22,14 @@ In this homework problem, we will build and evaluate a spam filter using a publi
 
 The dataset contains just two fields:
 
-*   **text**: The text of the email.
-*   **spam**: A binary variable indicating if the email was spam.
+ 
 
-Problem 1.1 - Loading the Dataset
----------------------------------
+- **text**: The text of the email.
+- **spam**: A binary variable indicating if the email was spam.
 
-Begin by loading the dataset [emails (CSV - 8.5MB)]({{< baseurl >}}/resources/emails) into a data frame called emails (don't open the file with Excel; import into R directly to avoid errors). Remember to pass the stringsAsFactors=FALSE option when loading the data.
+## Problem 1.1 - Loading the Dataset
+
+Begin by loading the dataset [emails (CSV - 8.5MB)](./resolveuid/67f7be241f1b459d7fdb8e9031384338) into a data frame called emails (don't open the file with Excel; import into R directly to avoid errors). Remember to pass the stringsAsFactors=FALSE option when loading the data.
 
 How many emails are in the dataset?
 
@@ -40,8 +37,19 @@ Exercise 1
 
 &nbsp;Numerical Response&nbsp;
 
-Problem 1.2 - Loading the Dataset
----------------------------------
+ 
+
+Explanation
+
+You can load the dataset with:
+
+emails = read.csv("emails.csv", stringsAsFactors=FALSE)
+
+The number of emails can be read from str(emails) or nrow(emails).
+
+CheckShow Answer
+
+## Problem 1.2 - Loading the Dataset
 
 How many of the emails are spam?
 
@@ -49,8 +57,15 @@ Exercise 2
 
 &nbsp;Numerical Response&nbsp;
 
-Problem 1.3 - Loading the Dataset
----------------------------------
+ 
+
+Explanation
+
+This can be read from table(emails$spam).
+
+CheckShow Answer
+
+## Problem 1.3 - Loading the Dataset
 
 Which word appears at the beginning of every email in the dataset? Respond as a lower-case word with punctuation removed.
 
@@ -58,17 +73,29 @@ Exercise 3
 
 &nbsp;Text Response&nbsp; Answer:subject
 
-Problem 1.4 - Loading the Dataset
----------------------------------
+Explanation
 
-{{< quiz_multiple_choice questionId="Q4_div" >}}{{< quiz_choices >}}{{< quiz_choice isCorrect="false" >}}&nbsp;No -- the word appears in every email so this variable would not help us differentiate spam from ham.&nbsp;{{< /quiz_choice >}}
-{{< quiz_choice isCorrect="true" >}}&nbsp;Yes -- the number of times the word appears might help us differentiate spam from ham.&nbsp;{{< /quiz_choice >}}{{< /quiz_choices >}}
-{{< quiz_solution >}}Explanation
+You can review emails with, for instance, emails$text\[1\] or emails$text\[1000\]. Every email begins with the word "Subject:".
 
-We know that each email has the word "subject" appear at least once, but the frequency with which it appears might help us differentiate spam from ham. For instance, a long email chain would have the word "subject" appear a number of times, and this higher frequency might be indicative of a ham message.{{< /quiz_solution >}}{{< /quiz_multiple_choice >}}
+CheckShow Answer
 
-Problem 1.5 - Loading the Dataset
----------------------------------
+## Problem 1.4 - Loading the Dataset
+
+Could a spam classifier potentially benefit from including the frequency of the word that appears in every email?
+
+Exercise 4
+
+&nbsp;No -- the word appears in every email so this variable would not help us differentiate spam from ham.&nbsp;
+
+&nbsp;Yes -- the number of times the word appears might help us differentiate spam from ham.&nbsp;
+
+Explanation
+
+We know that each email has the word "subject" appear at least once, but the frequency with which it appears might help us differentiate spam from ham. For instance, a long email chain would have the word "subject" appear a number of times, and this higher frequency might be indicative of a ham message.
+
+CheckShow Answer
+
+## Problem 1.5 - Loading the Dataset
 
 The nchar() function counts the number of characters in a piece of text. How many characters are in the longest email in the dataset (where longest is measured in terms of the maximum number of characters)?
 
@@ -76,8 +103,15 @@ Exercise 5
 
 &nbsp;Numerical Response&nbsp;
 
-Problem 2.1 - Preparing the Corpus
-----------------------------------
+ 
+
+Explanation
+
+The maximum length can be obtained with max(nchar(emails$text)).
+
+CheckShow Answer
+
+## Problem 2.1 - Preparing the Corpus
 
 Follow the standard steps to build and pre-process the corpus:
 
@@ -93,7 +127,7 @@ Follow the standard steps to build and pre-process the corpus:
 
 6) Build a document term matrix from the corpus, called dtm.
 
-If the code length(stopwords("english")) does not return 174 for you, then please run the line of code in [stopwords (TXT) file]({{< baseurl >}}/resources/stopwords-2), which will store the standard stop words in a variable called sw. When removing stop words, use tm\_map(corpus, removeWords, sw) instead of tm\_map(corpus, removeWords, stopwords("english")).
+If the code length(stopwords("english")) does not return 174 for you, then please run the line of code in [stopwords (TXT) file](./resolveuid/bcb87bd6e9ec8d828a362298d36363f5), which will store the standard stop words in a variable called sw. When removing stop words, use tm\_map(corpus, removeWords, sw) instead of tm\_map(corpus, removeWords, stopwords("english")).
 
 How many terms are in dtm?
 
@@ -101,8 +135,35 @@ Exercise 6
 
 &nbsp;Numerical Response&nbsp;
 
-Problem 2.2 - Preparing the Corpus
-----------------------------------
+ 
+
+Explanation
+
+These steps can be accomplished by running:
+
+library(tm)
+
+corpus = Corpus(VectorSource(emails$text))
+
+corpus = tm\_map(corpus, tolower)
+
+corpus = tm\_map(corpus, PlainTextDocument)
+
+corpus = tm\_map(corpus, removePunctuation)
+
+corpus = tm\_map(corpus, removeWords, stopwords("english"))
+
+corpus = tm\_map(corpus, stemDocument)
+
+dtm = DocumentTermMatrix(corpus)
+
+dtm
+
+¨C79C
+
+CheckShow Answer
+
+## Problem 2.2 - Preparing the Corpus
 
 To obtain a more reasonable number of terms, limit dtm to contain terms appearing in at least 5% of documents, and store this result as spdtm (don't overwrite dtm, because we will use it in a later step of this homework). How many terms are in spdtm?
 
@@ -110,8 +171,21 @@ Exercise 7
 
 &nbsp;Numerical Response&nbsp;
 
-Problem 3.1 - Building machine learning models
-----------------------------------------------
+ 
+
+Explanation
+
+This can be accomplished with:
+
+spdtm = removeSparseTerms(dtm, 0.95)
+
+spdtm
+
+From the spdtm summary output, it contains 330 terms.
+
+CheckShow Answer
+
+## Problem 3.1 - Building machine learning models
 
 First, create a variable called "emailsSparse" from "spdtm" using the command "emailsSparse = as.data.frame(as.matrix(spdtm))" and ensure it has legal variable names with "names(emailsSparse) = make.names(names(emailsSparse))". Then, copy the dependent variable from the original data frame called "emails" to "emailsSparse" using the command "emailsSparse$spam = as.factor(emails$spam)".
 
@@ -171,14 +245,35 @@ Exercise 8
 
 &nbsp;Numerical Response&nbsp;
 
+ 
+
+Explanation
+
+This can be obtained with:
+
+table(train$spam, predTrainCART > 0.5)
+
+Then the accuracy is (2885+894)/nrow(train)
+
 What is the training set accuracy of spamRF, using a threshold of 0.5 for predictions? (Remember that your answer might not match ours exactly, due to random behavior in the random forest algorithm on different operating systems.)
 
 Exercise 9
 
 &nbsp;Numerical Response&nbsp;
 
-Problem 3.2 - Building Machine Learning Models
-----------------------------------------------
+ 
+
+Explanation
+
+This can be obtained with:
+
+table(train$spam, predTrainRF > 0.5)
+
+And then the accuracy is (3013+914)/nrow(train)
+
+CheckShow Answer
+
+## Problem 3.2 - Building Machine Learning Models
 
 How many of the word stems "enron", "hou", "vinc", and "kaminski" appear in the CART tree? These are word stems likely specific to the inbox of Vincent Kaminski, whose email we used as the ham observations in our dataset.
 
@@ -186,8 +281,15 @@ Exercise 10
 
 &nbsp;Numerical Response&nbsp;
 
-Problem 3.3 - Building Machine Learning Models
-----------------------------------------------
+ 
+
+Explanation
+
+After loading the necessary package with "library(rpart.plot)", we see from "prp(spamCART)" that "vinc" and "enron" appear in the CART tree as the top two branches, but that "hou" and "kaminski" do not appear.
+
+CheckShow Answer
+
+## Problem 3.3 - Building Machine Learning Models
 
 What is the training set AUC of spamCART? Note that now that we have predicted probabilities from the CART model, we can compute AUC with the ROCR package just as we have for logistic regression.
 
@@ -195,8 +297,21 @@ Exercise 11
 
 &nbsp;Numerical Response&nbsp;
 
-Problem 3.4 - Building Machine Learning Models
-----------------------------------------------
+ 
+
+Explanation
+
+This can be obtained with:
+
+library(ROCR)
+
+predictionTrainCART = prediction(predTrainCART, train$spam)
+
+as.numeric(performance(predictionTrainCART, "auc")@y.values)
+
+CheckShow Answer
+
+## Problem 3.4 - Building Machine Learning Models
 
 What is the training set AUC of spamRF?
 
@@ -204,8 +319,19 @@ Exercise 12
 
 &nbsp;Numerical Response&nbsp;
 
-Problem 4.1 - Evaluating on the Test Set
-----------------------------------------
+ 
+
+Explanation
+
+This can be obtained with:
+
+predictionTrainRF = prediction(predTrainRF, train$spam)
+
+as.numeric(performance(predictionTrainRF, "auc")@y.values)
+
+CheckShow Answer
+
+## Problem 4.1 - Evaluating on the Test Set
 
 Obtain predicted probabilities for the testing set for each of the models, again ensuring that probabilities instead of classes are obtained. This can be achieved with the following code:
 
@@ -219,8 +345,19 @@ Exercise 13
 
 &nbsp;Numerical Response&nbsp;
 
-Problem 4.2 - Evaluating on the Test Set
-----------------------------------------
+ 
+
+Explanation
+
+This can be obtained with:
+
+table(test$spam, predTestCART > 0.5)
+
+Then the accuracy is (1228+386)/nrow(test)
+
+CheckShow Answer
+
+## Problem 4.2 - Evaluating on the Test Set
 
 What is the testing set AUC of spamCART?
 
@@ -228,8 +365,19 @@ Exercise 14
 
 &nbsp;Numerical Response&nbsp;
 
-Problem 4.3 - Evaluating on the Test Set
-----------------------------------------
+ 
+
+Explanation
+
+This can be obtained with:
+
+predictionTestCART = prediction(predTestCART, test$spam)
+
+as.numeric(performance(predictionTestCART, "auc")@y.values)
+
+CheckShow Answer
+
+## Problem 4.3 - Evaluating on the Test Set
 
 What is the testing set accuracy of spamRF, using a threshold of 0.5 for predictions?
 
@@ -237,8 +385,19 @@ Exercise 15
 
 &nbsp;Numerical Response&nbsp;
 
-Problem 4.4 - Evaluating on the Test Set
-----------------------------------------
+ 
+
+Explanation
+
+This can be obtained with:
+
+table(test$spam, predTestRF > 0.5)
+
+Then the accuracy is (1290+385)/nrow(test)
+
+CheckShow Answer
+
+## Problem 4.4 - Evaluating on the Test Set
 
 What is the testing set AUC of spamRF?
 
@@ -246,14 +405,35 @@ Exercise 16
 
 &nbsp;Numerical Response&nbsp;
 
-Problem 4.5 - Evaluating on the Test Set
-----------------------------------------
+ 
 
-{{< quiz_multiple_choice questionId="Q17_div" >}}{{< quiz_choices >}}{{< quiz_choice isCorrect="false" >}}&nbsp;CART&nbsp;{{< /quiz_choice >}}
-{{< quiz_choice isCorrect="true" >}}&nbsp;Random forest&nbsp;{{< /quiz_choice >}}{{< /quiz_choices >}}
-{{< quiz_solution >}}Explanation
+Explanation
 
-The random forest outperformed CART in both measures, obtaining an impressive AUC of 0.998 on the test set.{{< /quiz_solution >}}{{< /quiz_multiple_choice >}}
+This can be obtained with:
+
+predictionTestRF = prediction(predTestRF, test$spam)
+
+as.numeric(performance(predictionTestRF, "auc")@y.values)
+
+CheckShow Answer
+
+## Problem 4.5 - Evaluating on the Test Set
+
+Which model had the best testing set performance, in terms of accuracy and AUC?
+
+Exercise 17
+
+&nbsp;CART&nbsp;
+
+&nbsp;Random forest&nbsp;
+
+Explanation
+
+The random forest outperformed CART in both measures, obtaining an impressive AUC of 0.998 on the test set.
+
+CheckShow Answer
+
+ 
 
 You may note that we did not ask you to fit a logistic regression model to predict whether an email was spam or ham. This is in contrast to our usual approach of comparing all three models. If you in fact tried to train a logistic regression model in R using this dataset, you would get the following warning:
 
@@ -261,5 +441,5 @@ You may note that we did not ask you to fit a logistic regression model to pred
 
 This warning indicates that R's logistic regression solution procedure has failed.
 
-*   [BackVideo 8: Predictive Coding Today]({{< baseurl >}}/pages/text-analytics/predictive-coding-bringing-text-analytics-to-the-courtroom-recitation/video-8-predictive-coding-today)
-*   [ContinueDetecting Vandalism on Wikipedia]({{< baseurl >}}/pages/text-analytics/assignment-5/detecting-vandalism-on-wikipedia)
+- [Back: Video 8: Predictive Coding Today](./resolveuid/452a514d74e9b441d73ae42c18939bda)
+- [Continue: Detecting Vandalism on Wikipedia](./resolveuid/2e4c9dd96d084e8fd1d8111a5affc5a4)

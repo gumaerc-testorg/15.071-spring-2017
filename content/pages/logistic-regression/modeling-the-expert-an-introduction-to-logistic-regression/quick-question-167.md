@@ -1,5 +1,7 @@
 ---
 content_type: page
+description: ''
+draft: false
 learning_resource_types: []
 ocw_type: CourseSection
 parent_title: '3.2 Modeling the Expert: An Introduction to Logistic Regression'
@@ -7,27 +9,12 @@ parent_type: CourseSection
 parent_uid: 3063320a-4175-6b8a-4fa9-892f61b52c0d
 title: '3.2 Modeling the Expert: An Introduction to Logistic Regression'
 uid: 8c080206-9993-5e2b-b0c5-0c4cd73fd74c
+video_metadata:
+  youtube_id: null
 ---
+## Quick Question
 
-*   [\<Video 4: Logistic Regression in R]({{< baseurl >}}/pages/logistic-regression/modeling-the-expert-an-introduction-to-logistic-regression/video-4-logistic-regression-in-r)
-*   [3.2.1Video 1: Replicating Expert Assessment]({{< baseurl >}}/pages/logistic-regression/modeling-the-expert-an-introduction-to-logistic-regression)
-*   [3.2.2Video 2: Building the Dataset]({{< baseurl >}}/pages/logistic-regression/modeling-the-expert-an-introduction-to-logistic-regression/video-2-building-the-dataset)
-*   [3.2.3Quick Question]({{< baseurl >}}/pages/logistic-regression/modeling-the-expert-an-introduction-to-logistic-regression/quick-question-144)
-*   [3.2.4Video 3: Logistic Regression]({{< baseurl >}}/pages/logistic-regression/modeling-the-expert-an-introduction-to-logistic-regression/video-3-logistic-regression)
-*   [3.2.5Quick Question]({{< baseurl >}}/pages/logistic-regression/modeling-the-expert-an-introduction-to-logistic-regression/quick-question-152)
-*   [3.2.6Video 4: Logistic Regression in R]({{< baseurl >}}/pages/logistic-regression/modeling-the-expert-an-introduction-to-logistic-regression/video-4-logistic-regression-in-r)
-*   [3.2.7Quick Question]({{< baseurl >}}/pages/logistic-regression/modeling-the-expert-an-introduction-to-logistic-regression/quick-question-167)
-*   [3.2.8Video 5: Thresholding]({{< baseurl >}}/pages/logistic-regression/modeling-the-expert-an-introduction-to-logistic-regression/video-5-thresholding)
-*   [3.2.9Quick Question]({{< baseurl >}}/pages/logistic-regression/modeling-the-expert-an-introduction-to-logistic-regression/quick-question-188)
-*   [3.2.10Video 6: ROC Curves]({{< baseurl >}}/pages/logistic-regression/modeling-the-expert-an-introduction-to-logistic-regression/video-6-roc-curves)
-*   [3.2.11Quick Question]({{< baseurl >}}/pages/logistic-regression/modeling-the-expert-an-introduction-to-logistic-regression/quick-question-200)
-*   [3.2.12Video 7: Interpreting the Model]({{< baseurl >}}/pages/logistic-regression/modeling-the-expert-an-introduction-to-logistic-regression/video-7-interpreting-the-model)
-*   [3.2.13Quick Question]({{< baseurl >}}/pages/logistic-regression/modeling-the-expert-an-introduction-to-logistic-regression/quick-question-208)
-*   [3.2.14Video 8: The Analytics Edge]({{< baseurl >}}/pages/logistic-regression/modeling-the-expert-an-introduction-to-logistic-regression/video-8-the-analytics-edge)
-*   [\>Video 5: Thresholding]({{< baseurl >}}/pages/logistic-regression/modeling-the-expert-an-introduction-to-logistic-regression/video-5-thresholding)
-
-Quick Question
---------------
+ 
 
 In R, create a logistic regression model to predict "PoorCare" using the independent variables "StartedOnCombination" and "ProviderCount". Use the training set we created in the previous video to build the model.
 
@@ -59,14 +46,39 @@ Exercise 1
 
 &nbsp;Numerical Response&nbsp;
 
-Quick Question
---------------
+ 
 
-{{< quiz_multiple_choice questionId="Q2_div" >}}{{< quiz_choices >}}{{< quiz_choice isCorrect="true" >}}&nbsp;Poor Care&nbsp;{{< /quiz_choice >}}
-{{< quiz_choice isCorrect="false" >}}&nbsp;Good Care&nbsp;{{< /quiz_choice >}}{{< /quiz_choices >}}
-{{< quiz_solution >}}Explanation
+Explanation
 
-The coefficient value is positive, meaning that positive values of the variable make the outcome of 1 more likely. This corresponds to Poor Care.{{< /quiz_solution >}}{{< /quiz_multiple_choice >}}
+To construct this model in R, use the command:
 
-*   [BackVideo 4: Logistic Regression in R]({{< baseurl >}}/pages/logistic-regression/modeling-the-expert-an-introduction-to-logistic-regression/video-4-logistic-regression-in-r)
-*   [ContinueVideo 5: Thresholding]({{< baseurl >}}/pages/logistic-regression/modeling-the-expert-an-introduction-to-logistic-regression/video-5-thresholding)
+Model = glm(PoorCare ~ StartedOnCombination + ProviderCount, data=qualityTrain, family=binomial)
+
+If you look at the output of summary(Model), the value of the coefficient (Estimate) for StartedOnCombination is 1.95230.
+
+CheckShow Answer
+
+ 
+
+## Quick Question
+
+ 
+
+StartedOnCombination is a binary variable, which equals 1 if the patient is started on a combination of drugs to treat their diabetes, and equals 0 if the patient is not started on a combination of drugs. All else being equal, does this model imply that starting a patient on a combination of drugs is indicative of poor care, or good care?
+
+Exercise 2
+
+&nbsp;Poor Care&nbsp;
+
+&nbsp;Good Care&nbsp;
+
+Explanation
+
+The coefficient value is positive, meaning that positive values of the variable make the outcome of 1 more likely. This corresponds to Poor Care.
+
+CheckShow Answer
+
+ 
+
+- [Back: Video 4: Logistic Regression in R](./resolveuid/8fc17cbb03cdce23b5880c21e7dc33e8)
+- [Continue: Video 5: Thresholding](./resolveuid/7bf86a6c2bb6629ed20e4dd216833197)

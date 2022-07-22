@@ -1,5 +1,7 @@
 ---
 content_type: page
+description: ''
+draft: false
 learning_resource_types: []
 ocw_type: CourseSection
 parent_title: 8 Linear Optimization
@@ -7,14 +9,10 @@ parent_type: CourseSection
 parent_uid: daafaa58-867c-9765-f1c4-c60a9c0ed426
 title: 8.5 Assignment 8
 uid: 6a5d4bdb-70f4-48f5-8697-82dbaa8537a8
+video_metadata:
+  youtube_id: null
 ---
-
-*   [\<Video 8: Extensions and the Edge]({{< baseurl >}}/pages/linear-optimization/google-adwords-optimizing-online-advertising-recitation/video-8-extensions-and-the-edge)
-*   [8.5.1Even' Star Organic Farm]({{< baseurl >}}/pages/linear-optimization/assignment-8)
-*   [\>Integer Optimization]({{< baseurl >}}/pages/integer-optimization)
-
-Even' Star Organic Farm
------------------------
+## Even' Star Organic Farm
 
 Even' Star Organic Farm was founded in 1997 by Brett Grohsgal, a former chef in Washington DC. The company owns a 104-acre farm in southern Maryland, and grows and sells organic produce. For more information, see [Even' Star's Facebook page](https://www.facebook.com/evenstarfarm.org/). This problem describes the business issues faced by Brett, and the data is based on actual observations.
 
@@ -24,10 +22,11 @@ Initially, he sold exclusively to restuarants. He knows of 20 restaurants that w
 
 Brett has a limited amount of produce that he can sell each season, and he needs to decide how much produce to sell through each channel (restaurants, CSA, or farmers' markets). 
 
-Problem 1.1 - Formulating the Problem
--------------------------------------
+ 
 
-Let's formulate Brett's problem as a linear optimization problem. The spreadsheet [EvenStarFarm (ODS)]({{< baseurl >}}/resources/evenstarfarm) for LibreOffice or OpenOffice, and [EvenStarFarm (XLSX)]({{< baseurl >}}/resources/evenstarfarm-1) for Microsoft Excel, contains the data for the problem, and has set up the decision variables and objective for you.
+## Problem 1.1 - Formulating the Problem
+
+Let's formulate Brett's problem as a linear optimization problem. The spreadsheet [EvenStarFarm (ODS)](./resolveuid/76d937c2e04ad2de53f9c971328b5f0e) for LibreOffice or OpenOffice, and [EvenStarFarm (XLSX)](./resolveuid/0dfaed12f92d54696c28596520d801a4) for Microsoft Excel, contains the data for the problem, and has set up the decision variables and objective for you.
 
 The **decision variables** in our problem are the number of cases of each type of produce to sell in each channel (there are 24 decision variables). They are highlighted in yellow in the spreadsheet.
 
@@ -43,71 +42,127 @@ To compute the total variable cost for CSA clients, we need to know that each CS
 
 There is no variable cost for farmers' market clients.
 
-{{< quiz_multiple_choice questionId="Q1_div" >}}{{< quiz_choices >}}{{< quiz_choice isCorrect="false" >}}&nbsp;B19\*SUM(B26:B33)&nbsp;{{< /quiz_choice >}}
-{{< quiz_choice isCorrect="false" >}}&nbsp;B19/119&nbsp;{{< /quiz_choice >}}
-{{< quiz_choice isCorrect="true" >}}&nbsp;B19\*(SUM(B26:B33)/119)&nbsp;{{< /quiz_choice >}}
-{{< quiz_choice isCorrect="false" >}}&nbsp;SUM(B26:B33)/119&nbsp;{{< /quiz_choice >}}{{< /quiz_choices >}}
-{{< quiz_solution >}}Explanation
+Which of the following spreadsheet formulas computes the total variable cost for the restaurant channel? Use the location of the data and variables in the spreadsheet EvenStarFarm.
 
-The variable cost per restaurant client is located in cell B19. We need to multiply this by the total number of restuarant clients, which can be computed by summing the total number of cases sent to restaurant clients, and dividing by 119, or SUM(B26:B33)/119. So the correct answer is B19\*(SUM(B26:B33)/119).{{< /quiz_solution >}}{{< /quiz_multiple_choice >}}
+Exercise 1
 
-Problem 1.2 - Formulating the Problem
--------------------------------------
+&nbsp;B19*SUM(B26:B33)&nbsp;*
 
-{{< quiz_multiple_choice questionId="Q2_div" >}}{{< quiz_choices >}}{{< quiz_choice isCorrect="true" >}}&nbsp;C19\*(SUMPRODUCT(C26:C33;D6:D13)/400)&nbsp;{{< /quiz_choice >}}
-{{< quiz_choice isCorrect="false" >}}&nbsp;SUMPRODUCT(C26:C33;D6:D13)/400&nbsp;{{< /quiz_choice >}}
-{{< quiz_choice isCorrect="false" >}}&nbsp;C19\*SUMPRODUCT(C26:C33;D6:D13)&nbsp;{{< /quiz_choice >}}
-{{< quiz_choice isCorrect="false" >}}&nbsp;C19/400&nbsp;{{< /quiz_choice >}}{{< /quiz_choices >}}
-{{< quiz_solution >}}Explanation
+*&nbsp;B19/119&nbsp;*
 
-The variable cost per CSA client is given in cell C19. We need to multiply this by the total dollar amount sent to CSA customers, divided by $400, which is computed in LibreOffice as SUMPRODUCT(C26:C33;D6:D13)/400. So the total variable cost is C19\*(SUMPRODUCT(C26:C33;D6:D13)/400).{{< /quiz_solution >}}{{< /quiz_multiple_choice >}}
+*&nbsp;B19*(SUM(B26:B33)/119)&nbsp;
 
-Problem 1.3 - Formulating the Problem
--------------------------------------
+&nbsp;SUM(B26:B33)/119&nbsp;
 
-{{< quiz_multiple_choice questionId="Q3_div" >}}{{< quiz_choices >}}{{< quiz_choice isCorrect="true" >}}&nbsp;B26:D26 \\(\\geq\\) 0&nbsp;{{< /quiz_choice >}}
-{{< quiz_choice isCorrect="false" >}}&nbsp;B26:D26 \\(\\leq\\) 0&nbsp;{{< /quiz_choice >}}
-{{< quiz_choice isCorrect="false" >}}&nbsp;B26:D26 \\(=\\) 0&nbsp;{{< /quiz_choice >}}
-{{< quiz_choice isCorrect="false" >}}&nbsp;SUM(B26:D26) \\(\\geq\\) B6&nbsp;{{< /quiz_choice >}}
-{{< quiz_choice isCorrect="true" >}}&nbsp;SUM(B26:D26) \\(\\leq\\) B6&nbsp;{{< /quiz_choice >}}
-{{< quiz_choice isCorrect="false" >}}&nbsp;SUM(B26:D26) \\(=\\) B6&nbsp;{{< /quiz_choice >}}{{< /quiz_choices >}}
-{{< quiz_solution >}}Explanation
+Explanation
 
-We need to add constraints to restrict the total number of cases sold to each client (B26:D26) to be greater than or equal to zero, and we need to make sure that the total number of cases sold (SUM(B26:D26)) is no more than the total number produced, B6.{{< /quiz_solution >}}{{< /quiz_multiple_choice >}}
+The variable cost per restaurant client is located in cell B19. We need to multiply this by the total number of restuarant clients, which can be computed by summing the total number of cases sent to restaurant clients, and dividing by 119, or SUM(B26:B33)/119. So the correct answer is B19*(SUM(B26:B33)/119).*
+
+*CheckShow Answer*
+
+## *Problem 1.2 - Formulating the Problem*
+
+*Which of the following spreadsheet formulas computes the total variable cost for the CSA channel? Use the location of the data and variables in the spreadsheet EvenStarFarm.*
+
+*Exercise 2*
+
+*&nbsp;C19*(SUMPRODUCT(C26:C33;D6:D13)/400)&nbsp;
+
+&nbsp;SUMPRODUCT(C26:C33;D6:D13)/400&nbsp;
+
+&nbsp;C19*SUMPRODUCT(C26:C33;D6:D13)&nbsp;*
+
+*&nbsp;C19/400&nbsp;*
+
+*Explanation*
+
+*The variable cost per CSA client is given in cell C19. We need to multiply this by the total dollar amount sent to CSA customers, divided by $400, which is computed in LibreOffice as SUMPRODUCT(C26:C33;D6:D13)/400. So the total variable cost is C19*(SUMPRODUCT(C26:C33;D6:D13)/400).
+
+CheckShow Answer
+
+## Problem 1.3 - Formulating the Problem
+
+Now, let's formulate the constraints for our model. Brett can't sell negative cases, and he can't sell more cases than he produces. Cells B6:B13 in the spreadsheet list the number of available cases of each type of produce. For large tomatoes, which of the following constraints should we add to our model to capture these restrictions? Select all that apply.
+
+Exercise 3
+
+&nbsp;B26:D26 (\\geq) 0&nbsp;
+
+&nbsp;B26:D26 (\\leq) 0&nbsp;
+
+&nbsp;B26:D26 (=) 0&nbsp;
+
+&nbsp;SUM(B26:D26) (\\geq) B6&nbsp;
+
+&nbsp;SUM(B26:D26) (\\leq) B6&nbsp;
+
+&nbsp;SUM(B26:D26) (=) B6&nbsp;
+
+ 
+
+Explanation
+
+We need to add constraints to restrict the total number of cases sold to each client (B26:D26) to be greater than or equal to zero, and we need to make sure that the total number of cases sold (SUM(B26:D26)) is no more than the total number produced, B6.
 
 We should have similar constraints for each type of produce.
 
-Problem 1.4 - Formulating the Problem
--------------------------------------
+CheckShow Answer
 
-{{< quiz_multiple_choice questionId="Q4_div" >}}{{< quiz_choices >}}{{< quiz_choice isCorrect="false" >}}&nbsp;D26:D33 = 600&nbsp;{{< /quiz_choice >}}
-{{< quiz_choice isCorrect="false" >}}&nbsp;SUM(D26:D33) = 600&nbsp;{{< /quiz_choice >}}
-{{< quiz_choice isCorrect="false" >}}&nbsp;D26:D33 \\(\\leq\\) 600&nbsp;{{< /quiz_choice >}}
-{{< quiz_choice isCorrect="true" >}}&nbsp;SUM(D26:D33) \\(\\leq\\) 600&nbsp;{{< /quiz_choice >}}{{< /quiz_choices >}}
-{{< quiz_solution >}}Explanation
+## Problem 1.4 - Formulating the Problem
 
-We need to total number of cases sold at the farmers' market, SUM(D26:D33) to be less than or equal to 600.{{< /quiz_solution >}}{{< /quiz_multiple_choice >}}
+Due to the truck capacity, the number of cases sold at the farmers' market can't be more than 600. Which constraint(s) captures this restriction?
 
-Problem 1.5 - Formulating the Problem
--------------------------------------
+Exercise 4
 
-{{< quiz_multiple_choice questionId="Q5_div" >}}{{< quiz_choices >}}{{< quiz_choice isCorrect="true" >}}&nbsp;SUM(B26:B33)/119 \\(\\leq\\) 20&nbsp;{{< /quiz_choice >}}
-{{< quiz_choice isCorrect="false" >}}&nbsp;SUM(B26:B33)/119 = 20&nbsp;{{< /quiz_choice >}}
-{{< quiz_choice isCorrect="false" >}}&nbsp;B26:B33/119 \\(\\leq\\) 20&nbsp;{{< /quiz_choice >}}
-{{< quiz_choice isCorrect="false" >}}&nbsp;B26:B33/119 = 20&nbsp;{{< /quiz_choice >}}{{< /quiz_choices >}}
-{{< quiz_solution >}}Explanation
+&nbsp;D26:D33 = 600&nbsp;
 
-We first need to compute the total number of restaurant clients. We saw while computing the objective that this is SUM(B26:B33)/119. This should be less than or equal to 20.{{< /quiz_solution >}}{{< /quiz_multiple_choice >}}
+&nbsp;SUM(D26:D33) = 600&nbsp;
 
-Problem 1.6 - Formulating the Problem
--------------------------------------
+&nbsp;D26:D33 (\\leq) 600&nbsp;
 
-{{< quiz_multiple_choice questionId="Q6_div" >}}{{< quiz_choices >}}{{< quiz_choice isCorrect="false" >}}&nbsp;SUM(C26:C33;D6:D13)/400 \\(\\leq\\) 90&nbsp;{{< /quiz_choice >}}
-{{< quiz_choice isCorrect="true" >}}&nbsp;SUMPRODUCT(C26:C33;D6:D13)/400 \\(\\leq\\) 90&nbsp;{{< /quiz_choice >}}
-{{< quiz_choice isCorrect="false" >}}&nbsp;SUM(C26:C33)/400 \\(\\leq\\) 90&nbsp;{{< /quiz_choice >}}{{< /quiz_choices >}}
-{{< quiz_solution >}}Explanation
+&nbsp;SUM(D26:D33) (\\leq) 600&nbsp;
 
-We first need to compute the total number of CSA clients. We saw while computing the objective that this is SUMPRODUCT(C26:C33;D6:D13)/400. This should be less than or equal to 90.{{< /quiz_solution >}}{{< /quiz_multiple_choice >}}
+Explanation
+
+We need to total number of cases sold at the farmers' market, SUM(D26:D33) to be less than or equal to 600.
+
+CheckShow Answer
+
+## Problem 1.5 - Formulating the Problem
+
+Brett knows that at most 20 restaurants will buy his produce. Which constraint(s) captures this restriction? HINT: Each restaurant buys 119 cases.
+
+Exercise 5
+
+&nbsp;SUM(B26:B33)/119 (\\leq) 20&nbsp;
+
+&nbsp;SUM(B26:B33)/119 = 20&nbsp;
+
+&nbsp;B26:B33/119 (\\leq) 20&nbsp;
+
+&nbsp;B26:B33/119 = 20&nbsp;
+
+Explanation
+
+We first need to compute the total number of restaurant clients. We saw while computing the objective that this is SUM(B26:B33)/119. This should be less than or equal to 20.
+
+CheckShow Answer
+
+## Problem 1.6 - Formulating the Problem
+
+Brett knows that at most 90 CSA customers will buy his produce. Which constraint(s) captures this restriction? HINT: Each CSA customer buys $400 worth of produce.
+
+Exercise 6
+
+&nbsp;SUM(C26:C33;D6:D13)/400 (\\leq) 90&nbsp;
+
+&nbsp;SUMPRODUCT(C26:C33;D6:D13)/400 (\\leq) 90&nbsp;
+
+&nbsp;SUM(C26:C33)/400 (\\leq) 90&nbsp;
+
+Explanation
+
+We first need to compute the total number of CSA clients. We saw while computing the objective that this is SUMPRODUCT(C26:C33;D6:D13)/400. This should be less than or equal to 90.
 
 Add all of these constraints to your model in LibreOffice (or in the spreadsheet software you are using). Here is a list of all of the constraints you should be adding:
 
@@ -119,8 +174,9 @@ Add all of these constraints to your model in LibreOffice (or in the spreadsheet
 
 4) Brett can't sell produce to more than 90 CSA customers.
 
-Problem 2.1 - Solving the Model
--------------------------------
+CheckShow Answer
+
+## Problem 2.1 - Solving the Model
 
 Solve your model, and answer the following questions about the solution:
 
@@ -130,8 +186,35 @@ Exercise 7
 
 &nbsp;Numerical Response&nbsp;
 
-Problem 2.2 - Solving the Model
--------------------------------
+ 
+
+Explanation
+
+After solving the problem in LibreOffice, the objective value is $49,956.39.
+
+You should have added the following constraints:
+
+Large Tomato Limit: SUM(B26:D26) \<= 406
+
+Small Tomato Limit: SUM(B27:D27) \<= 608
+
+Watermelon Limit: SUM(B28:D28) \<= 167
+
+Okra Limit: SUM(B29:D29) \<= 76
+
+Basil Limit: SUM(B30:D30) \<= 72
+
+Cucumbers Limit: SUM(B31:D31) \<= 251
+
+Sweet Potatoes Limit: SUM(B32:D32) \<= 107
+
+Winter Squash Limit: SUM(B33:D33) \<= 133
+
+¨C87C ¨C88C ¨C89C ¨C90C
+
+CheckShow Answer
+
+## Problem 2.2 - Solving the Model
 
 How many cases of large tomatoes are given to CSA customers?
 
@@ -139,8 +222,15 @@ Exercise 8
 
 &nbsp;Numerical Response&nbsp;
 
-Problem 2.3 - Solving the Model
--------------------------------
+ 
+
+Explanation
+
+The decision variable corresponding to large tomatoes and CSA has value 0 in the solution.
+
+CheckShow Answer
+
+## Problem 2.3 - Solving the Model
 
 How many cases of watermelon are given to farmers' market customers?
 
@@ -148,8 +238,15 @@ Exercise 9
 
 &nbsp;Numerical Response&nbsp;
 
-Problem 2.4 - Solving the Model
--------------------------------
+ 
+
+Explanation
+
+The decision variable correponding to watermelon and the farmer's market has value 167 in the solution.
+
+CheckShow Answer
+
+## Problem 2.4 - Solving the Model
 
 How many CSA customers does Brett provide produce for? Remember that this might be fractional - go ahead and enter the exact number even though Brett can't really serve "fractional customers".
 
@@ -157,53 +254,99 @@ Exercise 10
 
 &nbsp;Numerical Response&nbsp;
 
-Problem 3.1 - Sensitivity Analysis
-----------------------------------
+ 
 
-{{< quiz_multiple_choice questionId="Q11_div" >}}{{< quiz_choices >}}{{< quiz_choice isCorrect="false" >}}&nbsp;Yes, he should buy the larger truck.&nbsp;{{< /quiz_choice >}}
-{{< quiz_choice isCorrect="true" >}}&nbsp;No, he shouldn't buy the larger truck.&nbsp;{{< /quiz_choice >}}{{< /quiz_choices >}}
-{{< quiz_solution >}}Explanation
+Explanation
 
-If you increase the right hand side of the constraint for farmers' market cases to 800 (increase by 200) and re-solve the model, the new objective value is $50,181.76. Compared to the old objective value of $49,956.39, this is an increase in profit of $50,181.76 - $49,956.39 = $225.37. Since this is less than the cost of the truck, he shouldn't buy the larger truck.{{< /quiz_solution >}}{{< /quiz_multiple_choice >}}
+If we look at the constraint for CSA customers, we see that the left-hand side of the constraint has value 65.88. This means that Brett will technically sell produce to 66 customers (65 will get $400 worth of produce, and one will get 0.88\*$400 worth of produce).
 
-Problem 3.2 - Sensitivity Analysis
-----------------------------------
+CheckShow Answer
 
-{{< quiz_multiple_choice questionId="Q12_div" >}}{{< quiz_choices >}}{{< quiz_choice isCorrect="false" >}}&nbsp;Hire the worker, and pay him $300 for helping.&nbsp;{{< /quiz_choice >}}
-{{< quiz_choice isCorrect="true" >}}&nbsp;Hire the worker, and pay him $150 for helping.&nbsp;{{< /quiz_choice >}}
-{{< quiz_choice isCorrect="false" >}}&nbsp;Not hiring the worker.&nbsp;{{< /quiz_choice >}}{{< /quiz_choices >}}
-{{< quiz_solution >}}Explanation
+## Problem 3.1 - Sensitivity Analysis
 
-We saw in the previous question that increasing the farmers' market cases to 800 increases profits by $225.37. Thus Brett should hire the worker, and pay him $150, since that will give him an additional profit of $225.37 - $150.00 = $75.37.{{< /quiz_solution >}}{{< /quiz_multiple_choice >}}
+Suppose that Brett can pay $1,000 to trade in his truck for a larger truck. This would allow him to transport 200 more cases of produce to the farmers' market (for a total of 800 cases). Should he do it? HINT: Adjust the constraints in your model, re-solve it, and compare the increase in objective function value to the cost of buying the larger truck.
 
-Problem 3.3 - Sensitivity Analysis
-----------------------------------
+Exercise 11
 
-{{< quiz_multiple_choice questionId="Q13_div" >}}{{< quiz_choices >}}{{< quiz_choice isCorrect="false" >}}&nbsp;Yes, adding all of these extra customers will increase his profit.&nbsp;{{< /quiz_choice >}}
-{{< quiz_choice isCorrect="false" >}}&nbsp;Yes, adding some of these extra customers will increase his profit.&nbsp;{{< /quiz_choice >}}
-{{< quiz_choice isCorrect="true" >}}&nbsp;No, he shouldn't sell produce to any of these customers.&nbsp;{{< /quiz_choice >}}{{< /quiz_choices >}}
-{{< quiz_solution >}}Explanation
+&nbsp;Yes, he should buy the larger truck.&nbsp;
 
-Since the constraint for CSA customers is not binding (we sell to 65.88 customers, when we know of 90) it is not beneficial to add 10 more CSA customers.{{< /quiz_solution >}}{{< /quiz_multiple_choice >}}
+&nbsp;No, he shouldn't buy the larger truck.&nbsp;
 
-Problem 3.4 - Sensitivity Analysis
-----------------------------------
+Explanation
+
+If you increase the right hand side of the constraint for farmers' market cases to 800 (increase by 200) and re-solve the model, the new objective value is $50,181.76. Compared to the old objective value of $49,956.39, this is an increase in profit of $50,181.76 - $49,956.39 = $225.37. Since this is less than the cost of the truck, he shouldn't buy the larger truck.
+
+CheckShow Answer
+
+## Problem 3.2 - Sensitivity Analysis
+
+One of Brett's workers has offered to use his truck to help Brett transport 200 more cases of produce to the farmer's market (for a total of 800 cases). Which of the following choices would increase Brett's profit? Select all that apply.
+
+Exercise 12
+
+&nbsp;Hire the worker, and pay him $300 for helping.&nbsp;
+
+&nbsp;Hire the worker, and pay him $150 for helping.&nbsp;
+
+&nbsp;Not hiring the worker.&nbsp;
+
+ 
+
+Explanation
+
+We saw in the previous question that increasing the farmers' market cases to 800 increases profits by $225.37. Thus Brett should hire the worker, and pay him $150, since that will give him an additional profit of $225.37 - $150.00 = $75.37.
+
+CheckShow Answer
+
+## Problem 3.3 - Sensitivity Analysis
+
+Now suppose that Brett has found 10 more customers who would like to join the CSA program, for a total of 100 potential CSA customers. Should he sell produce to these customers? If you have changed any values in the constraints, change them back to their original values before answering this question (600 cases at the farmers' market).
+
+Exercise 13
+
+&nbsp;Yes, adding all of these extra customers will increase his profit.&nbsp;
+
+&nbsp;Yes, adding some of these extra customers will increase his profit.&nbsp;
+
+&nbsp;No, he shouldn't sell produce to any of these customers.&nbsp;
+
+Explanation
+
+Since the constraint for CSA customers is not binding (we sell to 65.88 customers, when we know of 90) it is not beneficial to add 10 more CSA customers.
+
+CheckShow Answer
+
+## Problem 3.4 - Sensitivity Analysis
 
 Now suppose that Brett has purchased 5 additional acres of land, which allows him to produce 10 additional cases of one of his vegetables. Which vegetable should he plant on these 5 additional acres?
 
-{{< quiz_multiple_choice questionId="Q14_div" >}}{{< quiz_choices >}}{{< quiz_choice isCorrect="true" >}}&nbsp;Tomatoes (large)&nbsp;{{< /quiz_choice >}}
-{{< quiz_choice isCorrect="false" >}}&nbsp;Tomatoes (small)&nbsp;{{< /quiz_choice >}}
-{{< quiz_choice isCorrect="false" >}}&nbsp;Watermelon&nbsp;{{< /quiz_choice >}}
-{{< quiz_choice isCorrect="false" >}}&nbsp;Okra&nbsp;{{< /quiz_choice >}}
-{{< quiz_choice isCorrect="false" >}}&nbsp;Basil&nbsp;{{< /quiz_choice >}}
-{{< quiz_choice isCorrect="false" >}}&nbsp;Cucumber&nbsp;{{< /quiz_choice >}}
-{{< quiz_choice isCorrect="false" >}}&nbsp;Sweet Potatoes&nbsp;{{< /quiz_choice >}}
-{{< quiz_choice isCorrect="false" >}}&nbsp;Winter Squash&nbsp;{{< /quiz_choice >}}{{< /quiz_choices >}}
-{{< quiz_solution >}}Explanation
+If you have changed any values in the constraints, change them back to their original values before answering this question (600 cases at the farmers' market, and 90 potential CSA customers). Assume for this problem that the production cost is the same for all types of produce. For your reference, here is a list of the number of cases of each type of produce that Brett currently produces: 406 cases of Large Tomatoes, 608 cases of Small Tomatoes, 167 cases of Watermelon, 76 cases of Okra, 72 cases of Basil, 251 cases of Cucumbers, 107 cases of Sweet Potatoes, and 133 cases of Winter Squash.
 
-If you increase the total number of cases of each type of produce one at a time by 10, the large tomatoes give the largest increase in the objective function value. Thus, Brett should plant large tomatoes on the additional acres of land.{{< /quiz_solution >}}{{< /quiz_multiple_choice >}}
+Exercise 14
+
+&nbsp;Tomatoes (large)&nbsp;
+
+&nbsp;Tomatoes (small)&nbsp;
+
+&nbsp;Watermelon&nbsp;
+
+&nbsp;Okra&nbsp;
+
+&nbsp;Basil&nbsp;
+
+&nbsp;Cucumber&nbsp;
+
+&nbsp;Sweet Potatoes&nbsp;
+
+&nbsp;Winter Squash&nbsp;
+
+Explanation
+
+If you increase the total number of cases of each type of produce one at a time by 10, the large tomatoes give the largest increase in the objective function value. Thus, Brett should plant large tomatoes on the additional acres of land.
+
+CheckShow Answer
 
 Acknowledgements: This problem is based on the case study "[Introducing Integer Modeling with Excel Solver](https://pubsonline.informs.org/doi/pdf/10.1287/ited.7.1.88)" by Dessislava Pachamanova, INFORMS Transactions on Education 7:1(88-98). Publication year 2006.
 
-*   [BackVideo 8: Extensions and the Edge]({{< baseurl >}}/pages/linear-optimization/google-adwords-optimizing-online-advertising-recitation/video-8-extensions-and-the-edge)
-*   [ContinueInteger Optimization]({{< baseurl >}}/pages/integer-optimization)
+- [Back: Video 8: Extensions and the Edge](./resolveuid/3083aeae63672e7661a334ffc021896d)
+- [Continue: Integer Optimization](./resolveuid/db42b40ad705f431a7e23a1d11cec341)

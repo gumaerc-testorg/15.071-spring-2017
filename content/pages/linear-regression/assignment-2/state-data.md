@@ -1,5 +1,7 @@
 ---
 content_type: page
+description: ''
+draft: false
 learning_resource_types:
 - Assignments
 ocw_type: CourseSection
@@ -8,17 +10,10 @@ parent_type: CourseSection
 parent_uid: d3823600-300c-0300-0e79-696e835f8f2f
 title: 2.5 Assignment 2
 uid: 609cf352-3750-f69e-cb54-c706f04a68c5
+video_metadata:
+  youtube_id: null
 ---
-
-*   [\<Detecting Flu Epidemics via Search Engine Query Data]({{< baseurl >}}/pages/linear-regression/assignment-2/detecting-flu-epidemics-via-search-engine-query-data)
-*   [2.5.1Climate Change]({{< baseurl >}}/pages/linear-regression/assignment-2)
-*   [2.5.2Reading Test Scores]({{< baseurl >}}/pages/linear-regression/assignment-2/reading-test-scores)
-*   [2.5.3Detecting Flu Epidemics via Search Engine Query Data]({{< baseurl >}}/pages/linear-regression/assignment-2/detecting-flu-epidemics-via-search-engine-query-data)
-*   [2.5.4State Data]({{< baseurl >}}/pages/linear-regression/assignment-2/state-data)
-*   [\>Logistic Regression]({{< baseurl >}}/pages/logistic-regression)
-
-State Data
-----------
+## State Data
 
 We often take data for granted. However, one of the hardest parts about analyzing a problem you're interested in can be to find good data to answer the questions you want to ask. As you're learning R, though, there are many datasets that R has built in that you can take advantage of.
 
@@ -30,85 +25,121 @@ data(state)
 
 statedata = cbind(data.frame(state.x77), state.abb, state.area, state.center,  state.division, state.name, state.region)
 
-If you can't access the state dataset in R, here is a CSV file with the same data that you can load into R using the read.csv function: [statedata (CSV)]({{< baseurl >}}/resources/statedata).
+If you can't access the state dataset in R, here is a CSV file with the same data that you can load into R using the read.csv function: [statedata (CSV)](./resolveuid/b1ac404f54b7a0914b832e21afcb2fac).
 
 After you have loaded the data into R, inspect the data set using the command: str(statedata)
 
 This dataset has 50 observations (one for each US state) and the following 15 variables:
 
-*   **Population** - the population estimate of the state in 1975
-*   **Income** - per capita income in 1974
-*   **Illiteracy** - illiteracy rates in 1970, as a percent of the population
-*   **Life.Exp** - the life expectancy in years of residents of the state in 1970
-*   **Murder** - the murder and non-negligent manslaughter rate per 100,000 population in 1976 
-*   **HS.Grad** - percent of high-school graduates in 1970
-*   **Frost** - the mean number of days with minimum temperature below freezing from 1931–1960 in the capital or a large city of the state
-*   **Area** - the land area (in square miles) of the state
-*   **state.abb** - a 2-letter abreviation for each state
-*   **state.area** - the area of each state, in square miles
-*   **x** - the longitude of the center of the state
-*   **y** - the latitude of the center of the state
-*   **state.division** - the division each state belongs to (New England, Middle Atlantic, South Atlantic, East South Central, West South Central, East North Central, West North Central, Mountain, or Pacific)
-*   **state.name** - the full names of each state
-*   **state.region** - the region each state belong to (Northeast, South, North Central, or West)
+ 
 
-Problem 1.1 - Data Exploration
-------------------------------
+- **Population** - the population estimate of the state in 1975
+- **Income** - per capita income in 1974
+- **Illiteracy** - illiteracy rates in 1970, as a percent of the population
+- **Life.Exp** - the life expectancy in years of residents of the state in 1970
+- **Murder** - the murder and non-negligent manslaughter rate per 100,000 population in 1976 
+- **HS.Grad** - percent of high-school graduates in 1970
+- **Frost** - the mean number of days with minimum temperature below freezing from 1931–1960 in the capital or a large city of the state
+- **Area** - the land area (in square miles) of the state
+- **state.abb** - a 2-letter abreviation for each state
+- **state.area** - the area of each state, in square miles
+- **x** - the longitude of the center of the state
+- **y** - the latitude of the center of the state
+- **state.division** - the division each state belongs to (New England, Middle Atlantic, South Atlantic, East South Central, West South Central, East North Central, West North Central, Mountain, or Pacific)
+- **state.name** - the full names of each state
+- **state.region** - the region each state belong to (Northeast, South, North Central, or West)
+
+## Problem 1.1 - Data Exploration
 
 We begin by exploring the data. Plot all of the states' centers with latitude on the y axis (the "y" variable in our dataset) and longitude on the x axis (the "x" variable in our dataset). The shape of the plot should look like the outline of the United States! Note that Alaska and Hawaii have had their coordinates adjusted to appear just off of the west coast.
 
-{{< quiz_multiple_choice questionId="Q1_div" >}}{{< quiz_choices >}}{{< quiz_choice isCorrect="false" >}}&nbsp;statedata$y&nbsp;{{< /quiz_choice >}}
-{{< quiz_choice isCorrect="true" >}}&nbsp;statedata$x&nbsp;{{< /quiz_choice >}}
-{{< quiz_choice isCorrect="false" >}}&nbsp;I used a different variable name.&nbsp;{{< /quiz_choice >}}{{< /quiz_choices >}}
-{{< quiz_solution >}}Explanation
+In the R command you used to generate this plot, which variable name did you use as the first argument?
 
-To generate the described plot, you should type plot(statedata$x, statedata$y) in your R console. The first variable here is statedata$x.{{< /quiz_solution >}}{{< /quiz_multiple_choice >}}
+Exercise 1
 
-Problem 1.2 - Data Exploration
-------------------------------
+&nbsp;statedata$y&nbsp;
 
-{{< quiz_multiple_choice questionId="Q2_div" >}}{{< quiz_choices >}}{{< quiz_choice isCorrect="true" >}}&nbsp;West&nbsp;{{< /quiz_choice >}}
-{{< quiz_choice isCorrect="false" >}}&nbsp;North Central&nbsp;{{< /quiz_choice >}}
-{{< quiz_choice isCorrect="false" >}}&nbsp;South&nbsp;{{< /quiz_choice >}}
-{{< quiz_choice isCorrect="false" >}}&nbsp;Northeast&nbsp;{{< /quiz_choice >}}{{< /quiz_choices >}}
-{{< quiz_solution >}}Explanation
+&nbsp;statedata$x&nbsp;
+
+&nbsp;I used a different variable name.&nbsp;
+
+Explanation
+
+To generate the described plot, you should type plot(statedata$x, statedata$y) in your R console. The first variable here is statedata$x.
+
+CheckShow Answer
+
+## Problem 1.2 - Data Exploration
+
+Using the tapply command, determine which region of the US (West, North Central, South, or Northeast) has the highest average high school graduation rate of all the states in the region:
+
+Exercise 2
+
+&nbsp;West&nbsp;
+
+&nbsp;North Central&nbsp;
+
+&nbsp;South&nbsp;
+
+&nbsp;Northeast&nbsp;
+
+Explanation
 
 You can find the average high school graduation rate of all states in each of the regions by typing the following command in your R console:
 
 tapply(statedata$HS.Grad, statedata$state.region, mean)
 
-The highest value is for the West region.{{< /quiz_solution >}}{{< /quiz_multiple_choice >}}
+The highest value is for the West region.
 
-Problem 1.3 - Data Exploration
-------------------------------
+CheckShow Answer
+
+## Problem 1.3 - Data Exploration
 
 Now, make a boxplot of the murder rate by region (for more information about creating boxplots in R, type ?boxplot in your console).
 
-{{< quiz_multiple_choice questionId="Q3_div" >}}{{< quiz_choices >}}{{< quiz_choice isCorrect="false" >}}&nbsp;Northeast&nbsp;{{< /quiz_choice >}}
-{{< quiz_choice isCorrect="true" >}}&nbsp;South&nbsp;{{< /quiz_choice >}}
-{{< quiz_choice isCorrect="false" >}}&nbsp;North Central&nbsp;{{< /quiz_choice >}}
-{{< quiz_choice isCorrect="false" >}}&nbsp;West&nbsp;{{< /quiz_choice >}}{{< /quiz_choices >}}
-{{< quiz_solution >}}Explanation
+Which region has the highest median murder rate?
 
-To generate the boxplot, you should type boxplot(statedata$Murder ~ statedata$state.region) in your R console. You can see that the region with the highest median murder rate (the one with the highest solid line in the box) is the South.{{< /quiz_solution >}}{{< /quiz_multiple_choice >}}
+Exercise 3
 
-Problem 1.4 - Data Exploration
-------------------------------
+&nbsp;Northeast&nbsp;
 
-{{< quiz_multiple_choice questionId="Q4_div" >}}{{< quiz_choices >}}{{< quiz_choice isCorrect="false" >}}&nbsp;Delaware&nbsp;{{< /quiz_choice >}}
-{{< quiz_choice isCorrect="false" >}}&nbsp;Rhode Island&nbsp;{{< /quiz_choice >}}
-{{< quiz_choice isCorrect="false" >}}&nbsp;Maine&nbsp;{{< /quiz_choice >}}
-{{< quiz_choice isCorrect="true" >}}&nbsp;New York&nbsp;{{< /quiz_choice >}}{{< /quiz_choices >}}
-{{< quiz_solution >}}Explanation
+&nbsp;South&nbsp;
+
+&nbsp;North Central&nbsp;
+
+&nbsp;West&nbsp;
+
+Explanation
+
+To generate the boxplot, you should type boxplot(statedata$Murder ~ statedata$state.region) in your R console. You can see that the region with the highest median murder rate (the one with the highest solid line in the box) is the South.
+
+CheckShow Answer
+
+## Problem 1.4 - Data Exploration
+
+You should see that there is an outlier in the Northeast region of the boxplot you just generated. Which state does this correspond to? (Hint: There are many ways to find the answer to this question, but one way is to use the subset command to only look at the Northeast data.)
+
+Exercise 4
+
+&nbsp;Delaware&nbsp;
+
+&nbsp;Rhode Island&nbsp;
+
+&nbsp;Maine&nbsp;
+
+&nbsp;New York&nbsp;
+
+Explanation
 
 The correct answer is New York. If you first use the subset command:
 
 NortheastData = subset(statedata, state.region == "Northeast")
 
-You can then look at NortheastData$Murder together with NortheastData$state.abb to identify the outlier.{{< /quiz_solution >}}{{< /quiz_multiple_choice >}}
+You can then look at NortheastData$Murder together with NortheastData$state.abb to identify the outlier.
 
-Problem 2.1 - Predicting Life Expectancy - An Initial Model
------------------------------------------------------------
+CheckShow Answer
+
+## Problem 2.1 - Predicting Life Expectancy - An Initial Model
 
 We would like to build a model to predict life expectancy by state using the state statistics we have in our dataset.
 
@@ -120,50 +151,95 @@ Exercise 5
 
 &nbsp;Numerical Response&nbsp;
 
-Problem 2.2 - Predicting Life Expectancy - An Initial Model
------------------------------------------------------------
+ 
 
-{{< quiz_multiple_choice questionId="Q6_div" >}}{{< quiz_choices >}}{{< quiz_choice isCorrect="false" >}}&nbsp;For a one unit increase in income, predicted life expectancy increases by |x|&nbsp;{{< /quiz_choice >}}
-{{< quiz_choice isCorrect="true" >}}&nbsp;For a one unit increase in income, predicted life expectancy decreases by |x|&nbsp;{{< /quiz_choice >}}
-{{< quiz_choice isCorrect="false" >}}&nbsp;For a one unit increase in predicted life expectancy, income decreases by |x|&nbsp;{{< /quiz_choice >}}
-{{< quiz_choice isCorrect="false" >}}&nbsp;For a one unit increase in predicted life expectancy, income increases by |x|&nbsp;{{< /quiz_choice >}}{{< /quiz_choices >}}
-{{< quiz_solution >}}Explanation
+Explanation
 
-If we increase income by one unit, then our model’s prediction will increase by the coefficient of income, x. Because x is negative, this is the same as predicted life expectancy decreasing by |x|.{{< /quiz_solution >}}{{< /quiz_multiple_choice >}}
+You can build the linear regression model with the following command:
 
-Problem 2.3 - Predicting Life Expectancy - An Initial Model
------------------------------------------------------------
+LinReg = lm(Life.Exp ~ Population + Income + Illiteracy + Murder + HS.Grad + Frost + Area, data=statedata)
+
+Then, to find the coefficient for income, you can look at the summary of the regression with summary(LinReg).
+
+ 
+
+CheckShow Answer
+
+## Problem 2.2 - Predicting Life Expectancy - An Initial Model
+
+Call the coefficient for income x (the answer to Problem 2.1). What is the interpretation of the coefficient x?
+
+Exercise 6
+
+&nbsp;For a one unit increase in income, predicted life expectancy increases by |x|&nbsp;
+
+&nbsp;For a one unit increase in income, predicted life expectancy decreases by |x|&nbsp;
+
+&nbsp;For a one unit increase in predicted life expectancy, income decreases by |x|&nbsp;
+
+&nbsp;For a one unit increase in predicted life expectancy, income increases by |x|&nbsp;
+
+Explanation
+
+If we increase income by one unit, then our model’s prediction will increase by the coefficient of income, x. Because x is negative, this is the same as predicted life expectancy decreasing by |x|.
+
+CheckShow Answer
+
+## Problem 2.3 - Predicting Life Expectancy - An Initial Model
 
 Now plot a graph of life expectancy vs. income using the command:
 
 plot(statedata$Income, statedata$Life.Exp)
 
-{{< quiz_multiple_choice questionId="Q7_div" >}}{{< quiz_choices >}}{{< quiz_choice isCorrect="true" >}}&nbsp;Life expectancy is somewhat positively correlated with income.&nbsp;{{< /quiz_choice >}}
-{{< quiz_choice isCorrect="false" >}}&nbsp;Life expectancy is somewhat negatively correlated with income.&nbsp;{{< /quiz_choice >}}
-{{< quiz_choice isCorrect="false" >}}&nbsp;Life expectancy is not correlated with income.&nbsp;{{< /quiz_choice >}}{{< /quiz_choices >}}
-{{< quiz_solution >}}Explanation
+Visually observe the plot. What appears to be the relationship?
 
-Although the point in the lower right hand corner of the plot appears to be an outlier, we observe a positive linear relationship in the plot.{{< /quiz_solution >}}{{< /quiz_multiple_choice >}}
+Exercise 7
 
-Problem 2.4 - Predicting Life Expectancy - An Initial Model
------------------------------------------------------------
+&nbsp;Life expectancy is somewhat positively correlated with income.&nbsp;
 
-{{< quiz_multiple_choice questionId="Q8_div" >}}{{< quiz_choices >}}{{< quiz_choice isCorrect="false" >}}&nbsp;Income is not related to life expectancy.&nbsp;{{< /quiz_choice >}}
-{{< quiz_choice isCorrect="true" >}}&nbsp;Multicollinearity&nbsp;{{< /quiz_choice >}}{{< /quiz_choices >}}
-{{< quiz_solution >}}Explanation
+&nbsp;Life expectancy is somewhat negatively correlated with income.&nbsp;
 
-Although income is an insignificant variable in the model, this does not mean that there is no association between income and life expectancy. However, in the presence of all of the other variables, income does not add statistically significant explanatory power to the model. This means that multicollinearity is probably the issue.{{< /quiz_solution >}}{{< /quiz_multiple_choice >}}
+&nbsp;Life expectancy is not correlated with income.&nbsp;
 
-Problem 3.1 - Predicting Life Expectancy - Refining the Model and Analyzing Predictions
----------------------------------------------------------------------------------------
+Explanation
+
+Although the point in the lower right hand corner of the plot appears to be an outlier, we observe a positive linear relationship in the plot.
+
+CheckShow Answer
+
+## Problem 2.4 - Predicting Life Expectancy - An Initial Model
+
+The model we built does not display the relationship we saw from the plot of life expectancy vs. income. Which of the following explanations seems the most reasonable?
+
+Exercise 8
+
+&nbsp;Income is not related to life expectancy.&nbsp;
+
+&nbsp;Multicollinearity&nbsp;
+
+Explanation
+
+Although income is an insignificant variable in the model, this does not mean that there is no association between income and life expectancy. However, in the presence of all of the other variables, income does not add statistically significant explanatory power to the model. This means that multicollinearity is probably the issue.
+
+CheckShow Answer
+
+## Problem 3.1 - Predicting Life Expectancy - Refining the Model and Analyzing Predictions
 
 Recall that we discussed the principle of simplicity: that is, a model with fewer variables is preferable to a model with many unnnecessary variables. Experiment with removing independent variables from the original model. Remember to use the significance of the coefficients to decide which variables to remove (remove the one with the largest "p-value" first, or the one with the "t value" closest to zero), and to remove them one at a time (this is called "backwards variable selection"). This is important due to multicollinearity issues - removing one insignificant variable may make another previously insignificant variable become significant.
 
-{{< quiz_multiple_choice questionId="Q9_div" >}}{{< quiz_choices >}}{{< quiz_choice isCorrect="false" >}}&nbsp;Income, HS.Grad, Frost, Murder&nbsp;{{< /quiz_choice >}}
-{{< quiz_choice isCorrect="false" >}}&nbsp;HS.Grad, Population, Income, Frost&nbsp;{{< /quiz_choice >}}
-{{< quiz_choice isCorrect="false" >}}&nbsp;Frost, Murder, HS.Grad, Illiteracy&nbsp;{{< /quiz_choice >}}
-{{< quiz_choice isCorrect="true" >}}&nbsp;Population, Murder, Frost, HS.Grad&nbsp;{{< /quiz_choice >}}{{< /quiz_choices >}}
-{{< quiz_solution >}}Explanation
+You should be able to find a good model with only 4 independent variables, instead of the original 7. Which variables does this model contain?
+
+Exercise 9
+
+&nbsp;Income, HS.Grad, Frost, Murder&nbsp;
+
+&nbsp;HS.Grad, Population, Income, Frost&nbsp;
+
+&nbsp;Frost, Murder, HS.Grad, Illiteracy&nbsp;
+
+&nbsp;Population, Murder, Frost, HS.Grad&nbsp;
+
+Explanation
 
 We would eliminate the variable "Area" first (since it has the highest p-value, or probability, with a value of 0.9649), by adjusting our lm command to the following:
 
@@ -177,72 +253,127 @@ Looking at summary(LinReg) again, we would next choose to eliminate "Income", si
 
 LinReg = lm(Life.Exp ~ Population + Murder + HS.Grad + Frost, data=statedata)
 
-This model with 4 variables is a good model. However, we can see that the variable "Population" is not quite significant. In practice, it would be up to you whether or not to keep the variable "Population" or eliminate it for a 3-variable model. Population does not add much statistical significance in the presence of murder, high school graduation rate, and frost days. However, for the remainder of this question, we will analyze the 4-variable model.{{< /quiz_solution >}}{{< /quiz_multiple_choice >}}
+This model with 4 variables is a good model. However, we can see that the variable "Population" is not quite significant. In practice, it would be up to you whether or not to keep the variable "Population" or eliminate it for a 3-variable model. Population does not add much statistical significance in the presence of murder, high school graduation rate, and frost days. However, for the remainder of this question, we will analyze the 4-variable model.
 
-Problem 3.2 - Predicting Life Expectancy - Refining the Model and Analyzing Predictions
----------------------------------------------------------------------------------------
+CheckShow Answer
 
-{{< quiz_multiple_choice questionId="Q10_div" >}}{{< quiz_choices >}}{{< quiz_choice isCorrect="true" >}}&nbsp;We expect the "Multiple R-squared" value of the simplified model to be slightly worse than that of the initial model. It can't be better than the "Multiple R-squared" value of the initial model.&nbsp;{{< /quiz_choice >}}
-{{< quiz_choice isCorrect="false" >}}&nbsp;We expect the "Multiple R-squared" value of the simplified model to be slightly better than that of the initial model. It can't be worse than the "Multiple R-squared" value of the initial model. &nbsp;{{< /quiz_choice >}}
-{{< quiz_choice isCorrect="false" >}}&nbsp;We expect the "Multiple R-squared" of the simplified model to be about the same as the intial model (we have no way of knowing if it will be slightly worse or slightly better than the Multiple R-squared of the intial model).&nbsp;{{< /quiz_choice >}}{{< /quiz_choices >}}
-{{< quiz_solution >}}Explanation
+## Problem 3.2 - Predicting Life Expectancy - Refining the Model and Analyzing Predictions
+
+Removing insignificant variables changes the Multiple R-squared value of the model. By looking at the summary output for both the initial model (all independent variables) and the simplified model (only 4 independent variables) and using what you learned in class, which of the following correctly explains the change in the Multiple R-squared value?
+
+Exercise 10
+
+&nbsp;We expect the "Multiple R-squared" value of the simplified model to be slightly worse than that of the initial model. It can't be better than the "Multiple R-squared" value of the initial model.&nbsp;
+
+&nbsp;We expect the "Multiple R-squared" value of the simplified model to be slightly better than that of the initial model. It can't be worse than the "Multiple R-squared" value of the initial model. &nbsp;
+
+&nbsp;We expect the "Multiple R-squared" of the simplified model to be about the same as the intial model (we have no way of knowing if it will be slightly worse or slightly better than the Multiple R-squared of the intial model).&nbsp;
+
+Explanation
 
 When we remove insignificant variables, the "Multiple R-squared" will always be worse, but only slightly worse. This is due to the nature of a linear regression model. It is always possible for the regression model to make a coefficient zero, which would be the same as removing the variable from the model. The fact that the coefficient is not zero in the intial model means it must be helping the R-squared value, even if it is only a very small improvement. So when we force the variable to be removed, it will decrease the R-squared a little bit. However, this small decrease is worth it to have a simpler model.
 
-On the contrary, when we remove insignificant variables, the "Adjusted R-squred" will frequently be better. This value accounts for the complexity of the model, and thus tends to increase as insignificant variables are removed, and decrease as insignificant variables are added.{{< /quiz_solution >}}{{< /quiz_multiple_choice >}}
+On the contrary, when we remove insignificant variables, the "Adjusted R-squred" will frequently be better. This value accounts for the complexity of the model, and thus tends to increase as insignificant variables are removed, and decrease as insignificant variables are added.
 
-Problem 3.3 - Predicting Life Expectancy - Refining the Model and Analyzing Predictions
----------------------------------------------------------------------------------------
+CheckShow Answer
+
+## Problem 3.3 - Predicting Life Expectancy - Refining the Model and Analyzing Predictions
 
 Using the simplified 4 variable model that we created, we'll now take a look at how our predictions compare to the actual values.
 
 Take a look at the vector of predictions by using the predict function (since we are just looking at predictions on the training set, you don't need to pass a "newdata" argument to the predict function).
 
-{{< quiz_multiple_choice questionId="Q11_div" >}}{{< quiz_choices >}}{{< quiz_choice isCorrect="false" >}}&nbsp;South Carolina&nbsp;{{< /quiz_choice >}}
-{{< quiz_choice isCorrect="false" >}}&nbsp;Mississippi&nbsp;{{< /quiz_choice >}}
-{{< quiz_choice isCorrect="true" >}}&nbsp;Alabama&nbsp;{{< /quiz_choice >}}
-{{< quiz_choice isCorrect="false" >}}&nbsp;Georgia&nbsp;{{< /quiz_choice >}}{{< /quiz_choices >}}
-{{< quiz_solution >}}Explanation
+Which state do we predict to have the lowest life expectancy? (Hint: use the sort function)
+
+Exercise 11
+
+&nbsp;South Carolina&nbsp;
+
+&nbsp;Mississippi&nbsp;
+
+&nbsp;Alabama&nbsp;
+
+&nbsp;Georgia&nbsp;
+
+Explanation
 
 If your simplified 4-variable model is called "LinReg", you can answer this question by typing
 
 sort(predict(LinReg))
 
-in your R console. The first state listed has the lowest predicted life expectancy, which is Alabama.{{< /quiz_solution >}}{{< /quiz_multiple_choice >}}{{< quiz_multiple_choice questionId="Q12_div" >}}{{< quiz_choices >}}{{< quiz_choice isCorrect="true" >}}&nbsp;South Carolina&nbsp;{{< /quiz_choice >}}
-{{< quiz_choice isCorrect="false" >}}&nbsp;Mississippi&nbsp;{{< /quiz_choice >}}
-{{< quiz_choice isCorrect="false" >}}&nbsp;Alabama&nbsp;{{< /quiz_choice >}}
-{{< quiz_choice isCorrect="false" >}}&nbsp;Georgia&nbsp;{{< /quiz_choice >}}{{< /quiz_choices >}}
-{{< quiz_solution >}}Explanation
+in your R console. The first state listed has the lowest predicted life expectancy, which is Alabama.
 
-You can find the row number of the state with the lowest life expectancy by typing which.min(statedata$Life.Exp) into your R console. This returns 40. The 40th state name in the vector statedata$state.name is South Carolina.{{< /quiz_solution >}}{{< /quiz_multiple_choice >}}
+Which state actually has the lowest life expectancy? (Hint: use the which.min function)
 
-Problem 3.4 - Predicting Life Expectancy - Refining the Model and Analyzing Predictions
----------------------------------------------------------------------------------------
+Exercise 12
 
-{{< quiz_multiple_choice questionId="Q13_div" >}}{{< quiz_choices >}}{{< quiz_choice isCorrect="false" >}}&nbsp;Massachusetts&nbsp;{{< /quiz_choice >}}
-{{< quiz_choice isCorrect="false" >}}&nbsp;Maine&nbsp;{{< /quiz_choice >}}
-{{< quiz_choice isCorrect="true" >}}&nbsp;Washington&nbsp;{{< /quiz_choice >}}
-{{< quiz_choice isCorrect="false" >}}&nbsp;Hawaii&nbsp;{{< /quiz_choice >}}{{< /quiz_choices >}}
-{{< quiz_solution >}}Explanation
+&nbsp;South Carolina&nbsp;
 
-If your simplified 4-variable model is called "LinReg", you can answer this question by typing "sort(predict(LinReg))" in your R console. The last state listed has the highest predicted life expectancy, which is Washington.{{< /quiz_solution >}}{{< /quiz_multiple_choice >}}{{< quiz_multiple_choice questionId="Q14_div" >}}{{< quiz_choices >}}{{< quiz_choice isCorrect="false" >}}&nbsp;Massachusetts&nbsp;{{< /quiz_choice >}}
-{{< quiz_choice isCorrect="false" >}}&nbsp;Maine&nbsp;{{< /quiz_choice >}}
-{{< quiz_choice isCorrect="false" >}}&nbsp;Washington&nbsp;{{< /quiz_choice >}}
-{{< quiz_choice isCorrect="true" >}}&nbsp;Hawaii&nbsp;{{< /quiz_choice >}}{{< /quiz_choices >}}
-{{< quiz_solution >}}Explanation
+&nbsp;Mississippi&nbsp;
 
-You can find the row number of the state with the highest life expectancy by typing which.max(statedata$Life.Exp) into your R console. This returns 11. The 11th state name in the vector statedata$state.name is Hawaii.{{< /quiz_solution >}}{{< /quiz_multiple_choice >}}
+&nbsp;Alabama&nbsp;
 
-Problem 3.5 - Predicting Life Expectancy - Refining the Model and Analyzing Predictions
----------------------------------------------------------------------------------------
+&nbsp;Georgia&nbsp;
+
+Explanation
+
+You can find the row number of the state with the lowest life expectancy by typing which.min(statedata$Life.Exp) into your R console. This returns 40. The 40th state name in the vector statedata$state.name is South Carolina.
+
+CheckShow Answer
+
+## Problem 3.4 - Predicting Life Expectancy - Refining the Model and Analyzing Predictions
+
+Which state do we predict to have the highest life expectancy?
+
+Exercise 13
+
+&nbsp;Massachusetts&nbsp;
+
+&nbsp;Maine&nbsp;
+
+&nbsp;Washington&nbsp;
+
+&nbsp;Hawaii&nbsp;
+
+Explanation
+
+If your simplified 4-variable model is called "LinReg", you can answer this question by typing "sort(predict(LinReg))" in your R console. The last state listed has the highest predicted life expectancy, which is Washington.
+
+Which state actually has the highest life expectancy?
+
+Exercise 14
+
+&nbsp;Massachusetts&nbsp;
+
+&nbsp;Maine&nbsp;
+
+&nbsp;Washington&nbsp;
+
+&nbsp;Hawaii&nbsp;
+
+Explanation
+
+You can find the row number of the state with the highest life expectancy by typing which.max(statedata$Life.Exp) into your R console. This returns 11. The 11th state name in the vector statedata$state.name is Hawaii.
+
+CheckShow Answer
+
+## Problem 3.5 - Predicting Life Expectancy - Refining the Model and Analyzing Predictions
 
 Take a look at the vector of residuals (the difference between the predicted and actual values).
 
-{{< quiz_multiple_choice questionId="Q15_div" >}}{{< quiz_choices >}}{{< quiz_choice isCorrect="false" >}}&nbsp;Maine&nbsp;{{< /quiz_choice >}}
-{{< quiz_choice isCorrect="false" >}}&nbsp;Florida&nbsp;{{< /quiz_choice >}}
-{{< quiz_choice isCorrect="true" >}}&nbsp;Indiana&nbsp;{{< /quiz_choice >}}
-{{< quiz_choice isCorrect="false" >}}&nbsp;Illinois&nbsp;{{< /quiz_choice >}}{{< /quiz_choices >}}
-{{< quiz_solution >}}Explanation
+For which state do we make the smallest absolute error?
+
+Exercise 15
+
+&nbsp;Maine&nbsp;
+
+&nbsp;Florida&nbsp;
+
+&nbsp;Indiana&nbsp;
+
+&nbsp;Illinois&nbsp;
+
+Explanation
 
 You can look at the sorted list of absolute errors by typing
 
@@ -252,11 +383,21 @@ into your R console (where "model" is the name of your model). Alternatively, yo
 
 sort(abs(statedata$Life.Exp - predict(model)))
 
-in your R console. The smallest absolute error is for Indiana.{{< /quiz_solution >}}{{< /quiz_multiple_choice >}}{{< quiz_multiple_choice questionId="Q16_div" >}}{{< quiz_choices >}}{{< quiz_choice isCorrect="true" >}}&nbsp;Hawaii&nbsp;{{< /quiz_choice >}}
-{{< quiz_choice isCorrect="false" >}}&nbsp;Maine&nbsp;{{< /quiz_choice >}}
-{{< quiz_choice isCorrect="false" >}}&nbsp;Texas&nbsp;{{< /quiz_choice >}}
-{{< quiz_choice isCorrect="false" >}}&nbsp;South Carolina&nbsp;{{< /quiz_choice >}}{{< /quiz_choices >}}
-{{< quiz_solution >}}Explanation
+in your R console. The smallest absolute error is for Indiana.
+
+For which state do we make the largest absolute error?
+
+Exercise 16
+
+&nbsp;Hawaii&nbsp;
+
+&nbsp;Maine&nbsp;
+
+&nbsp;Texas&nbsp;
+
+&nbsp;South Carolina&nbsp;
+
+Explanation
 
 You can look at the sorted list of absolute errors by typing
 
@@ -266,7 +407,9 @@ into your R console (where "model" is the name of your model). Alternatively, yo
 
 sort(abs(statedata$Life.Exp - predict(model)))
 
-in your R console. The largest absolute error is for Hawaii.{{< /quiz_solution >}}{{< /quiz_multiple_choice >}}
+in your R console. The largest absolute error is for Hawaii.
 
-*   [BackDetecting Flu Epidemics via Search Engine Query Data]({{< baseurl >}}/pages/linear-regression/assignment-2/detecting-flu-epidemics-via-search-engine-query-data)
-*   [ContinueLogistic Regression]({{< baseurl >}}/pages/logistic-regression)
+CheckShow Answer
+
+- [Back: Detecting Flu Epidemics via Search Engine Query Data](./resolveuid/d64b92473ae1fb2350f1b27dc8fbde0b)
+- [Continue: Logistic Regression](./resolveuid/c4464cf49ddb1a4bc78cfaa6f93b74de)

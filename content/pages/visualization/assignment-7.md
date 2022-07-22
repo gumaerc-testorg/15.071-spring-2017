@@ -1,5 +1,7 @@
 ---
 content_type: page
+description: ''
+draft: false
 learning_resource_types: []
 ocw_type: CourseSection
 parent_title: 7 Visualization
@@ -7,39 +9,28 @@ parent_type: CourseSection
 parent_uid: ab87d151-cf8c-fe95-c873-e816df164d38
 title: 7.5 Assignment 7
 uid: 056c6914-368d-638a-59e4-cebbc43acfe5
+video_metadata:
+  youtube_id: null
 ---
-
-*   [\<Video 7: Using Line Charts Instead]({{< baseurl >}}/pages/visualization/the-good-the-bad-and-the-ugly-visualization-recitation-recitation/video-7-using-line-charts-instead)
-*   [7.5.1Visualizing Attributes of Parole Violators]({{< baseurl >}}/pages/visualization/assignment-7)
-*   [\>Linear Optimization]({{< baseurl >}}/pages/linear-optimization)
-
-Visualizing Attributes of Parole Violators
-------------------------------------------
+## Visualizing Attributes of Parole Violators
 
 In the crime lecture, we saw how we can use heatmaps to give a 2-dimensional representation of 3-dimensional data: we made heatmaps of crime counts by time of the day and day of the week. In this problem, we'll learn how to use histograms to show counts by one variable, and then how to visualize 3 dimensions by creating multiple histograms.
 
-We'll use the parole data [parole (CSV)]({{< baseurl >}}/resources/parole) from Unit 3. Before, we used this data to predict parole violators. Now, let's try to get a little more insight into this dataset using histograms. As a reminder, the variables in this dataset are:
+We'll use the parole data [parole (CSV)](./resolveuid/ee9b52a20d6ebf5944fb3da9171fa3e0) from Unit 3. Before, we used this data to predict parole violators. Now, let's try to get a little more insight into this dataset using histograms. As a reminder, the variables in this dataset are:
 
-*   **male** = 1 if the parolee is male, 0 if female
-*   **race** = 1 if the parolee is white, 2 otherwise
-    
-*   **age** = the parolee's age in years at the time of release from prison
-    
-*   **state** = a code for the parolee's state. 2 is Kentucky, 3 is Louisiana, 4 is Virginia, and 1 is any other state. These three states were selected due to having a high representation in the dataset.
-    
-*   **time.served** = the number of months the parolee served in prison (limited by the inclusion criteria to not exceed 6 months).
-    
-*   **max.sentence** = the maximum sentence length for all charges, in months (limited by the inclusion criteria to not exceed 18 months).
-    
-*   **multiple.offenses** = 1 if the parolee was incarcerated for multiple offenses, 0 otherwise.
-    
-*   **crime** = a code for the parolee's main crime leading to incarceration. 2 is larceny, 3 is drug-related crime, 4 is driving-related crime, and 1 is any other crime.
-    
-*   **violator** \= 1 if the parolee violated the parole, and 0 if the parolee completed the parole without violation.
-    
+ 
 
-Problem 1.1 - Loading the Data
-------------------------------
+- **male** = 1 if the parolee is male, 0 if female
+- **race** = 1 if the parolee is white, 2 otherwise
+- **age** = the parolee's age in years at the time of release from prison
+- **state** = a code for the parolee's state. 2 is Kentucky, 3 is Louisiana, 4 is Virginia, and 1 is any other state. These three states were selected due to having a high representation in the dataset.
+- **time.served** = the number of months the parolee served in prison (limited by the inclusion criteria to not exceed 6 months).
+- **max.sentence** = the maximum sentence length for all charges, in months (limited by the inclusion criteria to not exceed 18 months).
+- **multiple.offenses** = 1 if the parolee was incarcerated for multiple offenses, 0 otherwise.
+- **crime** = a code for the parolee's main crime leading to incarceration. 2 is larceny, 3 is drug-related crime, 4 is driving-related crime, and 1 is any other crime.
+- **violator** \= 1 if the parolee violated the parole, and 0 if the parolee completed the parole without violation.
+
+## Problem 1.1 - Loading the Data
 
 Using the read.csv function, load the dataset parole.csv and call it parole. Since male, state, and crime are all unordered factors, convert them to factor variables using the following commands:
 
@@ -55,23 +46,43 @@ Exercise 1
 
 &nbsp;Numerical Response&nbsp;
 
-Problem 1.2 - Loading the Data
-------------------------------
+ 
 
-{{< quiz_multiple_choice questionId="Q2_div" >}}{{< quiz_choices >}}{{< quiz_choice isCorrect="false" >}}&nbsp;Larceny&nbsp;{{< /quiz_choice >}}
-{{< quiz_choice isCorrect="true" >}}&nbsp;Drug-related crime&nbsp;{{< /quiz_choice >}}
-{{< quiz_choice isCorrect="false" >}}&nbsp;Driving-related crime&nbsp;{{< /quiz_choice >}}
-{{< quiz_choice isCorrect="false" >}}&nbsp;Other&nbsp;{{< /quiz_choice >}}{{< /quiz_choices >}}
-{{< quiz_solution >}}Explanation
+Explanation
+
+This can be found by using table:
+
+table(parole$male, parole$violator)
+
+The total number of violators is 78, and 14 of them are female.
+
+CheckShow Answer
+
+## Problem 1.2 - Loading the Data
+
+In this dataset, which crime is the most common in Kentucky?
+
+Exercise 2
+
+&nbsp;Larceny&nbsp;
+
+&nbsp;Drug-related crime&nbsp;
+
+&nbsp;Driving-related crime&nbsp;
+
+&nbsp;Other&nbsp;
+
+Explanation
 
 This can be found by using table:
 
 table(parole$state, parole$crime)
 
-The code 2 corresponds to Kentucky, and the most common crime is 3, which corresponds to Drug-related crime.{{< /quiz_solution >}}{{< /quiz_multiple_choice >}}
+The code 2 corresponds to Kentucky, and the most common crime is 3, which corresponds to Drug-related crime.
 
-Problem 2.1 - Creating a Basic Histogram
-----------------------------------------
+CheckShow Answer
+
+## Problem 2.1 - Creating a Basic Histogram
 
 Recall from lecture that in ggplot, we need to specify the dataset, the aesthetic, and the geometry. To create a histogram, the geometry will be geom\_histogram. The data we'll use is parole, and the aesthetic will be the map from a variable to the x-axis of the histogram.
 
@@ -83,35 +94,55 @@ By default, geom\_histogram divides the data into 30 bins. Change the width of t
 
 Note that by default, histograms create bins where the left endpoint is included in the bin, but the right endpoint isn't. So the first bin in this histogram represents parolees who are between 15 and 19 years old. The last bin in this histogram represents parolees who are between 65 and 69 years old.
 
-{{< quiz_multiple_choice questionId="Q3_div" >}}{{< quiz_choices >}}{{< quiz_choice isCorrect="true" >}}&nbsp;20-24&nbsp;{{< /quiz_choice >}}
-{{< quiz_choice isCorrect="false" >}}&nbsp;25-29&nbsp;{{< /quiz_choice >}}
-{{< quiz_choice isCorrect="false" >}}&nbsp;30-34&nbsp;{{< /quiz_choice >}}
-{{< quiz_choice isCorrect="false" >}}&nbsp;35-39&nbsp;{{< /quiz_choice >}}{{< /quiz_choices >}}
-{{< quiz_solution >}}Explanation
+What is the age bracket with the most parolees?
+
+Exercise 3
+
+&nbsp;20-24&nbsp;
+
+&nbsp;25-29&nbsp;
+
+&nbsp;30-34&nbsp;
+
+&nbsp;35-39&nbsp;
+
+Explanation
 
 You can generate the histogram with a bin width of 5 with the command:
 
 ggplot(data = parole, aes(x = age)) + geom\_histogram(binwidth=5)
 
-The tallest bar corresponds to the age bracket with the most parolees, which is 20-24.{{< /quiz_solution >}}{{< /quiz_multiple_choice >}}
+The tallest bar corresponds to the age bracket with the most parolees, which is 20-24.
 
-Problem 2.2 - Creating a Basic Histogram
-----------------------------------------
+CheckShow Answer
 
-{{< quiz_multiple_choice questionId="Q4_div" >}}{{< quiz_choices >}}{{< quiz_choice isCorrect="false" >}}&nbsp;Changes the fill color of the bars&nbsp;{{< /quiz_choice >}}
-{{< quiz_choice isCorrect="false" >}}&nbsp;Changes the background color of the plot&nbsp;{{< /quiz_choice >}}
-{{< quiz_choice isCorrect="true" >}}&nbsp;Changes the outline color of the bars&nbsp;{{< /quiz_choice >}}
-{{< quiz_choice isCorrect="false" >}}&nbsp;Changes the color of the axis labels &nbsp;{{< /quiz_choice >}}{{< /quiz_choices >}}
-{{< quiz_solution >}}Explanation
+## Problem 2.2 - Creating a Basic Histogram
+
+Redo the histogram, adding the following argument to the geom\_histogram function: color="blue". What does this do? Select all that apply.
+
+Exercise 4
+
+&nbsp;Changes the fill color of the bars&nbsp;
+
+&nbsp;Changes the background color of the plot&nbsp;
+
+&nbsp;Changes the outline color of the bars&nbsp;
+
+&nbsp;Changes the color of the axis labels &nbsp;
+
+ 
+
+Explanation
 
 You can generate the histogram by typing:
 
 ggplot(data = parole, aes(x = age)) + geom\_histogram(binwidth=5, color="blue")
 
-Adding the color argument changes the outline color of the bars.{{< /quiz_solution >}}{{< /quiz_multiple_choice >}}
+Adding the color argument changes the outline color of the bars.
 
-Problem 3.1 - Adding Another Dimension
---------------------------------------
+CheckShow Answer
+
+## Problem 3.1 - Adding Another Dimension
 
 Now suppose we are interested in seeing how the age distribution of male parolees compares to the age distribution of female parolees.
 
@@ -123,30 +154,47 @@ ggplot(data = parole, aes(x = age)) + geom\_histogram(binwidth = 5) + facet\_gri
 
 The histogram for female parolees is shown at the top, and the histogram for male parolees is shown at the bottom.
 
-{{< quiz_multiple_choice questionId="Q5_div" >}}{{< quiz_choices >}}{{< quiz_choice isCorrect="false" >}}&nbsp;20-24&nbsp;{{< /quiz_choice >}}
-{{< quiz_choice isCorrect="false" >}}&nbsp;25-29&nbsp;{{< /quiz_choice >}}
-{{< quiz_choice isCorrect="false" >}}&nbsp;30-34&nbsp;{{< /quiz_choice >}}
-{{< quiz_choice isCorrect="true" >}}&nbsp;35-39&nbsp;{{< /quiz_choice >}}{{< /quiz_choices >}}
-{{< quiz_solution >}}Explanation
+What is the age bracket with the most female parolees?
 
-Looking at the histogram at the top, we can see that the tallest bar corresponds to the age bracket 35-39.{{< /quiz_solution >}}{{< /quiz_multiple_choice >}}
+Exercise 5
 
-Problem 3.2 - Adding Another Dimension
---------------------------------------
+&nbsp;20-24&nbsp;
 
-{{< quiz_multiple_choice questionId="Q6_div" >}}{{< quiz_choices >}}{{< quiz_choice isCorrect="false" >}}&nbsp;Creates histograms of the male variable, sorted by the different values of age.&nbsp;{{< /quiz_choice >}}
-{{< quiz_choice isCorrect="true" >}}&nbsp;Puts the histograms side-by-side instead of on top of each other. &nbsp;{{< /quiz_choice >}}
-{{< quiz_choice isCorrect="false" >}}&nbsp;This doesn't change anything - the plot looks exactly the same as it did before.&nbsp;{{< /quiz_choice >}}{{< /quiz_choices >}}
-{{< quiz_solution >}}Explanation
+&nbsp;25-29&nbsp;
+
+&nbsp;30-34&nbsp;
+
+&nbsp;35-39&nbsp;
+
+Explanation
+
+Looking at the histogram at the top, we can see that the tallest bar corresponds to the age bracket 35-39.
+
+CheckShow Answer
+
+## Problem 3.2 - Adding Another Dimension
+
+Now change the facet\_grid argument to be ".~male" instead of "male~.". What does this do?
+
+Exercise 6
+
+&nbsp;Creates histograms of the male variable, sorted by the different values of age.&nbsp;
+
+&nbsp;Puts the histograms side-by-side instead of on top of each other. &nbsp;
+
+&nbsp;This doesn't change anything - the plot looks exactly the same as it did before.&nbsp;
+
+Explanation
 
 You can create the new plot with the command:
 
 ggplot(data = parole, aes(x = age)) + geom\_histogram(binwidth = 5) + facet\_grid(.~male)
 
-This puts the plots side-by-side instead of on top of each other.{{< /quiz_solution >}}{{< /quiz_multiple_choice >}}
+This puts the plots side-by-side instead of on top of each other.
 
-Problem 3.3 - Adding Another DImension
---------------------------------------
+CheckShow Answer
+
+## Problem 3.3 - Adding Another DImension
 
 An alternative to faceting is to simply color the different groups differently. To color the data points by group, we need to tell ggplot that a property of the data (male or not male) should be translated to an aesthetic property of the histogram. We can do this by setting the fill parameter within the aesthetic to male.
 
@@ -162,14 +210,21 @@ This is actually a colorblind-friendly palette, desribed on this [Cookbook for R
 
 ggplot(data = parole, aes(x = age, fill = male)) + geom\_histogram(binwidth = 5) + scale\_fill\_manual(values=colorPalette)
 
-{{< quiz_multiple_choice questionId="Q7_div" >}}{{< quiz_choices >}}{{< quiz_choice isCorrect="false" >}}&nbsp;Orange&nbsp;{{< /quiz_choice >}}
-{{< quiz_choice isCorrect="true" >}}&nbsp;Black&nbsp;{{< /quiz_choice >}}{{< /quiz_choices >}}
-{{< quiz_solution >}}Explanation
+What color is the histogram for the female parolees?
 
-From the previous question, we saw that the female parolee histogram was much smaller than the male parolee histogram. So it looks like the female histogram is the black-colored one. We can also read this from the legend.{{< /quiz_solution >}}{{< /quiz_multiple_choice >}}
+Exercise 7
 
-Problem 3.4 - Adding Another Dimension
---------------------------------------
+&nbsp;Orange&nbsp;
+
+&nbsp;Black&nbsp;
+
+Explanation
+
+From the previous question, we saw that the female parolee histogram was much smaller than the male parolee histogram. So it looks like the female histogram is the black-colored one. We can also read this from the legend.
+
+CheckShow Answer
+
+## Problem 3.4 - Adding Another Dimension
 
 Coloring the groups differently is a good way to see the breakdown of age by sex within the single, aggregated histogram. However, the bars here are stacked, meaning that the height of the orange bars in each age bin represents the total number of parolees in that age bin, not just the number of parolees in that group.
 
@@ -183,97 +238,155 @@ We just need to:
 
 Redo the plot, making both of these changes.
 
-{{< quiz_multiple_choice questionId="Q8_div" >}}{{< quiz_choices >}}{{< quiz_choice isCorrect="true" >}}&nbsp;15-19&nbsp;{{< /quiz_choice >}}
-{{< quiz_choice isCorrect="false" >}}&nbsp;20-24&nbsp;{{< /quiz_choice >}}
-{{< quiz_choice isCorrect="false" >}}&nbsp;25-29&nbsp;{{< /quiz_choice >}}
-{{< quiz_choice isCorrect="false" >}}&nbsp;30-34&nbsp;{{< /quiz_choice >}}
-{{< quiz_choice isCorrect="false" >}}&nbsp;35-39&nbsp;{{< /quiz_choice >}}
-{{< quiz_choice isCorrect="false" >}}&nbsp;40-44&nbsp;{{< /quiz_choice >}}
-{{< quiz_choice isCorrect="false" >}}&nbsp;45-49&nbsp;{{< /quiz_choice >}}
-{{< quiz_choice isCorrect="false" >}}&nbsp;50-54&nbsp;{{< /quiz_choice >}}
-{{< quiz_choice isCorrect="true" >}}&nbsp;55-59&nbsp;{{< /quiz_choice >}}
-{{< quiz_choice isCorrect="false" >}}&nbsp;60-64&nbsp;{{< /quiz_choice >}}
-{{< quiz_choice isCorrect="true" >}}&nbsp;65-69&nbsp;{{< /quiz_choice >}}{{< /quiz_choices >}}
-{{< quiz_solution >}}Explanation
+Which of the following buckets contain no female paroles? Select all that apply.
+
+Exercise 8
+
+&nbsp;15-19&nbsp;
+
+&nbsp;20-24&nbsp;
+
+&nbsp;25-29&nbsp;
+
+&nbsp;30-34&nbsp;
+
+&nbsp;35-39&nbsp;
+
+&nbsp;40-44&nbsp;
+
+&nbsp;45-49&nbsp;
+
+&nbsp;50-54&nbsp;
+
+&nbsp;55-59&nbsp;
+
+&nbsp;60-64&nbsp;
+
+&nbsp;¨C34C65-69&nbsp;
+
+ 
+
+Explanation
 
 This plot can be generated with the following command:
 
 ggplot(parole, aes(x = age, fill = male)) + geom\_histogram(binwidth = 5, position = "identity", alpha = 0.5) + scale\_fill\_manual(values=colorPalette)
 
-If you look at the plot, you can see that there are no female parolees in the age groups 15-19, 55-59, and 65-69 (the bars have height zero).{{< /quiz_solution >}}{{< /quiz_multiple_choice >}}
+If you look at the plot, you can see that there are no female parolees in the age groups 15-19, 55-59, and 65-69 (the bars have height zero).
 
-Problem 4.1 - Time Served
--------------------------
+CheckShow Answer
+
+## Problem 4.1 - Time Served
 
 Now let's explore another aspect of the data: the amount of time served by parolees. Create a basic histogram like the one we created in Problem 2, but this time with time.served on the x-axis. Set the bin width to one month.
 
-{{< quiz_multiple_choice questionId="Q9_div" >}}{{< quiz_choices >}}{{< quiz_choice isCorrect="false" >}}&nbsp;Between 2 and 3 months&nbsp;{{< /quiz_choice >}}
-{{< quiz_choice isCorrect="false" >}}&nbsp;Between 3 and 4 months&nbsp;{{< /quiz_choice >}}
-{{< quiz_choice isCorrect="true" >}}&nbsp;Between 4 and 5 months&nbsp;{{< /quiz_choice >}}
-{{< quiz_choice isCorrect="false" >}}&nbsp;Between 5 and 6 months&nbsp;{{< /quiz_choice >}}{{< /quiz_choices >}}
-{{< quiz_solution >}}Explanation
+What is the most common length of time served, according to this histogram?
+
+Exercise 9
+
+&nbsp;Between 2 and 3 months&nbsp;
+
+&nbsp;Between 3 and 4 months&nbsp;
+
+&nbsp;Between 4 and 5 months&nbsp;
+
+&nbsp;Between 5 and 6 months&nbsp;
+
+Explanation
 
 You can create this histogram with the following command:
 
 ggplot(data = parole, aes(x = time.served)) + geom\_histogram(binwidth = 1)
 
-The highest bar corresponds to between 4 and 5 months.{{< /quiz_solution >}}{{< /quiz_multiple_choice >}}
+The highest bar corresponds to between 4 and 5 months.
 
-Problem 4.2 - Time Served
--------------------------
+CheckShow Answer
 
-{{< quiz_multiple_choice questionId="Q10_div" >}}{{< quiz_choices >}}{{< quiz_choice isCorrect="false" >}}&nbsp;Between 2.1 and 2.2 months&nbsp;{{< /quiz_choice >}}
-{{< quiz_choice isCorrect="true" >}}&nbsp;Between 3.0 and 3.1 months&nbsp;{{< /quiz_choice >}}
-{{< quiz_choice isCorrect="false" >}}&nbsp;Between 4.2 and 4.3 months &nbsp;{{< /quiz_choice >}}
-{{< quiz_choice isCorrect="false" >}}&nbsp;Between 4.8 and 4.9 months&nbsp;{{< /quiz_choice >}}{{< /quiz_choices >}}
-{{< quiz_solution >}}Explanation
+## Problem 4.2 - Time Served
+
+Change the binwidth to 0.1 months. Now what is the most common length of time served, according to the histogram?
+
+Exercise 10
+
+&nbsp;Between 2.1 and 2.2 months&nbsp;
+
+&nbsp;Between 3.0 and 3.1 months&nbsp;
+
+&nbsp;Between 4.2 and 4.3 months &nbsp;
+
+&nbsp;Between 4.8 and 4.9 months&nbsp;
+
+Explanation
 
 You can change the binwidth by using the following command:
 
 ggplot(data = parole, aes(x = time.served)) + geom\_histogram(binwidth = .1)
 
-Now, the highest bar corresponds to between 3.0 and 3.1 months.{{< /quiz_solution >}}{{< /quiz_multiple_choice >}}
+Now, the highest bar corresponds to between 3.0 and 3.1 months.
 
 Be careful when choosing the binwidth - it can significantly affect the interpretation of a histogram! When visualizing histograms, it is always a good idea to vary the bin size in order to understand the data at various granularities.
 
-Problem 4.3 - Time Served
--------------------------
+CheckShow Answer
+
+## Problem 4.3 - Time Served
 
 Now, suppose we suspect that it is unlikely that each type of crime has the same distribution of time served. To visualize this, change the binwidth back to 1 month, and use facet\_grid to create a separate histogram of time.served for each value of the variable crime.
 
-{{< quiz_multiple_choice questionId="Q11_div" >}}{{< quiz_choices >}}{{< quiz_choice isCorrect="false" >}}&nbsp;Larceny&nbsp;{{< /quiz_choice >}}
-{{< quiz_choice isCorrect="false" >}}&nbsp;Drug-related&nbsp;{{< /quiz_choice >}}
-{{< quiz_choice isCorrect="true" >}}&nbsp;Driving-related&nbsp;{{< /quiz_choice >}}
-{{< quiz_choice isCorrect="false" >}}&nbsp;Other&nbsp;{{< /quiz_choice >}}{{< /quiz_choices >}}
-{{< quiz_solution >}}Explanation
+Which crime type has no observations where time served is less than one month? Recall that crime type #2 is larceny, #3 is drug-related crime, #4 is driving-related crime, and #1 is any other crime.
+
+Exercise 11
+
+&nbsp;Larceny&nbsp;
+
+&nbsp;Drug-related&nbsp;
+
+&nbsp;Driving-related&nbsp;
+
+&nbsp;Other&nbsp;
+
+For which crime does the frequency of 5-6 month prison terms exceed the frequencies of each other term length?
+
+Exercise 12
+
+&nbsp;Larceny&nbsp;
+
+&nbsp;Drug-related&nbsp;
+
+&nbsp;Driving-related&nbsp;
+
+&nbsp;Other&nbsp;
+
+Explanation
 
 This histogram can be generated using the command:
 
-ggplot(data = parole, aes(x = time.served)) + geom\_histogram(binwidth = 1) + facet\_grid(crime ~ .){{< /quiz_solution >}}{{< /quiz_multiple_choice >}}{{< quiz_multiple_choice questionId="Q12_div" >}}{{< quiz_choices >}}{{< quiz_choice isCorrect="false" >}}&nbsp;Larceny&nbsp;{{< /quiz_choice >}}
-{{< quiz_choice isCorrect="true" >}}&nbsp;Drug-related&nbsp;{{< /quiz_choice >}}
-{{< quiz_choice isCorrect="false" >}}&nbsp;Driving-related&nbsp;{{< /quiz_choice >}}
-{{< quiz_choice isCorrect="false" >}}&nbsp;Other&nbsp;{{< /quiz_choice >}}{{< /quiz_choices >}}
-{{< quiz_solution >}}Explanation
+ggplot(data = parole, aes(x = time.served)) + geom\_histogram(binwidth = 1) + facet\_grid(crime ~ .)
 
-This histogram can be generated using the command:
+CheckShow Answer
 
-ggplot(data = parole, aes(x = time.served)) + geom\_histogram(binwidth = 1) + facet\_grid(crime ~ .){{< /quiz_solution >}}{{< /quiz_multiple_choice >}}
-
-Problem 4.4 - Time Served
--------------------------
+## Problem 4.4 - Time Served
 
 Now, instead of faceting the histograms, overlay them. Remember to set the position and alpha parameters so that the histograms are not stacked. Also, make sure to indicate that the fill aesthetic should be "crime".
 
-{{< quiz_multiple_choice questionId="Q13_div" >}}{{< quiz_choices >}}{{< quiz_choice isCorrect="true" >}}&nbsp;With four different groups, it can be hard to tell them apart when they are overlayed. &nbsp;{{< /quiz_choice >}}
-{{< quiz_choice isCorrect="false" >}}&nbsp;ggplot doesn't let us overlay plots with more than two groups.&nbsp;{{< /quiz_choice >}}
-{{< quiz_choice isCorrect="false" >}}&nbsp;Overlaying the plots doesn't allow us to observe which crime type is the most common.&nbsp;{{< /quiz_choice >}}{{< /quiz_choices >}}
-{{< quiz_solution >}}Explanation
+In this case, faceting seems like a better alternative. Why?
+
+Exercise 13
+
+&nbsp;With four different groups, it can be hard to tell them apart when they are overlayed. &nbsp;
+
+&nbsp;ggplot doesn't let us overlay plots with more than two groups.&nbsp;
+
+&nbsp;Overlaying the plots doesn't allow us to observe which crime type is the most common.&nbsp;
+
+Explanation
 
 You can generate this plot with the following command:
 
 ggplot(data=parole, aes(x=time.served, fill=crime)) + geom\_histograph(binwidth=1, position="identity", alpha=0.5)
 
-While overlaying the plots is allowed and lets us observe some attributes of the plots like the most common crime type, it can be hard to tell them apart and if they have similar values it can be hard to read.{{< /quiz_solution >}}{{< /quiz_multiple_choice >}}
+While overlaying the plots is allowed and lets us observe some attributes of the plots like the most common crime type, it can be hard to tell them apart and if they have similar values it can be hard to read.
 
-*   [BackVideo 7: Using Line Charts Instead]({{< baseurl >}}/pages/visualization/the-good-the-bad-and-the-ugly-visualization-recitation-recitation/video-7-using-line-charts-instead)
-*   [ContinueLinear Optimization]({{< baseurl >}}/pages/linear-optimization)
+CheckShow Answer
+
+- [Back: Video 7: Using Line Charts Instead](./resolveuid/5d57bafe1422b8d9a742d6339058ab65)
+- [Continue: Linear Optimization](./resolveuid/daafaa58867c9765f1c4c60a9c0ed426)
