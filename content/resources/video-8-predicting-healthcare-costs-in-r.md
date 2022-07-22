@@ -1,17 +1,19 @@
 ---
 content_type: resource
 description: ''
+end_time: ''
 file: null
 learning_resource_types: []
+license: https://creativecommons.org/licenses/by-nc-sa/4.0/
 ocw_type: ''
 optional_tab_title: ''
 optional_text: ''
 parent_title: '4.3 Keeping an Eye on Healthcare Costs: The D2Hawkeye Story '
 parent_type: CourseSection
-parent_uid: null
 related_resources_text: ''
 resource_index_text: ''
 resourcetype: Video
+start_time: ''
 title: 'Video 8: Predicting Healthcare Costs in R'
 uid: 3f95c5ad-b13c-f1d6-c97b-2ee6e111992a
 video_files:

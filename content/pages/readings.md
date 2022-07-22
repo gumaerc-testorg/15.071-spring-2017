@@ -1,11 +1,14 @@
 ---
 content_type: page
+description: This section lists the readings assigned in the residential version of
+  this course.
 learning_resource_types:
 - Readings
 ocw_type: CourseSection
-parent_uid: null
 title: Readings
 uid: 3da02316-bd16-dd1d-d117-db2d3a5cdf73
+video_metadata:
+  youtube_id: null
 ---
 
 \[AE\] = Dimitris Bertsimas, Allison O'Hair and Bill Pulleyblank, _The Analytics Edge_, Dynamic Ideas, 2016. ISBN: 978-0989910897.
