@@ -2,6 +2,7 @@
 content_type: page
 description: This section details the assignments in the residential version of the
   course.
+draft: true
 learning_resource_types:
 - Assignments
 ocw_type: CourseSection
@@ -10,7 +11,6 @@ uid: 790693dd-03fa-16d8-62fd-02407cfcb455
 video_metadata:
   youtube_id: null
 ---
-
 Individual Work Assignments
 ---------------------------
 
