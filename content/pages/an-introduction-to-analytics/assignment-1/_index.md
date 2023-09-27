@@ -1,6 +1,6 @@
 ---
 content_type: page
-description: ''
+description: Part 4 of Assignment 1.
 draft: false
 learning_resource_types: []
 ocw_type: CourseSection
@@ -18,11 +18,11 @@ Crime is an international concern, but it is documented and handled in very diff
 
 Chicago is the third most populous city in the United States, with a population of over 2.7 million people. The city of Chicago is shown in the map below, with the state of Illinois highlighted in red. 
 
-![Map of the United States with Illinois in red and pointing to the location of Chicago.](./resolveuid/1b011894db06d27c0885ce6c8f1afa60)
+{{< resource uuid="1b011894-db06-d27c-0885-ce6c8f1afa60" >}}
 
 There are two main types of crimes: violent crimes, and property crimes. In this problem, we'll focus on one specific type of property crime, called "motor vehicle theft" (sometimes referred to as grand theft auto). This is the act of stealing, or attempting to steal, a car. In this problem, we'll use some basic data analysis in R to understand the motor vehicle thefts in Chicago. 
 
-Please download the file [mvtWeek1 (CSV)](./resolveuid/123f9aa4885b259db7f3aef5153835de) for this problem (do not open this file in any spreadsheet software before completing this problem because it might change the format of the Date field). Here is a list of descriptions of the variables:
+Please download the file {{% resource_link "123f9aa4-885b-259d-b7f3-aef5153835de" "mvtWeek1 (CSV)" %}} for this problem (do not open this file in any spreadsheet software before completing this problem because it might change the format of the Date field). Here is a list of descriptions of the variables:
 
  
 
@@ -46,7 +46,7 @@ How many rows of data (observations) are in this dataset?
 
 Exercise 1
 
-&nbsp;Numerical Response&nbsp;
+ Numerical Response 
 
  
 
@@ -62,7 +62,7 @@ How many variables are in this dataset?
 
 Exercise 2
 
-&nbsp;Numerical Response&nbsp;
+ Numerical Response 
 
  
 
@@ -78,7 +78,7 @@ Using the "max" function, what is the maximum value of the variable "ID"?
 
 Exercise 3
 
-&nbsp;Numerical Response&nbsp;
+ Numerical Response 
 
  
 
@@ -94,7 +94,7 @@ What is the minimum value of the variable "Beat"?
 
 Exercise 4
 
-&nbsp;Numerical Response&nbsp;
+ Numerical Response 
 
  
 
@@ -110,7 +110,7 @@ How many observations have value TRUE in the Arrest variable (this is the number
 
 Exercise 5
 
-&nbsp;Numerical Response&nbsp;
+ Numerical Response 
 
  
 
@@ -126,7 +126,7 @@ How many observations have a LocationDescription value of ALLEY?
 
 Exercise 6
 
-&nbsp;Numerical Response&nbsp;
+ Numerical Response 
 
  
 
@@ -144,13 +144,13 @@ In what format are the entries in the variable Date?
 
 Exercise 7
 
-&nbsp;Month/Day/Year Hour:Minute&nbsp;
+ Month/Day/Year Hour:Minute 
 
-&nbsp;Day/Month/Year Hour:Minute&nbsp;
+ Day/Month/Year Hour:Minute 
 
-&nbsp;Hour:Minute Month/Day/Year&nbsp;
+ Hour:Minute Month/Day/Year 
 
-&nbsp;Hour:Minute Day/Month/Year&nbsp;
+ Hour:Minute Day/Month/Year 
 
 Explanation
 
@@ -170,7 +170,7 @@ What is the month and year of the median date in our dataset? Enter your answer 
 
 Exercise 8
 
-&nbsp;Text Response&nbsp; Answer:May 2006
+ Text Response  Answer:May 2006
 
 Explanation
 
@@ -196,7 +196,7 @@ In which month did the fewest motor vehicle thefts occur?
 
 Exercise 9
 
-&nbsp;JanuaryFebruaryMarchAprilMayJuneJulyAugustSeptemberOctoberNovemberDecember February&nbsp;
+ JanuaryFebruaryMarchAprilMayJuneJulyAugustSeptemberOctoberNovemberDecember February 
 
 Explanation
 
@@ -210,7 +210,7 @@ On which weekday did the most motor vehicle thefts occur?
 
 Exercise 10
 
-&nbsp;MondayTuesdayWednesdayThursdayFridaySaturdaySunday Friday&nbsp;
+ MondayTuesdayWednesdayThursdayFridaySaturdaySunday Friday 
 
 Explanation
 
@@ -224,7 +224,7 @@ Each observation in the dataset represents a motor vehicle theft, and the Arrest
 
 Exercise 11
 
-&nbsp;JanuaryFebruaryMarchAprilMayJuneJulyAugustSeptemberOctoberNovemberDecember January&nbsp;
+ JanuaryFebruaryMarchAprilMayJuneJulyAugustSeptemberOctoberNovemberDecember January 
 
 Explanation
 
@@ -246,9 +246,9 @@ In general, does it look like crime increases or decreases from 2002 - 2012?
 
 Exercise 12
 
-&nbsp;Increases&nbsp;
+ Increases 
 
-&nbsp;Decreases&nbsp;
+ Decreases 
 
 Explanation
 
@@ -258,9 +258,9 @@ In general, does it look like crime increases or decreases from 2005 - 2008?
 
 Exercise 13
 
-&nbsp;Increases&nbsp;
+ Increases 
 
-&nbsp;Decreases&nbsp;
+ Decreases 
 
 Explanation
 
@@ -270,9 +270,9 @@ In general, does it look like crime increases or decreases from 2009 - 2011?
 
 Exercise 14
 
-&nbsp;Increases&nbsp;
+ Increases 
 
-&nbsp;Decreases&nbsp;
+ Decreases 
 
 Explanation
 
@@ -290,9 +290,9 @@ Does it look like there were more crimes for which arrests were made in the firs
 
 Exercise 15
 
-&nbsp;First half&nbsp;
+ First half 
 
-&nbsp;Second half&nbsp;
+ Second half 
 
 Explanation
 
@@ -310,7 +310,7 @@ Note: in this question and many others in the course, we are asking for an answe
 
 Exercise 16
 
-&nbsp;Numerical Response&nbsp;
+ Numerical Response 
 
  
 
@@ -326,7 +326,7 @@ For what proportion of motor vehicle thefts in 2007 was an arrest made?
 
 Exercise 17
 
-&nbsp;Numerical Response&nbsp;
+ Numerical Response 
 
  
 
@@ -342,7 +342,7 @@ For what proportion of motor vehicle thefts in 2012 was an arrest made?
 
 Exercise 18
 
-&nbsp;Numerical Response&nbsp;
+ Numerical Response 
 
  
 
@@ -366,25 +366,25 @@ Which locations are the top five locations for motor vehicle thefts, excluding t
 
 Exercise 19
 
-&nbsp;Bank&nbsp;
+ Bank 
 
-&nbsp;Gas Station&nbsp;
+ Gas Station 
 
-&nbsp;Hotel/Motel&nbsp;
+ Hotel/Motel 
 
-&nbsp;Street&nbsp;
+ Street 
 
-&nbsp;Car Wash&nbsp;
+ Car Wash 
 
-&nbsp;Restaurant&nbsp;
+ Restaurant 
 
-&nbsp;Parking Lot/Garage (Non-Residential)&nbsp;
+ Parking Lot/Garage (Non-Residential) 
 
-&nbsp;Alley&nbsp;
+ Alley 
 
-&nbsp;Driveway (Residential)&nbsp;
+ Driveway (Residential) 
 
-&nbsp;Vacant Lot/Land&nbsp;
+ Vacant Lot/Land 
 
  
 
@@ -404,7 +404,7 @@ How many observations are in Top5?
 
 Exercise 20
 
-&nbsp;Numerical Response&nbsp;
+ Numerical Response 
 
  
 
@@ -438,7 +438,7 @@ One of the locations has a much higher arrest rate than the other locations. Whi
 
 Exercise 21
 
-&nbsp;Text Response&nbsp; Answer:Gas Station
+ Text Response  Answer:Gas Station
 
 Explanation
 
@@ -452,7 +452,7 @@ On which day of the week do the most motor vehicle thefts at gas stations happen
 
 Exercise 22
 
-&nbsp;MondayTuesdayWednesdayThursdayFridaySaturdaySunday Saturday&nbsp;
+ MondayTuesdayWednesdayThursdayFridaySaturdaySunday Saturday 
 
 Explanation
 
@@ -466,7 +466,7 @@ On which day of the week do the fewest motor vehicle thefts in residential drive
 
 Exercise 23
 
-&nbsp;MondayTuesdayWednesdayThursdayFridaySaturdaySunday Saturday&nbsp;
+ MondayTuesdayWednesdayThursdayFridaySaturdaySunday Saturday 
 
 Explanation
 
