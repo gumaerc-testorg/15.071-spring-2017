@@ -52,5 +52,5 @@ As we see here, the random component of the random forest method can change the 
 
 CheckShow Answer
 
-- [Back: Video 5: Random Forests](./resolveuid/d818f0620c7e3cee943507c440503537)
-- [Continue: Video 6: Cross-Validation](./resolveuid/aed8634b040dd1af7abb68e999cb9c43)
+- {{% resource_link "d818f062-0c7e-3cee-9435-07c440503537" "Back: Video 5: Random Forests" %}}
+- {{% resource_link "aed8634b-040d-d1af-7abb-68e999cb9c43" "Continue: Video 6: Cross-Validation" %}}

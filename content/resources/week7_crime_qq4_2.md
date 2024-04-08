@@ -2,6 +2,7 @@
 content_type: resource
 description: 'Image: '
 file: /courses/15-071-the-analytics-edge-spring-2017/be57802c07c0cabbef69146663aaec19_Week7_Crime_QQ4_2.png
+file_size: 38570
 file_type: image/png
 image_metadata:
   caption: ''

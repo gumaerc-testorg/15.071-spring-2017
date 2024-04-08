@@ -14,7 +14,7 @@ video_metadata:
 ---
 ## Quick Question
 
-In R, use the dataset [wine (CSV)](./resolveuid/314267a9b7ddb86e315b90440aa4f2ad) to create a linear regression model to predict Price using HarvestRain and WinterRain as independent variables. Using the summary output of this model, answer the following questions:
+In R, use the dataset {{% resource_link "314267a9-b7dd-b86e-315b-90440aa4f2ad" "wine (CSV)" %}} to create a linear regression model to predict Price using HarvestRain and WinterRain as independent variables. Using the summary output of this model, answer the following questions:
 
 What is the "Multiple R-squared" value of your model?
 
@@ -50,5 +50,5 @@ Then, look at the output of summary(modelQQ4). The Multiple R-squared is listed 
 
 CheckShow Answer
 
-- [Back: Video 4: Linear Regression in R](./resolveuid/9f456e81561bed0d7c0a516cd7739d20)
-- [Continue: Video 5: Understanding the Model](./resolveuid/6111ddea9e0270bea0978feb66c8bf60)
+- {{% resource_link "9f456e81-561b-ed0d-7c0a-516cd7739d20" "Back: Video 4: Linear Regression in R" %}}
+- {{% resource_link "6111ddea-9e02-70be-a097-8feb66c8bf60" "Continue: Video 5: Understanding the Model" %}}

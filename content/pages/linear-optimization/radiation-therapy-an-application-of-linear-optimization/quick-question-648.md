@@ -34,5 +34,5 @@ CheckShow Answer
 
  
 
-- [Back: Video 4: A Head and Neck Case](./resolveuid/2fe86f88782c20080bd1b70037ba3db3)
-- [Continue: Video 5: Sensitivity Analysis](./resolveuid/a10ced6c1f0f3ddcaa30efb14db63365)
+- {{% resource_link "2fe86f88-782c-2008-0bd1-b70037ba3db3" "Back: Video 4: A Head and Neck Case" %}}
+- {{% resource_link "a10ced6c-1f0f-3ddc-aa30-efb14db63365" "Continue: Video 5: Sensitivity Analysis" %}}

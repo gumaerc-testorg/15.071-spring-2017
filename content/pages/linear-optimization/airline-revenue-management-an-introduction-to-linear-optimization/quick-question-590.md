@@ -42,5 +42,5 @@ CheckShow Answer
 
  
 
-- [Back: Video 3: The Problem Formulation](./resolveuid/e9725d1bf88eacdd5ae8cd5e31dbe7cc)
-- [Continue: Video 4: Solving the Problem](./resolveuid/86a033cce142d448a8bb9112a73f89db)
+- {{% resource_link "e9725d1b-f88e-acdd-5ae8-cd5e31dbe7cc" "Back: Video 3: The Problem Formulation" %}}
+- {{% resource_link "86a033cc-e142-d448-a8bb-9112a73f89db" "Continue: Video 4: Solving the Problem" %}}

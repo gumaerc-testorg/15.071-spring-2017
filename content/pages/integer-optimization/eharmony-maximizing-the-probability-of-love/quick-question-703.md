@@ -54,5 +54,5 @@ CheckShow Answer
 
  
 
-- [Back: Video 2: Using Integer Optimization](./resolveuid/53b49e57bb91291ac131759296912fa6)
-- [Continue: Video 3: Predicting Compatibility Scores](./resolveuid/4ee865af69155a39e352d98aad5670d0)
+- {{% resource_link "53b49e57-bb91-291a-c131-759296912fa6" "Back: Video 2: Using Integer Optimization" %}}
+- {{% resource_link "4ee865af-6915-5a39-e352-d98aad5670d0" "Continue: Video 3: Predicting Compatibility Scores" %}}

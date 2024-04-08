@@ -94,5 +94,5 @@ Since one of the correlations is positive and the other is negative, this means 
 
 CheckShow Answer
 
-- [Back: Video 5: Winning the World Series](./resolveuid/a7a0fe58cf53ad2e8a4800f4efacbaed)
-- [Continue: Video 6: The Analytics Edge in Sports](./resolveuid/9694655b13312f40a587b03a675d6122)
+- {{% resource_link "a7a0fe58-cf53-ad2e-8a48-00f4efacbaed" "Back: Video 5: Winning the World Series" %}}
+- {{% resource_link "9694655b-1331-2f40-a587-b03a675d6122" "Continue: Video 6: The Analytics Edge in Sports" %}}

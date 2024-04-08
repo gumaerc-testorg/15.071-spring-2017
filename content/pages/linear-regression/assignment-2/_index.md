@@ -18,20 +18,20 @@ There have been many studies documenting that the average global temperature has
 
 In this problem, we will attempt to study the relationship between average global temperature and several other factors.
 
-The file [climate\_change (CSV)](./resolveuid/3b53e75d1ddb97bd98f40ae5bbee2475) contains climate data from May 1983 to December 2008. The available variables include:
+The file {{% resource_link "3b53e75d-1ddb-97bd-98f4-0ae5bbee2475" "climate\_change (CSV)" %}} contains climate data from May 1983 to December 2008. The available variables include:
 
  
 
 - *Year*: the observation year.
 - *Month*: the observation month.
-- *Temp*: the difference in degrees Celsius between the average global temperature in that period and a reference value. This data comes from the [Climatic Research Unit at the University of East Anglia](https://sites.uea.ac.uk/cru/).
-- *CO2*, *N2O*, *CH4*, *CFC.11*, *CFC.12*: atmospheric concentrations of carbon dioxide (CO2), nitrous oxide (N2O), methane  (CH4), trichlorofluoromethane (CCl3F; commonly referred to as CFC-11) and dichlorodifluoromethane (CCl2F2; commonly referred to as CFC-12), respectively. This data comes from the [ESRL/NOAA Global Monitoring Division](http://www.esrl.noaa.gov/gmd/ccgg/data-products.html).
+- *Temp*: the difference in degrees Celsius between the average global temperature in that period and a reference value. This data comes from the {{% resource_link "65051768-67f7-4303-ad44-c7e689ffed27" "Climatic Research Unit at the University of East Anglia" %}}.
+- *CO2*, *N2O*, *CH4*, *CFC.11*, *CFC.12*: atmospheric concentrations of carbon dioxide (CO2), nitrous oxide (N2O), methane  (CH4), trichlorofluoromethane (CCl3F; commonly referred to as CFC-11) and dichlorodifluoromethane (CCl2F2; commonly referred to as CFC-12), respectively. This data comes from the {{% resource_link "784a3131-f5ce-4858-ae53-3f39d7ac9c94" "ESRL/NOAA Global Monitoring Division" %}}.
 - CO2, N2O and CH4 are expressed in ppmv (parts per million by volume  -- i.e., 397 ppmv of CO2 means that CO2 constitutes 397 millionths of the total volume of the atmosphere)
 - CFC.11 and CFC.12 are expressed in ppbv (parts per billion by volume). 
-- *Aerosols*: the mean stratospheric aerosol optical depth at 550 nm. This variable is linked to volcanoes, as volcanic eruptions result in new particles being added to the atmosphere, which affect how much of the sun's energy is reflected back into space. This data is from the [Godard Institute for Space Studies at NASA](http://data.giss.nasa.gov/modelforce/strataer/).
-- *TSI*: the total solar irradiance (TSI) in W/m2 (the rate at which the sun's energy is deposited per unit area). Due to sunspots and other solar phenomena, the amount of energy that is given off by the sun varies substantially with time. This data is from the [SOLARIS-HEPPA project website](http://solarisheppa.geomar.de/solarisheppa/cmip5).  
+- *Aerosols*: the mean stratospheric aerosol optical depth at 550 nm. This variable is linked to volcanoes, as volcanic eruptions result in new particles being added to the atmosphere, which affect how much of the sun's energy is reflected back into space. This data is from the {{% resource_link "6a49ab3d-6a96-4baa-ac69-06cefbe16064" "Godard Institute for Space Studies at NASA" %}}.
+- *TSI*: the total solar irradiance (TSI) in W/m2 (the rate at which the sun's energy is deposited per unit area). Due to sunspots and other solar phenomena, the amount of energy that is given off by the sun varies substantially with time. This data is from the {{% resource_link "3272782b-7ad6-4499-b37b-5cef02e969ad" "SOLARIS-HEPPA project website" %}}.  
      
-- *MEI*: multivariate El Nino Southern Oscillation index (MEI), a measure of the strength of the [El Nino/La Nina-Southern Oscillation](http://en.wikipedia.org/wiki/El_nino) (a weather effect in the Pacific Ocean that affects global temperatures). This data comes from the [ESRL/NOAA Physical Sciences Division](https://www.esrl.noaa.gov/psd/).
+- *MEI*: multivariate El Nino Southern Oscillation index (MEI), a measure of the strength of the {{% resource_link "7fd8d296-d1d6-462a-a732-8d3fc45898fb" "El Nino/La Nina-Southern Oscillation" %}} (a weather effect in the Pacific Ocean that affects global temperatures). This data comes from the {{% resource_link "87caf0e8-660a-43c7-9537-ebc34ebad075" "ESRL/NOAA Physical Sciences Division" %}}.
 
 ## Problem 1.1 - Creating Our First Model
 
@@ -199,5 +199,5 @@ We have observed that, for this problem, when we remove many variables the sign 
 
 CheckShow Answer
 
-- [Back: Video 4: Making Predictions](./resolveuid/4a72056c6bbe0c01489fb7068637be07)
-- [Continue: Reading Test Scores](./resolveuid/f590aa024205ae291d855ec56a16b4a4)
+- {{% resource_link "4a72056c-6bbe-0c01-489f-b7068637be07" "Back: Video 4: Making Predictions" %}}
+- {{% resource_link "f590aa02-4205-ae29-1d85-5ec56a16b4a4" "Continue: Reading Test Scores" %}}

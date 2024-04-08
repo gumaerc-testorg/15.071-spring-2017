@@ -70,5 +70,5 @@ CheckShow Answer
 
  
 
-- [Back: Video 3: Splitting and Predictions](./resolveuid/ca1564b0917866a3a00e801c8c9fdbbc)
-- [Continue: Video 4: CART in R](./resolveuid/a0af0b83fff43d634dfe02e15106f92d)
+- {{% resource_link "ca1564b0-9178-66a3-a00e-801c8c9fdbbc" "Back: Video 3: Splitting and Predictions" %}}
+- {{% resource_link "a0af0b83-fff4-3d63-4dfe-02e15106f92d" "Continue: Video 4: CART in R" %}}

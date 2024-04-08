@@ -14,7 +14,7 @@ video_metadata:
 ---
 ## Video 4: Basic Scatterplots Using ggplot
 
-In the rest of this lecture, we'll be using the data file {{% resource_link "00947740-0497-16b3-6f8b-a103a7fb03c4" "WHO (CSV)" %}}. Please download this file to your computer, and save it to a location that you will remember. This data comes from the [Global Health Observatory Data Repository](http://apps.who.int/gho/data/node.main). 
+In the rest of this lecture, we'll be using the data file {{% resource_link "00947740-0497-16b3-6f8b-a103a7fb03c4" "WHO (CSV)" %}}. Please download this file to your computer, and save it to a location that you will remember. This data comes from the {{% resource_link "4e54b95b-e355-438a-9bd5-f8dc1ef5d9c8" "Global Health Observatory Data Repository" %}}. 
 
 An R script file with all of the commands used in this lecture can be downloaded here: {{% resource_link "27fb60c9-5b98-51db-4983-1751f9ccf614" "Resource Unit7_WHO (R)" %}}.
 
@@ -30,7 +30,7 @@ All of the available shapes are described in the following image:
 
 {{< resource uuid="6a88ce72-b6c9-709c-c7bd-95550e3cd349" >}}
 
-This image comes from [Cookbook for R](http://www.cookbook-r.com/Graphs/Shapes_and_line_types/). License: CC BY-SA. This content is excluded from our Creative Commons license. For more information, see [https://ocw.mit.edu/help/faq-fair-use/](/help/faq-fair-use/).
+This image comes from {{% resource_link "e7ee713b-631d-47fd-b4c0-0f18e615ccc7" "Cookbook for R" %}}. License: CC BY-SA. This content is excluded from our Creative Commons license. For more information, see [https://ocw.mit.edu/help/faq-fair-use/](/help/faq-fair-use/).
 
 The number 0 corresponds to an empty square, the number 6 corresponds to an upside down triangle, etc.
 

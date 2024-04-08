@@ -2,6 +2,7 @@
 content_type: resource
 description: 'Resource:'
 file: /courses/15-071-the-analytics-edge-spring-2017/271485a3c50161ab6c401dc835409ef7_AirlineRM_Connecting.ods
+file_size: 23434
 file_type: application/vnd.oasis.opendocument.spreadsheet
 learning_resource_types: []
 license: https://creativecommons.org/licenses/by-nc-sa/4.0/

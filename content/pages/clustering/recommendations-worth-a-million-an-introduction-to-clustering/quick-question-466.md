@@ -56,5 +56,5 @@ CheckShow Answer
 
  
 
-- [Back: Video 6: Getting the Data](./resolveuid/97456de3089198f1c51aa74e3d11930c)
-- [Continue: Video 7: Hierarchical Clustering in R](./resolveuid/c0ef063dc722b998a530922a135bd19e)
+- {{% resource_link "97456de3-0891-98f1-c51a-a74e3d11930c" "Back: Video 6: Getting the Data" %}}
+- {{% resource_link "c0ef063d-c722-b998-a530-922a135bd19e" "Continue: Video 7: Hierarchical Clustering in R" %}}

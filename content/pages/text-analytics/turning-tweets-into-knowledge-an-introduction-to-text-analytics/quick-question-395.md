@@ -52,5 +52,5 @@ Is this worse or better than the baseline model accuracy of 84.5%? Think about t
 
 CheckShow Answer
 
-- [Back: Video 7: Predicting Sentiment](./resolveuid/6faa3dc62c17bf81844bb5d994e997d9)
-- [Continue: Video 8: Conclusion](./resolveuid/f3a415ffeba9ca2d622f58bcb8aea03c)
+- {{% resource_link "6faa3dc6-2c17-bf81-844b-b5d994e997d9" "Back: Video 7: Predicting Sentiment" %}}
+- {{% resource_link "f3a415ff-eba9-ca2d-622f-58bcb8aea03c" "Continue: Video 8: Conclusion" %}}

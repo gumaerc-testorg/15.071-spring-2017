@@ -34,5 +34,5 @@ CheckShow Answer
 
  
 
-- [Back: Video 6: Sensitivity Analysis](./resolveuid/f20e206f20f79b3c410bc053183afdbb)
-- [Continue: Video 7: Connecting Flights](./resolveuid/80f150bc38fd0f8475f7ccfe876f7744)
+- {{% resource_link "f20e206f-20f7-9b3c-410b-c053183afdbb" "Back: Video 6: Sensitivity Analysis" %}}
+- {{% resource_link "80f150bc-38fd-0f84-75f7-ccfe876f7744" "Continue: Video 7: Connecting Flights" %}}

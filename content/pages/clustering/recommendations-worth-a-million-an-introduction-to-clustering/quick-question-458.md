@@ -42,5 +42,5 @@ CheckShow Answer
 
  
 
-- [Back: Video 5: Hierarchical Clustering](./resolveuid/9b460c896936605488ea504e144b78ff)
-- [Continue: Video 6: Getting the Data](./resolveuid/97456de3089198f1c51aa74e3d11930c)
+- {{% resource_link "9b460c89-6936-6054-88ea-504e144b78ff" "Back: Video 5: Hierarchical Clustering" %}}
+- {{% resource_link "97456de3-0891-98f1-c51a-a74e3d11930c" "Continue: Video 6: Getting the Data" %}}

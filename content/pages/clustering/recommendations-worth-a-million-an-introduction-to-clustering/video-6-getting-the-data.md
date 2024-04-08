@@ -14,7 +14,7 @@ video_metadata:
 ---
 ## Video 6: Getting the Data
 
-In this video, we'll be downloading our dataset from the MovieLens website. Please open the following link in a new window or tab of your browser to access the data: [http://files.grouplens.org/datasets/movielens/ml-100k/u.item](http://files.grouplens.org/datasets/movielens/ml-100k/u.item).
+In this video, we'll be downloading our dataset from the MovieLens website. Please open the following link in a new window or tab of your browser to access the data: {{% resource_link "7a18eeb2-5f5f-4467-a0b0-0b270c3adf42" "http://files.grouplens.org/datasets/movielens/ml-100k/u.item" %}}.
 
 This video will show you how to load the data into R. 
 

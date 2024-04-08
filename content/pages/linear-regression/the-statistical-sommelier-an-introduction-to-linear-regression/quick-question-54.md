@@ -22,7 +22,7 @@ The following figure shows three data points and the best fit line
 
 The x-coordinate, or "x", is our independent variable and the y-coordinate, or "y", is our dependent variable.
 
-![Figure showing three data points and the best fit line.](./resolveuid/0c812c318c8939543d901b0f954da36a)
+{{< resource uuid="0c812c31-8c89-3954-3d90-1b0f954da36a" >}}
 
 Please answer the following questions using this figure.
 
@@ -92,5 +92,5 @@ R² = 1 - 18/24 = 0.25.
 
 CheckShow Answer
 
-- [Back: Video 2: One-Variable Linear Regression](./resolveuid/1f0b61bba29b5ee75d265ed940cc2d1d)
-- [Continue: Video 3: Multiple Linear Regression](./resolveuid/505bba75964b7b2c74d8ebcee23c8259)
+- {{% resource_link "1f0b61bb-a29b-5ee7-5d26-5ed940cc2d1d" "Back: Video 2: One-Variable Linear Regression" %}}
+- {{% resource_link "505bba75-964b-7b2c-74d8-ebcee23c8259" "Continue: Video 3: Multiple Linear Regression" %}}

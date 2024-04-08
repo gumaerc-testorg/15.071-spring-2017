@@ -14,7 +14,7 @@ video_metadata:
 ---
 ## Even' Star Organic Farm Revisited
 
-Last week in the "Even' Star Organic Farm" optional homework problem, we formulated and solved the problem faced by Brett Grohsgal, the founder of the organic farm in southern Maryland. This week, we'll use integer optimization to improve the formulation and model some new decisions faced by Brett. We'll be using the spreadsheet [EvenStarFarmRevisited (ODS)](./resolveuid/6cd223a14aec5eb0c21e45ff237283bb) for LibreOffice or OpenOffice, and [EvenStarFarmRevisited (XLSX)](./resolveuid/040348f2170d8719fb1874e9a3e484ce) for Microsoft Excel.
+Last week in the "Even' Star Organic Farm" optional homework problem, we formulated and solved the problem faced by Brett Grohsgal, the founder of the organic farm in southern Maryland. This week, we'll use integer optimization to improve the formulation and model some new decisions faced by Brett. We'll be using the spreadsheet {{% resource_link "6cd223a1-4aec-5eb0-c21e-45ff237283bb" "EvenStarFarmRevisited (ODS)" %}} for LibreOffice or OpenOffice, and {{% resource_link "040348f2-170d-8719-fb18-74e9a3e484ce" "EvenStarFarmRevisited (XLSX)" %}} for Microsoft Excel.
 
  
 
@@ -254,7 +254,7 @@ In many situations, the decision variables should take integer values, but we of
 
 CheckShow Answer
 
-Acknowledgements: This problem is based on the case study "[Introducing Integer Modeling with Excel Solver](https://pubsonline.informs.org/doi/10.1287/ited.7.1.88)" by Dessislava Pachamanova, *INFORMS Transactions on Education* 7(1), p.88-98, 2006.
+Acknowledgements: This problem is based on the case study "{{% resource_link "810a0506-cd88-4787-a2c4-33e1595069aa" "Introducing Integer Modeling with Excel Solver" %}}" by Dessislava Pachamanova, *INFORMS Transactions on Education* 7(1), p.88-98, 2006.
 
-- [Back: Video 4: The Solution](./resolveuid/6e8bdbce3ea9e6440e2b66d90a657d47)
-- [Continue: Gerrymandering New Mexico](./resolveuid/1ab3f4def0507a6b6327b8e7dfa4fb69)
+- {{% resource_link "6e8bdbce-3ea9-e644-0e2b-66d90a657d47" "Back: Video 4: The Solution" %}}
+- {{% resource_link "1ab3f4de-f050-7a6b-6327-b8e7dfa4fb69" "Continue: Gerrymandering New Mexico" %}}

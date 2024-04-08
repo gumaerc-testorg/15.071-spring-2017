@@ -2,6 +2,7 @@
 content_type: resource
 description: 'Resource:'
 file: /courses/15-071-the-analytics-edge-spring-2017/bcb87bd6e9ec8d828a362298d36363f5_stopwords.txt
+file_size: 1483
 file_type: text/plain
 learning_resource_types:
 - Assignments

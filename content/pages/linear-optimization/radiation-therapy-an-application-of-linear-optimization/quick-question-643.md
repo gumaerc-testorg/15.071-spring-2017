@@ -32,5 +32,5 @@ CheckShow Answer
 
  
 
-- [Back: Video 3: Solving the Problem](./resolveuid/45f1617526496ba1fed2d4528a0cc423)
-- [Continue: Video 4: A Head and Neck Case](./resolveuid/2fe86f88782c20080bd1b70037ba3db3)
+- {{% resource_link "45f16175-2649-6ba1-fed2-d4528a0cc423" "Back: Video 3: Solving the Problem" %}}
+- {{% resource_link "2fe86f88-782c-2008-0bd1-b70037ba3db3" "Continue: Video 4: A Head and Neck Case" %}}

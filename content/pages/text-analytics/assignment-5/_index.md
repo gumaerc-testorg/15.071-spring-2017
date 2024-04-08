@@ -29,7 +29,7 @@ The dataset contains just two fields:
 
 ## Problem 1.1 - Loading the Dataset
 
-Begin by loading the dataset [emails (CSV - 8.5MB)](./resolveuid/67f7be241f1b459d7fdb8e9031384338) into a data frame called emails (don't open the file with Excel; import into R directly to avoid errors). Remember to pass the stringsAsFactors=FALSE option when loading the data.
+Begin by loading the dataset {{% resource_link "67f7be24-1f1b-459d-7fdb-8e9031384338" "emails (CSV - 8.5MB)" %}} into a data frame called emails (don't open the file with Excel; import into R directly to avoid errors). Remember to pass the stringsAsFactors=FALSE option when loading the data.
 
 How many emails are in the dataset?
 
@@ -127,7 +127,7 @@ Follow the standard steps to build and pre-process the corpus:
 
 6) Build a document term matrix from the corpus, called dtm.
 
-If the code length(stopwords("english")) does not return 174 for you, then please run the line of code in [stopwords (TXT) file](./resolveuid/bcb87bd6e9ec8d828a362298d36363f5), which will store the standard stop words in a variable called sw. When removing stop words, use tm\_map(corpus, removeWords, sw) instead of tm\_map(corpus, removeWords, stopwords("english")).
+If the code length(stopwords("english")) does not return 174 for you, then please run the line of code in {{% resource_link "bcb87bd6-e9ec-8d82-8a36-2298d36363f5" "stopwords (TXT) file" %}}, which will store the standard stop words in a variable called sw. When removing stop words, use tm\_map(corpus, removeWords, sw) instead of tm\_map(corpus, removeWords, stopwords("english")).
 
 How many terms are in dtm?
 
@@ -441,5 +441,5 @@ You may note that we did not ask you to fit a logistic regression model to pred
 
 This warning indicates that R's logistic regression solution procedure has failed.
 
-- [Back: Video 8: Predictive Coding Today](./resolveuid/452a514d74e9b441d73ae42c18939bda)
-- [Continue: Detecting Vandalism on Wikipedia](./resolveuid/2e4c9dd96d084e8fd1d8111a5affc5a4)
+- {{% resource_link "452a514d-74e9-b441-d73a-e42c18939bda" "Back: Video 8: Predictive Coding Today" %}}
+- {{% resource_link "2e4c9dd9-6d08-4e8f-d1d8-111a5affc5a4" "Continue: Detecting Vandalism on Wikipedia" %}}

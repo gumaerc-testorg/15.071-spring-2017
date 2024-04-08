@@ -15,9 +15,9 @@ video_metadata:
 ---
 ## Stock Dynamics
 
-A stock market is where buyers and sellers trade shares of a company, and is one of the most popular ways for individuals and companies to invest money. The size of the world stock market  is now estimated to be in the trillions. The largest stock market in the world is the New York Stock Exchange (NYSE), located in New York City. About 2,800 companies are listed on the NSYE. In this problem, we'll look at the monthly stock prices of five of these companies: [IBM](http://www.ibm.com/), [General Electric (GE)](http://www.ge.com/), [Procter and Gamble](http://www.pg.com/), [Coca Cola](http://www.coca-cola.com), and [Boeing](http://www.boeing.com). The data used in this problem comes from [Infochimps](http://infochimps.org/).
+A stock market is where buyers and sellers trade shares of a company, and is one of the most popular ways for individuals and companies to invest money. The size of the world stock market  is now estimated to be in the trillions. The largest stock market in the world is the New York Stock Exchange (NYSE), located in New York City. About 2,800 companies are listed on the NSYE. In this problem, we'll look at the monthly stock prices of five of these companies: {{% resource_link "1596e21c-71f0-4993-aba7-60adec95b99d" "IBM" %}}, {{% resource_link "6c4f2349-556f-43f2-a184-b6e7addd9ebd" "General Electric (GE)" %}}, {{% resource_link "9a451065-93ab-4fcd-a9ce-3a80d419c35c" "Procter and Gamble" %}}, {{% resource_link "cc3b59bf-80a6-4cb5-a95b-c7af8767c4e2" "Coca Cola" %}}, and {{% resource_link "9b38940b-55de-45f4-be2c-7f69992d4980" "Boeing" %}}. The data used in this problem comes from {{% resource_link "8a7dcace-a2cc-4a14-86b7-002a3cf9dce6" "Infochimps" %}}.
 
-Download and read the following files into R, using the read.csv function: [IBMStock (CSV)](./resolveuid/08d083a51725af8b9880dca1198098a7), [GEStock (CSV)](./resolveuid/0e654677e28d932d10fcd75f3884636d), [ProcterGambleStock (CSV)](./resolveuid/5b4baa711c24d26117a729b442529ba5), [CocaColaStock (CSV)](./resolveuid/4e0afebb6ca9c80d80e630e8e9872585), and [BoeingStock (CSV)](./resolveuid/550f7976b38aea3b061072d505e139f1). (Do not open these files in any spreadsheet software before completing this problem because it might change the format of the Date field.)
+Download and read the following files into R, using the read.csv function: {{% resource_link "08d083a5-1725-af8b-9880-dca1198098a7" "IBMStock (CSV)" %}}, {{% resource_link "0e654677-e28d-932d-10fc-d75f3884636d" "GEStock (CSV)" %}}, {{% resource_link "5b4baa71-1c24-d261-17a7-29b442529ba5" "ProcterGambleStock (CSV)" %}}, {{% resource_link "4e0afebb-6ca9-c80d-80e6-30e8e9872585" "CocaColaStock (CSV)" %}}, and {{% resource_link "550f7976-b38a-ea3b-0610-72d505e139f1" "BoeingStock (CSV)" %}}. (Do not open these files in any spreadsheet software before completing this problem because it might change the format of the Date field.)
 
 Call the data frames "IBM", "GE", "ProcterGamble", "CocaCola", and "Boeing", respectively. Each data frame has two variables, described as follows:
 
@@ -516,5 +516,5 @@ CheckShow Answer
 
 After seeing these trends, we are ready to buy stock in certain months and sell it in others! But, we should be careful, because one really good or really bad year could skew the average to show a trend that is not really there in general.
 
-- [Back: Assignment 1](./resolveuid/0af41c2fca6884fab36c0a31155319b9)
-- [Continue: Demographics and Employment in the United States](./resolveuid/d628845fdc26781bfce4c58e39e14746)
+- {{% resource_link "0af41c2f-ca68-84fa-b36c-0a31155319b9" "Back: Assignment 1" %}}
+- {{% resource_link "d628845f-dc26-781b-fce4-c58e39e14746" "Continue: Demographics and Employment in the United States" %}}

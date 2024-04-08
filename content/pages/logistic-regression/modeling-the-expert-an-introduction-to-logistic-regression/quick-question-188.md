@@ -104,5 +104,5 @@ We predict the outcome 1 less often in Confusion Matrix #2. This means we must h
 
 CheckShow Answer
 
-- [Back: Video 5: Thresholding](./resolveuid/7bf86a6c2bb6629ed20e4dd216833197)
-- [Continue: Video 6: ROC Curves](./resolveuid/f62162651257bdbe48268a5e5b311096)
+- {{% resource_link "7bf86a6c-2bb6-629e-d20e-4dd216833197" "Back: Video 5: Thresholding" %}}
+- {{% resource_link "f6216265-1257-bdbe-4826-8a5e5b311096" "Continue: Video 6: ROC Curves" %}}

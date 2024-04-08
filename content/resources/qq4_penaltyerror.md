@@ -2,6 +2,7 @@
 content_type: resource
 description: 'Image: '
 file: /courses/15-071-the-analytics-edge-spring-2017/2d20a1e450f8bd62006bf8e20477eb64_QQ4_PenaltyError.png
+file_size: 51060
 file_type: image/png
 image_metadata:
   caption: ''

@@ -80,5 +80,5 @@ CheckShow Answer
 
  
 
-- [Back: Video 4: Logistic Regression in R](./resolveuid/8fc17cbb03cdce23b5880c21e7dc33e8)
-- [Continue: Video 5: Thresholding](./resolveuid/7bf86a6c2bb6629ed20e4dd216833197)
+- {{% resource_link "8fc17cbb-03cd-ce23-b588-0c21e7dc33e8" "Back: Video 4: Logistic Regression in R" %}}
+- {{% resource_link "7bf86a6c-2bb6-629e-d20e-4dd216833197" "Continue: Video 5: Thresholding" %}}

@@ -46,5 +46,5 @@ CheckShow Answer
 
  
 
-- [Back: Video 5: A Geographical Hot Spot Map](./resolveuid/0d6e8df118b96fff96f8bda53ace64b7)
-- [Continue: Video 6: A Heatmap on the United States](./resolveuid/50eab6cd164e035d9470dc118924f686)
+- {{% resource_link "0d6e8df1-18b9-6fff-96f8-bda53ace64b7" "Back: Video 5: A Geographical Hot Spot Map" %}}
+- {{% resource_link "50eab6cd-164e-035d-9470-dc118924f686" "Continue: Video 6: A Heatmap on the United States" %}}

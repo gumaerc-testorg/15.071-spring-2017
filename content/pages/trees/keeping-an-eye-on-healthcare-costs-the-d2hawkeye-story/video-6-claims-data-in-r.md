@@ -16,7 +16,7 @@ video_metadata:
 
 In the next few videos, we'll be using the dataset {{% resource_link "da45d600-6998-21bf-0d20-24d5628389ab" "ClaimsData (ZIP - 2.2MB)" %}}: this file contains 1 CSV file. Please download the dataset to follow along. Note that this file is in ZIP format due to its large size. You will need to decompress (or unzip) the file before loading it into R.
 
-This data comes from the [DE-SynPUF dataset](http://www.cms.gov/Research-Statistics-Data-and-Systems/Downloadable-Public-Use-Files/SynPUFs/DE_Syn_PUF.html), published by the United States Centers for Medicare and Medicaid Services (CMS).
+This data comes from the {{% resource_link "5f57c31a-9d70-45ee-9a22-a83e6d58e01a" "DE-SynPUF dataset" %}}, published by the United States Centers for Medicare and Medicaid Services (CMS).
 
 An R script file with all of the R commands used in this lecture can be downloaded here: {{% resource_link "38db138e-5600-92bd-669a-8916a3b8b4d7" "Unit4_D2Hawkeye (R)" %}}
 

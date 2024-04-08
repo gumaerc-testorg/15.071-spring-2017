@@ -2,6 +2,7 @@
 content_type: resource
 description: 'Image: '
 file: /courses/15-071-the-analytics-edge-spring-2017/2d2061176d857ff3a33d60d7c1fafd9c_Histogram_Week7.jpg
+file_size: 14953
 file_type: image/jpeg
 image_metadata:
   caption: ''

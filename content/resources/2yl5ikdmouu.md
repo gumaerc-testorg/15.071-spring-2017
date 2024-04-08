@@ -2,6 +2,7 @@
 content_type: resource
 description: ''
 file: /courses/15-071-the-analytics-edge-spring-2017/e0011575b432c50e2b35a2dbfe55bfa1_2Yl5IkDMoUU.srt
+file_size: 1497
 file_type: application/x-subrip
 learning_resource_types: []
 license: https://creativecommons.org/licenses/by-nc-sa/4.0/
