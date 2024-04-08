@@ -46,5 +46,5 @@ CheckShow Answer
 
  
 
-- [Back: Video 2: A Single Flight](./resolveuid/1a99f51a66ac8af143edd5efdd454605)
-- [Continue: Video 3: The Problem Formulation](./resolveuid/e9725d1bf88eacdd5ae8cd5e31dbe7cc)
+- {{% resource_link "1a99f51a-66ac-8af1-43ed-d5efdd454605" "Back: Video 2: A Single Flight" %}}
+- {{% resource_link "e9725d1b-f88e-acdd-5ae8-cd5e31dbe7cc" "Continue: Video 3: The Problem Formulation" %}}

@@ -15,9 +15,9 @@ video_metadata:
 ---
 ## Demographics and Employment in the United States
 
-In the wake of the Great Recession of 2009, there has been a good deal of focus on employment statistics, one of the most important metrics policymakers use to gauge the overall strength of the economy. In the United States, the government measures unemployment using [the Current Population Survey (CPS)](https://www.bls.gov/cps/), which collects demographic and employment information from a wide range of Americans each month. In this exercise, we will employ the topics reviewed in the lectures as well as a few new techniques using the September 2013 version of this rich, nationally representative dataset.
+In the wake of the Great Recession of 2009, there has been a good deal of focus on employment statistics, one of the most important metrics policymakers use to gauge the overall strength of the economy. In the United States, the government measures unemployment using {{% resource_link "22b7a8a2-c5cc-4209-af1d-6e6e1a0a4ef6" "the Current Population Survey (CPS)" %}}, which collects demographic and employment information from a wide range of Americans each month. In this exercise, we will employ the topics reviewed in the lectures as well as a few new techniques using the September 2013 version of this rich, nationally representative dataset.
 
-The observations in the dataset represent people surveyed in the September 2013 CPS who actually completed a survey. While the full dataset has 385 variables, in this exercise we will use a more compact version of the dataset, [CPSData (CSV)](./resolveuid/b7aa3ea7d1fcb58d70b89ae225669588), which has the following variables:
+The observations in the dataset represent people surveyed in the September 2013 CPS who actually completed a survey. While the full dataset has 385 variables, in this exercise we will use a more compact version of the dataset, {{% resource_link "b7aa3ea7-d1fc-b58d-70b8-9ae225669588" "CPSData (CSV)" %}}, which has the following variables:
 
 **PeopleInHousehold**: The number of people in the interviewee's household.
 
@@ -25,7 +25,7 @@ The observations in the dataset represent people surveyed in the September 2013 
 
 **State**: The state where the interviewee lives.
 
-**MetroAreaCode**: A code that identifies the metropolitan area in which the interviewee lives (missing if the interviewee does not live in a metropolitan area). The mapping from codes to names of metropolitan areas is provided in the file [MetroAreaCodes (CSV)](./resolveuid/0eeba3bf0732485a5a3e2eb6594f4482).
+**MetroAreaCode**: A code that identifies the metropolitan area in which the interviewee lives (missing if the interviewee does not live in a metropolitan area). The mapping from codes to names of metropolitan areas is provided in the file {{% resource_link "0eeba3bf-0732-485a-5a3e-2eb6594f4482" "MetroAreaCodes (CSV)" %}}.
 
 **Age**: The age, in years, of the interviewee. 80 represents people aged 80-84, and 85 represents people aged 85 and higher.
 
@@ -39,7 +39,7 @@ The observations in the dataset represent people surveyed in the September 2013 
 
 **Hispanic**: Whether the interviewee is of Hispanic ethnicity.
 
-**CountryOfBirthCode**: A code identifying the country of birth of the interviewee. The mapping from codes to names of countries is provided in the file [CountryCodes (CSV)](./resolveuid/6f7b55715ac9f5032af8e507af05e87b).
+**CountryOfBirthCode**: A code identifying the country of birth of the interviewee. The mapping from codes to names of countries is provided in the file {{% resource_link "6f7b5571-5ac9-f503-2af8-e507af05e87b" "CountryCodes (CSV)" %}}.
 
 **Citizenship**: The United States citizenship status of the interviewee.
 
@@ -51,7 +51,7 @@ The observations in the dataset represent people surveyed in the September 2013 
 
 ## Problem 1.1 - Loading and Summarizing the Dataset
 
-Load the dataset from [CPSData (CSV)](./resolveuid/b7aa3ea7d1fcb58d70b89ae225669588) into a data frame called CPS, and view the dataset with the summary() and str() commands.
+Load the dataset from {{% resource_link "b7aa3ea7-d1fc-b58d-70b8-9ae225669588" "CPSData (CSV)" %}} into a data frame called CPS, and view the dataset with the summary() and str() commands.
 
 How many interviewees are in the dataset?
 
@@ -305,7 +305,7 @@ CheckShow Answer
 
 Codes like MetroAreaCode and CountryOfBirthCode are a compact way to encode factor variables with text as their possible values, and they are therefore quite common in survey datasets. In fact, all but one of the variables in this dataset were actually stored by a numeric code in the original CPS datafile.
 
-When analyzing a variable stored by a numeric code, we will often want to convert it into the values the codes represent. To do this, we will use a dictionary, which maps the the code to the actual value of the variable. We have provided dictionaries [MetroAreaCodes.csv](./resolveuid/0eeba3bf0732485a5a3e2eb6594f4482) and [CountryCodes.csv](./resolveuid/6f7b55715ac9f5032af8e507af05e87b), which respectively map MetroAreaCode and CountryOfBirthCode into their true values. Read these two dictionaries into data frames MetroAreaMap and CountryMap.
+When analyzing a variable stored by a numeric code, we will often want to convert it into the values the codes represent. To do this, we will use a dictionary, which maps the the code to the actual value of the variable. We have provided dictionaries {{% resource_link "0eeba3bf-0732-485a-5a3e-2eb6594f4482" "MetroAreaCodes.csv" %}} and {{% resource_link "6f7b5571-5ac9-f503-2af8-e507af05e87b" "CountryCodes.csv" %}}, which respectively map MetroAreaCode and CountryOfBirthCode into their true values. Read these two dictionaries into data frames MetroAreaMap and CountryMap.
 
 How many observations (codes for metropolitan areas) are there in MetroAreaMap?
 
@@ -555,5 +555,5 @@ We see that New York has the most interviewees born in India (96), Boston has th
 
 CheckShow Answer
 
-- [Back: Stock Dynamics](./resolveuid/89ce47d27edcdd9b8a8cbe641a59b520)
-- [Continue: Internet Privacy Poll](./resolveuid/e7021f06ce2f36d6b3f83d333dfef935)
+- {{% resource_link "89ce47d2-7edc-dd9b-8a8c-be641a59b520" "Back: Stock Dynamics" %}}
+- {{% resource_link "e7021f06-ce2f-36d6-b3f8-3d333dfef935" "Continue: Internet Privacy Poll" %}}

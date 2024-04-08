@@ -48,5 +48,5 @@ CheckShow Answer
 
  
 
-- [Back: Video 5: Pre-Processing in R](./resolveuid/6cb54a0c457feabde1b7dd4d95399d8c)
-- [Continue: Video 6: Bag of Words in R](./resolveuid/b8c9ec4867a6977eb31db490c342ef38)
+- {{% resource_link "6cb54a0c-457f-eabd-e1b7-dd4d95399d8c" "Back: Video 5: Pre-Processing in R" %}}
+- {{% resource_link "b8c9ec48-67a6-977e-b31d-b490c342ef38" "Continue: Video 6: Bag of Words in R" %}}

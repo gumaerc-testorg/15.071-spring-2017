@@ -14,7 +14,7 @@ video_metadata:
 ---
 ## Video 3: A Line Plot
 
-In the next few videos, we'll be using the dataset {{% resource_link "f696bd7b-2341-029c-903e-a725a8482b15" "mvt (CSV - 7.0MB)" %}}. Please download this dataset before starting this video. This data comes from the [Chicago Police Department](http://gis.chicagopolice.org/). 
+In the next few videos, we'll be using the dataset {{% resource_link "f696bd7b-2341-029c-903e-a725a8482b15" "mvt (CSV - 7.0MB)" %}}. Please download this dataset before starting this video. This data comes from the {{% resource_link "9d73d159-7a89-4120-bd3c-a4b057afd89f" "Chicago Police Department" %}}. 
 
 An R script file with all of the commands used in this lecture can be downloaded here: {{% resource_link "17a0cac3-bf89-2ddc-f5d2-ab6f9bc79a4b" "Resource Unit7_Crime (R)" %}}. 
 

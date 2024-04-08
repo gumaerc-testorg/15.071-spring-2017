@@ -14,7 +14,7 @@ video_metadata:
 ---
 ## Video 4: Loading Data Files
 
-In the rest of this lecture, we'll be using the data file {{% resource_link "da18dfa4-b6c1-e1ea-f6f6-602203b8c4a3" "WHO (CSV)" %}}. Please download this file to your computer, and save it to a location that you will remember. This data comes from the [Global Health Observatory Data Repository](http://apps.who.int/gho/data/node.main).
+In the rest of this lecture, we'll be using the data file {{% resource_link "da18dfa4-b6c1-e1ea-f6f6-602203b8c4a3" "WHO (CSV)" %}}. Please download this file to your computer, and save it to a location that you will remember. This data comes from the {{% resource_link "4e54b95b-e355-438a-9bd5-f8dc1ef5d9c8" "Global Health Observatory Data Repository" %}}.
 
 {{< resource uuid="32985d65-3926-f779-87ee-22cd46589384" >}}
 

@@ -25,7 +25,7 @@ data(state)
 
 statedata = cbind(data.frame(state.x77), state.abb, state.area, state.center,  state.division, state.name, state.region)
 
-If you can't access the state dataset in R, here is a CSV file with the same data that you can load into R using the read.csv function: [statedata (CSV)](./resolveuid/b1ac404f54b7a0914b832e21afcb2fac).
+If you can't access the state dataset in R, here is a CSV file with the same data that you can load into R using the read.csv function: {{% resource_link "b1ac404f-54b7-a091-4b83-2e21afcb2fac" "statedata (CSV)" %}}.
 
 After you have loaded the data into R, inspect the data set using the command: str(statedata)
 
@@ -411,5 +411,5 @@ in your R console. The largest absolute error is for Hawaii.
 
 CheckShow Answer
 
-- [Back: Detecting Flu Epidemics via Search Engine Query Data](./resolveuid/d64b92473ae1fb2350f1b27dc8fbde0b)
-- [Continue: Logistic Regression](./resolveuid/c4464cf49ddb1a4bc78cfaa6f93b74de)
+- {{% resource_link "d64b9247-3ae1-fb23-50f1-b27dc8fbde0b" "Back: Detecting Flu Epidemics via Search Engine Query Data" %}}
+- {{% resource_link "c4464cf4-9ddb-1a4b-c78c-faa6f93b74de" "Continue: Logistic Regression" %}}

@@ -2,6 +2,7 @@
 content_type: resource
 description: ''
 file: /courses/15-071-the-analytics-edge-spring-2017/95e1dea61a0c566e8b1fe4ab6b1309ff_MIT15_071S17_Unit1_IntroductionR.pdf
+file_size: 503620
 file_type: application/pdf
 learning_resource_types: []
 license: https://creativecommons.org/licenses/by-nc-sa/4.0/

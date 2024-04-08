@@ -2,6 +2,7 @@
 content_type: resource
 description: 'Image: '
 file: /courses/15-071-the-analytics-edge-spring-2017/47316383de173f457bcc8726c7c9aef7_New_Mexico_County_Map.png
+file_size: 36649
 file_type: image/png
 image_metadata:
   caption: ''

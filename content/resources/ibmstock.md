@@ -2,6 +2,7 @@
 content_type: resource
 description: 'Resource:'
 file: /courses/15-071-the-analytics-edge-spring-2017/08d083a51725af8b9880dca1198098a7_IBMStock.csv
+file_size: 8756
 file_type: text/comma-separated-values
 learning_resource_types:
 - Assignments

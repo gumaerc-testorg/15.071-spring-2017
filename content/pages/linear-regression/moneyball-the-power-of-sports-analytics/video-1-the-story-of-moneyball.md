@@ -14,7 +14,7 @@ video_metadata:
 ---
 ## Video 1: The Story of Moneyball
 
-In this lecture, we will be using the dataset {{% resource_link "beba5070-dddb-f0bf-3000-02d82564c3e7" "baseball (CSV)" %}}. Download this dataset to follow along in R as we build regression models. This data comes from [the Baseball Reference website](https://www.baseball-reference.com/).
+In this lecture, we will be using the dataset {{% resource_link "beba5070-dddb-f0bf-3000-02d82564c3e7" "baseball (CSV)" %}}. Download this dataset to follow along in R as we build regression models. This data comes from {{% resource_link "77f1a661-d5f4-4100-88e2-ef398da07597" "the Baseball Reference website" %}}.
 
 A script file containing all of the R commands used in this lecture can be downloaded here: {{% resource_link "12e92ec2-937a-917c-f288-db31d2d27450" "Unit2_Moneyball (R)" %}}.
 

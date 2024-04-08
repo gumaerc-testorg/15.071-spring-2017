@@ -50,7 +50,7 @@ To determine the best number of clusters using this plot, we want to look for a 
 
 SumWithinss = sapply(2:10, function(x) sum(kmeans(healthyVector, centers=x, iter.max=1000)$withinss))
 
-We won't be teaching more advanced R functions like sapply in this course, but if you're interested you could read more at [the R-bloggers website](https://www.r-bloggers.com/using-apply-sapply-lapply-in-r/).
+We won't be teaching more advanced R functions like sapply in this course, but if you're interested you could read more at {{% resource_link "9c8c7939-855a-4ea6-9ec8-5e7b6270dfac" "the R-bloggers website" %}}.
 
 - {{% resource_link "05a0aaf9-347f-ba27-6e3a-f7cddfcf258b" "Back: Video 4: MRI Image" %}}
 - {{% resource_link "4345a10d-7637-ddfb-0f09-1b661423cd4f" "Continue: Video 6: Detecting Tumors" %}}

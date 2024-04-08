@@ -23,7 +23,7 @@ Load the dataset into R and convert it to a data frame by running the following 
 
 data(state) statedata = data.frame(state.x77)
 
-If you can't access the state dataset in R, here is a CSV file with the same data that you can load into R using the read.csv function: [statedataSimple (CSV)](./resolveuid/188d21c275a21a4ad828e6014675f5d4).  Be sure to call the output of the read.csv function "statedata".
+If you can't access the state dataset in R, here is a CSV file with the same data that you can load into R using the read.csv function: {{% resource_link "188d21c2-75a2-1a4a-d828-e6014675f5d4" "statedataSimple (CSV)" %}}.  Be sure to call the output of the read.csv function "statedata".
 
 After you have loaded the data into R, inspect the data set using the command: str(statedata)
 
@@ -544,5 +544,5 @@ The original Area tree was overfitting the data - it was uninterpretable. Area i
 
 CheckShow Answer
 
-- [Back: Understanding Why People Vote](./resolveuid/e4031315c29ed0c6413fd2bd77d67b94)
-- [Continue: Text Analytics](./resolveuid/5847ad879afecf3e9b93c20cffe87acf)
+- {{% resource_link "e4031315-c29e-d0c6-413f-d2bd77d67b94" "Back: Understanding Why People Vote" %}}
+- {{% resource_link "5847ad87-9afe-cf3e-9b93-c20cffe87acf" "Continue: Text Analytics" %}}

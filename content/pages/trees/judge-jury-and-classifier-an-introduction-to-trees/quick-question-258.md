@@ -16,7 +16,7 @@ video_metadata:
 
 Suppose that you have the following CART tree:
 
-![Example of a cart tree.](./resolveuid/b2eea6fba57db424a4844f679aee4bc9)
+{{< resource uuid="b2eea6fb-a57d-b424-a484-4f679aee4bc9" >}}
 
 How many splits are in this tree?
 
@@ -46,5 +46,5 @@ This tree has three splits. The first split says to predict "Red" if X is less t
 
 CheckShow Answer
 
-- [Back: Video 2: CART](./resolveuid/fbeabfb3e0a4b479efe5ffb5d7cf5d4a)
-- [Continue: Video 3: Splitting and Predictions](./resolveuid/ca1564b0917866a3a00e801c8c9fdbbc)
+- {{% resource_link "fbeabfb3-e0a4-b479-efe5-ffb5d7cf5d4a" "Back: Video 2: CART" %}}
+- {{% resource_link "ca1564b0-9178-66a3-a00e-801c8c9fdbbc" "Continue: Video 3: Splitting and Predictions" %}}

@@ -14,7 +14,7 @@ video_metadata:
 ---
 ## Spreadsheet Tutorial
 
-If you have never used a spreadsheet software like Microsoft Excel, LibreOffice Calc, or OpenOffice Calc, we highly recommend that you go through a spreadsheet tutorial before starting this week. There are many tutorials available on the internet, including this [OpenOffice Tutorial](http://spreadsheets.about.com/od/otherspreadsheets/ss/080616_24_calc.htm) and this [Microsoft Excel Tutorial](http://spreadsheets.about.com/od/excel2007/ss/excel2007_forma.htm). Please follow a tutorial that corresponds to the software that you will be using in this class. 
+If you have never used a spreadsheet software like Microsoft Excel, LibreOffice Calc, or OpenOffice Calc, we highly recommend that you go through a spreadsheet tutorial before starting this week. There are many tutorials available on the internet, including this {{% resource_link "2f37ea1c-4864-4397-a2d3-d29b98653d37" "OpenOffice Tutorial" %}} and this {{% resource_link "e6569df4-6a1e-4eb7-bab3-5513afa9ba6e" "Microsoft Excel Tutorial" %}}. Please follow a tutorial that corresponds to the software that you will be using in this class. 
 
 - {{% resource_link "8556ba9c-76cf-a0d6-4a07-e442426c65bf" "Back: Installing LibreOffice or OpenOffice" %}}
 - {{% resource_link "2900efa7-1aff-756d-feba-74c6d16f2d3d" "Continue: Airline Revenue Management: An Introduction to Linear Optimization" %}}

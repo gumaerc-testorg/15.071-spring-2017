@@ -14,7 +14,7 @@ video_metadata:
 ---
 ## Video 4: Linear Regression in R
 
-Before starting this video, please download the datasets {{% resource_link "e6eb6895-83a5-01e5-b4c6-164d771880d9" "wine (CSV)" %}} and {{% resource_link "fbf05b0e-868b-c87b-4fba-dac6fe406c30" "wine_test (CSV)" %}}. Save them to a folder on your computer that you will remember, and in R, navigate to this folder (File->Change dir… on a PC, and Misc->Change Working Directory on a Mac). This data comes from [Liquid Assets](http://www.liquidasset.com/winedata.html).
+Before starting this video, please download the datasets {{% resource_link "e6eb6895-83a5-01e5-b4c6-164d771880d9" "wine (CSV)" %}} and {{% resource_link "fbf05b0e-868b-c87b-4fba-dac6fe406c30" "wine_test (CSV)" %}}. Save them to a folder on your computer that you will remember, and in R, navigate to this folder (File->Change dir… on a PC, and Misc->Change Working Directory on a Mac). This data comes from {{% resource_link "b3d41377-2c78-4c88-bf1e-5dd991b60fc4" "Liquid Assets" %}}.
 
 A script file containing all of the R commands used in this lecture can be downloaded here: {{% resource_link "4b42530d-d2f3-fc2c-dd30-ba7d12315265" "Unit2_WineRegression (R)" %}}.
 

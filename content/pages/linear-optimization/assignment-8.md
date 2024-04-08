@@ -14,7 +14,7 @@ video_metadata:
 ---
 ## Even' Star Organic Farm
 
-Even' Star Organic Farm was founded in 1997 by Brett Grohsgal, a former chef in Washington DC. The company owns a 104-acre farm in southern Maryland, and grows and sells organic produce. For more information, see [Even' Star's Facebook page](https://www.facebook.com/evenstarfarm.org/). This problem describes the business issues faced by Brett, and the data is based on actual observations.
+Even' Star Organic Farm was founded in 1997 by Brett Grohsgal, a former chef in Washington DC. The company owns a 104-acre farm in southern Maryland, and grows and sells organic produce. For more information, see {{% resource_link "6e07ecf2-b19d-49a9-863d-0f8c0b6ef0fc" "Even' Star's Facebook page" %}}. This problem describes the business issues faced by Brett, and the data is based on actual observations.
 
 Brett has decided to grow eight different types of produce: large tomatoes, small tomatoes, watermelon, okra, basil, cucumbers, sweet potatoes, and winter squash. He distributes his produce through three different channels: Restaurants, Community-Supported Agriculture, and Farmers' Markets. 
 
@@ -26,7 +26,7 @@ Brett has a limited amount of produce that he can sell each season, and he needs
 
 ## Problem 1.1 - Formulating the Problem
 
-Let's formulate Brett's problem as a linear optimization problem. The spreadsheet [EvenStarFarm (ODS)](./resolveuid/76d937c2e04ad2de53f9c971328b5f0e) for LibreOffice or OpenOffice, and [EvenStarFarm (XLSX)](./resolveuid/0dfaed12f92d54696c28596520d801a4) for Microsoft Excel, contains the data for the problem, and has set up the decision variables and objective for you.
+Let's formulate Brett's problem as a linear optimization problem. The spreadsheet {{% resource_link "76d937c2-e04a-d2de-53f9-c971328b5f0e" "EvenStarFarm (ODS)" %}} for LibreOffice or OpenOffice, and {{% resource_link "0dfaed12-f92d-5469-6c28-596520d801a4" "EvenStarFarm (XLSX)" %}} for Microsoft Excel, contains the data for the problem, and has set up the decision variables and objective for you.
 
 The **decision variables** in our problem are the number of cases of each type of produce to sell in each channel (there are 24 decision variables). They are highlighted in yellow in the spreadsheet.
 
@@ -346,7 +346,7 @@ If you increase the total number of cases of each type of produce one at a time 
 
 CheckShow Answer
 
-Acknowledgements: This problem is based on the case study "[Introducing Integer Modeling with Excel Solver](https://pubsonline.informs.org/doi/pdf/10.1287/ited.7.1.88)" by Dessislava Pachamanova, INFORMS Transactions on Education 7:1(88-98). Publication year 2006.
+Acknowledgements: This problem is based on the case study "{{% resource_link "e7786c71-f523-4d21-9268-0cc71b068604" "Introducing Integer Modeling with Excel Solver" %}}" by Dessislava Pachamanova, INFORMS Transactions on Education 7:1(88-98). Publication year 2006.
 
-- [Back: Video 8: Extensions and the Edge](./resolveuid/3083aeae63672e7661a334ffc021896d)
-- [Continue: Integer Optimization](./resolveuid/db42b40ad705f431a7e23a1d11cec341)
+- {{% resource_link "3083aeae-6367-2e76-61a3-34ffc021896d" "Back: Video 8: Extensions and the Edge" %}}
+- {{% resource_link "db42b40a-d705-f431-a7e2-3a1d11cec341" "Continue: Integer Optimization" %}}

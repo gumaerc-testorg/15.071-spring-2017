@@ -15,19 +15,19 @@ video_metadata:
 ---
 ## Detecting Vandalism on Wikipedia
 
-[Wikipedia](http://en.wikipedia.org/wiki/Wikipedia) is a free online encyclopedia that anyone can edit and contribute to. It is available in many languages and is growing all the time. On the English language version of Wikipedia:
+{{% resource_link "b0c0f98d-702f-466f-b6c3-24f05f626f73" "Wikipedia" %}} is a free online encyclopedia that anyone can edit and contribute to. It is available in many languages and is growing all the time. On the English language version of Wikipedia:
 
  
 
-- There are currently [4.7 million pages](http://en.wikipedia.org/wiki/Wikipedia:Size_of_Wikipedia)*.*
-- *There have been a total over* [*760 million edits*](http://en.wikipedia.org/wiki/Wikipedia:Pruning_article_revisions) (also called revisions) over its lifetime.
-- There are approximately [130,000 edits per day](http://en.wikipedia.org/wiki/Wikipedia:WikiProject_Editing_trends/Raw_data/Revisions_per_day)*.*
+- There are currently {{% resource_link "4bd6f4bd-13d9-489e-89f5-1ddc6dedf023" "4.7 million pages" %}}*.*
+- *There have been a total over* {{% resource_link "15ab6147-5b2e-426d-9ec2-59b2a0e943c4" "*760 million edits*" %}} (also called revisions) over its lifetime.
+- There are approximately {{% resource_link "d161a81e-3d35-4316-a0d5-342ad763d525" "130,000 edits per day" %}}*.*
 
 At time of 15.071x course publication.
 
 One of the consequences of being editable by anyone is that some people *vandalize* pages. This can take the form of removing content, adding promotional or inappropriate content, or more subtle shifts that change the meaning of the article. With this many articles and edits per day it is difficult for humans to detect all instances of vandalism and *revert* (undo) them. As a result, Wikipedia uses *bots* - computer programs that automatically revert edits that look like vandalism. In this assignment we will attempt to develop a vandalism detector that uses machine learning to distinguish between a valid edit and vandalism.
 
-The data for this problem is based on the revision history of the page [Language](http://en.wikipedia.org/wiki/Language). Wikipedia provides a history for each page that consists of the state of the page at each revision. Rather than manually considering each revision, a script was run that checked whether edits stayed or were reverted. If a change was eventually reverted then that revision is marked as vandalism. This may result in some misclassifications, but the script performs well enough for our needs.
+The data for this problem is based on the revision history of the page {{% resource_link "f25d5b69-b705-4c62-833e-ccb6cb9fbed8" "Language" %}}. Wikipedia provides a history for each page that consists of the state of the page at each revision. Rather than manually considering each revision, a script was run that checked whether edits stayed or were reverted. If a change was eventually reverted then that revision is marked as vandalism. This may result in some misclassifications, but the script performs well enough for our needs.
 
 As a result of this preprocessing, some common processing tasks have already been done, including lower-casing and punctuation removal. The columns in the dataset are:
 
@@ -41,7 +41,7 @@ Notice the repeated use of *unique*. The data we have available is not the trad
 
 ## Problem 1.1 - Bags of Words
 
-Load the data [wiki (CSV)](./resolveuid/689509df0b6105e6af7ea0b866825c45) with the option stringsAsFactors=FALSE, calling the data frame "wiki". Convert the "Vandal" column to a factor using the command wiki$Vandal = as.factor(wiki$Vandal).
+Load the data {{% resource_link "689509df-0b61-05e6-af7e-a0b866825c45" "wiki (CSV)" %}} with the option stringsAsFactors=FALSE, calling the data frame "wiki". Convert the "Vandal" column to a factor using the command wiki$Vandal = as.factor(wiki$Vandal).
 
 How many cases of vandalism were detected in the history of this page?
 
@@ -81,7 +81,7 @@ We will now use the bag of words approach to build a model. We have two columns 
 
 4) Build the DocumentTermMatrix, and call it dtmAdded.
 
-If the code length(stopwords("english")) does not return 174 for you, then please run the line of code in [stopwords (TXT) file](./resolveuid/8bb9e560bb61e7199ca1eccfbe6a9832), which will store the standard stop words in a variable called sw. When removing stop words, use tm\_map(corpusAdded, removeWords, sw) instead of tm\_map(corpusAdded, removeWords, stopwords("english")).
+If the code length(stopwords("english")) does not return 174 for you, then please run the line of code in {{% resource_link "8bb9e560-bb61-e719-9ca1-eccfbe6a9832" "stopwords (TXT) file" %}}, which will store the standard stop words in a variable called sw. When removing stop words, use tm\_map(corpusAdded, removeWords, sw) instead of tm\_map(corpusAdded, removeWords, stopwords("english")).
 
 How many terms appear in dtmAdded?
 
@@ -475,5 +475,5 @@ By adding new independent variables, we were able to significantly improve our a
 
 CheckShow Answer
 
-- [Back: Assignment 5](./resolveuid/81eae0fd28f287336b792210ba33dfbb)
-- [Continue: Automating Reviews in Medicine](./resolveuid/f9baad347f956b6f860866551433d510)
+- {{% resource_link "81eae0fd-28f2-8733-6b79-2210ba33dfbb" "Back: Assignment 5" %}}
+- {{% resource_link "f9baad34-7f95-6b6f-8608-66551433d510" "Continue: Automating Reviews in Medicine" %}}

@@ -50,5 +50,5 @@ CheckShow Answer
 
  
 
-- [Back: Video 7: Baseline Method and Penalty Matrix](./resolveuid/9f0c19816b4e786a4cb964211da05bf8)
-- [Continue: Video 8: Predicting Healthcare Cost in R](./resolveuid/42af8e9a43f3ab0e231be7ab1d08c0ca)
+- {{% resource_link "9f0c1981-6b4e-786a-4cb9-64211da05bf8" "Back: Video 7: Baseline Method and Penalty Matrix" %}}
+- {{% resource_link "42af8e9a-43f3-ab0e-231b-e7ab1d08c0ca" "Continue: Video 8: Predicting Healthcare Cost in R" %}}

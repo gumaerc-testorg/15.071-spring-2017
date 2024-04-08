@@ -2,6 +2,7 @@
 content_type: resource
 description: ''
 file: /courses/15-071-the-analytics-edge-spring-2017/ca6980b2bff267cf66dd890efa3f0caa_MIT15_071S17_Unit3_Framingham.pdf
+file_size: 927831
 file_type: application/pdf
 learning_resource_types: []
 license: https://creativecommons.org/licenses/by-nc-sa/4.0/

@@ -2,6 +2,7 @@
 content_type: resource
 description: 'Image: '
 file: /courses/15-071-the-analytics-edge-spring-2017/2cc4ad885d2156d89c14e3848a5fb9dc_gerrymandering_bluewins.png
+file_size: 32053
 file_type: image/png
 image_metadata:
   caption: ''

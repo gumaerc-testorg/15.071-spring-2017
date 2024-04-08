@@ -40,5 +40,5 @@ CheckShow Answer
 
  
 
-- [Back: Video 2: Making it to the Playoffs](./resolveuid/7ec3aa84c4f8d59e848e36852d9526f9)
-- [Continue: Video 3: Predicting Runs](./resolveuid/bf2dc78df3180c13511a832922454f59)
+- {{% resource_link "7ec3aa84-c4f8-d59e-848e-36852d9526f9" "Back: Video 2: Making it to the Playoffs" %}}
+- {{% resource_link "bf2dc78d-f318-0c13-511a-832922454f59" "Continue: Video 3: Predicting Runs" %}}

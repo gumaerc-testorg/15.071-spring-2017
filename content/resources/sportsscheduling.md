@@ -2,6 +2,7 @@
 content_type: resource
 description: 'Resource:'
 file: /courses/15-071-the-analytics-edge-spring-2017/dce548fb4eb6da08dd5eca135b495dcc_SportsScheduling.ods
+file_size: 10559
 file_type: application/vnd.oasis.opendocument.spreadsheet
 learning_resource_types: []
 license: https://creativecommons.org/licenses/by-nc-sa/4.0/

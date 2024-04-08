@@ -2,6 +2,7 @@
 content_type: resource
 description: 'Resource:'
 file: /courses/15-071-the-analytics-edge-spring-2017/b16ce1e8d533ce403f362639be9f03a8_clinical_trial.csv
+file_size: 3026295
 file_type: text/comma-separated-values
 learning_resource_types:
 - Assignments

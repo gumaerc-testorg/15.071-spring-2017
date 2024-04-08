@@ -2,6 +2,7 @@
 content_type: resource
 description: 'Resource:'
 file: /courses/15-071-the-analytics-edge-spring-2017/9478257f45b795247ad6f9220f3c7bcc_GoogleAdWords_LO_Complete.ods
+file_size: 29609
 file_type: application/vnd.oasis.opendocument.spreadsheet
 learning_resource_types: []
 license: https://creativecommons.org/licenses/by-nc-sa/4.0/
