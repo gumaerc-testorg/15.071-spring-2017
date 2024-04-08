@@ -2,6 +2,7 @@
 content_type: resource
 description: ''
 file: /courses/15-071-the-analytics-edge-spring-2017/0d2d8b03be47ecde5f14b0a30c2490b1_households.csv
+file_size: 353
 file_type: text/comma-separated-values
 learning_resource_types: []
 license: https://creativecommons.org/licenses/by-nc-sa/4.0/

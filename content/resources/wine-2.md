@@ -2,6 +2,7 @@
 content_type: resource
 description: 'Resource:'
 file: /courses/15-071-the-analytics-edge-spring-2017/b7caee99307eb87b00b3d3e80055b116_wine.csv
+file_size: 1040
 file_type: text/comma-separated-values
 learning_resource_types: []
 license: https://creativecommons.org/licenses/by-nc-sa/4.0/

@@ -2,6 +2,7 @@
 content_type: resource
 description: 'Resource:'
 file: /courses/15-071-the-analytics-edge-spring-2017/beba5070dddbf0bf300002d82564c3e7_baseball.csv
+file_size: 67157
 file_type: text/comma-separated-values
 learning_resource_types: []
 license: https://creativecommons.org/licenses/by-nc-sa/4.0/

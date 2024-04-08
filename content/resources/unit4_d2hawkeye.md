@@ -2,6 +2,7 @@
 content_type: resource
 description: 'Resource:'
 file: /courses/15-071-the-analytics-edge-spring-2017/38db138e560092bd669a8916a3b8b4d7_Unit4_D2Hawkeye.R
+file_size: 2190
 file_type: application/octet-stream
 learning_resource_types: []
 license: https://creativecommons.org/licenses/by-nc-sa/4.0/

@@ -2,6 +2,7 @@
 content_type: resource
 description: 'Resource:'
 file: /courses/15-071-the-analytics-edge-spring-2017/040348f2170d8719fb1874e9a3e484ce_EvenStarFarmRevisited.xlsx
+file_size: 41878
 file_type: application/vnd.openxmlformats-officedocument.spreadsheetml.sheet
 learning_resource_types:
 - Assignments

@@ -2,6 +2,7 @@
 content_type: resource
 description: 'Image: '
 file: /courses/15-071-the-analytics-edge-spring-2017/0c812c318c8939543d901b0f954da36a_Wine_QQ2.png
+file_size: 29395
 file_type: image/png
 image_metadata:
   caption: ''

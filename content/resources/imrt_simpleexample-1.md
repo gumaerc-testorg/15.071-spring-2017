@@ -2,6 +2,7 @@
 content_type: resource
 description: 'Resource:'
 file: /courses/15-071-the-analytics-edge-spring-2017/d446b84ee7b14b674346648750f18c47_IMRT_SimpleExample.xlsx
+file_size: 41374
 file_type: application/vnd.openxmlformats-officedocument.spreadsheetml.sheet
 learning_resource_types: []
 license: https://creativecommons.org/licenses/by-nc-sa/4.0/

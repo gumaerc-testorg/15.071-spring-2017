@@ -2,6 +2,7 @@
 content_type: resource
 description: ''
 file: /courses/15-071-the-analytics-edge-spring-2017/e4319f683e5e7f910c276f5157ef4545_MIT15_071S17_Unit9_Recitation.pdf
+file_size: 658684
 file_type: application/pdf
 learning_resource_types: []
 license: https://creativecommons.org/licenses/by-nc-sa/4.0/

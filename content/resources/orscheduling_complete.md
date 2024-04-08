@@ -2,6 +2,7 @@
 content_type: resource
 description: 'Resource:'
 file: /courses/15-071-the-analytics-edge-spring-2017/f9d0e9bcadbcf7fab487085230efbceb_ORscheduling_Complete.ods
+file_size: 12981
 file_type: application/vnd.oasis.opendocument.spreadsheet
 learning_resource_types: []
 license: https://creativecommons.org/licenses/by-nc-sa/4.0/

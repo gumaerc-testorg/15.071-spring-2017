@@ -2,6 +2,7 @@
 content_type: resource
 description: 'Resource:'
 file: /courses/15-071-the-analytics-edge-spring-2017/666aaa7f2146df6e575dac0b0c89a8e8_Unit7_Recitation.R
+file_size: 3552
 file_type: application/octet-stream
 learning_resource_types: []
 license: https://creativecommons.org/licenses/by-nc-sa/4.0/
