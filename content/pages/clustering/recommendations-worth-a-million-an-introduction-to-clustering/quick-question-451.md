@@ -36,5 +36,5 @@ CheckShow Answer
 
  
 
-- [Back: Video 4: Computing Distances](./resolveuid/a5ab66993ed80a0f758b18debb6e10a5)
-- [Continue: Video 5: Hierarchical Clustering](./resolveuid/9b460c896936605488ea504e144b78ff)
+- {{% resource_link "a5ab6699-3ed8-0a0f-758b-18debb6e10a5" "Back: Video 4: Computing Distances" %}}
+- {{% resource_link "9b460c89-6936-6054-88ea-504e144b78ff" "Continue: Video 5: Hierarchical Clustering" %}}

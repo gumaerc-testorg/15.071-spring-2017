@@ -66,5 +66,5 @@ Using the Logistic Response Function, we can compute that P(y = 1) = 1/(1 + e^(-
 
 CheckShow Answer
 
-- [Back: Video 3: Logistic Regression](./resolveuid/8099bebbd4e81ce09baa3ede1f3ec357)
-- [Continue: Video 4: Logistic Regression in R](./resolveuid/8fc17cbb03cdce23b5880c21e7dc33e8)
+- {{% resource_link "8099bebb-d4e8-1ce0-9baa-3ede1f3ec357" "Back: Video 3: Logistic Regression" %}}
+- {{% resource_link "8fc17cbb-03cd-ce23-b588-0c21e7dc33e8" "Continue: Video 4: Logistic Regression in R" %}}

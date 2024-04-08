@@ -19,7 +19,7 @@ Flu epidemics constitute a major public health concern causing respiratory illne
 
 The U.S. Centers for Disease Control and Prevention (CDC) and the European Influenza Surveillance Scheme (EISS) detect influenza activity through virologic and clinical data, including Influenza-like Illness (ILI) physician visits. Reporting national and regional data, however, are published with a 1-2 week lag.
 
-The [Google Flu Trends](https://www.google.org/flutrends/us/#US) project was initiated to see if faster reporting can be made possible by considering flu-related online search queries -- data that is available almost immediately.
+The {{% resource_link "638420de-5a7b-44f3-9ef5-dd3dd3723736" "Google Flu Trends" %}} project was initiated to see if faster reporting can be made possible by considering flu-related online search queries -- data that is available almost immediately.
 
  
 
@@ -27,15 +27,15 @@ The [Google Flu Trends](https://www.google.org/flutrends/us/#US) project was ini
 
 We would like to estimate influenza-like illness (ILI) activity using Google web search logs. Fortunately, one can easily access this data online:
 
-ILI Data - The [CDC](http://www.cdc.gov/flu/weekly/fluactivitysurv.htm) publishes on its website the official regional and state-level percentage of patient visits to healthcare providers for ILI purposes on a weekly basis.
+ILI Data - The {{% resource_link "cc460fc7-7168-4735-8336-b8d7c7f06620" "CDC" %}} publishes on its website the official regional and state-level percentage of patient visits to healthcare providers for ILI purposes on a weekly basis.
 
  
 
-Google Search Queries - [Google Trends](http://www.google.com/trends/) allows public retrieval of weekly counts for every query searched by users around the world. For each location, the counts are normalized by dividing the count for each query in a particular week by the total number of online search queries submitted in that location during the week. Then, the values are adjusted to be between 0 and 1.
+Google Search Queries - {{% resource_link "84a2aad6-6835-41b7-997e-a262354beb37" "Google Trends" %}} allows public retrieval of weekly counts for every query searched by users around the world. For each location, the counts are normalized by dividing the count for each query in a particular week by the total number of online search queries submitted in that location during the week. Then, the values are adjusted to be between 0 and 1.
 
  
 
-The csv file [FluTrain (CSV)](./resolveuid/0148593d1ffa6dfdc89b468c796b52f3) aggregates this data from January 1, 2004 until December 31, 2011 as follows:
+The csv file {{% resource_link "0148593d-1ffa-6dfd-c89b-468c796b52f3" "FluTrain (CSV)" %}} aggregates this data from January 1, 2004 until December 31, 2011 as follows:
 
 "Week" - The range of dates represented by this observation, in year/month/day format.
 
@@ -225,7 +225,7 @@ CheckShow Answer
 
 ## Problem 3.1 - Performance on the Test Set
 
-The csv file [FluTest.csv](./resolveuid/7dab7b0643fffe3c60340a93323d2a0a) provides the 2012 weekly data of the ILI-related search queries and the observed weekly percentage of ILI-related physician visits. Load this data into a data frame called FluTest.
+The csv file {{% resource_link "7dab7b06-43ff-fe3c-6034-0a93323d2a0a" "FluTest.csv" %}} provides the 2012 weekly data of the ILI-related search queries and the observed weekly percentage of ILI-related physician visits. Load this data into a data frame called FluTest.
 
 Normally, we would obtain test-set predictions from the model FluTrend1 using the code
 
@@ -559,5 +559,5 @@ In this problem, we used a simple time series model with a single lag term. ARIM
 
 CheckShow Answer
 
-- [Back: Reading Test Scores](./resolveuid/f590aa024205ae291d855ec56a16b4a4)
-- [Continue: State Data](./resolveuid/609cf3523750f69ecb54c706f04a68c5)
+- {{% resource_link "f590aa02-4205-ae29-1d85-5ec56a16b4a4" "Back: Reading Test Scores" %}}
+- {{% resource_link "609cf352-3750-f69e-cb54-c706f04a68c5" "Continue: State Data" %}}

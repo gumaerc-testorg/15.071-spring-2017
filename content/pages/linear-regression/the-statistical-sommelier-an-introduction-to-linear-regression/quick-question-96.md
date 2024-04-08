@@ -16,7 +16,7 @@ video_metadata:
 
  
 
-Using the data set [wine (CSV)](./resolveuid/b7caee99307eb87b00b3d3e80055b116), what is the correlation between HarvestRain and WinterRain?
+Using the data set {{% resource_link "b7caee99-307e-b87b-00b3-d3e80055b116" "wine (CSV)" %}}, what is the correlation between HarvestRain and WinterRain?
 
 Exercise 1
 
@@ -32,5 +32,5 @@ You can compute the correlation between HarvestRain and WinterRain by typing the
 
 CheckShow Answer
 
-- [Back: Video 6: Correlation and Multicollinearity](./resolveuid/1ab830be7abc5468421c996f95e8e252)
-- [Continue: Video 7: Making Predictions](./resolveuid/9b500b6f7f1d17af5de0ab9946895858)
+- {{% resource_link "1ab830be-7abc-5468-421c-996f95e8e252" "Back: Video 6: Correlation and Multicollinearity" %}}
+- {{% resource_link "9b500b6f-7f1d-17af-5de0-ab9946895858" "Continue: Video 7: Making Predictions" %}}

@@ -42,5 +42,5 @@ CheckShow Answer
 
  
 
-- [Back: Video 2: An Optimization Problem](./resolveuid/98a5789ba2031300ac3e513ddaf88866)
-- [Continue: Video 3: Solving the Problem](./resolveuid/45f1617526496ba1fed2d4528a0cc423)
+- {{% resource_link "98a5789b-a203-1300-ac3e-513ddaf88866" "Back: Video 2: An Optimization Problem" %}}
+- {{% resource_link "45f16175-2649-6ba1-fed2-d4528a0cc423" "Continue: Video 3: Solving the Problem" %}}

@@ -21,11 +21,11 @@ Each representative typically is affiliated with one of the two major political 
 
 Gerrymandering refers to the process of redrawing district boundaries so as to favor a particular political party. To illustrate this, suppose we have the hypothetical state below, with three districts. Each district is further subdivided along a grid into smaller subregions, where each subregion votes unanimously for either party. Suppose that in this hypothetical example, there is only one voter in each subregion.
 
-![Example of a gerrymandering grid in which Blue wins.](./resolveuid/2cc4ad885d2156d89c14e3848a5fb9dc)
+{{< resource uuid="2cc4ad88-5d21-56d8-9c14-e3848a5fb9dc" >}}
 
 Based on the current district boundaries, the blue party has a majority in each district, so each district elects a blue representative. However, suppose we decide to redraw the boundaries in the following way:
 
-![Example of the same gerrymandering grid in which red wins.](./resolveuid/96516b5e431f1672ee8ca633d2d2e93e)
+{{< resource uuid="96516b5e-431f-1672-ee8c-a633d2d2e93e" >}}
 
 Now the blue party does not win in every district; in fact, the red party wins two of the three districts. 
 
@@ -37,15 +37,15 @@ In this problem, we will be exploring how to systematically manipulate these kin
 
 The state of New Mexico, located in the south of the US, currently has three districts:
 
-![Colored map showing New Mexico's congressional districts.](./resolveuid/a716bfa776b2be85f666b0a4e6877f69)
+{{< resource uuid="a716bfa7-76b2-be85-f666-b0a4e6877f69" >}}
 
 The state of New Mexico is also divided into counties:
 
-![Map showing the outlines of New Mexico's counties.](./resolveuid/47316383de173f457bcc8726c7c9aef7)
+{{< resource uuid="47316383-de17-3f45-7bcc-8726c7c9aef7" >}}
 
 Counties are administrative units that are typically smaller than districts. In many states counties are split across districts, but in this problem we will assume that the new districts we will design will be built from the existing counties. 
 
-We have the voting record from the 2012 presidential election for each county in New Mexico. We will use the presidential election voting record of each county in 2012 as a proxy for how the county will vote in the next election for the house of representatives. This data is provided in [Gerrymandering (ODS)](./resolveuid/e584a070e342e7b633663ac538a60f69) for LibreOffice and OpenOffice, or [Gerrymandering (XLSX)](./resolveuid/378b5f186924f2c3e9a0c48f4f366fef) for Excel.
+We have the voting record from the 2012 presidential election for each county in New Mexico. We will use the presidential election voting record of each county in 2012 as a proxy for how the county will vote in the next election for the house of representatives. This data is provided in {{% resource_link "e584a070-e342-e7b6-3366-3ac538a60f69" "Gerrymandering (ODS)" %}} for LibreOffice and OpenOffice, or {{% resource_link "378b5f18-6924-f2c3-e9a0-c48f4f366fef" "Gerrymandering (XLSX)" %}} for Excel.
 
 ## The Problem
 
@@ -608,4 +608,4 @@ You can find these numbers by looking at the left-hand-sides of the constraints.
 
 CheckShow Answer
 
-- [Back: Assignment 9](./resolveuid/2dbce7a6bb3717df55b4be0179616ad6)
+- {{% resource_link "2dbce7a6-bb37-17df-55b4-be0179616ad6" "Back: Assignment 9" %}}

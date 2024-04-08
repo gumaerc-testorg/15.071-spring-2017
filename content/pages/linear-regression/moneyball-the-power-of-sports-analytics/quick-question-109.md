@@ -60,5 +60,5 @@ CheckShow Answer
 
  
 
-- [Back: Video 3: Predicting Runs](./resolveuid/bf2dc78df3180c13511a832922454f59)
-- [Continue: Video 4: Using the Models to Make Predictions](./resolveuid/6f7a2882de1167a26875fd353266fee4)
+- {{% resource_link "bf2dc78d-f318-0c13-511a-832922454f59" "Back: Video 3: Predicting Runs" %}}
+- {{% resource_link "6f7a2882-de11-67a2-6875-fd353266fee4" "Continue: Video 4: Using the Models to Make Predictions" %}}

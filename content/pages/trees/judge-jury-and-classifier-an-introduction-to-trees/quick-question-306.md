@@ -34,5 +34,5 @@ CheckShow Answer
 
  
 
-- [Back: Video 6: Cross-Validation](./resolveuid/aed8634b040dd1af7abb68e999cb9c43)
-- [Continue: Video 7: The Model v. The Experts](./resolveuid/2ca2e4f174a66019fbe68e97bba87376)
+- {{% resource_link "aed8634b-040d-d1af-7abb-68e999cb9c43" "Back: Video 6: Cross-Validation" %}}
+- {{% resource_link "2ca2e4f1-74a6-6019-fbe6-8e97bba87376" "Continue: Video 7: The Model v. The Experts" %}}

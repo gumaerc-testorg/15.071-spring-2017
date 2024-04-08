@@ -17,7 +17,7 @@ video_metadata:
 
 Last week, in the Moneyball lecture, we discussed how regular season performance is not strongly correlated with winning the World Series in baseball. In this homework question, we'll use the same data to investigate how well we can predict the World Series winner at the beginning of the playoffs.
 
-To begin, load the dataset [baseball (CSV)](./resolveuid/20168d0dad9b53e072396f5168dc5290) into R using the read.csv function, and call the data frame "baseball". This is the same data file we used during the Moneyball lecture, and the data comes from [Baseball-Reference.com](http://www.baseball-reference.com/).
+To begin, load the dataset {{% resource_link "20168d0d-ad9b-53e0-7239-6f5168dc5290" "baseball (CSV)" %}} into R using the read.csv function, and call the data frame "baseball". This is the same data file we used during the Moneyball lecture, and the data comes from {{% resource_link "e92ff25e-acaa-423e-b9b5-a23853ecbfc9" "Baseball-Reference.com" %}}.
 
 As a reminder, this dataset contains data concerning a baseball team's performance in a given year. It has the following variables:
 
@@ -381,5 +381,5 @@ This seems to confirm the claim made by Billy Beane in Moneyball that all that m
 
 CheckShow Answer
 
-- [Back: Assignment 3](./resolveuid/d4a650ea930c2c8c0f989b353a5a342e)
-- [Continue: Trees](./resolveuid/19c8cf92e31d034a1ea15ad53194d892)
+- {{% resource_link "d4a650ea-930c-2c8c-0f98-9b353a5a342e" "Back: Assignment 3" %}}
+- {{% resource_link "19c8cf92-e31d-034a-1ea1-5ad53194d892" "Continue: Trees" %}}

@@ -20,9 +20,9 @@ video_metadata:
 
 ## Cross-Validation for Random Forests
 
-You might be wondering why we used cross-validation on our CART model, but not on our random forest model. According to the creaters of the random forest algorithm, the model is not very sensitive to the parameters and therefore does not easily overfit to the training set. You can read more on [the Random Forests website](https://www.stat.berkeley.edu/~breiman/RandomForests/cc_home.htm). 
+You might be wondering why we used cross-validation on our CART model, but not on our random forest model. According to the creaters of the random forest algorithm, the model is not very sensitive to the parameters and therefore does not easily overfit to the training set. You can read more on {{% resource_link "527a3e1d-7800-4e2f-a803-1858b8b1e351" "the Random Forests website" %}}. 
 
-However, if you are interested in experimenting with the parameters of the random forest model more, you can read about the parameters and cross-validation for random forests in the [documentation for the randomForest package (PDF)](http://cran.r-project.org/web/packages/randomForest/randomForest.pdf).
+However, if you are interested in experimenting with the parameters of the random forest model more, you can read about the parameters and cross-validation for random forests in the {{% resource_link "0d7544cc-53b3-4ba0-a0e8-eee6a08fb003" "documentation for the randomForest package (PDF)" %}}.
 
 - {{% resource_link "ff7dc49d-2cde-fc1a-c3e5-d01f07046ac1" "BackQuick Question" %}}
 - {{% resource_link "0be06c80-7e39-cc4e-2808-dc63ffaa5efa" "ContinueQuick Question" %}}

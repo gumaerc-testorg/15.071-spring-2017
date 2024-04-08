@@ -17,7 +17,7 @@ video_metadata:
 
 The Programme for International Student Assessment (PISA) is a test given every three years to 15-year-old students from around the world to evaluate their performance in mathematics, reading, and science. This test provides a quantitative way to compare the performance of students from different parts of the world. In this homework assignment, we will predict the reading scores of students from the United States of America on the 2009 PISA exam.
 
-The datasets [pisa2009train (CSV)](./resolveuid/e2141a02399a532766818b7092ec92c8) and [pisa2009test (CSV)](./resolveuid/aaebd921b1c08e81759240fd6780400d) contain information about the demographics and schools for American students taking the exam, derived from [2009 PISA Public-Use Data Files](http://nces.ed.gov/pubsearch/pubsinfo.asp?pubid=2011038) distributed by the United States National Center for Education Statistics (NCES). While the datasets are not supposed to contain identifying information about students taking the test, by using the data you are bound by the [NCES data use agreement](./resolveuid/5bb3aaa2f054659994cfda27ac3e7599), which prohibits any attempt to determine the identity of any student in the datasets.
+The datasets {{% resource_link "e2141a02-399a-5327-6681-8b7092ec92c8" "pisa2009train (CSV)" %}} and {{% resource_link "aaebd921-b1c0-8e81-7592-40fd6780400d" "pisa2009test (CSV)" %}} contain information about the demographics and schools for American students taking the exam, derived from {{% resource_link "1aa9fe59-01aa-4b45-9ece-30b6e95a9160" "2009 PISA Public-Use Data Files" %}} distributed by the United States National Center for Education Statistics (NCES). While the datasets are not supposed to contain identifying information about students taking the test, by using the data you are bound by the {{% resource_link "5bb3aaa2-f054-6599-94cf-da27ac3e7599" "NCES data use agreement" %}}, which prohibits any attempt to determine the identity of any student in the datasets.
 
 Each row in the datasets pisa2009train.csv and pisa2009test.csv represents one student taking the exam. The datasets have the following variables:
 
@@ -593,5 +593,5 @@ The test-set R^2 is defined as 1-SSE/SST, where SSE is the sum of squared errors
 
 CheckShow Answer
 
-- [Back: Assignment 2](./resolveuid/d3823600300c03000e79696e835f8f2f)
-- [Continue: Detecting Flu Epidemics via Search Engine Query Data](./resolveuid/d64b92473ae1fb2350f1b27dc8fbde0b)
+- {{% resource_link "d3823600-300c-0300-0e79-696e835f8f2f" "Back: Assignment 2" %}}
+- {{% resource_link "d64b9247-3ae1-fb23-50f1-b27dc8fbde0b" "Continue: Detecting Flu Epidemics via Search Engine Query Data" %}}

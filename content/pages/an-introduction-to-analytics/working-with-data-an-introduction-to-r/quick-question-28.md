@@ -74,5 +74,5 @@ CheckShow Answer
 
  
 
-- [Back: Video 5: Data Analysis - Summary Statistics and Scatterplots](./resolveuid/eeb22344b68207d4d7b6e8fcc1cd06b6)
-- [Continue: Video 6: Data Analysis - Plots and Summary Tables](./resolveuid/050acd529f55fd87a5c298728b4daa03)
+- {{% resource_link "eeb22344-b682-07d4-d7b6-e8fcc1cd06b6" "Back: Video 5: Data Analysis - Summary Statistics and Scatterplots" %}}
+- {{% resource_link "050acd52-9f55-fd87-a5c2-98728b4daa03" "Continue: Video 6: Data Analysis - Plots and Summary Tables" %}}

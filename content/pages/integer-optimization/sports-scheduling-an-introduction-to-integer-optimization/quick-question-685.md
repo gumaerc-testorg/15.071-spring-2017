@@ -42,5 +42,5 @@ We would have 6 division constraints, 9 non-division constraints (each of the th
 
 CheckShow Answer
 
-- [Back: Video 3: Solving the Problem](./resolveuid/611ff2e225d312915c1705e9cd35ede7)
-- [Continue: Video 4: Logical Constraints](./resolveuid/209100b38ec9d10b5925656d460ca2ad)
+- {{% resource_link "611ff2e2-25d3-1291-5c17-05e9cd35ede7" "Back: Video 3: Solving the Problem" %}}
+- {{% resource_link "209100b3-8ec9-d10b-5925-656d460ca2ad" "Continue: Video 4: Logical Constraints" %}}

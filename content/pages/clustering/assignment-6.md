@@ -18,9 +18,9 @@ Document clustering, or text clustering, is a very popular application of cluste
 
 Clustering methods can be used to automatically group search results into categories, making it easier to find relavent results. This method is used in the search engines PolyMeta and Helioid, as well as on FirstGov.gov, the official Web portal for the U.S. government. The two most common algorithms used for document clustering are Hierarchical and k-means. 
 
-In this problem, we'll be clustering articles published on [Daily Kos](https://www.dailykos.com/), an American political blog that publishes news and opinion articles written from a progressive point of view. Daily Kos was founded by Markos Moulitsas in 2002, and as of September 2014, the site had an average weekday traffic of hundreds of thousands of visits. 
+In this problem, we'll be clustering articles published on {{% resource_link "62a6e428-e2f8-4bf9-801c-471e37a8c846" "Daily Kos" %}}, an American political blog that publishes news and opinion articles written from a progressive point of view. Daily Kos was founded by Markos Moulitsas in 2002, and as of September 2014, the site had an average weekday traffic of hundreds of thousands of visits. 
 
-The file [dailykos (CSV - 10.1MB)](./resolveuid/543653c07a597591b02024d3658f8d07) contains data on 3,430 news articles or blogs that have been posted on Daily Kos. These articles were posted in 2004, leading up to the United States Presidential Election. The leading candidates were incumbent President George W. Bush (republican) and John Kerry (democratic). Foreign policy was a dominant topic of the election, specifically, the 2003 invasion of Iraq. 
+The file {{% resource_link "543653c0-7a59-7591-b020-24d3658f8d07" "dailykos (CSV - 10.1MB)" %}} contains data on 3,430 news articles or blogs that have been posted on Daily Kos. These articles were posted in 2004, leading up to the United States Presidential Election. The leading candidates were incumbent President George W. Bush (republican) and John Kerry (democratic). Foreign policy was a dominant topic of the election, specifically, the 2003 invasion of Iraq. 
 
 Each of the variables in the dataset is a word that has appeared in at least 50 different articles (1,545 words in total). The set of  words has been trimmed according to some of the techniques covered in the previous week on text analytics (punctuation has been removed, and stop words have been removed). For each document, the variable values are the number of times that word appeared in the document. 
 
@@ -448,5 +448,5 @@ From "table(hierGroups, KmeansCluster$cluster)", we read that 179 (64.6%) of the
 
 CheckShow Answer
 
-- [Back: Video 7: Comparing Methods](./resolveuid/f38d14c2d66c55044b9e071235d5fdd8)
-- [Continue: Visualization](./resolveuid/ab87d151cf8cfe95c873e816df164d38)
+- {{% resource_link "f38d14c2-d66c-5504-4b9e-071235d5fdd8" "Back: Video 7: Comparing Methods" %}}
+- {{% resource_link "ab87d151-cf8c-fe95-c873-e816df164d38" "Continue: Visualization" %}}

@@ -50,5 +50,5 @@ The accuracy of the model is (1030+92)/(1030+227+126+92) = 0.76
 
 CheckShow Answer
 
-- [Back: Video 3: Predicting Compatibility Scores](./resolveuid/4ee865af69155a39e352d98aad5670d0)
-- [Continue: Video 4: The Analytics Edge](./resolveuid/77d81d8b92b7acee0e6b7bc04c4a9533)
+- {{% resource_link "4ee865af-6915-5a39-e352-d98aad5670d0" "Back: Video 3: Predicting Compatibility Scores" %}}
+- {{% resource_link "77d81d8b-92b7-acee-0e6b-7bc04c4a9533" "Continue: Video 4: The Analytics Edge" %}}

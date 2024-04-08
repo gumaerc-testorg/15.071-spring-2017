@@ -16,9 +16,9 @@ video_metadata:
 
 The United States government periodically collects demographic information by conducting a census.
 
-In this problem, we are going to use census information about an individual to predict how much a person earns -- in particular, whether the person earns more than $50,000 per year. This data comes from the [UCI Machine Learning Repository](http://archive.ics.uci.edu/ml/datasets/Adult).
+In this problem, we are going to use census information about an individual to predict how much a person earns -- in particular, whether the person earns more than $50,000 per year. This data comes from the {{% resource_link "01e9f774-fbcf-482a-a1bc-b423dbc2f7eb" "UCI Machine Learning Repository" %}}.
 
-The file [census (CSV - 3.3MB)](./resolveuid/23bdcd0033c04ce7b2ea204f161b30e0) contains 1994 census data for 31,978 individuals in the United States.
+The file {{% resource_link "23bdcd00-33c0-4ce7-b2ea-204f161b30e0" "census (CSV - 3.3MB)" %}} contains 1994 census data for 31,978 individuals in the United States.
 
 The dataset includes the following 13 variables:
 
@@ -464,5 +464,5 @@ If you plot the tree with prp(model), where "model" is the name of your CART tre
 
 CheckShow Answer
 
-- [Back: Video 7: Cross-Validation](./resolveuid/6fc7a0e47d44d24efd6c876af7f8e2de)
-- [Continue: Understanding Why People Vote](./resolveuid/e4031315c29ed0c6413fd2bd77d67b94)
+- {{% resource_link "6fc7a0e4-7d44-d24e-fd6c-876af7f8e2de" "Back: Video 7: Cross-Validation" %}}
+- {{% resource_link "e4031315-c29e-d0c6-413f-d2bd77d67b94" "Continue: Understanding Why People Vote" %}}

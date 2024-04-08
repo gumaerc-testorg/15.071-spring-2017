@@ -16,7 +16,7 @@ video_metadata:
 
 {{< resource uuid="8564e25d-fe28-fc77-4650-6aa53d45e61e" >}}
 
-The images in this video of the brain scans come from the [Computational Environment for Radiotherapy Research (CERR)](https://github.com/cerr/CERR). 
+The images in this video of the brain scans come from the {{% resource_link "2894ade1-e666-447d-8fb9-ac1a0b00bec1" "Computational Environment for Radiotherapy Research (CERR)" %}}. 
 
 - {{% resource_link "55edcce9-e44e-b3b2-09ea-19a4efdc913a" "Back: Quick Question" %}}
 - {{% resource_link "d50911ab-0a07-b12c-1073-2226ad167e5f" "Continue: Quick Question" %}}

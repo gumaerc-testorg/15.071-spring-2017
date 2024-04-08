@@ -46,5 +46,5 @@ CheckShow Answer
 
 The AUC of a model has the following nice interpretation: given a random patient from the dataset who actually received poor care, and a random patient from the dataset who actually received good care, the AUC is the perecentage of time that our model will classify which is which correctly.
 
-- [Back: Video 7: Interpreting the Model](./resolveuid/1e61720ecc150a7b0c5eb3fe60c5ffa1)
-- [Continue: Video 8: The Analytics Edge](./resolveuid/81d5d93d77c2b8fc0b85d9cbcdc418a5)
+- {{% resource_link "1e61720e-cc15-0a7b-0c5e-b3fe60c5ffa1" "Back: Video 7: Interpreting the Model" %}}
+- {{% resource_link "81d5d93d-77c2-b8fc-0b85-d9cbcdc418a5" "Continue: Video 8: The Analytics Edge" %}}

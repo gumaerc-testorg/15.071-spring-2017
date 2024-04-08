@@ -46,5 +46,5 @@ CheckShow Answer
 
  
 
-- [Back: Video 6: Claims Data in R](./resolveuid/b189783b0ca7287f248b0339ea5afbeb)
-- [Continue: Video 7: Baseline Method and Penalty Matrix](./resolveuid/9f0c19816b4e786a4cb964211da05bf8)
+- {{% resource_link "b189783b-0ca7-287f-248b-0339ea5afbeb" "Back: Video 6: Claims Data in R" %}}
+- {{% resource_link "9f0c1981-6b4e-786a-4cb9-64211da05bf8" "Continue: Video 7: Baseline Method and Penalty Matrix" %}}

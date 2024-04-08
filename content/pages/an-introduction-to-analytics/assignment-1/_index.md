@@ -14,7 +14,7 @@ video_metadata:
 ---
 ## An Analytical Detective
 
-Crime is an international concern, but it is documented and handled in very different ways in different countries. In the United States, violent crimes and property crimes are recorded by the Federal Bureau of Investigation (FBI).  Additionally, each city documents crime, and some cities release data regarding crime rates. The city of Chicago, Illinois releases [crime data from 2001 onward online](https://data.cityofchicago.org/Public-Safety/Crimes-2001-to-present/ijzp-q8t2).
+Crime is an international concern, but it is documented and handled in very different ways in different countries. In the United States, violent crimes and property crimes are recorded by the Federal Bureau of Investigation (FBI).  Additionally, each city documents crime, and some cities release data regarding crime rates. The city of Chicago, Illinois releases {{% resource_link "4393a442-846c-482c-9d95-0f8eb9627727" "crime data from 2001 onward online" %}}.
 
 Chicago is the third most populous city in the United States, with a population of over 2.7 million people. The city of Chicago is shown in the map below, with the state of Illinois highlighted in red. 
 
@@ -40,7 +40,7 @@ Please download the file {{% resource_link "123f9aa4-885b-259d-b7f3-aef5153835de
 
 ## Problem 1.1 - Loading the Data
 
-Read the dataset [mvtWeek1 (CSV)](./resolveuid/123f9aa4885b259db7f3aef5153835de) into R, using the read.csv function, and call the data frame "mvt". Remember to navigate to the directory on your computer containing the file mvtWeek1.csv first. It may take a few minutes to read in the data, since it is pretty large. Then, use the str and summary functions to answer the following questions.
+Read the dataset {{% resource_link "123f9aa4-885b-259d-b7f3-aef5153835de" "mvtWeek1 (CSV)" %}} into R, using the read.csv function, and call the data frame "mvt". Remember to navigate to the directory on your computer containing the file mvtWeek1.csv first. It may take a few minutes to read in the data, since it is pretty large. Then, use the str and summary functions to answer the following questions.
 
 How many rows of data (observations) are in this dataset?
 
@@ -234,7 +234,7 @@ CheckShow Answer
 
 ## Problem 3.1 - Visualizing Crime Trends
 
-Now, let's make some plots to help us better understand how crime has changed over time in Chicago. Throughout this problem, and in general, you can save your plot to a file. For more information, [this website](http://www.stat.berkeley.edu/~s133/saving.html) very clearly explains the process.
+Now, let's make some plots to help us better understand how crime has changed over time in Chicago. Throughout this problem, and in general, you can save your plot to a file. For more information, {{% resource_link "47a48cc2-1c0e-4231-a45d-dfa557267c45" "this website" %}} very clearly explains the process.
 
 First, let's make a histogram of the variable Date. We'll add an extra argument, to specify the number of bars we want in our histogram. In your R console, type
 
@@ -284,7 +284,7 @@ CheckShow Answer
 
 ## Problem 3.2 - Visualizing Crime Trends
 
-Now, let's see how arrests have changed over time. Create a boxplot of the variable "Date", sorted by the variable "Arrest" (if you are not familiar with boxplots and would like to learn more, check out this [tutorial](http://msenux2.redwoods.edu/MathDept/R/boxplot.php)). In a boxplot, the bold horizontal line is the median value of the data, the box shows the range of values between the first quartile and third quartile, and the whiskers (the dotted lines extending outside the box) show the minimum and maximum values, excluding any outliers (which are plotted as circles). Outliers are defined by first computing the difference between the first and third quartile values, or the height of the box. This number is called the Inter-Quartile Range (IQR). Any point that is greater than the third quartile plus the IQR or less than the first quartile minus the IQR is considered an outlier.
+Now, let's see how arrests have changed over time. Create a boxplot of the variable "Date", sorted by the variable "Arrest" (if you are not familiar with boxplots and would like to learn more, check out this {{% resource_link "67d9f918-1eeb-47ac-a253-1dc37b4d1e4e" "tutorial" %}}). In a boxplot, the bold horizontal line is the median value of the data, the box shows the range of values between the first quartile and third quartile, and the whiskers (the dotted lines extending outside the box) show the minimum and maximum values, excluding any outliers (which are plotted as circles). Outliers are defined by first computing the difference between the first and third quartile values, or the height of the box. This number is called the Inter-Quartile Range (IQR). Any point that is greater than the third quartile plus the IQR or less than the first quartile minus the IQR is considered an outlier.
 
 Does it look like there were more crimes for which arrests were made in the first half of the time period or the second half of the time period? (Note that the time period is from 2001 to 2012, so the middle of the time period is the beginning of 2007.)
 
@@ -474,5 +474,5 @@ This can be read from table(Top5$LocationDescription, Top5$Weekday).
 
 CheckShow Answer
 
-- [Back: Video 6: Summary Tables](./resolveuid/34529fa513c12be0756196f923431249)
-- [Continue: Stock Dynamics](./resolveuid/89ce47d27edcdd9b8a8cbe641a59b520)
+- {{% resource_link "34529fa5-13c1-2be0-7561-96f923431249" "Back: Video 6: Summary Tables" %}}
+- {{% resource_link "89ce47d2-7edc-dd9b-8a8c-be641a59b520" "Continue: Stock Dynamics" %}}

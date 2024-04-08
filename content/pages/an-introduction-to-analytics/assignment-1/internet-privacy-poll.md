@@ -15,7 +15,7 @@ video_metadata:
 ---
 ## Internet Privacy Poll
 
-Internet privacy has gained widespread attention in recent years. To measure the degree to which people are concerned about hot-button issues like Internet privacy, social scientists conduct polls in which they interview a large number of people about the topic. In this assignment, we will analyze data from a [July 2013 Pew Internet and American Life Project poll on Internet anonymity and privacy](http://www.pewinternet.org/2013/09/05/anonymity-privacy-and-security-online/), which involved interviews across the United States. While the full polling data can be found on [the Pew Research Center's website](http://www.pewinternet.org/2013/09/05/anonymity-privacy-and-security-online/), we will use a more limited version of the results, available in [AnonymityPoll (CSV)](./resolveuid/fc53f44a4ec7c467b2f882a5636b0d3b). The dataset has the following fields (all Internet use-related fields were only collected from interviewees who either use the Internet or have a smartphone):
+Internet privacy has gained widespread attention in recent years. To measure the degree to which people are concerned about hot-button issues like Internet privacy, social scientists conduct polls in which they interview a large number of people about the topic. In this assignment, we will analyze data from a {{% resource_link "e09c01c9-7bf4-4bc6-b042-18017cb70cd0" "July 2013 Pew Internet and American Life Project poll on Internet anonymity and privacy" %}}, which involved interviews across the United States. While the full polling data can be found on {{% resource_link "e09c01c9-7bf4-4bc6-b042-18017cb70cd0" "the Pew Research Center's website" %}}, we will use a more limited version of the results, available in {{% resource_link "fc53f44a-4ec7-c467-b2f8-82a5636b0d3b" "AnonymityPoll (CSV)" %}}. The dataset has the following fields (all Internet use-related fields were only collected from interviewees who either use the Internet or have a smartphone):
 
  
 
@@ -35,7 +35,7 @@ Internet privacy has gained widespread attention in recent years. To measure the
 
 ## Problem 1.1 - Loading and Summarizing the Dataset
 
-Using read.csv(), load the dataset from [AnonymityPoll (CSV)](./resolveuid/fc53f44a4ec7c467b2f882a5636b0d3b) into a data frame called poll and summarize it with the summary() and str() functions.
+Using read.csv(), load the dataset from {{% resource_link "fc53f44a-4ec7-c467-b2f8-82a5636b0d3b" "AnonymityPoll (CSV)" %}} into a data frame called poll and summarize it with the summary() and str() functions.
 
 How many people participated in the poll?
 
@@ -532,5 +532,5 @@ Next week, we will begin to more formally characterize how an outcome variable l
 
 CheckShow Answer
 
-- [Back: Demographics and Employment in the United States](./resolveuid/d628845fdc26781bfce4c58e39e14746)
-- [Continue: Linear Regression](./resolveuid/c846ced6fc6d3bc964e047324e251a98)
+- {{% resource_link "d628845f-dc26-781b-fce4-c58e39e14746" "Back: Demographics and Employment in the United States" %}}
+- {{% resource_link "c846ced6-fc6d-3bc9-64e0-47324e251a98" "Continue: Linear Regression" %}}

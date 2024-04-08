@@ -62,5 +62,5 @@ Using this confusion matrix, we can compute that the sensitivity is 11/(11+187) 
 
 CheckShow Answer
 
-- [Back: Video 3: A Logistic Regression Model](./resolveuid/8a9ba6a68196ffcd9f101b66733dbcb0)
-- [Continue: Video 4: Validating the Model](./resolveuid/4f9a84c34f7f3867891dbe7fae75a149)
+- {{% resource_link "8a9ba6a6-8196-ffcd-9f10-1b66733dbcb0" "Back: Video 3: A Logistic Regression Model" %}}
+- {{% resource_link "4f9a84c3-4f7f-3867-891d-be7fae75a149" "Continue: Video 4: Validating the Model" %}}

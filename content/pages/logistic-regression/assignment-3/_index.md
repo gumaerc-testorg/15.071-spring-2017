@@ -24,7 +24,7 @@ Knowing the competitive nature of the recording industry, record labels face the
   
 How can we use analytics to predict the popularity of a song? In this assignment, we challenge ourselves to predict whether a song will reach a spot in the Top 10 of the Billboard Hot 100 Chart.
 
-Taking an analytics approach, we aim to use information about a song's properties to predict its popularity. The dataset [songs (CSV)](./resolveuid/0657f55b10c097853d2bee6e5186764d) consists of all songs which made it to the Top 10 of the Billboard Hot 100 Chart from 1990-2010 plus a sample of additional songs that didn't make the Top 10. This data comes from three sources: [Wikipedia](http://en.wikipedia.org/wiki/Billboard_Hot_100), [Billboard.com](http://www.billboard.com/), and [EchoNest](https://en.wikipedia.org/wiki/The_Echo_Nest).
+Taking an analytics approach, we aim to use information about a song's properties to predict its popularity. The dataset {{% resource_link "0657f55b-10c0-9785-3d2b-ee6e5186764d" "songs (CSV)" %}} consists of all songs which made it to the Top 10 of the Billboard Hot 100 Chart from 1990-2010 plus a sample of additional songs that didn't make the Top 10. This data comes from three sources: {{% resource_link "eabb5238-517b-4e6e-ba49-9cba791372e7" "Wikipedia" %}}, {{% resource_link "a3868aac-804d-454f-9099-2c77f6879a2f" "Billboard.com" %}}, and {{% resource_link "a8fa85cb-8f45-4778-91e4-90d76baab904" "EchoNest" %}}.
 
 The variables included in the dataset either describe the artist or the song, or they are associated with the following song attributes: time signature, loudness, key, pitch, tempo, and timbre.
 
@@ -301,5 +301,5 @@ We can compute the True Positive Rate to be the number of correctly identified T
 
 CheckShow Answer
 
-- [Back: Video 5: Test Set Predictions](./resolveuid/bafc7d5602f9e47a53ea0d210aa17805)
-- [Continue: Predicting the Baseball World Series Champion](./resolveuid/3b4628337389a83d66097f7597856e56)
+- {{% resource_link "bafc7d56-02f9-e47a-53ea-0d210aa17805" "Back: Video 5: Test Set Predictions" %}}
+- {{% resource_link "3b462833-7389-a83d-6609-7f7597856e56" "Continue: Predicting the Baseball World Series Champion" %}}

@@ -74,5 +74,5 @@ CheckShow Answer
 
  
 
-- [Back: Video 4: CART in R](./resolveuid/a0af0b83fff43d634dfe02e15106f92d)
-- [Continue: Video 5: Random Forests](./resolveuid/d818f0620c7e3cee943507c440503537)
+- {{% resource_link "a0af0b83-fff4-3d63-4dfe-02e15106f92d" "Back: Video 4: CART in R" %}}
+- {{% resource_link "d818f062-0c7e-3cee-9435-07c440503537" "Continue: Video 5: Random Forests" %}}

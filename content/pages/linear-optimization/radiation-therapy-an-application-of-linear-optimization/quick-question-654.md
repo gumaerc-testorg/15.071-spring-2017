@@ -50,5 +50,5 @@ CheckShow Answer
 
  
 
-- [Back: Video 5: Sensitivity Analysis](./resolveuid/a10ced6c1f0f3ddcaa30efb14db63365)
-- [Continue: Video 6: The Analytics Edge](./resolveuid/eaf609ccc68c36a2cb165b923543a1c7)
+- {{% resource_link "a10ced6c-1f0f-3ddc-aa30-efb14db63365" "Back: Video 5: Sensitivity Analysis" %}}
+- {{% resource_link "eaf609cc-c68c-36a2-cb16-5b923543a1c7" "Continue: Video 6: The Analytics Edge" %}}

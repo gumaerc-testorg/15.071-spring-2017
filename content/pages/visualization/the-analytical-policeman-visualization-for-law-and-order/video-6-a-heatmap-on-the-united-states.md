@@ -14,7 +14,7 @@ video_metadata:
 ---
 ## Video 6: A Heatmap on the United States
 
-In this video, we'll be using the dataset {{% resource_link "36129924-d80a-cf17-557e-e219a6c3c79c" "murders (CSV)" %}}. This data is provided by the U.S. Census Bureau and the FBI, and is decribed [in this Wikipedia entry about gun violence in the U.S. by state.](http://en.wikipedia.org/wiki/Gun_violence_in_the_United_States_by_state). 
+In this video, we'll be using the dataset {{% resource_link "36129924-d80a-cf17-557e-e219a6c3c79c" "murders (CSV)" %}}. This data is provided by the U.S. Census Bureau and the FBI, and is decribed {{% resource_link "d1c36a6f-6c39-45dc-8165-c11a7821987f" "in this Wikipedia entry about gun violence in the U.S. by state." %}}. 
 
 {{< resource uuid="043fc419-1950-05dd-6080-e3330724c725" >}}
 
