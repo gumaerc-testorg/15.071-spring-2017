@@ -1,6 +1,6 @@
 ---
 content_type: page
-description: ''
+description: '4.4 Location, Location, Location: Regression Trees for Housing Data  (Recitation)'
 draft: false
 learning_resource_types: []
 ocw_type: CourseSection
@@ -18,5 +18,4 @@ video_metadata:
 
 The slides from all videos in this recitation can be downloaded here: {{% resource_link "7f805ea1-6eb0-4035-1aeb-70db90036148" "Regression Trees for Housing Data (PDF - 1.1MB)" %}}.
 
-- {{% resource_link "aef27920-c51c-efd1-88ed-937539251bd9" "Back: Location, Location, Location: Regression Trees for Housing Data (Recitation)" %}}
-- {{% resource_link "fe8e6610-7427-85e9-e33b-488d454628d9" "Continue: Video 2: The Data" %}}
+{{% resource_link "fe8e6610-7427-85e9-e33b-488d454628d9" "Continue: Video 2: The Data" %}}

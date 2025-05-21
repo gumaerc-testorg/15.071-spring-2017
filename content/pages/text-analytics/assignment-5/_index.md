@@ -1,6 +1,6 @@
 ---
 content_type: page
-description: ''
+description: Separating Spam From Ham
 draft: false
 learning_resource_types: []
 ocw_type: CourseSection
@@ -22,8 +22,6 @@ In this homework problem, we will build and evaluate a spam filter using a publi
 
 The dataset contains just two fields:
 
- 
-
 - **text**: The text of the email.
 - **spam**: A binary variable indicating if the email was spam.
 
@@ -33,83 +31,21 @@ Begin by loading the dataset {{% resource_link "67f7be24-1f1b-459d-7fdb-8e903138
 
 How many emails are in the dataset?
 
-Exercise 1
-
-&nbsp;Numerical Response&nbsp;
-
- 
-
-Explanation
-
-You can load the dataset with:
-
-emails = read.csv("emails.csv", stringsAsFactors=FALSE)
-
-The number of emails can be read from str(emails) or nrow(emails).
-
-CheckShow Answer
-
 ## Problem 1.2 - Loading the Dataset
 
 How many of the emails are spam?
-
-Exercise 2
-
-&nbsp;Numerical Response&nbsp;
-
- 
-
-Explanation
-
-This can be read from table(emails$spam).
-
-CheckShow Answer
 
 ## Problem 1.3 - Loading the Dataset
 
 Which word appears at the beginning of every email in the dataset? Respond as a lower-case word with punctuation removed.
 
-Exercise 3
-
-&nbsp;Text Response&nbsp; Answer:subject
-
-Explanation
-
-You can review emails with, for instance, emails$text\[1\] or emails$text\[1000\]. Every email begins with the word "Subject:".
-
-CheckShow Answer
-
 ## Problem 1.4 - Loading the Dataset
 
 Could a spam classifier potentially benefit from including the frequency of the word that appears in every email?
 
-Exercise 4
-
-&nbsp;No -- the word appears in every email so this variable would not help us differentiate spam from ham.&nbsp;
-
-&nbsp;Yes -- the number of times the word appears might help us differentiate spam from ham.&nbsp;
-
-Explanation
-
-We know that each email has the word "subject" appear at least once, but the frequency with which it appears might help us differentiate spam from ham. For instance, a long email chain would have the word "subject" appear a number of times, and this higher frequency might be indicative of a ham message.
-
-CheckShow Answer
-
 ## Problem 1.5 - Loading the Dataset
 
 The nchar() function counts the number of characters in a piece of text. How many characters are in the longest email in the dataset (where longest is measured in terms of the maximum number of characters)?
-
-Exercise 5
-
-&nbsp;Numerical Response&nbsp;
-
- 
-
-Explanation
-
-The maximum length can be obtained with max(nchar(emails$text)).
-
-CheckShow Answer
 
 ## Problem 2.1 - Preparing the Corpus
 
@@ -130,14 +66,6 @@ Follow the standard steps to build and pre-process the corpus:
 If the code length(stopwords("english")) does not return 174 for you, then please run the line of code in {{% resource_link "bcb87bd6-e9ec-8d82-8a36-2298d36363f5" "stopwords (TXT) file" %}}, which will store the standard stop words in a variable called sw. When removing stop words, use tm\_map(corpus, removeWords, sw) instead of tm\_map(corpus, removeWords, stopwords("english")).
 
 How many terms are in dtm?
-
-Exercise 6
-
-&nbsp;Numerical Response&nbsp;
-
- 
-
-Explanation
 
 These steps can be accomplished by running:
 
@@ -161,29 +89,9 @@ dtm
 
 ¨C79C
 
-CheckShow Answer
-
 ## Problem 2.2 - Preparing the Corpus
 
 To obtain a more reasonable number of terms, limit dtm to contain terms appearing in at least 5% of documents, and store this result as spdtm (don't overwrite dtm, because we will use it in a later step of this homework). How many terms are in spdtm?
-
-Exercise 7
-
-&nbsp;Numerical Response&nbsp;
-
- 
-
-Explanation
-
-This can be accomplished with:
-
-spdtm = removeSparseTerms(dtm, 0.95)
-
-spdtm
-
-From the spdtm summary output, it contains 330 terms.
-
-CheckShow Answer
 
 ## Problem 3.1 - Building machine learning models
 
@@ -241,95 +149,19 @@ predTrainRF = predict(spamRF, type="prob")\[,2\]
 
 What is the training set accuracy of spamCART, using a threshold of 0.5 for predictions?
 
-Exercise 8
-
-&nbsp;Numerical Response&nbsp;
-
- 
-
-Explanation
-
-This can be obtained with:
-
-table(train$spam, predTrainCART > 0.5)
-
-Then the accuracy is (2885+894)/nrow(train)
-
 What is the training set accuracy of spamRF, using a threshold of 0.5 for predictions? (Remember that your answer might not match ours exactly, due to random behavior in the random forest algorithm on different operating systems.)
-
-Exercise 9
-
-&nbsp;Numerical Response&nbsp;
-
- 
-
-Explanation
-
-This can be obtained with:
-
-table(train$spam, predTrainRF > 0.5)
-
-And then the accuracy is (3013+914)/nrow(train)
-
-CheckShow Answer
 
 ## Problem 3.2 - Building Machine Learning Models
 
 How many of the word stems "enron", "hou", "vinc", and "kaminski" appear in the CART tree? These are word stems likely specific to the inbox of Vincent Kaminski, whose email we used as the ham observations in our dataset.
 
-Exercise 10
-
-&nbsp;Numerical Response&nbsp;
-
- 
-
-Explanation
-
-After loading the necessary package with "library(rpart.plot)", we see from "prp(spamCART)" that "vinc" and "enron" appear in the CART tree as the top two branches, but that "hou" and "kaminski" do not appear.
-
-CheckShow Answer
-
 ## Problem 3.3 - Building Machine Learning Models
 
 What is the training set AUC of spamCART? Note that now that we have predicted probabilities from the CART model, we can compute AUC with the ROCR package just as we have for logistic regression.
 
-Exercise 11
-
-&nbsp;Numerical Response&nbsp;
-
- 
-
-Explanation
-
-This can be obtained with:
-
-library(ROCR)
-
-predictionTrainCART = prediction(predTrainCART, train$spam)
-
-as.numeric(performance(predictionTrainCART, "auc")@y.values)
-
-CheckShow Answer
-
 ## Problem 3.4 - Building Machine Learning Models
 
 What is the training set AUC of spamRF?
-
-Exercise 12
-
-&nbsp;Numerical Response&nbsp;
-
- 
-
-Explanation
-
-This can be obtained with:
-
-predictionTrainRF = prediction(predTrainRF, train$spam)
-
-as.numeric(performance(predictionTrainRF, "auc")@y.values)
-
-CheckShow Answer
 
 ## Problem 4.1 - Evaluating on the Test Set
 
@@ -341,103 +173,29 @@ predTestRF = predict(spamRF, newdata=test, type="prob")\[,2\]
 
 What is the testing set accuracy of spamCART, using a threshold of 0.5 for predictions?
 
-Exercise 13
-
-&nbsp;Numerical Response&nbsp;
-
- 
-
-Explanation
-
-This can be obtained with:
-
-table(test$spam, predTestCART > 0.5)
-
-Then the accuracy is (1228+386)/nrow(test)
-
-CheckShow Answer
-
 ## Problem 4.2 - Evaluating on the Test Set
 
 What is the testing set AUC of spamCART?
-
-Exercise 14
-
-&nbsp;Numerical Response&nbsp;
-
- 
-
-Explanation
-
-This can be obtained with:
-
-predictionTestCART = prediction(predTestCART, test$spam)
-
-as.numeric(performance(predictionTestCART, "auc")@y.values)
-
-CheckShow Answer
 
 ## Problem 4.3 - Evaluating on the Test Set
 
 What is the testing set accuracy of spamRF, using a threshold of 0.5 for predictions?
 
-Exercise 15
-
-&nbsp;Numerical Response&nbsp;
-
- 
-
-Explanation
-
-This can be obtained with:
-
-table(test$spam, predTestRF > 0.5)
-
-Then the accuracy is (1290+385)/nrow(test)
-
-CheckShow Answer
-
 ## Problem 4.4 - Evaluating on the Test Set
 
 What is the testing set AUC of spamRF?
-
-Exercise 16
-
-&nbsp;Numerical Response&nbsp;
-
- 
-
-Explanation
-
-This can be obtained with:
-
-predictionTestRF = prediction(predTestRF, test$spam)
-
-as.numeric(performance(predictionTestRF, "auc")@y.values)
-
-CheckShow Answer
 
 ## Problem 4.5 - Evaluating on the Test Set
 
 Which model had the best testing set performance, in terms of accuracy and AUC?
 
-Exercise 17
+ CART 
 
-&nbsp;CART&nbsp;
-
-&nbsp;Random forest&nbsp;
-
-Explanation
-
-The random forest outperformed CART in both measures, obtaining an impressive AUC of 0.998 on the test set.
-
-CheckShow Answer
-
- 
+ Random forest 
 
 You may note that we did not ask you to fit a logistic regression model to predict whether an email was spam or ham. This is in contrast to our usual approach of comparing all three models. If you in fact tried to train a logistic regression model in R using this dataset, you would get the following warning:
 
-**glm.fit: algorithm did not converge** 
+**glm.fit: algorithm did not converge**
 
 This warning indicates that R's logistic regression solution procedure has failed.
 

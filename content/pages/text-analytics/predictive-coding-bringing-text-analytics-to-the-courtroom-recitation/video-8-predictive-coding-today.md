@@ -1,6 +1,6 @@
 ---
 content_type: page
-description: ''
+description: '5.4 Predictive Coding: Bringing Text Analytics to the Courtroom  (Recitation)'
 draft: false
 learning_resource_types: []
 ocw_type: CourseSection
@@ -16,5 +16,4 @@ video_metadata:
 
 {{< resource uuid="8c8bd8dd-f7f5-fa5a-4df6-5ac0721ca708" >}}
 
-- {{% resource_link "19c7a1c6-b044-e1b2-c2b1-916f5be9f51f" "Back: Video 7: The ROC Curve" %}}
-- {{% resource_link "81eae0fd-28f2-8733-6b79-2210ba33dfbb" "Continue: Assignment 5" %}}
+{{% resource_link "19c7a1c6-b044-e1b2-c2b1-916f5be9f51f" "Back: Video 7: The ROC Curve" %}}

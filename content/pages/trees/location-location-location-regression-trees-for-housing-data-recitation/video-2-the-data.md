@@ -14,7 +14,7 @@ video_metadata:
 ---
 ## Video 2: The Data
 
-In this recitation, Iain will be using the dataset {{% resource_link "d4332a30-56f4-4e1a-1dec-9600a31f21c8" "boston (CSV)" %}} to predict housing prices in Boston. Please download this dataset to follow along in this recitation. This data comes from the {{% resource_link "7c99a827-306b-4688-9733-95c3ef04b026" "UCI Machine Learning Repository" %}}.
+In this recitation, Iain will be using the dataset {{% resource_link "d4332a30-56f4-4e1a-1dec-9600a31f21c8" "boston (CSV)" %}} to predict housing prices in Boston. Please download this dataset to follow along in this recitation. This data comes from the {{% resource_link "574eee5c-6e5b-48b4-8c51-8af002b09c72" "UCI Machine Learning Repository" %}}.
 
 An R script file with all of the R commands used in this recitation can be downloaded here: {{% resource_link "07abfd3f-d112-a229-c1bf-1dbe9f454d98" "Resource Unit4_Recitation (R)" %}}.
 

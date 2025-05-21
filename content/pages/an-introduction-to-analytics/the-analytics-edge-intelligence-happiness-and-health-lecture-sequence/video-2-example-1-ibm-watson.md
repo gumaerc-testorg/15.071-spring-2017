@@ -1,6 +1,7 @@
 ---
 content_type: page
-description: ''
+description: '1.2 The Analytics Edge: Intelligence, Happiness, and Health  (Lecture
+  Sequence)'
 draft: false
 learning_resource_types: []
 ocw_type: CourseSection
@@ -17,5 +18,4 @@ video_metadata:
 
 {{< resource uuid="cf2300f9-46cb-bdd1-1fd2-412911fdac2e" >}}
 
-- {{% resource_link "9fb45936-9f44-df97-dad3-89bb5d1aa82c" "Back: The Analytics Edge: Intelligence, Happiness, and Health (Lecture Sequence)" %}}
-- {{% resource_link "57067762-c39b-9c56-4fcb-dde7585e1d63" "Continue: Video 3: Example 2 - eHarmony" %}}
+{{% resource_link "57067762-c39b-9c56-4fcb-dde7585e1d63" "Continue: Video 3: Example 2 - eHarmony" %}}

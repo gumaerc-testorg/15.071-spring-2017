@@ -1,6 +1,6 @@
 ---
 content_type: page
-description: ''
+description: 1 An Introduction to Analytics
 draft: false
 learning_resource_types: []
 ocw_type: CourseSection
@@ -9,8 +9,6 @@ uid: bebdc8ab-5b1f-9682-d6b7-62b671b5cf25
 video_metadata:
   youtube_id: null
 ---
-- {{% resource_link "a958c6c3-2e8f-cfa1-cbab-a162067382a1" "Continue: Welcome to Unit 1" %}}
-
 **1.1 Welcome to Unit 1**
 
 - {{% resource_link "a958c6c3-2e8f-cfa1-cbab-a162067382a1" "1.1.1 Welcome to Unit 1" %}}
@@ -57,4 +55,3 @@ video_metadata:
 - {{% resource_link "89ce47d2-7edc-dd9b-8a8c-be641a59b520" "1.5.2 Stock Dynamics" %}}
 - {{% resource_link "d628845f-dc26-781b-fce4-c58e39e14746" "1.5.3 Demographics and Employment in the United States" %}}
 - {{% resource_link "e7021f06-ce2f-36d6-b3f8-3d333dfef935" "1.5.4 Internet Privacy Poll" %}}
-- {{% resource_link "a958c6c3-2e8f-cfa1-cbab-a162067382a1" "Continue: Welcome to Unit 1" %}}

@@ -1,6 +1,7 @@
 ---
 content_type: page
-description: ''
+description: '5.4 Predictive Coding: Bringing Text Analytics to the Courtroom Video
+  1'
 draft: false
 learning_resource_types: []
 ocw_type: CourseSection
@@ -18,5 +19,4 @@ video_metadata:
 
 The slides from all videos in this Recitation can be downloaded here: {{% resource_link "61edcfb6-bda8-e214-6cc2-e5e293e7a042" "Bringing Text Analytics to the Courtroom (PDF)" %}}.
 
-- {{% resource_link "d4b1a3b9-42ed-98d1-94fe-b3777ba22595" "Back: Predictive Coding: Bringing Text Analytics to the Courtroom (Recitation)" %}}
-- {{% resource_link "d2b6e4bc-cf8f-0017-b1fc-3de36e683c9a" "Continue: Video 2: The Data" %}}
+{{% resource_link "d2b6e4bc-cf8f-0017-b1fc-3de36e683c9a" "Continue: Video 2: The Data" %}}

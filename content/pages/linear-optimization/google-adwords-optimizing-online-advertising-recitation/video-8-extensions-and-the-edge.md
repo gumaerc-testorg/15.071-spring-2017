@@ -1,6 +1,6 @@
 ---
 content_type: page
-description: ''
+description: '8.4 Google AdWords: Optimizing Online Advertising  (Recitation)'
 draft: false
 learning_resource_types: []
 ocw_type: CourseSection
@@ -16,5 +16,4 @@ video_metadata:
 
 {{< resource uuid="7b99d590-e1c2-c048-7c57-840afaa7264e" >}}
 
-- {{% resource_link "2d0a67f4-94dc-2dad-f750-4c69427d6a55" "Back: Video 7: Sensitivity Analysis" %}}
-- {{% resource_link "6a5d4bdb-70f4-48f5-8697-82dbaa8537a8" "Continue: Assignment 8" %}}
+{{% resource_link "2d0a67f4-94dc-2dad-f750-4c69427d6a55" "Back: Video 7: Sensitivity Analysis" %}}

@@ -1,6 +1,6 @@
 ---
 content_type: page
-description: ''
+description: 'Detecting Flu Epidemics via Search Engine Query Data '
 draft: false
 learning_resource_types:
 - Assignments
@@ -19,21 +19,15 @@ Flu epidemics constitute a major public health concern causing respiratory illne
 
 The U.S. Centers for Disease Control and Prevention (CDC) and the European Influenza Surveillance Scheme (EISS) detect influenza activity through virologic and clinical data, including Influenza-like Illness (ILI) physician visits. Reporting national and regional data, however, are published with a 1-2 week lag.
 
-The {{% resource_link "638420de-5a7b-44f3-9ef5-dd3dd3723736" "Google Flu Trends" %}} project was initiated to see if faster reporting can be made possible by considering flu-related online search queries -- data that is available almost immediately.
-
- 
+The {{% resource_link "8151d40a-ff2f-4e10-a964-ab7b45ed5b71" "Google Flu Trends" %}} project was initiated to see if faster reporting can be made possible by considering flu-related online search queries -- data that is available almost immediately.
 
 ## Problem 1.1 - Understanding the Data
 
 We would like to estimate influenza-like illness (ILI) activity using Google web search logs. Fortunately, one can easily access this data online:
 
-ILI Data - The {{% resource_link "cc460fc7-7168-4735-8336-b8d7c7f06620" "CDC" %}} publishes on its website the official regional and state-level percentage of patient visits to healthcare providers for ILI purposes on a weekly basis.
+ILI Data - The {{% resource_link "7811654e-2843-44cd-a2b5-f090ab66ca8a" "CDC" %}} publishes on its website the official regional and state-level percentage of patient visits to healthcare providers for ILI purposes on a weekly basis.
 
- 
-
-Google Search Queries - {{% resource_link "84a2aad6-6835-41b7-997e-a262354beb37" "Google Trends" %}} allows public retrieval of weekly counts for every query searched by users around the world. For each location, the counts are normalized by dividing the count for each query in a particular week by the total number of online search queries submitted in that location during the week. Then, the values are adjusted to be between 0 and 1.
-
- 
+Google Search Queries - {{% resource_link "8fe708f1-530e-44d7-b01d-2635088cc70d" "Google Trends" %}} allows public retrieval of weekly counts for every query searched by users around the world. For each location, the counts are normalized by dividing the count for each query in a particular week by the total number of online search queries submitted in that location during the week. Then, the values are adjusted to be between 0 and 1.
 
 The csv file {{% resource_link "0148593d-1ffa-6dfd-c89b-468c796b52f3" "FluTrain (CSV)" %}} aggregates this data from January 1, 2004 until December 31, 2011 as follows:
 
@@ -43,81 +37,19 @@ The csv file {{% resource_link "0148593d-1ffa-6dfd-c89b-468c796b52f3" "FluTrain 
 
 "Queries" - This column lists the fraction of queries that are ILI-related for the corresponding week, adjusted to be between 0 and 1 (higher values correspond to more ILI-related search queries).
 
-Before applying analytics tools on the training set, we first need to understand the data at hand. Load "FluTrain.csv" into a data frame called FluTrain. Looking at the time period 2004-2011, which week corresponds to the highest percentage of ILI-related physician visits? Select the day of the month corresponding to the start of this week.
-
-{{< tableopen >}}{{< tbodyopen >}}{{< tropen >}}{{< tdopen >}}
-
-Exercise 1
-
-&nbsp;  January February March April May June July August September October November December  October&nbsp;
-
-{{< tdclose >}}{{< tdopen >}}
-
-Exercise 2
-
-&nbsp;  1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31  18&nbsp;
-
-{{< tdclose >}}{{< tdopen >}}
-
-Exercise 3
-
-&nbsp;  2004 2005 2006 2007 2008 2009 2010 2011  2009&nbsp;
-
-{{< tdclose >}}{{< trclose >}}{{< tbodyclose >}}{{< tableclose >}}
-
-Explanation
-
-We can limit FluTrain to the observations that obtain the maximum ILI value with subset(FluTrain, ILI == max(ILI)). From here, we can read information about the week at which the maximum was obtained. Alternatively, you can use which.max(FluTrain$ILI) to find the row number corresponding to the observation with the maximum value of ILI, which is 303. Then, you can output the corresponding week using FluTrain$Week\[303\].
+Before applying analytics tools on the training set, we first need to understand the data at hand. Load "FluTrain.csv" into a data frame called FluTrain. Looking at the time period 2004-2011, which week corresponds to the highest percentage of ILI-related physician visits? 
 
 Which week corresponds to the highest percentage of ILI-related query fraction?
-
-{{< tableopen >}}{{< tbodyopen >}}{{< tropen >}}{{< tdopen >}}
-
-Exercise 4
-
-&nbsp;  January February March April May June July August September October November December  October&nbsp;
-
-{{< tdclose >}}{{< tdopen >}}
-
-Exercise 5
-
-&nbsp;  1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31  18&nbsp;
-
-{{< tdclose >}}{{< tdopen >}}
-
-Exercise 6
-
-&nbsp;  2004 2005 2006 2007 2008 2009 2010 2011  2009&nbsp;
-
-{{< tdclose >}}{{< trclose >}}{{< tropen >}}{{< tdopen >}}
- 
-{{< tdclose >}}{{< tdopen >}}
- 
-{{< tdclose >}}{{< tdopen >}}
-CheckShow Answer
-{{< tdclose >}}{{< trclose >}}{{< tbodyclose >}}{{< tableclose >}}
-
-Explanation
-
-We can limit FluTrain to the observations that obtain the maximum ILI value with subset(FluTrain, Queries == max(Queries)). From here, we can read information about the week at which the maximum was obtained. Alternatively, you can use which.max(FluTrain$Queries) to find the row number corresponding to the observation with the maximum value of Queries, which is 303. Then, you can output the corresponding week using FluTrain$Week\[303\].
 
 ## Problem 1.2 - Understanding the Data
 
 Let us now understand the data at an aggregate level. Plot the histogram of the dependent variable, ILI. What best describes the distribution of values of ILI?
 
-Exercise 7
+ A. Most of the ILI values are small, with a relatively small number of much larger values (in statistics, this sort of data is called "skew right").  
 
-&nbsp;Most of the ILI values are small, with a relatively small number of much larger values (in statistics, this sort of data is called "skew right"). &nbsp;
+ B. The ILI values are balanced, with equal numbers of unusually large and unusually small values.  
 
-&nbsp;The ILI values are balanced, with equal numbers of unusually large and unusually small values. &nbsp;
-
-&nbsp;Most of the ILI values are large, with a relatively small number of much smaller values (in statistics, this sort of data is called "skew left"). &nbsp;
-
-Explanation
-
-The histogram of ILI can be obtained with hist(FluTrain$ILI). Visually, the data is skew right.
-
-CheckShow Answer
+ C. Most of the ILI values are large, with a relatively small number of much smaller values (in statistics, this sort of data is called "skew left").  
 
 ## Problem 1.3 - Understanding the Data
 
@@ -125,47 +57,31 @@ When handling a skewed dependent variable, it is often useful to predict the log
 
 Plot the natural logarithm of ILI versus Queries. What does the plot suggest?.
 
-Exercise 8
+ A. There is a negative, linear relationship between log(ILI) and Queries.  
 
-&nbsp;There is a negative, linear relationship between log(ILI) and Queries. &nbsp;
+ B. There is no apparent linear relationship between log(ILI) and Queries.  
 
-&nbsp;There is no apparent linear relationship between log(ILI) and Queries. &nbsp;
-
-&nbsp;There is a positive, linear relationship between log(ILI) and Queries. &nbsp;
-
-Explanation
-
-The plot can be obtained with plot(FluTrain$Queries, log(FluTrain$ILI)). Visually, there is a positive, linear relationship between log(ILI) and Queries.
-
-CheckShow Answer
+ C. There is a positive, linear relationship between log(ILI) and Queries.  
 
 ## Problem 2.1 - Linear Regression Model
 
 Based on the plot we just made, it seems that a linear regression model could be a good modeling choice. Based on our understanding of the data from the previous subproblem, which model best describes our estimation problem?
 
-Exercise 9
+ A. ILI = intercept + coefficient x Queries, where the coefficient is negative 
 
-&nbsp;ILI = intercept + coefficient x Queries, where the coefficient is negative&nbsp;
+ B. Queries = intercept + coefficient x ILI, where the coefficient is negative 
 
-&nbsp;Queries = intercept + coefficient x ILI, where the coefficient is negative&nbsp;
+ C. ILI = intercept + coefficient x Queries, where the coefficient is positive 
 
-&nbsp;ILI = intercept + coefficient x Queries, where the coefficient is positive&nbsp;
+ D. Queries = intercept + coefficient x ILI, where the coefficient is positive 
 
-&nbsp;Queries = intercept + coefficient x ILI, where the coefficient is positive&nbsp;
+ E. log(ILI) = intercept + coefficient x Queries, where the coefficient is negative 
 
-&nbsp;log(ILI) = intercept + coefficient x Queries, where the coefficient is negative&nbsp;
+ F. Queries = intercept + coefficient x log(ILI), where the coefficient is negative 
 
-&nbsp;Queries = intercept + coefficient x log(ILI), where the coefficient is negative&nbsp;
+ G. log(ILI) = intercept + coefficient x Queries, where the coefficient is positive 
 
-&nbsp;log(ILI) = intercept + coefficient x Queries, where the coefficient is positive&nbsp;
-
-&nbsp;Queries = intercept + coefficient x log(ILI), where the coeffcient is positive&nbsp;
-
-Explanation
-
-From the previous subproblem, we are predicting log(ILI) using the Queries variable. From the plot in the previous subproblem, we expect the coefficient on Queries to be positive.
-
-CheckShow Answer
+ H. Queries = intercept + coefficient x log(ILI), where the coeffcient is positive 
 
 ## Problem 2.2 - Linear Regression Model
 
@@ -173,55 +89,9 @@ Let's call the regression model from the previous problem (Problem 2.1) FluTrend
 
 What is the training set R-squared value for FluTrend1 model (the "Multiple R-squared")?
 
-Exercise 10
-
-&nbsp;Numerical Response&nbsp;
-
- 
-
-Explanation
-
-The model can be trained with:
-
-FluTrend1 = lm(log(ILI)~Queries, data=FluTrain)
-
-From summary(FluTrend1), we read that the R-squared value is 0.709.
-
- 
-
-CheckShow Answer
-
 ## Problem 2.3 - Linear Regression Model
 
 For a single variable linear regression model, there is a direct relationship between the R-squared and the correlation between the independent and the dependent variables. What is the relationship we infer from our problem? (Don't forget that you can use the cor function to compute the correlation between two variables.)
-
-Exercise 11
-
-&nbsp;R-squared = Correlation^2&nbsp;
-
-&nbsp;R-squared = log(1/Correlation)&nbsp;
-
-&nbsp;R-squared = exp(-0.5*Correlation)&nbsp;*
-
-*Explanation*
-
-*To test these hypotheses, we first need to compute the correlation between the independent variable used in the model (Queries) and the dependent variable (log(ILI)). This can be done with*
-
-*Correlation = cor(FluTrain$Queries, log(FluTrain$ILI))*
-
-*The values of the three expressions are then:*
-
-*Correlation^2 = 0.7090201*
-
-*log(1/Correlation) = 0.1719357*
-
-*exp(-0.5*Correlation) = 0.6563792
-
-It appears that Correlation^2 is equal to the R-squared value. It can be proved that this is always the case.
-
-Note that the "exp" function stands for the exponential function. The exponential can be computed in R using the function exp().
-
-CheckShow Answer
 
 ## Problem 3.1 - Performance on the Test Set
 
@@ -237,71 +107,15 @@ PredTest1 = exp(predict(FluTrend1, newdata=FluTest))
 
 What is our estimate for the percentage of ILI-related physician visits for the week of March 11, 2012? (HINT: You can either just output FluTest$Week to find which element corresponds to March 11, 2012, or you can use the "which" function in R. To learn more about the which function, type "?which" in your R console.)
 
-Exercise 12
-
-&nbsp;Numerical Response&nbsp;
-
- 
-
-Explanation
-
-To obtain the predictions, we need can run
-
-PredTest1 = exp(predict(FluTrend1, newdata=FluTest))
-
-Next, we need to determine which element in the test set is for March 11, 2012. We can determine this with:
-
-which(FluTest$Week == "2012-03-11 - 2012-03-17")
-
-Now we know we are looking for prediction number 11. This can be accessed with:
-
-PredTest1\[11\]
-
-CheckShow Answer
-
 ## Problem 3.2 - Performance on the Test Set
 
 What is the relative error betweeen the estimate (our prediction) and the observed value for the week of March 11, 2012? Note that the relative error is calculated as
 
 (Observed ILI - Estimated ILI)/Observed ILI
 
-Exercise 13
-
-&nbsp;Numerical Response&nbsp;
-
- 
-
-Explanation
-
-From the previous problem, we know the predicted value is 2.187378. The actual value is the 11th testing set ILI value or FluTest$ILI\[11\], which has value 2.293422. Finally we compute the relative error to be (2.293422 - 2.187378)/2.293422.
-
-CheckShow Answer
-
 ## Problem 3.3 - Performance on the Test Set
 
 What is the Root Mean Square Error (RMSE) between our estimates and the actual observations for the percentage of ILI-related physician visits, on the test set?
-
-Exercise 14
-
-&nbsp;Numerical Response&nbsp;
-
- 
-
-Explanation
-
-The RMSE can be calculated by first computing the SSE:
-
-SSE = sum((PredTest1-FluTest$ILI)^2)
-
-and then dividing by the number of observations and taking the square root:
-
-RMSE = sqrt(SSE / nrow(FluTest))
-
-Alternatively, you could use the following command:
-
-sqrt(mean((PredTest1-FluTest$ILI)^2)).
-
-CheckShow Answer
 
 ## Problem 4.1 - Training a Time Series Model
 
@@ -325,35 +139,15 @@ In these commands, the value of -2 passed to lag means to return 2 observations 
 
 How many values are missing in the new ILILag2 variable?
 
-Exercise 15
-
-&nbsp;Numerical Response&nbsp;
-
- 
-
-Explanation
-
-This can be read from the output of summary(FluTrain$ILILag2).
-
-CheckShow Answer
-
 ## Problem 4.2 - Training a Time Series Model
 
 Use the plot() function to plot the log of ILILag2 against the log of ILI. Which best describes the relationship between these two variables?
 
-Exercise 16
+ A. There is a strong negative relationship between log(ILILag2) and log(ILI). 
 
-&nbsp;There is a strong negative relationship between log(ILILag2) and log(ILI).&nbsp;
+ B. This is a weak or no relationship between log(ILILag2) and log(ILI) 
 
-&nbsp;This is a weak or no relationship between log(ILILag2) and log(ILI)&nbsp;
-
-&nbsp;There is a strong positive relationship between log(ILILag2) and log(ILI).&nbsp;
-
-Explanation
-
-From plot(log(FluTrain$ILILag2), log(FluTrain$ILI)), we observe a strong positive relationship.
-
-CheckShow Answer
+ C. There is a strong positive relationship between log(ILILag2) and log(ILI). 
 
 ## Problem 4.3 - Training a Time Series Model
 
@@ -361,53 +155,23 @@ Train a linear regression model on the FluTrain dataset to predict the log of th
 
 Which coefficients are significant at the p=0.05 level in this regression model? (Select all that apply.)
 
-Exercise 17
+ A. Intercept 
 
-&nbsp;Intercept&nbsp;
+ B. Queries 
 
-&nbsp;Queries&nbsp;
-
-&nbsp;log(ILILag2)&nbsp;
-
- 
+ C. log(ILILag2) 
 
 What is the R^2 value of the FluTrend2 model?
-
-Exercise 18
-
-&nbsp;Numerical Response&nbsp;
-
- 
-
-Explanation
-
-The following code builds and summarizes the FluTrend2 model:
-
-FluTrend2 = lm(log(ILI)~Queries+log(ILILag2), data=FluTrain)
-
-summary(FluTrend2)
-
-As can be seen, all three coefficients are highly significant, and the R^2 value is 0.9063.
-
-CheckShow Answer
 
 ## Problem 4.4 - Training a Time Series Model
 
 On the basis of R-squared value and significance of coefficients, which statement is the most accurate?
 
-Exercise 19
+ A. Due to overfitting, FluTrend2 is a weaker model then FluTrend1 on the training set. 
 
-&nbsp;Due to overfitting, FluTrend2 is a weaker model then FluTrend1 on the training set.&nbsp;
+ B. FluTrend2 is about the same quality as FluTrend1 on the training set. 
 
-&nbsp;FluTrend2 is about the same quality as FluTrend1 on the training set.&nbsp;
-
-&nbsp;FluTrend2 is a stronger model than FluTrend1 on the training set.&nbsp;
-
-Explanation
-
-Moving from FluTrend1 to FluTrend2, in-sample R^2 improved from 0.709 to 0.9063, and the new variable is highly significant. As a result, there is no sign of overfitting, and FluTrend2 is superior to FluTrend1 on the training set.
-
-CheckShow Answer
+ C. FluTrend2 is a stronger model than FluTrend1 on the training set. 
 
 ## Problem 5.1 - Evaluating the Time Series Model in the Test Set
 
@@ -415,99 +179,37 @@ So far, we have only added the ILILag2 variable to the FluTrain data frame. To m
 
 Modify the code from the previous subproblem to add an ILILag2 variable to the FluTest data frame. How many missing values are there in this new variable?
 
-Exercise 20
-
-&nbsp;Numerical Response&nbsp;
-
- 
-
-Explanation
-
-We can add the new variable with:
-
-ILILag2 = lag(zoo(FluTest$ILI), -2, na.pad=TRUE)
-
-FluTest$ILILag2 = coredata(ILILag2)
-
-From summary(FluTest$ILILag2), we can see that we're missing two values of the new variable.
-
-CheckShow Answer
-
 ## Problem 5.2 - Evaluating the Time Series Model in the Test Set
 
 In this problem, the training and testing sets are split sequentially -- the training set contains all observations from 2004-2011 and the testing set contains all observations from 2012. There is no time gap between the two datasets, meaning the first observation in FluTest was recorded one week after the last observation in FluTrain. From this, we can identify how to fill in the missing values for the ILILag2 variable in FluTest.
 
 Which value should be used to fill in the ILILag2 variable for the first observation in FluTest?
 
-Exercise 21
+ A. The ILI value of the second-to-last observation in the FluTrain data frame. 
 
-&nbsp;The ILI value of the second-to-last observation in the FluTrain data frame.&nbsp;
+ B. The ILI value of the last observation in the FluTrain data frame. 
 
-&nbsp;The ILI value of the last observation in the FluTrain data frame.&nbsp;
+ C. The ILI value of the first observation in the FluTest data frame. 
 
-&nbsp;The ILI value of the first observation in the FluTest data frame.&nbsp;
-
-&nbsp;The ILI value of the second observation in the FluTest data frame.&nbsp;
-
-Explanation
-
-The time two weeks before the first week of 2012 is the second-to-last week of 2011. This corresponds to the second-to-last observation in FluTrain.
+ D. The ILI value of the second observation in the FluTest data frame. 
 
 Which value should be used to fill in the ILILag2 variable for the second observation in FluTest?
 
-Exercise 22
+ A. The ILI value of the second-to-last observation in the FluTrain data frame. 
 
-&nbsp;The ILI value of the second-to-last observation in the FluTrain data frame.&nbsp;
+ B. The ILI value of the last observation in the FluTrain data frame. 
 
-&nbsp;The ILI value of the last observation in the FluTrain data frame.&nbsp;
+ C. The ILI value of the first observation in the FluTest data frame. 
 
-&nbsp;The ILI value of the first observation in the FluTest data frame.&nbsp;
-
-&nbsp;The ILI value of the second observation in the FluTest data frame.&nbsp;
-
-Explanation
-
-The time two weeks before the second week of 2012 is the last week of 2011. This corresponds to the last observation in FluTrain.
-
-CheckShow Answer
+ D. The ILI value of the second observation in the FluTest data frame. 
 
 ## Problem 5.3 - Evaluating the Time Series Model in the Test Set
 
 Fill in the missing values for ILILag2 in FluTest. In terms of syntax, you could set the value of ILILag2 in row "x" of the FluTest data frame to the value of ILI in row "y" of the FluTrain data frame with "FluTest$ILILag2\[x\] = FluTrain$ILI\[y\]". Use the answer to the previous questions to determine the appropriate values of "x" and "y". It may be helpful to check the total number of rows in FluTrain using str(FluTrain) or nrow(FluTrain).
 
-Explanation
-
-From nrow(FluTrain), we see that there are 417 observations in the training set. Therefore, we need to run the following two commands:
-
-FluTest$ILILag2\[1\] = FluTrain$ILI\[416\]
-
-FluTest$ILILag2\[2\] = FluTrain$ILI\[417\]
-
 What is the new value of the ILILag2 variable in the first row of FluTest?
 
-Exercise 23
-
-&nbsp;Numerical Response&nbsp;
-
- 
-
-Explanation
-
-This can be read from FluTest$ILILag2\[1\].
-
 What is the new value of the ILILag2 variable in the second row of FluTest?
-
-Exercise 24
-
-&nbsp;Numerical Response&nbsp;
-
- 
-
-Explanation
-
-This can be read from FluTest$ILILag2\[2\].
-
-CheckShow Answer
 
 ## Problem 5.4 - Evaluating the Time Series Model in the Test Set
 
@@ -515,49 +217,9 @@ Obtain test set predictions of the ILI variable from the FluTrend2 model, again 
 
 What is the test-set RMSE of the FluTrend2 model?
 
-Exercise 25
-
-&nbsp;Numerical Response&nbsp;
-
- 
-
-Explanation
-
-We can obtain the test-set predictions with:
-
-PredTest2 = exp(predict(FluTrend2, newdata=FluTest))
-
-And then we can compute the RMSE with the following commands:
-
-SSE = sum((PredTest2-FluTest$ILI)^2)
-
-RMSE = sqrt(SSE / nrow(FluTest))
-
-Alternatively, you could use the following command to compute the RMSE:
-
-sqrt(mean((PredTest2-FluTest$ILI)^2)).
-
-The test-set RMSE of FluTrend2 is 0.294.
-
-CheckShow Answer
-
 ## Problem 5.5 - Evaluating the Time Series Model in the Test Set
 
 Which model obtained the best test-set RMSE?
-
-Exercise 26
-
-&nbsp;FluTrend1&nbsp;
-
-&nbsp;FluTrend2&nbsp;
-
-Explanation
-
-The test-set RMSE of FluTrend2 is 0.294, as opposed to the 0.749 value obtained by the FluTrend1 model.
-
-In this problem, we used a simple time series model with a single lag term. ARIMA models are a more general form of the model we built, which can include multiple lag terms as well as more complicated combinations of previous values of the dependent variable. If you're interested in learning more, check out "?arima" or the available online tutorials for these sorts of models.
-
-CheckShow Answer
 
 - {{% resource_link "f590aa02-4205-ae29-1d85-5ec56a16b4a4" "Back: Reading Test Scores" %}}
 - {{% resource_link "609cf352-3750-f69e-cb54-c706f04a68c5" "Continue: State Data" %}}

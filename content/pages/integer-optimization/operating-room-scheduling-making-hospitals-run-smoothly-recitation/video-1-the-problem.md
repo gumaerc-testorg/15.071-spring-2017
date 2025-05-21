@@ -1,6 +1,6 @@
 ---
 content_type: page
-description: ''
+description: '9.4 Operating Room Scheduling: Making Hospitals Run Smoothly  (Recitation)'
 draft: false
 learning_resource_types: []
 ocw_type: CourseSection
@@ -18,5 +18,4 @@ video_metadata:
 
 The slides from all videos in this recitation can be downloaded here: {{% resource_link "e4319f68-3e5e-7f91-0c27-6f5157ef4545" "An Optimization Model for Hospitals (PDF)" %}}.
 
-- {{% resource_link "1ebaa9f0-a112-c161-92d9-1227cd28b727" "Back: Operating Room Scheduling: Making Hospitals Run Smoothly (Recitation)" %}}
-- {{% resource_link "8a92070b-71b9-513e-35b1-c9854c1ef91c" "Continue: Video 2: An Optimization Model" %}}
+{{% resource_link "8a92070b-71b9-513e-35b1-c9854c1ef91c" "Continue: Video 2: An Optimization Model" %}}

@@ -2,7 +2,7 @@
 content_type: page
 description: This section details the assignments in the residential version of the
   course.
-draft: true
+draft: false
 learning_resource_types:
 - Assignments
 ocw_type: CourseSection

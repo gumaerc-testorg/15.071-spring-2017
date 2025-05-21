@@ -1,6 +1,8 @@
 ---
 content_type: page
-description: ''
+description: '8.2 Airline Revenue Management: An Introduction to Linear Optimization
+
+  '
 draft: false
 learning_resource_types: []
 ocw_type: CourseSection
@@ -16,5 +18,4 @@ video_metadata:
 
 {{< resource uuid="16b9e20c-802b-ebc4-126b-2ef0546def59" >}}
 
-- {{% resource_link "2900efa7-1aff-756d-feba-74c6d16f2d3d" "Back: Airline Revenue Management: An Introduction to Linear Optimization" %}}
-- {{% resource_link "3a0381df-ab5e-b38d-f338-52ce8d57f81b" "Continue: Quick Question" %}}
+{{% resource_link "3a0381df-ab5e-b38d-f338-52ce8d57f81b" "Continue: Quick Question" %}}

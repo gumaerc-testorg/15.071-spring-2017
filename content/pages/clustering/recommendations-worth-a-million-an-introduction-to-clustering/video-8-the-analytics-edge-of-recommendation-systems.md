@@ -1,6 +1,6 @@
 ---
 content_type: page
-description: ''
+description: '6.2 Recommendations Worth a Million: An Introduction to Clustering'
 draft: false
 learning_resource_types: []
 ocw_type: CourseSection
@@ -16,5 +16,4 @@ video_metadata:
 
 {{< resource uuid="cf64e584-3276-67aa-daf2-c2990defe523" >}}
 
-- {{% resource_link "4d3cfab6-9136-623b-888a-5451d2fad159" "Back: Quick Question" %}}
-- {{% resource_link "0943bd81-1d9c-af9e-92bf-3c7bf9d7b9f2" "Continue: Predictive Diagnosis: Discovering Patterns for Disease Detection" %}}
+{{% resource_link "4d3cfab6-9136-623b-888a-5451d2fad159" "Back: Quick Question" %}}

@@ -1,6 +1,7 @@
 ---
 content_type: page
-description: ''
+description: '1.2 The Analytics Edge: Intelligence, Happiness, and Health  (Lecture
+  Sequence)'
 draft: false
 learning_resource_types: []
 ocw_type: CourseSection
@@ -17,5 +18,4 @@ video_metadata:
 
 {{< resource uuid="55f63868-4259-171d-1186-4ebb36f2e449" >}}
 
-- {{% resource_link "dd0e31df-5551-708a-f83d-36da17c4c663" "Back: Video 5: Example 4 - D2Hawkeye" %}}
-- {{% resource_link "1ac933da-13d1-3dfa-2e38-03abf2d6971f" "Continue: Working with Data: An Introduction to R" %}}
+{{% resource_link "dd0e31df-5551-708a-f83d-36da17c4c663" "Back: Video 5: Example 4 - D2Hawkeye" %}}

@@ -20,7 +20,7 @@ video_metadata:
 
 If your optimal objective function value was 35.666, then you probably are maximizing instead of minimizing! Be sure to check that you are minimizing the objective in the Solver window. 
 
-The images in this video of the brain scans come from the {{% resource_link "2894ade1-e666-447d-8fb9-ac1a0b00bec1" "Computational Environment for Radiotherapy Research (CERR)" %}}. 
+The images in this video of the brain scans come from the {{% resource_link "27ab854f-8d4b-4f7c-b6e7-7858657f2cea" "Computational Environment for Radiotherapy Research (CERR)" %}}. 
 
 - {{% resource_link "12e6da56-9931-1c83-7bce-67f78b499ef3" "Back: Quick Question" %}}
 - {{% resource_link "79d91262-8a00-9665-9e54-0a5ff3802ab3" "Continue: Quick Question" %}}

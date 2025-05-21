@@ -1,6 +1,6 @@
 ---
 content_type: page
-description: ''
+description: 8.1 Welcome to Unit 8
 draft: false
 learning_resource_types: []
 ocw_type: CourseSection
@@ -16,5 +16,4 @@ video_metadata:
 
 {{< resource uuid="92d49837-0721-2eb4-6880-2b2929ad74b0" >}}
 
-- {{% resource_link "daafaa58-867c-9765-f1c4-c60a9c0ed426" "Back: Linear Optimization" %}}
-- {{% resource_link "8556ba9c-76cf-a0d6-4a07-e442426c65bf" "Continue: Installing LibreOffice or OpenOffice" %}}
+{{% resource_link "8556ba9c-76cf-a0d6-4a07-e442426c65bf" "Continue: Installing LibreOffice or OpenOffice" %}}

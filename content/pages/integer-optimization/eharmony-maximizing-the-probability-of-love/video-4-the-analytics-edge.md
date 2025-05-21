@@ -1,6 +1,6 @@
 ---
 content_type: page
-description: ''
+description: '9.3 eHarmony: Maximizing the Probability of Love'
 draft: false
 learning_resource_types: []
 ocw_type: CourseSection
@@ -16,5 +16,4 @@ video_metadata:
 
 {{< resource uuid="b2c338b4-b9ee-6e7d-3532-0ce66e52ba0c" >}}
 
-- {{% resource_link "ff041fd1-d8ec-5719-0e25-cb482bdb9cd2" "Back: Quick Question" %}}
-- {{% resource_link "1ebaa9f0-a112-c161-92d9-1227cd28b727" "Continue: Operating Room Scheduling: Making Hospitals Run Smoothly (Recitation)" %}}
+{{% resource_link "ff041fd1-d8ec-5719-0e25-cb482bdb9cd2" "Back: Quick Question" %}}

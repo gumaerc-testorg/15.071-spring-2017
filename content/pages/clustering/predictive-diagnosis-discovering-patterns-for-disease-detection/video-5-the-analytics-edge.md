@@ -1,6 +1,8 @@
 ---
 content_type: page
-description: ''
+description: '6.3 Predictive Diagnosis: Discovering Patterns for Disease Detection
+
+  '
 draft: false
 learning_resource_types: []
 ocw_type: CourseSection
@@ -16,5 +18,4 @@ video_metadata:
 
 {{< resource uuid="087c0a89-92ff-b355-b956-938e5927b59a" >}}
 
-- {{% resource_link "fe5956e5-eba7-36c9-83c6-c9c470f55d64" "Back: Quick Question" %}}
-- {{% resource_link "c6d206cc-fb15-28f6-048f-29e817450da7" "Continue: Seeing the Big Picture: Segmenting Images to Create Data (Recitation)" %}}
+{{% resource_link "fe5956e5-eba7-36c9-83c6-c9c470f55d64" "Back: Quick Question" %}}

@@ -1,6 +1,7 @@
 ---
 content_type: page
-description: ''
+description: '1.2 The Analytics Edge: Intelligence, Happiness, and Health  (Lecture
+  Sequence)'
 draft: false
 learning_resource_types: []
 ocw_type: CourseSection
@@ -18,5 +19,4 @@ video_metadata:
 
 The slides from all videos in this Lecture Sequence can be downloaded here: {{% resource_link "9e84c60f-f05f-5ad6-c2be-78008f392422" "Introduction to the Analytics Edge (PDF)" %}}.
 
-- {{% resource_link "a958c6c3-2e8f-cfa1-cbab-a162067382a1" "Back: Welcome to Unit 1" %}}
-- {{% resource_link "d47941e3-7e10-d553-df10-f1506d21de79" "Continue: Video 2: Example 1 - IBM Watson" %}}
+{{% resource_link "d47941e3-7e10-d553-df10-f1506d21de79" "Continue: Video 2: Example 1 - IBM Watson" %}}

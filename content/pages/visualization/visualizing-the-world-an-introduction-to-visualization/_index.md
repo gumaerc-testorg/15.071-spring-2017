@@ -1,6 +1,8 @@
 ---
 content_type: page
-description: ''
+description: '7.2 Visualizing the World: An Introduction to Visualization
+
+  '
 draft: false
 learning_resource_types: []
 ocw_type: CourseSection
@@ -18,5 +20,4 @@ video_metadata:
 
 The slides from all videos in this lecture can be downloaded here: {{% resource_link "81c92311-a4e6-844e-148e-18a58d7e3c49" "An Introduction to Visualization (PDF)" %}}.
 
-- {{% resource_link "252f83b9-1a54-bc0d-b02e-8b2cdb45007c" "Back: Welcome to Unit 7" %}}
-- {{% resource_link "dc9db678-f128-3a5e-3783-460ede434049" "Continue: Quick Question" %}}
+{{% resource_link "dc9db678-f128-3a5e-3783-460ede434049" "Continue: Quick Question" %}}

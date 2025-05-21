@@ -1,6 +1,6 @@
 ---
 content_type: page
-description: ''
+description: 9.1 Welcome to Unit 9
 draft: false
 learning_resource_types: []
 ocw_type: CourseSection
@@ -16,5 +16,4 @@ video_metadata:
 
 {{< resource uuid="9a9fdad4-6ae1-f331-7769-2d11d9fa1309" >}}
 
-- {{% resource_link "db42b40a-d705-f431-a7e2-3a1d11cec341" "Back: Integer Optimization" %}}
-- {{% resource_link "fbf2b704-9246-466e-f247-36bff248b7c3" "Continue: Sports Scheduling: An Introduction to Integer Optimization" %}}
+{{% resource_link "fbf2b704-9246-466e-f247-36bff248b7c3" "Continue: Sports Scheduling: An Introduction to Integer Optimization" %}}

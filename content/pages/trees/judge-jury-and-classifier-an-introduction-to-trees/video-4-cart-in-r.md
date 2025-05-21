@@ -14,7 +14,7 @@ video_metadata:
 ---
 ## Video 4: CART in R
 
-In the next few videos, we'll be using the dataset {{% resource_link "1fae15ec-e611-9c72-496a-a45be0f4b024" "stevens (CSV)" %}} to build trees in R. Please download the dataset to follow along. This data comes from the {{% resource_link "ce9c86d2-e3b2-4f90-a310-e50edfa76987" "Supreme Court Forecasting Project" %}} website.
+In the next few videos, we'll be using the dataset {{% resource_link "1fae15ec-e611-9c72-496a-a45be0f4b024" "stevens (CSV)" %}} to build trees in R. Please download the dataset to follow along. This data comes from the {{% resource_link "a3719584-ccdb-4091-a67c-1a56918ac91e" "Supreme Court Forecasting Project" %}} website.
 
 An R script file with all of the R commands used in this lecture can be downloaded here: {{% resource_link "4b3d8602-6f29-ac08-8fd4-a59adf74a01e" "Unit4_SupremeCourt (R)" %}}.
 

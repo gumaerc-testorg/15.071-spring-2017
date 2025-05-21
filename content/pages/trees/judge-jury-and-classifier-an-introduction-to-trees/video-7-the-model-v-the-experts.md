@@ -1,6 +1,6 @@
 ---
 content_type: page
-description: ''
+description: '4.2 Judge, Jury, and Classifier: An Introduction to Trees'
 draft: false
 learning_resource_types: []
 ocw_type: CourseSection
@@ -16,5 +16,4 @@ video_metadata:
 
 {{< resource uuid="a2d5bd54-26fb-55c6-1abd-2e90d90d7c3c" >}}
 
-- {{% resource_link "0be06c80-7e39-cc4e-2808-dc63ffaa5efa" "Back: Quick Question" %}}
-- {{% resource_link "52a221dd-c011-90a4-45b1-a393b15cb810" "Continue: Keeping an Eye on Healthcare Costs: The D2Hawkeye Story" %}}
+{{% resource_link "0be06c80-7e39-cc4e-2808-dc63ffaa5efa" "Back: Quick Question" %}}

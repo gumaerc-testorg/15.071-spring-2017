@@ -1,6 +1,8 @@
 ---
 content_type: page
-description: ''
+description: '7.2 Visualizing the World: An Introduction to Visualization
+
+  '
 draft: false
 learning_resource_types: []
 ocw_type: CourseSection
@@ -24,12 +26,12 @@ Note: You can add scale\_color\_brewer(palette="Dark2") to your plot if you are 
 
 One region in particular has a lot of countries with a very low fertility rate and a very low percentage of the population under 15. Which region is it?
 
-{{< quiz_multiple_choice questionId="Q1_div" >}}{{< quiz_choices >}}{{< quiz_choice isCorrect="false" >}} Africa {{< /quiz_choice >}}   
-{{< quiz_choice isCorrect="false" >}} Americas {{< /quiz_choice >}}   
-{{< quiz_choice isCorrect="false" >}} Eastern Mediterranean {{< /quiz_choice >}}   
-{{< quiz_choice isCorrect="true" >}} Europe {{< /quiz_choice >}}   
-{{< quiz_choice isCorrect="false" >}} South-East Asia {{< /quiz_choice >}}   
-{{< quiz_choice isCorrect="false" >}} Western Pacific {{< /quiz_choice >}}{{< /quiz_choices >}}   
+{{< quiz_multiple_choice questionId="Q1_div" >}}{{< quiz_choices >}}{{< quiz_choice isCorrect="false" >}} Africa {{< /quiz_choice >}}    
+{{< quiz_choice isCorrect="false" >}} Americas {{< /quiz_choice >}}    
+{{< quiz_choice isCorrect="false" >}} Eastern Mediterranean {{< /quiz_choice >}}    
+{{< quiz_choice isCorrect="true" >}} Europe {{< /quiz_choice >}}    
+{{< quiz_choice isCorrect="false" >}} South-East Asia {{< /quiz_choice >}}    
+{{< quiz_choice isCorrect="false" >}} Western Pacific {{< /quiz_choice >}}{{< /quiz_choices >}}    
 {{< quiz_solution >}}Explanation
 
 You can color the points by region if you adjust the command to the following:
@@ -38,5 +40,4 @@ ggplot(WHO, aes(x = FertilityRate, y = Under15, color=Region)) + geom\_point()
 
 Most of the countries in Europe have a very low fertility rate and a very low percentage of the population under 15.{{< /quiz_solution >}}{{< /quiz_multiple_choice >}}
 
-- {{% resource_link "be1c12bd-caf2-9b71-c12f-50c42551b8a6" "Back: Video 5: Advanced Scatterplots Using ggplot" %}}
-- {{% resource_link "716f78f6-1fe6-c5f4-7370-d7a3c4127827" "Continue: The Analytical Policeman: Visualization for Law and Order" %}}
+{{% resource_link "be1c12bd-caf2-9b71-c12f-50c42551b8a6" "Back: Video 5: Advanced Scatterplots Using ggplot" %}}

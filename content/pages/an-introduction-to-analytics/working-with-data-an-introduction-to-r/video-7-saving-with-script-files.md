@@ -1,6 +1,6 @@
 ---
 content_type: page
-description: ''
+description: '1.3 Working with Data: An Introduction to R'
 draft: false
 learning_resource_types: []
 ocw_type: CourseSection
@@ -14,9 +14,8 @@ video_metadata:
 ---
 ## Video 7: Saving with Script Files
 
-A script file containing all of the R commands used in this lecture can be downloaded here: {{% resource_link "77a5d5c9-ab1b-51dc-18e2-9f06f4defc34" "Unit1_IntroductionR (R)" %}}.
+A script file containing all of the R commands used in this lecture can be downloaded here: {{% resource_link "77a5d5c9-ab1b-51dc-18e2-9f06f4defc34" "Unit1\_IntroductionR (R)" %}}.
 
 {{< resource uuid="6e4647ab-c18f-d701-2bbb-26dc07ed1fb0" >}}
 
-- {{% resource_link "64119b70-3f1d-42bf-97ce-9f87d64a094c" "Back: Quick Question" %}}
-- {{% resource_link "7ae5f9ab-ee30-803e-522b-c737bfb5e185" "Continue: Understanding Food: Nutritional Education with Data (Recitation)" %}}
+{{% resource_link "64119b70-3f1d-42bf-97ce-9f87d64a094c" "Back: Quick Question" %}}

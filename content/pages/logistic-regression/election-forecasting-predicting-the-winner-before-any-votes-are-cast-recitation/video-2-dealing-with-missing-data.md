@@ -15,7 +15,7 @@ video_metadata:
 ---
 ## Video 2: Dealing with Missing Data
 
-In this recitation, we will be using the dataset {{% resource_link "2e5e305f-5deb-1aee-9679-c33cf303484b" "PollingData (CSV)" %}}. Please download this dataset to your computer, and save it in a location that you can easily navigate to in R. This data comes from {{% resource_link "acf3fad4-d703-4877-a4d8-7d90276920de" "RealClearPolitics.com" %}}.
+In this recitation, we will be using the dataset {{% resource_link "2e5e305f-5deb-1aee-9679-c33cf303484b" "PollingData (CSV)" %}}. Please download this dataset to your computer, and save it in a location that you can easily navigate to in R. This data comes from {{% resource_link "1319a7ae-c8f5-4664-abf2-8d20cede29cd" "RealClearPolitics.com" %}}.
 
 An R script file with all of the commands used in this lecture can be downloaded here: {{% resource_link "a56bc792-6829-9a5d-642c-ee6b3d7da861" "Unit3_Recitation (R)" %}}.
 
