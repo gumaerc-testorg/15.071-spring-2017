@@ -1,6 +1,6 @@
 ---
 content_type: page
-description: ''
+description: '8.2 Airline Revenue Management: An Introduction to Linear Optimization'
 draft: false
 learning_resource_types: []
 ocw_type: CourseSection
@@ -16,5 +16,4 @@ video_metadata:
 
 {{< resource uuid="05888959-6f88-3ebc-9a5c-4db7413eae9e" >}}
 
-- {{% resource_link "866b08a8-38d4-f694-786a-619e9ebff44b" "Back: Quick Question" %}}
-- {{% resource_link "7a59278a-134c-5085-244c-381fc6090890" "Continue: Radiation Therapy: An Application of Linear Optimization" %}}
+{{% resource_link "866b08a8-38d4-f694-786a-619e9ebff44b" "Back: Quick Question" %}}

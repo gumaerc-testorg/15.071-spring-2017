@@ -1,6 +1,8 @@
 ---
 content_type: page
-description: ''
+description: '7.3 The Analytical Policeman: Visualization for Law and Order
+
+  '
 draft: false
 learning_resource_types: []
 ocw_type: CourseSection
@@ -16,5 +18,4 @@ video_metadata:
 
 {{< resource uuid="95bbe828-34a9-5331-f28b-4b04683e69af" >}}
 
-- {{% resource_link "578178b9-992b-b5c4-e6a9-8dc2f7c1ad78" "Back: Quick Question" %}}
-- {{% resource_link "0af39afb-aff0-a226-a397-da1206ecd712" "Continue: The Good, the Bad, and the Ugly: Visualization Recitation (Recitation)" %}}
+{{% resource_link "578178b9-992b-b5c4-e6a9-8dc2f7c1ad78" "Back: Quick Question" %}}

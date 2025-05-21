@@ -1,6 +1,6 @@
 ---
 content_type: page
-description: ''
+description: 5.1 Welcome to Unit 5
 draft: false
 learning_resource_types: []
 ocw_type: CourseSection
@@ -15,6 +15,3 @@ video_metadata:
 ## Welcome to Unit 5
 
 {{< resource uuid="58f2d325-3f44-4a7a-41ec-39eacee96528" >}}
-
-- {{% resource_link "5847ad87-9afe-cf3e-9b93-c20cffe87acf" "Back: Text Analytics" %}}
-- {{% resource_link "aea3bc9c-07f7-3648-65c4-6fec93dd8515" "Continue: Turning Tweets into Knowledge: An Introduction to Text Analytics" %}}

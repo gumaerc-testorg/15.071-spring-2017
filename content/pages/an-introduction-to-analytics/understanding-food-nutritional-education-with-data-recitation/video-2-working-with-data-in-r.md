@@ -1,6 +1,6 @@
 ---
 content_type: page
-description: ''
+description: '1.4 Understanding Food: Nutritional Education with Data  (Recitation)'
 draft: false
 learning_resource_types: []
 ocw_type: CourseSection
@@ -14,9 +14,9 @@ video_metadata:
 ---
 ## Video 2: Working with Data in R
 
-In this recitation, we'll be using the data {{% resource_link "15b9bfcb-9109-c3dc-dcd9-372740d5b7cb" "USDA (CSV)" %}}. Please download this dataset and save it to your computer in a location that you will remember. This data comes from the {{% resource_link "d328edd5-aa57-46f0-8811-e40c00c49b57" "USDA National Nutrient Database for Standard Reference" %}}.
+In this recitation, we'll be using the data {{% resource_link "15b9bfcb-9109-c3dc-dcd9-372740d5b7cb" "USDA (CSV)" %}}. Please download this dataset and save it to your computer in a location that you will remember. This data comes from the [USDA National Nutrient Database for Standard Reference.](https://data.globalchange.gov/dataset/usda-ars-00020)
 
-A script file with all of the R commands that will be used in this recitation can be downloaded here: {{% resource_link "15c14666-af82-15f8-a5cc-076653f6f408" "Unit1_Recitation (R)" %}}.
+A script file with all of the R commands that will be used in this recitation can be downloaded here: {{% resource_link "15c14666-af82-15f8-a5cc-076653f6f408" "Unit1\_Recitation (R)" %}}.
 
 {{< resource uuid="6aa8fcaa-cf92-69a8-4185-c7cd1c8e742c" >}}
 

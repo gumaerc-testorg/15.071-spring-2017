@@ -1,6 +1,6 @@
 ---
 content_type: page
-description: ''
+description: '1.4 Understanding Food: Nutritional Education with Data  (Recitation)'
 draft: false
 learning_resource_types: []
 ocw_type: CourseSection

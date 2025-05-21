@@ -1,6 +1,6 @@
 ---
 content_type: page
-description: ''
+description: '2.2 The Statistical Sommelier: An Introduction to Linear Regression'
 draft: false
 learning_resource_types: []
 ocw_type: CourseSection
@@ -18,5 +18,4 @@ video_metadata:
 
 The slides from all videos in this Lecture Sequence can be downloaded here: {{% resource_link "4f6d186d-9fc1-7569-4534-71da9b7336d1" "Introduction to Linear Regression (PDF - 1.3MB)" %}}.
 
-- {{% resource_link "4f0a4b24-64cb-eba3-50fe-fae41b407cd6" "Back: Welcome to Unit 2" %}}
-- {{% resource_link "ef446456-afa1-894f-834f-a9ae8908c9a2" "Continue: Quick Question" %}}
+{{% resource_link "ef446456-afa1-894f-834f-a9ae8908c9a2" "Continue: Quick Question" %}}

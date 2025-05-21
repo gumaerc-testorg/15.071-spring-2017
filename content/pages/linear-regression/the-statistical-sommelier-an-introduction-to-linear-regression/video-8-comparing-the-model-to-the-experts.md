@@ -1,6 +1,6 @@
 ---
 content_type: page
-description: ''
+description: '2.2 The Statistical Sommelier: An Introduction to Linear Regression'
 draft: false
 learning_resource_types: []
 ocw_type: CourseSection
@@ -16,5 +16,4 @@ video_metadata:
 
 {{< resource uuid="9d19e349-427d-6ab2-9479-47c0189b88c3" >}}
 
-- {{% resource_link "04ad6920-c418-b28f-1259-8538cd8136cf" "Back: Quick Question" %}}
-- {{% resource_link "fcb6a63f-4737-920a-80bf-15309d3ee7b6" "Continue: Moneyball: The Power of Sports Analytics" %}}
+{{% resource_link "04ad6920-c418-b28f-1259-8538cd8136cf" "Back: Quick Question" %}}

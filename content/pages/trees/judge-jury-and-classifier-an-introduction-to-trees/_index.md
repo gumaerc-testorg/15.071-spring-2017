@@ -1,6 +1,6 @@
 ---
 content_type: page
-description: ''
+description: '4.2 Judge, Jury, and Classifier: An Introduction to Trees'
 draft: false
 learning_resource_types: []
 ocw_type: CourseSection
@@ -18,5 +18,4 @@ video_metadata:
 
 The slides from all videos in this Lecture Sequence can be downloaded here: {{% resource_link "fcf915a4-9a9c-d842-9328-2f66a1d255f4" "An Introduction to Trees (PDF - 1.1MB)" %}}.
 
-- {{% resource_link "1bbf68ce-76a4-7a1d-41c9-0293ba65ab6e" "Back: Welcome to Unit 4" %}}
-- {{% resource_link "b707db7f-9900-9e83-423e-4911e4d83568" "Continue: Quick Question" %}}
+{{% resource_link "b707db7f-9900-9e83-423e-4911e4d83568" "Continue: Quick Question" %}}

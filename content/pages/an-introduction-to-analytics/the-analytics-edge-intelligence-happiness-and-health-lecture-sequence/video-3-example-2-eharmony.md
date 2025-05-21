@@ -1,6 +1,7 @@
 ---
 content_type: page
-description: ''
+description: '1.2 The Analytics Edge: Intelligence, Happiness, and Health  (Lecture
+  Sequence)'
 draft: false
 learning_resource_types: []
 ocw_type: CourseSection

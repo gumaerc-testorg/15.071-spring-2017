@@ -1,6 +1,6 @@
 ---
 content_type: page
-description: ''
+description: 2.4 Playing Moneyball in the NBA  (Recitation)
 draft: false
 learning_resource_types: []
 ocw_type: CourseSection
@@ -16,5 +16,4 @@ video_metadata:
 
 {{< resource uuid="e4c6aeb7-d011-6de1-e848-b554e11656ed" >}}
 
-- {{% resource_link "117ccde2-d58f-68e2-13ef-c11a6b2848fb" "Back: Video 3: Points Scored" %}}
-- {{% resource_link "d3823600-300c-0300-0e79-696e835f8f2f" "Continue: Assignment 2" %}}
+{{% resource_link "117ccde2-d58f-68e2-13ef-c11a6b2848fb" "Back: Video 3: Points Scored" %}}

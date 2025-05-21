@@ -1,6 +1,6 @@
 ---
 content_type: page
-description: ''
+description: '3.2 Modeling the Expert: An Introduction to Logistic Regression'
 draft: false
 learning_resource_types: []
 ocw_type: CourseSection
@@ -16,5 +16,4 @@ video_metadata:
 
 {{< resource uuid="d3bf6fce-e70d-0778-5c6c-12c87dfbe83e" >}}
 
-- {{% resource_link "8809159b-6e06-0da2-d386-90c7900fdd67" "Back: Quick Question" %}}
-- {{% resource_link "58bb6065-48df-9c3a-8c14-8318a4e0e5c7" "Continue: The Framingham Heart Study: Evaluating Risk Factors to Save Lives" %}}
+{{% resource_link "8809159b-6e06-0da2-d386-90c7900fdd67" "Back: Quick Question" %}}

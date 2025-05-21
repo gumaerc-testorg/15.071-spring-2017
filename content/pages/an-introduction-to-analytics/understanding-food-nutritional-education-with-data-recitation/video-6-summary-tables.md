@@ -1,6 +1,6 @@
 ---
 content_type: page
-description: ''
+description: '1.4 Understanding Food: Nutritional Education with Data  (Recitation)'
 draft: false
 learning_resource_types: []
 ocw_type: CourseSection
@@ -16,5 +16,4 @@ video_metadata:
 
 {{< resource uuid="6cf203f1-b14e-4792-530e-59a31153bb94" >}}
 
-- {{% resource_link "041c3127-fd08-cfd7-d4e7-305dc781718b" "Back: Video 5: Adding Variables" %}}
-- {{% resource_link "0af41c2f-ca68-84fa-b36c-0a31155319b9" "Continue: Assignment 1" %}}
+{{% resource_link "041c3127-fd08-cfd7-d4e7-305dc781718b" "Back: Video 5: Adding Variables" %}}

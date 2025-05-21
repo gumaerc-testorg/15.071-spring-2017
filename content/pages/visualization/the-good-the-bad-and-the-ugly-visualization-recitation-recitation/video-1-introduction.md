@@ -1,6 +1,8 @@
 ---
 content_type: page
-description: ''
+description: '7.4 The Good, the Bad, and the Ugly: Visualization Recitation (Recitation)
+
+  '
 draft: false
 learning_resource_types: []
 ocw_type: CourseSection
@@ -18,5 +20,4 @@ video_metadata:
 
 The slides from all videos in this Recitation can be downloaded here: {{% resource_link "e2772a67-1376-cfd3-3a44-edea7e17ebd8" "Bad vs. Good Visualizations﻿ (PDF)" %}}.
 
-- {{% resource_link "0af39afb-aff0-a226-a397-da1206ecd712" "Back: The Good, the Bad, and the Ugly: Visualization Recitation (Recitation)" %}}
-- {{% resource_link "8b0a3402-f3ae-148c-c59d-c8f6078637f0" "Continue: Video 2: Pie Charts" %}}
+{{% resource_link "8b0a3402-f3ae-148c-c59d-c8f6078637f0" "Continue: Video 2: Pie Charts" %}}

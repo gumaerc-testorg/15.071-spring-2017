@@ -1,6 +1,6 @@
 ---
 content_type: page
-description: ''
+description: '3.2 Modeling the Expert: An Introduction to Logistic Regression'
 draft: false
 learning_resource_types: []
 ocw_type: CourseSection
@@ -18,5 +18,4 @@ video_metadata:
 
 The slides from all videos in this Lecture Sequence can be downloaded here: {{% resource_link "68b9d139-0f0a-37e6-7efa-5d40a5cfae84" "An Introduction to Logistic Regression (PDF - 1.2MB)" %}}.
 
-- {{% resource_link "29b6c08f-b66f-c563-5e83-256d2e175fed" "Back: Welcome to Unit 3" %}}
-- {{% resource_link "a92dcb88-eddd-40ad-72c0-d5bc2288c90e" "Continue: Video 2: Building the Dataset" %}}
+{{% resource_link "a92dcb88-eddd-40ad-72c0-d5bc2288c90e" "Continue: Video 2: Building the Dataset" %}}
