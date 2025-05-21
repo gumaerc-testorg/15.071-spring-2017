@@ -1,6 +1,6 @@
 ---
 content_type: page
-description: ''
+description: '4.3 Keeping an Eye on Healthcare Costs: The D2Hawkeye Story'
 draft: false
 learning_resource_types: []
 ocw_type: CourseSection
@@ -16,5 +16,4 @@ video_metadata:
 
 {{< resource uuid="e78b27f2-19eb-8b15-b4f4-86e9af94661c" >}}
 
-- {{% resource_link "2f9da0d0-e4ef-29ad-6861-c462ec145784" "Back: Quick Question" %}}
-- {{% resource_link "aef27920-c51c-efd1-88ed-937539251bd9" "Continue: Location, Location, Location: Regression Trees for Housing Data (Recitation)" %}}
+{{% resource_link "2f9da0d0-e4ef-29ad-6861-c462ec145784" "Back: Quick Question" %}}

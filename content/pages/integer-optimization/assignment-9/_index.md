@@ -1,6 +1,6 @@
 ---
 content_type: page
-description: ''
+description: Even' Star Organic Farm Revisited
 draft: false
 learning_resource_types: []
 ocw_type: CourseSection
@@ -15,8 +15,6 @@ video_metadata:
 ## Even' Star Organic Farm Revisited
 
 Last week in the "Even' Star Organic Farm" optional homework problem, we formulated and solved the problem faced by Brett Grohsgal, the founder of the organic farm in southern Maryland. This week, we'll use integer optimization to improve the formulation and model some new decisions faced by Brett. We'll be using the spreadsheet {{% resource_link "6cd223a1-4aec-5eb0-c21e-45ff237283bb" "EvenStarFarmRevisited (ODS)" %}} for LibreOffice or OpenOffice, and {{% resource_link "040348f2-170d-8719-fb18-74e9a3e484ce" "EvenStarFarmRevisited (XLSX)" %}} for Microsoft Excel.
-
- 
 
 ## Problem 1.1 - Adjusting the Formulation
 
@@ -34,137 +32,47 @@ Now, we need to add constraints to make sure that if Brett does not enter a chan
 
 We know that Brett can’t sell more cases than he produced. What is the total number of cases Brett produced?
 
-Exercise 1
-
-&nbsp;Numerical Response&nbsp;
-
- 
-
-Explanation
-
-Brett has 1820 total available cases of all types of produce.
-
-This is the maximum number of cases that Brett can sell in any channel. Call this number M. Add the following constraint to your model for restaurants:
-
-Total number of cases sold to restaurants (\\leq) M*(Binary variable for restaurants)*
-
-*What does this constraint do? If the binary variable is equal to 1 (Brett does enter the channel), then he can sell up to M cases in that channel (because he can’t sell more than M cases, this constraint will not limit his sales in the restaurant channel). But if the binary variable is equal to 0 (Brett does not enter the channel), then he can't sell any cases in that channel (the total number of cases in that channel has to be less than or equal to 0).*
-
-*Add similar constraints for the CSA channel, and the farmers' market channel, and then solve your model in LibreOffice. Be sure to add the new variables, and to indicate that the new variables are binary in the constraints section.*
-
-*CheckShow Answer*
-
 ## *Problem 1.2 - Adjusting the Formulation*
 
 *In the optimal solution, which channels does Brett enter? Select all that apply.*
 
-*Exercise 2*
+ *Restaurants* 
 
-*&nbsp;Restaurants&nbsp;*
+ *CSA* 
 
-*&nbsp;CSA&nbsp;*
-
-*&nbsp;Farmers' Market&nbsp;*
-
- 
-
-*Explanation*
-
-*The binary variables have value 1 for restaurants and CSA, but 0 for the Farmers' Market, meaning that he should enter the restaurant and CSA channel, but not the farmers' market channel.*
-
-*Assuming that you added the new binary variables right below the current decision variables (in cells B34:D34) then the objective formula should now be:*
-
-*SUMPRODUCT(B26:D33;C6:E13) - B19*(SUM(B26:B33)/119) - B20*B34 - C19*(SUMPRODUCT(C26:C33;D6:D13)/400) - C20*C34 - D20*D34
-
-And you should have added three new constraints:
-
-Restaurant Cases: SUM(B26:B33) \<= 1820*B34*
-
-*CSA Cases: SUM(C26:C33) \<= 1820*C34
-
-Farmers' Market Cases: SUM(D26:D33) \<= 1820\*D34
-
-Don't forget to indicate that the new decision variables are binary in the Solver, and that the objective should be maximized.
-
-CheckShow Answer
+ *Farmers' Market* 
 
 ## Problem 1.3 - Adjusting the Formulation
 
 How much extra profit does he gain now compared to before, when he was always entering all of the channels?
 
-Exercise 3
-
-&nbsp;Numerical Response&nbsp;
-
- 
-
-Explanation
-
-The new objective value is $54,402.29, and the old objective value was $49,956.39. The difference between the two is $4,445.90, which is the total amount of extra profit.
-
-CheckShow Answer
-
 ## Problem 1.4 - Adjusting the Formulation
 
 How many total cases of produce does Brett sell in the restaurant channel?
-
-Exercise 4
-
-&nbsp;Numerical Response&nbsp;
-
- 
-
-Explanation
-
-The sum of the decision variable values for the restaurant channel is 897, which is the total number of cases sold through this channel.
-
-Answers will be marked correct within a 1% tolerance.
-
-CheckShow Answer
 
 ## Problem 2.1 - Sensitivity Analysis
 
 To maximize his profit, we saw in the optimal solution that Brett should not enter the Farmers' Market channel. However, Brett feels that having a booth at the farmers' market increases his visibility in the community, and is important to his business. Which of the following actions could he take to try to make the farmers' market channel more profitable so that it is worth re-entering? Select all that apply.
 
-Exercise 5
+ He could increase his prices. 
 
-&nbsp;He could increase his prices.&nbsp;
+ He could reduce the entry cost. 
 
-&nbsp;He could reduce the entry cost.&nbsp;
+ He could reduce the variable costs. 
 
-&nbsp;He could reduce the variable costs.&nbsp;
-
-&nbsp;He could buy a bigger truck to increase the number of cases he can sell.&nbsp;
-
- 
-
-Explanation
-
-Increasing his prices and/or reducing the entry cost for the farmers' market channel will increase his profits. Reducing the variables costs will not help since they are currently zero, and buying a bigger truck will not help since he currently does not even want to use the truck he has.
-
-CheckShow Answer
+ He could buy a bigger truck to increase the number of cases he can sell. 
 
 ## Problem 2.2 - Sensitivity Analysis
 
 In LibreOffice, which of the following adjustments makes Brett enter the farmers' market channel in the optimal solution? Select all that apply.
 
-Exercise 6
+ Increasing his prices at the farmers' market by 10% 
 
-&nbsp;Increasing his prices at the farmers' market by 10%&nbsp;
+ Increasing his prices at the farmers' market by 25% 
 
-&nbsp;Increasing his prices at the farmers' market by 25%&nbsp;
+ Reducing his entry cost to $5,000.00 
 
-&nbsp;Reducing his entry cost to $5,000.00&nbsp;
-
-&nbsp;Reducing his entry cost to $3,000.00&nbsp;
-
- 
-
-Explanation
-
-If you increase the prices at the farmers' market by 10% and resolve the model, the solution does not change. However, if you increase the prices by 25%, the solution changes and it becomes profitable to enter the farmers' market channel. Reducing the entry cost to either $5,000 or $3,000 does not change the solution.
-
-CheckShow Answer
+ Reducing his entry cost to $3,000.00 
 
 ## Problem 2.3 - Sensitivity Analysis
 
@@ -172,67 +80,35 @@ Suppose that Brett finds it easier to increase his prices than to reduce his ent
 
 What is the objective value in the new solution?
 
-Exercise 7
-
-&nbsp;Numerical Response&nbsp;
-
- 
-
-Explanation
-
-After increasing the prices at the farmers' market and resolving the model, the objective value changes to $54,726.68.
-
-CheckShow Answer
-
 ## Problem 2.4 - Sensitivity Analysis
 
 Which types of produce does he sell at the farmers' market? Select all that apply.
 
-Exercise 8
+ Tomatoes (large) 
 
-&nbsp;Tomatoes (large)&nbsp;
+ Tomatoes (small) 
 
-&nbsp;Tomatoes (small)&nbsp;
+ Watermelon 
 
-&nbsp;Watermelon&nbsp;
+ Okra 
 
-&nbsp;Okra&nbsp;
+ Basil 
 
-&nbsp;Basil&nbsp;
+ Cucumbers 
 
-&nbsp;Cucumbers&nbsp;
+ Sweet Potatoes 
 
-&nbsp;Sweet Potatoes&nbsp;
-
-&nbsp;Winter Squash&nbsp;
-
- 
-
-Explanation
-
-At the farmers' market, Brett should sell large tomatoes, sweet potatoes, and winter squash.
-
-CheckShow Answer
+ Winter Squash 
 
 ## Problem 2.5 - Sensitivity Analysis
 
 Which channels does Brett enter now? Select all that apply.
 
-Exercise 9
+ Restaurants 
 
-&nbsp;Restaurants&nbsp;
+ CSA 
 
-&nbsp;CSA&nbsp;
-
-&nbsp;Farmers' Market&nbsp;
-
- 
-
-Explanation
-
-The binary variables for CSA and the farmers' market are equal to 1, so he enters these two channels.
-
-CheckShow Answer
+ Farmers' Market 
 
 ## Problem 2.6 - Sensitivity Analysis
 
@@ -240,21 +116,11 @@ The decision variables for the number of cases can take fractional values. It se
 
 Note that you might need to set the time limit in Solver for this problem. Remember that you can set the time limit by opening up the Solver, and then clicking on Options. If you are using Excel, you want to set "Max Time" to 100. If you are using OpenOffice or LibreOffice, you want to check that "Solving time limit" says 100. If not, click on it and hit "Edit". Change it to 100 and click Okay.
 
-Exercise 10
+ Yes 
 
-&nbsp;Yes&nbsp;
+ No 
 
-&nbsp;No&nbsp;
-
-Explanation
-
-No, the objective value does not change. Note that your solution might have changed slightly, so Brett might have had to make some adjustments to his case allocation.
-
-In many situations, the decision variables should take integer values, but we often don't need to add the integer restriction (the solution gives integer values naturally). If this is the case, it is better to not include the integer restriction, since it is a simpler model. However, in some cases, like this one, we needed to add the integer restriction to our model.
-
-CheckShow Answer
-
-Acknowledgements: This problem is based on the case study "{{% resource_link "810a0506-cd88-4787-a2c4-33e1595069aa" "Introducing Integer Modeling with Excel Solver" %}}" by Dessislava Pachamanova, *INFORMS Transactions on Education* 7(1), p.88-98, 2006.
+Acknowledgements: This problem is based on the case study *Introducing Integer Modeling with Excel Solver* by Dessislava Pachamanova, *INFORMS Transactions on Education* 7(1), p.88-98, 2006.
 
 - {{% resource_link "6e8bdbce-3ea9-e644-0e2b-66d90a657d47" "Back: Video 4: The Solution" %}}
 - {{% resource_link "1ab3f4de-f050-7a6b-6327-b8e7dfa4fb69" "Continue: Gerrymandering New Mexico" %}}

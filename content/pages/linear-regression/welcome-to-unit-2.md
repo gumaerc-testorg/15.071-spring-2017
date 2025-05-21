@@ -1,6 +1,6 @@
 ---
 content_type: page
-description: ''
+description: 2.1 Welcome to Unit 2
 draft: false
 learning_resource_types: []
 ocw_type: CourseSection
@@ -15,6 +15,3 @@ video_metadata:
 ## Welcome to Unit 2
 
 {{< resource uuid="f1ef3b39-887c-b3de-d81e-e6f87b0d6421" >}}
-
-- {{% resource_link "c846ced6-fc6d-3bc9-64e0-47324e251a98" "Back: Linear Regression" %}}
-- {{% resource_link "4495fb48-3934-3c33-23b2-2ef2104af559" "Continue: The Statistical Sommelier: An Introduction to Linear Regression" %}}

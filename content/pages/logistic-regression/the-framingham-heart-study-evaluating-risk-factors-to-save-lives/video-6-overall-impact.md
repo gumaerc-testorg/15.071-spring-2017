@@ -1,6 +1,6 @@
 ---
 content_type: page
-description: ''
+description: '3.3 The Framingham Heart Study: Evaluating Risk Factors to Save Lives'
 draft: false
 learning_resource_types: []
 ocw_type: CourseSection
@@ -16,5 +16,4 @@ video_metadata:
 
 {{< resource uuid="d3e4cfea-9adc-efb9-6bde-acb9718607a1" >}}
 
-- {{% resource_link "3a429d7b-b7cc-36d2-31ba-2a9cdd7dc04e" "Back: Quick Question" %}}
-- {{% resource_link "cd55cbba-60f6-d5d3-7320-e05f520c4cf1" "Continue: Election Forecasting: Predicting the Winner Before any Votes are Cast (Recitation)" %}}
+{{% resource_link "3a429d7b-b7cc-36d2-31ba-2a9cdd7dc04e" "Back: Quick Question" %}}

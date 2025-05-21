@@ -1,6 +1,6 @@
 ---
 content_type: page
-description: ''
+description: 1.1 Welcome to Unit 1
 draft: false
 learning_resource_types: []
 ocw_type: CourseSection
@@ -15,6 +15,3 @@ video_metadata:
 ## Welcome to Unit 1
 
 {{< resource uuid="d1eb865e-ba7f-9989-0be1-348ba7cad5bd" >}}
-
-- {{% resource_link "bebdc8ab-5b1f-9682-d6b7-62b671b5cf25" "Back: An Introduction to Analytics" %}}
-- {{% resource_link "9fb45936-9f44-df97-dad3-89bb5d1aa82c" "Continue: The Analytics Edge: Intelligence, Happiness, and Health (Lecture Sequence)" %}}

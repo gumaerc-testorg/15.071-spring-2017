@@ -1,6 +1,6 @@
 ---
 content_type: page
-description: ''
+description: climate change excercise
 draft: false
 learning_resource_types: []
 ocw_type: CourseSection
@@ -20,18 +20,15 @@ In this problem, we will attempt to study the relationship between average globa
 
 The file {{% resource_link "3b53e75d-1ddb-97bd-98f4-0ae5bbee2475" "climate\_change (CSV)" %}} contains climate data from May 1983 to December 2008. The available variables include:
 
- 
-
 - *Year*: the observation year.
 - *Month*: the observation month.
-- *Temp*: the difference in degrees Celsius between the average global temperature in that period and a reference value. This data comes from the {{% resource_link "65051768-67f7-4303-ad44-c7e689ffed27" "Climatic Research Unit at the University of East Anglia" %}}.
-- *CO2*, *N2O*, *CH4*, *CFC.11*, *CFC.12*: atmospheric concentrations of carbon dioxide (CO2), nitrous oxide (N2O), methane  (CH4), trichlorofluoromethane (CCl3F; commonly referred to as CFC-11) and dichlorodifluoromethane (CCl2F2; commonly referred to as CFC-12), respectively. This data comes from the {{% resource_link "784a3131-f5ce-4858-ae53-3f39d7ac9c94" "ESRL/NOAA Global Monitoring Division" %}}.
+- *Temp*: the difference in degrees Celsius between the average global temperature in that period and a reference value. This data comes from the [Climatic Research Unit at the University of East Anglia.](https://www.uea.ac.uk/groups-and-centres/climatic-research-unit)
+- *CO2*, *N2O*, *CH4*, *CFC.11*, *CFC.12*: atmospheric concentrations of carbon dioxide (CO2), nitrous oxide (N2O), methane  (CH4), trichlorofluoromethane (CCl3F; commonly referred to as CFC-11) and dichlorodifluoromethane (CCl2F2; commonly referred to as CFC-12), respectively. This data comes from the {{% resource_link "477b3f33-419b-4b25-942f-cdf3f852370f" "ESRL/NOAA Global Monitoring Division" %}}.
 - CO2, N2O and CH4 are expressed in ppmv (parts per million by volume  -- i.e., 397 ppmv of CO2 means that CO2 constitutes 397 millionths of the total volume of the atmosphere)
 - CFC.11 and CFC.12 are expressed in ppbv (parts per billion by volume). 
-- *Aerosols*: the mean stratospheric aerosol optical depth at 550 nm. This variable is linked to volcanoes, as volcanic eruptions result in new particles being added to the atmosphere, which affect how much of the sun's energy is reflected back into space. This data is from the {{% resource_link "6a49ab3d-6a96-4baa-ac69-06cefbe16064" "Godard Institute for Space Studies at NASA" %}}.
-- *TSI*: the total solar irradiance (TSI) in W/m2 (the rate at which the sun's energy is deposited per unit area). Due to sunspots and other solar phenomena, the amount of energy that is given off by the sun varies substantially with time. This data is from the {{% resource_link "3272782b-7ad6-4499-b37b-5cef02e969ad" "SOLARIS-HEPPA project website" %}}.  
-     
-- *MEI*: multivariate El Nino Southern Oscillation index (MEI), a measure of the strength of the {{% resource_link "7fd8d296-d1d6-462a-a732-8d3fc45898fb" "El Nino/La Nina-Southern Oscillation" %}} (a weather effect in the Pacific Ocean that affects global temperatures). This data comes from the {{% resource_link "87caf0e8-660a-43c7-9537-ebc34ebad075" "ESRL/NOAA Physical Sciences Division" %}}.
+- *Aerosols*: the mean stratospheric aerosol optical depth at 550 nm. This variable is linked to volcanoes, as volcanic eruptions result in new particles being added to the atmosphere, which affect how much of the sun's energy is reflected back into space. This data is from the {{% resource_link "516277cd-8528-4d7b-b4fb-f3b5ff0b7932" "Godard Institute for Space Studies at NASA" %}}.
+- *TSI*: the total solar irradiance (TSI) in W/m2 (the rate at which the sun's energy is deposited per unit area). Due to sunspots and other solar phenomena, the amount of energy that is given off by the sun varies substantially with time. This data is from the {{% resource_link "b0cfca61-9513-4c79-89b1-09cd6c03b447" "SOLARIS-HEPPA project website" %}}.  
+- *MEI*: multivariate El Nino Southern Oscillation index (MEI), a measure of the strength of the {{% resource_link "147bbc42-5be2-4766-992b-711430bd9159" "El Nino/La Nina-Southern Oscillation" %}} (a weather effect in the Pacific Ocean that affects global temperatures). This data comes from the {{% resource_link "2c5d5491-32f4-4b64-b866-4ec322830c53" "ESRL/NOAA Physical Sciences Division" %}}.
 
 ## Problem 1.1 - Creating Our First Model
 
@@ -43,59 +40,25 @@ Next, build a linear regression model to predict the dependent variable Temp, us
 
 Enter the model R2 (the "Multiple R-squared" value):
 
-Exercise 1
-
-&nbsp;Numerical Response&nbsp;
-
- 
-
-Explanation
-
-First, read in the data and split it using the subset command:
-
-climate = read.csv("climate\_change.csv")
-
-train = subset(climate, Year \<= 2006)
-
-test = subset(climate, Year > 2006)
-
-Then, you can create the model using the command:
-
-climatelm = lm(Temp ~ MEI + CO2 + CH4 + N2O + CFC.11 + CFC.12 + TSI + Aerosols, data=train)
-
-Lastly, look at the model using summary(climatelm). The Multiple R-squared value is 0.7509.
-
-CheckShow Answer
-
 ## Problem 1.2 - Creating Our First Model
 
 Which variables are significant in the model? We will consider a variable signficant only if the p-value is below 0.05. (Select all that apply.)
 
-Exercise 2
+ MEI 
 
-&nbsp;MEI&nbsp;
+ CO2 
 
-&nbsp;CO2&nbsp;
+ CH4 
 
-&nbsp;CH4&nbsp;
+ N2O 
 
-&nbsp;N2O&nbsp;
+ CFC.11 
 
-&nbsp;CFC.11&nbsp;
+ CFC.12 
 
-&nbsp;CFC.12&nbsp;
+ TSI 
 
-&nbsp;TSI&nbsp;
-
-&nbsp;Aerosols&nbsp;
-
- 
-
-Explanation
-
-If you look at the model we created in the previous problem using summary(climatelm), all of the variables have at least one star except for CH4 and N2O. So MEI, CO2, CFC.11, CFC.12, TSI, and Aerosols are all significant.
-
-CheckShow Answer
+ Aerosols 
 
 ## Problem 2.1 - Understanding the Model
 
@@ -103,67 +66,39 @@ Current scientific opinion is that nitrous oxide and CFC-11 are greenhouse gases
 
 Which of the following is the *simplest* correct explanation for this contradiction?
 
-Exercise 3
-
-&nbsp;Climate scientists are wrong that N2O and CFC-11 are greenhouse gases - this regression analysis constitutes part of a disproof.&nbsp;
-
-&nbsp;There is not enough data, so the regression coefficients being estimated are not accurate.&nbsp;
-
-&nbsp;All of the gas concentration variables reflect human development - N2O and CFC.11 are correlated with other variables in the data set.&nbsp;
-
-Explanation
-
-The linear correlation of N2O and CFC.11 with other variables in the data set is quite large. The first explanation does not seem correct, as the warming effect of nitrous oxide and CFC-11 are well documented, and our regression analysis is not enough to disprove it. The second explanation is unlikely, as we have estimated eight coefficients and the intercept from 284 observations.
-
-CheckShow Answer
-
 ## Problem 2.2 - Understanding the Model
 
 Compute the correlations between all the variables in the training set. Which of the following independent variables is N2O highly correlated with (absolute correlation greater than 0.7)? Select all that apply.
 
-Exercise 4
+ MEI 
 
-&nbsp;MEI&nbsp;
+ CO2 
 
-&nbsp;CO2&nbsp;
+ CH4 
 
-&nbsp;CH4&nbsp;
+ CFC.11 
 
-&nbsp;CFC.11&nbsp;
+ CFC.12 
 
-&nbsp;CFC.12&nbsp;
+ Aerosols 
 
-&nbsp;Aerosols&nbsp;
-
-&nbsp;TSI&nbsp;
-
- 
+ TSI 
 
 Which of the following independent variables is CFC.11 highly correlated with? Select all that apply.
 
-Exercise 5
+ MEI 
 
-&nbsp;MEI&nbsp;
+ CO2 
 
-&nbsp;CO2&nbsp;
+ CH4 
 
-&nbsp;CH4&nbsp;
+ N2O 
 
-&nbsp;N2O&nbsp;
+ CFC.12 
 
-&nbsp;CFC.12&nbsp;
+ Aerosols 
 
-&nbsp;Aerosols&nbsp;
-
-&nbsp;TSI&nbsp;
-
- 
-
-Explanation
-
-You can calculate all correlations at once using cor(train) where train is the name of the training data set.
-
-CheckShow Answer
+ TSI 
 
 ## Problem 3 - Simplifying the Model
 
@@ -171,23 +106,9 @@ Given that the correlations are so high, let us focus on the N2O variable and bu
 
 Enter the coefficient of N2O in this reduced model:
 
-Exercise 6
-
-&nbsp;Numerical Response&nbsp;
-
- 
-
 (How does this compare to the coefficient in the previous model with all of the variables?)
 
 Enter the model R2:
-
-Exercise 7
-
-&nbsp;Numerical Response&nbsp;
-
- 
-
-Explanation
 
 We can create this simplified model with the command:
 
@@ -196,8 +117,6 @@ LinReg = lm(Temp ~ MEI + N2O + TSI + Aerosols, data=train)
 You can get the coefficient for N2O and the model R-squared by typing summary(LinReg).
 
 We have observed that, for this problem, when we remove many variables the sign of N2O flips. The model has not lost a lot of explanatory power (the model R2 is 0.7261 compared to 0.7509 previously) despite removing many variables. As discussed in lecture, this type of behavior is typical when building a model where many of the independent variables are highly correlated with each other. In this particular problem many of the variables (CO2, CH4, N2O, CFC.11 and CFC.12) are highly correlated, since they are all driven by human industrial development.
-
-CheckShow Answer
 
 - {{% resource_link "4a72056c-6bbe-0c01-489f-b7068637be07" "Back: Video 4: Making Predictions" %}}
 - {{% resource_link "f590aa02-4205-ae29-1d85-5ec56a16b4a4" "Continue: Reading Test Scores" %}}

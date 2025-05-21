@@ -1,6 +1,6 @@
 ---
 content_type: page
-description: ''
+description: '9.4 Operating Room Scheduling: Making Hospitals Run Smoothly  (Recitation)'
 draft: false
 learning_resource_types: []
 ocw_type: CourseSection
@@ -16,5 +16,4 @@ video_metadata:
 
 {{< resource uuid="ae410ffd-bedd-e1c2-9303-719c2a35d6fb" >}}
 
-- {{% resource_link "162e5921-904a-9507-80e7-596c005168c3" "Back: Video 3: Solving the Problem" %}}
-- {{% resource_link "2dbce7a6-bb37-17df-55b4-be0179616ad6" "Continue: Assignment 9" %}}
+{{% resource_link "162e5921-904a-9507-80e7-596c005168c3" "Back: Video 3: Solving the Problem" %}}

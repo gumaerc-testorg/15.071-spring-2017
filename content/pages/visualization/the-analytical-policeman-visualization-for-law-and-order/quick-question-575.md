@@ -16,7 +16,7 @@ video_metadata:
 
 Redo the map from Video 6, but this time fill each state with the variable GunOwnership. This shows the percentage of people in each state who own a gun.
 
-Which of the following states has the highest gun ownership rate? To see the state labels, take a look at {{% resource_link "e670c4ae-361e-4e04-b796-0a5f64a3e2d5" "the World Atlas map" %}}.
+Which of the following states has the highest gun ownership rate? To see the state labels, take a look at {{% resource_link "0651aecd-b481-42bc-9a4a-903adecb4819" "the World Atlas map" %}}.
 
 {{< quiz_multiple_choice questionId="Q1_div" >}}{{< quiz_choices >}}{{< quiz_choice isCorrect="false" >}} California {{< /quiz_choice >}}  
 {{< quiz_choice isCorrect="true" >}} Montana {{< /quiz_choice >}}  

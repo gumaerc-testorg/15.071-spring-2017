@@ -1,6 +1,6 @@
 ---
 content_type: page
-description: ''
+description: Gerrymandering New Mexico
 draft: false
 learning_resource_types:
 - Assignments
@@ -30,8 +30,6 @@ Based on the current district boundaries, the blue party has a majority in each
 Now the blue party does not win in every district; in fact, the red party wins two of the three districts. 
 
 In this problem, we will be exploring how to systematically manipulate these kinds of boundaries. We will be doing this specifically for the state of New Mexico, which is one of the fifty states of the United States.
-
- 
 
 ## The Data
 
@@ -69,61 +67,35 @@ With regard to constraints, we would like:
 
 Which of the following is the correct objective function for this problem?
 
-Exercise 1
+ O1: maximize ((D\_1 - R\_1) x\_{2,1} + (D\_2 - R\_2) x\_{2,2} + … + (D\_{33} - R\_{33}) x\_{2,33}), where (D\_j) and (R\_j) are the numbers of Democratic and Republican votes, respectively, cast in county (j)  
 
-&nbsp;O1: maximize ((D\_1 - R\_1) x\_{2,1} + (D\_2 - R\_2) x\_{2,2} + … + (D\_{33} - R\_{33}) x\_{2,33}), where (D\_j) and (R\_j) are the numbers of Democratic and Republican votes, respectively, cast in county (j) &nbsp;
+ O2: maximize (x\_{1,1} + x\_{1,2} + … + x\_{1,33} + x\_{2,1} + … + x\_{2,33} + x\_{3,1} + … + x\_{3,33})  
 
-&nbsp;O2: maximize (x\_{1,1} + x\_{1,2} + … + x\_{1,33} + x\_{2,1} + … + x\_{2,33} + x\_{3,1} + … + x\_{3,33}) &nbsp;
+ O3: maximize ((D\_1 - R\_1) x\_{1,1} + (D\_2 - R\_2) x\_{1,2} + … + (D\_{33} - R\_{33}) x\_{1,33}), where (D\_j) and (R\_j) are the numbers of Democratic and Republican votes, respectively, cast in county (j) 
 
-&nbsp;O3: maximize ((D\_1 - R\_1) x\_{1,1} + (D\_2 - R\_2) x\_{1,2} + … + (D\_{33} - R\_{33}) x\_{1,33}), where (D\_j) and (R\_j) are the numbers of Democratic and Republican votes, respectively, cast in county (j)&nbsp;
-
-&nbsp;O4: maximize (x\_{2,1} + … + x\_{2,33}) &nbsp;
-
-Explanation
-
-O1 is the correct objective function; the sum over all counties (i) of ((D\_i - R\_i)x\_{2,i}) will be the number of votes that the Democratic party wins district 2 by.
-
-O2 is not correct. O2 merely sums the assignment variables -- this expression does not capture by how much the Democratic Party wins district 2.
-
-O3 is also incorrect. O3 is the same as O1, except that it computes the number of votes that the Democratic Party wins district 1 by.
-
-O4 is also incorrect, because it just sums up the decision variables for district 2.
-
-CheckShow Answer
+ O4: maximize (x\_{2,1} + … + x\_{2,33})  
 
 ## Problem 1.2 - Assignment Constraints
 
 Which of the following sets of inequalities should we add to our model to capture the constraints that each county should be assigned to exactly one district?
 
-Exercise 2
+ C1: (x\_{1,1} + x\_{1,2} + … + x\_{1,33} + x\_{2,1} + … + x\_{2,33} + x\_{3,1} + … + x\_{3,33} = 33) 
 
-&nbsp;C1: (x\_{1,1} + x\_{1,2} + … + x\_{1,33} + x\_{2,1} + … + x\_{2,33} + x\_{3,1} + … + x\_{3,33} = 33)&nbsp;
+ C2: (x\_{1,j} + x\_{2,j} + x\_{3,j} = 1), for (j = 1, … , 33) 
 
-&nbsp;C2: (x\_{1,j} + x\_{2,j} + x\_{3,j} = 1), for (j = 1, … , 33)&nbsp;
+ C3: (x\_{i,1} + x\_{i,2} + … + x\_{i,33} \\geq 1), for (i = 1, …, 3) 
 
-&nbsp;C3: (x\_{i,1} + x\_{i,2} + … + x\_{i,33} \\geq 1), for (i = 1, …, 3)&nbsp;
-
-&nbsp;C4: (x\_{i,j} = 1,) for (i = 1, …, 3), and (j = 1, …, 33)&nbsp;
+ C4: (x\_{i,j} = 1,) for (i = 1, …, 3), and (j = 1, …, 33) 
 
 Which of the following sets of inequalities should we add to our model to capture the constraints that each district should contain at least one county?
 
-Exercise 3
+ C1: (x\_{1,1} + x\_{1,2} + … + x\_{1,33} + x\_{2,1} + … + x\_{2,33} + x\_{3,1} + … + x\_{3,33} = 33) 
 
-&nbsp;C1: (x\_{1,1} + x\_{1,2} + … + x\_{1,33} + x\_{2,1} + … + x\_{2,33} + x\_{3,1} + … + x\_{3,33} = 33)&nbsp;
+ C2: (x\_{1,j} + x\_{2,j} + x\_{3,j} = 1), for (j = 1, … , 33) 
 
-&nbsp;C2: (x\_{1,j} + x\_{2,j} + x\_{3,j} = 1), for (j = 1, … , 33)&nbsp;
+ C3: (x\_{i,1} + x\_{i,2} + … + x\_{i,33} \\geq 1), for (i = 1, …, 3) 
 
-&nbsp;C3: (x\_{i,1} + x\_{i,2} + … + x\_{i,33} \\geq 1), for (i = 1, …, 3)&nbsp;
-
-&nbsp;C4: (x\_{i,j} = 1,) for (i = 1, …, 3), and (j = 1, …, 33)&nbsp;
-
-Explanation
-
-C2 is correct for the first question, and C3 is correct for the second question. C2 ensures that every county is assigned to one -- and only one -- district.
-
-C3 says that the sum of (x\_{i,1}, x\_{i,2}, … x\_{i,33}) is at least one; since the (x\_{i,j})'s are binary, this means that for each district, there is at least one county j such that (x\_{i,j}) is 1. This is exactly the constraint that at least one county is assigned to every district.
-
-CheckShow Answer
+ C4: (x\_{i,j} = 1,) for (i = 1, …, 3), and (j = 1, …, 33) 
 
 ## Problem 1.3 - District 1 and 3 Constraints
 
@@ -133,43 +105,19 @@ Remember that our data gives us for each county the difference (D\_i - R\_i), wh
 
 Which of the following is the correct constraint to ensure that the Democratic Party will win district 1 by at least 100 votes?
 
-Exercise 4
+  C1: ((D\_1 - R\_1) x\_{1,1} + (D\_2 - R\_2) x\_{1,2} + … + (D\_{33} - R\_{33}) x\_{1,33} \\geq 100) 
 
-&nbsp; C1: ((D\_1 - R\_1) x\_{1,1} + (D\_2 - R\_2) x\_{1,2} + … + (D\_{33} - R\_{33}) x\_{1,33} \\geq 100)&nbsp;
+  C2: ((D\_1 - R\_1) x\_{1,1} +(D\_2 - R\_2) x\_{1,2} + … + (D\_{33} - R\_{33}) x\_{1,33} \\geq 0) 
 
-&nbsp; C2: ((D\_1 - R\_1) x\_{1,1} +(D\_2 - R\_2) x\_{1,2} + … + (D\_{33} - R\_{33}) x\_{1,33} \\geq 0)&nbsp;
-
-&nbsp; C3: For each county j, (D\_j x\_{1,j} - R\_j x\_{1,j} \\geq 100)&nbsp;
+  C3: For each county j, (D\_j x\_{1,j} - R\_j x\_{1,j} \\geq 100) 
 
 We'll need to add a similar constraint to our model for district 3.
-
-Explanation
-
-The first option is the correct answer. The left hand side models the difference of Democratic and Republican votes in district 1, and the constraint says that this difference has to be at least 100.
-
-The second option is incorrect. It requires that the difference in Democratic and Republican votes, in district 1, is nonnegative: in words, the Democratic party wins district 1. This is not what we want.
-
-The third option is also incorrect. This is immediate from the fact that it is specified for each county; the left hand side does not model the difference between the votes cast in district 1.
-
-CheckShow Answer
 
 ## Problem 2.1 - Solving the Problem
 
 Formulate the problem in LibreOffice and solve it. Use the decision variables, the objective and the constraints we defined above. For the vote difference (D\_j - R\_j), use the numbers given under the column "Scenario 1".
 
 By how many votes does the Democratic Party win in district 2 under this redistricting?
-
-Exercise 5
-
-&nbsp;Numerical Response&nbsp;
-
- 
-
-Explanation
-
-This is the optimal objective value of your model. Note that depending on your solver settings, your answer might be slightly different than the answer shown here (we get 76197 in LibreOffice/OpenOffice and 75909 in Excel).
-
-CheckShow Answer
 
 ## Problem 2.2 - Adjusting the Objective
 
@@ -179,29 +127,11 @@ In the spreadsheet, we have included information about the current districts, th
 
 Let (z\_{ij}) be 1 if district i currently contains county j, and 0 otherwise. We wish to ensure that our proposed district assignments and the current district assignments are as "similar" as possible. Which of the following objectives allows us to correctly do this?
 
-Exercise 6
+ O1: maximize ((x\_{1,1} - z\_{1,1}) + (x\_{1,2} - z\_{1,2}) + … + (x\_{1,33} - z\_{1,33}) \\+ (x\_{2,1} - z\_{2,1}) + (x\_{2,2} - z\_{2,2}) + … + (x\_{2,33} - z\_{2,33}) \\+ (x\_{3,1} - z\_{3,1}) + (x\_{3,2} - z\_{3,2}) + … + (x\_{3,33} - z\_{3,33})) 
 
-&nbsp;O1: maximize ((x\_{1,1} - z\_{1,1}) + (x\_{1,2} - z\_{1,2}) + … + (x\_{1,33} - z\_{1,33}) \\+ (x\_{2,1} - z\_{2,1}) + (x\_{2,2} - z\_{2,2}) + … + (x\_{2,33} - z\_{2,33}) \\+ (x\_{3,1} - z\_{3,1}) + (x\_{3,2} - z\_{3,2}) + … + (x\_{3,33} - z\_{3,33}))&nbsp;
+ O2: minimize (z\_{1,1} x\_{1,1} + z\_{1,2} x\_{1,2} + … + z\_{1,33} x\_{1,33} \\+ z\_{2,1} x\_{2,1} + z\_{2,2} x\_{2,2} + . . . + z\_{2,33} x\_{2,33} \\+ z\_{3,1} x\_{3,1} + z\_{3,2} x\_{3,2} + . . . + z\_{3,33} x\_{3,33}) 
 
-&nbsp;O2: minimize (z\_{1,1} x\_{1,1} + z\_{1,2} x\_{1,2} + … + z\_{1,33} x\_{1,33} \\+ z\_{2,1} x\_{2,1} + z\_{2,2} x\_{2,2} + . . . + z\_{2,33} x\_{2,33} \\+ z\_{3,1} x\_{3,1} + z\_{3,2} x\_{3,2} + . . . + z\_{3,33} x\_{3,33})&nbsp;
-
-&nbsp;O3: maximize (z\_{1,1} x\_{1,1} + z\_{1,2} x\_{1,2} + … + z\_{1,33} x\_{1,33} \\+ z\_{2,1} x\_{2,1} + z\_{2,2} x\_{2,2} + . . . + z\_{2,33} x\_{2,33} \\+ z\_{3,1} x\_{3,1} + z\_{3,2} x\_{3,2} + . . . + z\_{3,33} x\_{3,33}) &nbsp;
-
-Explanation
-
-O3 is the correct answer. To see this, fix a county j. If we consider the terms for county j, we have
-
-\[z\_{1,j} x\_{1,j} + z\_{2,j} x\_{2,j} + z\_{3,j} x\_{3,j}\]
-
-If the assignment of county j is the same in our proposal and in the current (2012) assignments, then this expression evaluates to one.
-
-If the assignments of county j in our proposal and in the 2012 districts are different, then this expression evaluates to zero. In words, the sum is 0 if county j is assigned differently in the two assignments, and 1 if it is assigned the same way. If we now sum this over all i, as in O3, we get the total number of counties that we assigned the same as the existing 2012 districts. By maximizing this sum, we ensure that our proposal is as similar as possible to the existing 2012 districts.
-
-O1 is not correct. The reason why is that for any solution, the value of this objective is the same.
-
-O2 is not correct because it is minimizing instead of maximizing.
-
-CheckShow Answer
+ O3: maximize (z\_{1,1} x\_{1,1} + z\_{1,2} x\_{1,2} + … + z\_{1,33} x\_{1,33} \\+ z\_{2,1} x\_{2,1} + z\_{2,2} x\_{2,2} + . . . + z\_{2,33} x\_{2,33} \\+ z\_{3,1} x\_{3,1} + z\_{3,2} x\_{3,2} + . . . + z\_{3,33} x\_{3,33})  
 
 ## Problem 2.3 - Re-Solving the Problem
 
@@ -211,97 +141,75 @@ You should still be using the "Scenario 1" column for the vote differences.
 
 Solve the problem. How many counties are NOT given new assignments (relative to the 2012 districts -- columns C through E in the spreadsheet) in this new solution?
 
-Exercise 7
-
-&nbsp;Numerical Response&nbsp;
-
- 
-
-Explanation
-
-After solving the problem in LibreOffice, the optimal objective is 32. Therefore, the number of counties that do not have new assignments is 32.
-
-CheckShow Answer
-
 ## Problem 2.4 - Understanding the Solution
 
 Which counties have been re-assigned relative to the 2012 assignments (columns C through E in the spreadsheet)? Select all that apply.
 
-Exercise 8
+ 1 - Bernalillo 
 
-&nbsp;1 - Bernalillo&nbsp;
+ 2 - Catron 
 
-&nbsp;2 - Catron&nbsp;
+ 3 - Chaves 
 
-&nbsp;3 - Chaves&nbsp;
+ 4 - Cibola 
 
-&nbsp;4 - Cibola&nbsp;
+ 5 - Colfax 
 
-&nbsp;5 - Colfax&nbsp;
+ 6 - Curry 
 
-&nbsp;6 - Curry&nbsp;
+ 7 - DeBaca 
 
-&nbsp;7 - DeBaca&nbsp;
+ 8 - Dona Ana 
 
-&nbsp;8 - Dona Ana&nbsp;
+ 9 - Eddy 
 
-&nbsp;9 - Eddy&nbsp;
+ 10 - Grant 
 
-&nbsp;10 - Grant&nbsp;
+ ¨C36C11 - Guadalupe 
 
-&nbsp;¨C36C11 - Guadalupe&nbsp;
+ ¨C37C12 - Harding 
 
-&nbsp;¨C37C12 - Harding&nbsp;
+ ¨C38C13 - Hidalgo 
 
-&nbsp;¨C38C13 - Hidalgo&nbsp;
+ ¨C39C14 - Lea 
 
-&nbsp;¨C39C14 - Lea&nbsp;
+ ¨C40C15 - Lincoln 
 
-&nbsp;¨C40C15 - Lincoln&nbsp;
+ ¨C41C16 - Los Alamos 
 
-&nbsp;¨C41C16 - Los Alamos&nbsp;
+ ¨C42C17 - Luna 
 
-&nbsp;¨C42C17 - Luna&nbsp;
+ ¨C43C18 - McKinley 
 
-&nbsp;¨C43C18 - McKinley&nbsp;
+ ¨C44C19 - Mora 
 
-&nbsp;¨C44C19 - Mora&nbsp;
+ ¨C45C20 - Otero 
 
-&nbsp;¨C45C20 - Otero&nbsp;
+ ¨C46C21 - Quay 
 
-&nbsp;¨C46C21 - Quay&nbsp;
+ ¨C47C22 - Rio Arriba 
 
-&nbsp;¨C47C22 - Rio Arriba&nbsp;
+ ¨C48C23 - Roosevelt 
 
-&nbsp;¨C48C23 - Roosevelt&nbsp;
+ ¨C49C24 - Sandoval 
 
-&nbsp;¨C49C24 - Sandoval&nbsp;
+ ¨C50C25 - San Juan 
 
-&nbsp;¨C50C25 - San Juan&nbsp;
+ ¨C51C26 - San Miguel 
 
-&nbsp;¨C51C26 - San Miguel&nbsp;
+ ¨C52C27 - Santa Fe 
 
-&nbsp;¨C52C27 - Santa Fe&nbsp;
+ ¨C53C28 - Sierra 
 
-&nbsp;¨C53C28 - Sierra&nbsp;
+ ¨C54C29 - Socorro 
 
-&nbsp;¨C54C29 - Socorro&nbsp;
+ ¨C55C30 - Taos 
 
-&nbsp;¨C55C30 - Taos&nbsp;
+ ¨C56C31 - Torrance 
 
-&nbsp;¨C56C31 - Torrance&nbsp;
+ ¨C57C32 - Union 
 
-&nbsp;¨C57C32 - Union&nbsp;
-
-&nbsp;¨C58C33 - Valencia&nbsp;
-
- 
-
-Explanation
-
-Simply compare the values in your assignment cells to the values in columns C through E. By doing this, the only county that has changed is Santa Fe.
-
-CheckShow Answer
+ ¨C58C33 - Valencia 
 
 In addition to ensuring that the Democratic Party wins in each district, we also may have to take into account other considerations:
 
@@ -312,145 +220,97 @@ In addition to ensuring that the Democratic Party wins in each district, we also
 
 Which of the following constraints models constraint 1 listed above?
 
-Exercise 9
+ C1: (x\_{2,27} + x\_{2,8} \\leq 1)  
 
-&nbsp;C1: (x\_{2,27} + x\_{2,8} \\leq 1) &nbsp;
+ C2: (x\_{2,27} + x\_{2,8} = 1)  
 
-&nbsp;C2: (x\_{2,27} + x\_{2,8} = 1) &nbsp;
-
-&nbsp;C3: (x\_{2,27} + x\_{2,8} = 2) &nbsp;
-
-Explanation
-
-C2 is the correct answer. There are only two ways that C2 can be satisfied: if (x\_{2,27} = 1) and (x\_{2,8} = 0) (Santa Fe is in district 2, and Dona Ana is not in district 2), or if (x\_{2,27} = 0) and (x\_{2,8} = 1) (Santa Fe is not in district 2, and Dona Ana is in district 2).
-
-C1 is incorrect. The meaning of C1 is that at most one of counties 27 and 8 is in district 2.
-
-C3 is also incorrect. C3 can only be satisfied if both Santa Fe and Dona Ana are in district 2. Clearly this is not what we want, so C3 is not appropriate.
-
-CheckShow Answer
+ C3: (x\_{2,27} + x\_{2,8} = 2)  
 
 ## Problem 3.2 - A New Constraint
 
 Which of the following models constraint 2 listed above?
 
-Exercise 10
+ C1: (x\_{1,29} + x\_{2,29} + x\_{3,29} = x\_{1,31} + x\_{2,31} + x\_{3,31}) 
 
-&nbsp;C1: (x\_{1,29} + x\_{2,29} + x\_{3,29} = x\_{1,31} + x\_{2,31} + x\_{3,31})&nbsp;
+ C2: (x\_{1,29} + 2 x\_{2,29} + 3 x\_{3,29} = x\_{1,31} + 2 x\_{2,31} + 3 x\_{3,31}) 
 
-&nbsp;C2: (x\_{1,29} + 2 x\_{2,29} + 3 x\_{3,29} = x\_{1,31} + 2 x\_{2,31} + 3 x\_{3,31})&nbsp;
+ C3: (x\_{1,29} = x\_{1,31}) 
 
-&nbsp;C3: (x\_{1,29} = x\_{1,31})&nbsp;
-
-&nbsp;This constraint cannot be modeled using the variables of our model.&nbsp;
-
-Explanation
-
-C2 is the correct answer. To see this, consider what the value of the left hand side will be. If county 29 is assigned to district 1, then (x\_{1,29}) is 1, and (x\_{2,29}) and (x\_{3,29}) are both 0, so the value of the left hand side is 1. If county 29 is assigned to district 2, then (x\_{2,29} = 1), and (x\_{1,29} = x\_{3,29} = 0), so the value is 2. If county 29 is assigned to district 3, then (x\_{3,29} = 1, x\_{1,29} = x\_{2,29} = 0), so the value is 3. In words, the left hand side exactly models the district to which county 29 is assigned. The right hand side similarly models the district to which county 31 is assigned. By setting these two values to be equal to each other, we ensure that county 29 and county 31 end up in the same district.
-
-C1 is not correct. It can be satisfied by assigning counties 29 and 31 to different districts; for example, if (x\_{1,29} = 1) (so {(x\_{2,29} = x\_{3,29} = 0)) and if (x\_{2,31} = 1) (so (x\_{1,31} = x\_{3,31} = 0)), then the left hand side ends up being 1 and the right hand side ends up being 1, even though county 29 is in district 1 and county 31 is in district 2.
-
-C3 is not correct. C3 requires that either both county 29 and 31 are in district 1, or both county 29 and 31 are not in district 1. This is in the right direction, but not quite what we want.
-
-C4 is clearly not correct, as C2 is a valid way to model this constraint.
-
-CheckShow Answer
+ This constraint cannot be modeled using the variables of our model. 
 
 ## Problem 3.3 - Re-Solving the Problem
 
 Add these two constraints and re-solve the problem. How many counties have been re-assigned (relative to the 2012 assignments in columns C through E of the spreadsheet)?
 
-Exercise 11
-
-&nbsp;Numerical Response&nbsp;
-
- 
-
-Explanation
-
-The optimal objective is 31; since the optimal objective counts the number of assignments that are not different relative to the 2012 assignments, the answer is 2.
-
-CheckShow Answer
-
 ## Problem 3.4 - Re-Assigned Counties
 
 Which counties have been re-assigned relative to the 2012 assignments (columns C through E in the spreadsheet)? Select all that apply.
 
-Exercise 12
+ 1 - Bernalillo 
 
-&nbsp;1 - Bernalillo&nbsp;
+ 2 - Catron 
 
-&nbsp;2 - Catron&nbsp;
+ 3 - Chaves 
 
-&nbsp;3 - Chaves&nbsp;
+ 4 - Cibola 
 
-&nbsp;4 - Cibola&nbsp;
+ 5 - Colfax 
 
-&nbsp;5 - Colfax&nbsp;
+ 6 - Curry 
 
-&nbsp;6 - Curry&nbsp;
+ 7 - DeBaca 
 
-&nbsp;7 - DeBaca&nbsp;
+ 8 - Dona Ana 
 
-&nbsp;8 - Dona Ana&nbsp;
+ 9 - Eddy 
 
-&nbsp;9 - Eddy&nbsp;
+ 10 - Grant 
 
-&nbsp;10 - Grant&nbsp;
+ ¨C79C11 - Guadalupe 
 
-&nbsp;¨C79C11 - Guadalupe&nbsp;
+ ¨C80C12 - Harding 
 
-&nbsp;¨C80C12 - Harding&nbsp;
+ ¨C81C13 - Hidalgo 
 
-&nbsp;¨C81C13 - Hidalgo&nbsp;
+ ¨C82C14 - Lea 
 
-&nbsp;¨C82C14 - Lea&nbsp;
+ ¨C83C15 - Lincoln 
 
-&nbsp;¨C83C15 - Lincoln&nbsp;
+ ¨C84C16 - Los Alamos 
 
-&nbsp;¨C84C16 - Los Alamos&nbsp;
+ ¨C85C17 - Luna 
 
-&nbsp;¨C85C17 - Luna&nbsp;
+ ¨C86C18 - McKinley 
 
-&nbsp;¨C86C18 - McKinley&nbsp;
+ ¨C87C19 - Mora 
 
-&nbsp;¨C87C19 - Mora&nbsp;
+ ¨C88C20 - Otero 
 
-&nbsp;¨C88C20 - Otero&nbsp;
+ ¨C89C21 - Quay 
 
-&nbsp;¨C89C21 - Quay&nbsp;
+ ¨C90C22 - Rio Arriba 
 
-&nbsp;¨C90C22 - Rio Arriba&nbsp;
+ ¨C91C23 - Roosevelt 
 
-&nbsp;¨C91C23 - Roosevelt&nbsp;
+ ¨C92C24 - Sandoval 
 
-&nbsp;¨C92C24 - Sandoval&nbsp;
+ ¨C93C25 - San Juan 
 
-&nbsp;¨C93C25 - San Juan&nbsp;
+ ¨C94C26 - San Miguel 
 
-&nbsp;¨C94C26 - San Miguel&nbsp;
+ ¨C95C27 - Santa Fe 
 
-&nbsp;¨C95C27 - Santa Fe&nbsp;
+ ¨C96C28 - Sierra 
 
-&nbsp;¨C96C28 - Sierra&nbsp;
+ ¨C97C29 - Socorro 
 
-&nbsp;¨C97C29 - Socorro&nbsp;
+ ¨C98C30 - Taos 
 
-&nbsp;¨C98C30 - Taos&nbsp;
+ ¨C99C31 - Torrance 
 
-&nbsp;¨C99C31 - Torrance&nbsp;
+ ¨C100C32 - Union 
 
-&nbsp;¨C100C32 - Union&nbsp;
-
-&nbsp;¨C101C33 - Valencia&nbsp;
-
- 
-
-Explanation
-
-Simply compare the values in the cells containing your assignment decision variables to the values in columns C through E of the spreadsheet.
-
-CheckShow Answer
+ ¨C101C33 - Valencia 
 
 ## Problem 4.1 - Voting Considerations
 
@@ -460,29 +320,11 @@ This is a problematic feature of the model, because voters will not vote in this
 
 To illustrate this, consider the margins under “Scenario 2” in the spreadsheet. Use these values in place of the original margins to compute how many votes more than the Republican party the Democratic Party gets in the districts, given the optimal solution from Problem 11. Which districts does the Democratic Party lose? Select all that apply.
 
-Exercise 13
+ District 1 
 
-&nbsp;District 1&nbsp;
+ District 2 
 
-&nbsp;District 2&nbsp;
-
-&nbsp;District 3&nbsp;
-
- 
-
-Explanation
-
-Apply the SUMPRODUCT command using the assignments and the new margins. Doing this, we see that the difference between the Democratic votes and Republican votes in each of the districts are
-
-District 1: -489 votes
-
-District 2: 24899 votes
-
-District 3: 51662 votes
-
-Since district 1 is the only one where the difference is negative, this is the only district the Democrats lose.
-
-CheckShow Answer
+ District 3 
 
 ## Problem 4.2 - Voting Scenarios
 
@@ -492,120 +334,78 @@ To do this, we need to revisit our constraints that ensure that the Democratic p
 
 Add these constraints to the model, and re-solve it. How many counties have been re-assigned relative to the existing 2012 assignments (columns C through E in the spreadsheet)?
 
-Exercise 14
-
-&nbsp;Numerical Response&nbsp;
-
- 
-
-Explanation
-
-After solving the problem, the objective value is 29; since the objective value is the number of counties that have not changed, the answer is 4.
-
-CheckShow Answer
-
 ## Problem 4.3 - Understanding the New Solution
 
 Which counties have been re-assigned? Select all that apply.
 
-Exercise 15
+ 1 - Bernalillo 
 
-&nbsp;1 - Bernalillo&nbsp;
+ 2 - Catron 
 
-&nbsp;2 - Catron&nbsp;
+ 3 - Chaves 
 
-&nbsp;3 - Chaves&nbsp;
+ 4 - Cibola 
 
-&nbsp;4 - Cibola&nbsp;
+ 5 - Colfax 
 
-&nbsp;5 - Colfax&nbsp;
+ 6 - Curry 
 
-&nbsp;6 - Curry&nbsp;
+ 7 - DeBaca 
 
-&nbsp;7 - DeBaca&nbsp;
+ 8 - Dona Ana 
 
-&nbsp;8 - Dona Ana&nbsp;
+ 9 - Eddy 
 
-&nbsp;9 - Eddy&nbsp;
+ 10 - Grant 
 
-&nbsp;10 - Grant&nbsp;
+ ¨C118C11 - Guadalupe 
 
-&nbsp;¨C118C11 - Guadalupe&nbsp;
+ ¨C119C12 - Harding 
 
-&nbsp;¨C119C12 - Harding&nbsp;
+ ¨C120C13 - Hidalgo 
 
-&nbsp;¨C120C13 - Hidalgo&nbsp;
+ ¨C121C14 - Lea 
 
-&nbsp;¨C121C14 - Lea&nbsp;
+ ¨C122C15 - Lincoln 
 
-&nbsp;¨C122C15 - Lincoln&nbsp;
+ ¨C123C16 - Los Alamos 
 
-&nbsp;¨C123C16 - Los Alamos&nbsp;
+ ¨C124C17 - Luna 
 
-&nbsp;¨C124C17 - Luna&nbsp;
+ ¨C125C18 - McKinley 
 
-&nbsp;¨C125C18 - McKinley&nbsp;
+ ¨C126C19 - Mora 
 
-&nbsp;¨C126C19 - Mora&nbsp;
+ ¨C127C20 - Otero 
 
-&nbsp;¨C127C20 - Otero&nbsp;
+ ¨C128C21 - Quay 
 
-&nbsp;¨C128C21 - Quay&nbsp;
+ ¨C129C22 - Rio Arriba 
 
-&nbsp;¨C129C22 - Rio Arriba&nbsp;
+ ¨C130C23 - Roosevelt 
 
-&nbsp;¨C130C23 - Roosevelt&nbsp;
+ ¨C131C24 - Sandoval 
 
-&nbsp;¨C131C24 - Sandoval&nbsp;
+ ¨C132C25 - San Juan 
 
-&nbsp;¨C132C25 - San Juan&nbsp;
+ ¨C133C26 - San Miguel 
 
-&nbsp;¨C133C26 - San Miguel&nbsp;
+ ¨C134C27 - Santa Fe 
 
-&nbsp;¨C134C27 - Santa Fe&nbsp;
+ ¨C135C28 - Sierra 
 
-&nbsp;¨C135C28 - Sierra&nbsp;
+ ¨C136C29 - Socorro 
 
-&nbsp;¨C136C29 - Socorro&nbsp;
+ ¨C137C30 - Taos 
 
-&nbsp;¨C137C30 - Taos&nbsp;
+ ¨C138C31 - Torrance 
 
-&nbsp;¨C138C31 - Torrance&nbsp;
+ ¨C139C32 - Union 
 
-&nbsp;¨C139C32 - Union&nbsp;
-
-&nbsp;¨C140C33 - Valencia&nbsp;
-
- 
-
-Explanation
-
-Simply compare the values in the cells containing your assignment decision variables to the values in columns C through E of the spreadsheet.
-
-CheckShow Answer
+ ¨C140C33 - Valencia 
 
 ## Problem 4.4 - Margin of Victory
 
 By what margin does the Democratic Party win in district 3 in Scenario 2?
 
-Exercise 16
-
-&nbsp;Numerical Response&nbsp;
-
- 
-
 By what margin does the Democratic Party win in district 1 in Scenario 3?
-
-Exercise 17
-
-&nbsp;Numerical Response&nbsp;
-
- 
-
-Explanation
-
-You can find these numbers by looking at the left-hand-sides of the constraints.
-
-CheckShow Answer
-
-- {{% resource_link "2dbce7a6-bb37-17df-55b4-be0179616ad6" "Back: Assignment 9" %}}

@@ -1,6 +1,6 @@
 ---
 content_type: page
-description: ''
+description: '8.4 Google AdWords: Optimizing Online Advertising  (Recitation)'
 draft: false
 learning_resource_types: []
 ocw_type: CourseSection
@@ -18,5 +18,4 @@ video_metadata:
 
 The slides from all videos in this recitation can be downloaded here: {{% resource_link "785b9bc9-e852-065d-1f42-411ea550db00" "Optimizing Online Advertising (PDF - 1.1MB)" %}}.
 
-- {{% resource_link "696dd6e4-42cc-1fc4-7c9f-2924e2edfb26" "Back: Google AdWords: Optimizing Online Advertising (Recitation)" %}}
-- {{% resource_link "9ca8d522-1938-d4b5-71f2-f13ccdb46a19" "Continue: Video 2: How Online Advertising Works" %}}
+{{% resource_link "9ca8d522-1938-d4b5-71f2-f13ccdb46a19" "Continue: Video 2: How Online Advertising Works" %}}

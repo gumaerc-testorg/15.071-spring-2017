@@ -1,6 +1,8 @@
 ---
 content_type: page
-description: ''
+description: '6.4 Seeing the Big Picture: Segmenting Images to Create Data (Recitation)
+
+  '
 draft: false
 learning_resource_types: []
 ocw_type: CourseSection
@@ -18,5 +20,4 @@ video_metadata:
 
 The slides from all videos in this Recitation can be downloaded here: {{% resource_link "9258e775-e0bf-57ee-47b6-ddabe1834003" "Segmenting Images to Create Data (PDF)" %}}.
 
-- {{% resource_link "c6d206cc-fb15-28f6-048f-29e817450da7" "Back: Seeing the Big Picture: Segmenting Images to Create Data (Recitation)" %}}
-- {{% resource_link "63f40bde-98fd-3fdc-8c2d-df21ec19f21f" "Continue: Video 2: Clustering Pixels" %}}
+{{% resource_link "63f40bde-98fd-3fdc-8c2d-df21ec19f21f" "Continue: Video 2: Clustering Pixels" %}}

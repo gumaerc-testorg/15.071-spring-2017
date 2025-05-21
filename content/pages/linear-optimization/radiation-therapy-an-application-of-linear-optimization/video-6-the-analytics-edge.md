@@ -1,6 +1,6 @@
 ---
 content_type: page
-description: ''
+description: '8.3 Radiation Therapy: An Application of Linear Optimization'
 draft: false
 learning_resource_types: []
 ocw_type: CourseSection
@@ -16,5 +16,4 @@ video_metadata:
 
 {{< resource uuid="5777e908-aef0-edbe-4bc0-9938cd63fcd3" >}}
 
-- {{% resource_link "2194bcb2-4c12-fa9a-11f3-457666bd1bee" "Back: Quick Question" %}}
-- {{% resource_link "696dd6e4-42cc-1fc4-7c9f-2924e2edfb26" "Continue: Google AdWords: Optimizing Online Advertising (Recitation)" %}}
+{{% resource_link "2194bcb2-4c12-fa9a-11f3-457666bd1bee" "Back: Quick Question" %}}

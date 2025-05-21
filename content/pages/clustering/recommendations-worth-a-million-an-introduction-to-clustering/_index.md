@@ -1,6 +1,6 @@
 ---
 content_type: page
-description: ''
+description: '6.2 Recommendations Worth a Million: An Introduction to Clustering'
 draft: false
 learning_resource_types: []
 ocw_type: CourseSection
@@ -18,5 +18,4 @@ video_metadata:
 
 The slides from all videos in this Lecture Sequence can be downloaded here: {{% resource_link "86fae9fb-f6d9-3ba7-eb37-9c4a6d01cdd3" "Introduction to Clustering (PDF - 1.3MB)" %}}.
 
-- {{% resource_link "33fa178e-64d4-cd25-dd86-7bb0db6ee3a5" "Back: Welcome to Unit 6" %}}
-- {{% resource_link "0929460c-b5ed-43df-db0e-cacb845ffa3f" "Continue: Quick Question" %}}
+{{% resource_link "0929460c-b5ed-43df-db0e-cacb845ffa3f" "Continue: Quick Question" %}}

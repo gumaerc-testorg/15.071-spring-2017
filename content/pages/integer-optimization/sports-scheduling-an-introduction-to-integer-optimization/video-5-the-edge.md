@@ -1,6 +1,6 @@
 ---
 content_type: page
-description: ''
+description: '9.2 Sports Scheduling: An Introduction to Integer Optimization'
 draft: false
 learning_resource_types: []
 ocw_type: CourseSection
@@ -16,5 +16,4 @@ video_metadata:
 
 {{< resource uuid="dbeeb464-0960-40af-1a4d-6300b6cc7d20" >}}
 
-- {{% resource_link "bc55ff56-182e-b4ef-aaab-2b01313266a2" "Back: Quick Question" %}}
-- {{% resource_link "11e612d8-9845-c6c9-6a73-07cebaa24191" "Continue: eHarmony: Maximizing the Probability of Love" %}}
+{{% resource_link "bc55ff56-182e-b4ef-aaab-2b01313266a2" "Back: Quick Question" %}}

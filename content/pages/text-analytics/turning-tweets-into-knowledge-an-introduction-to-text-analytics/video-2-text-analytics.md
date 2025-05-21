@@ -1,6 +1,6 @@
 ---
 content_type: page
-description: ''
+description: '5.2 Turning Tweets into Knowledge: An Introduction to Text Analytics'
 draft: false
 learning_resource_types: []
 ocw_type: CourseSection
@@ -16,5 +16,4 @@ video_metadata:
 
 {{< resource uuid="1d144885-aff7-5c5e-c4d8-b2854e2865d3" >}}
 
-- {{% resource_link "aea3bc9c-07f7-3648-65c4-6fec93dd8515" "Back: Turning Tweets into Knowledge: An Introduction to Text Analytics" %}}
-- {{% resource_link "e9e9d44a-c8e5-6812-4e52-cdb5056597b7" "Continue: Quick Question" %}}
+{{% resource_link "e9e9d44a-c8e5-6812-4e52-cdb5056597b7" "Continue: Quick Question" %}}

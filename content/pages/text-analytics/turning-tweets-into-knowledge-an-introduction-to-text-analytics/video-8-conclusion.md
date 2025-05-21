@@ -1,6 +1,6 @@
 ---
 content_type: page
-description: ''
+description: '5.2 Turning Tweets into Knowledge: An Introduction to Text Analytics'
 draft: false
 learning_resource_types: []
 ocw_type: CourseSection
@@ -16,5 +16,4 @@ video_metadata:
 
 {{< resource uuid="09086b89-e3fe-1b02-84c5-9e4633719b24" >}}
 
-- {{% resource_link "c08c448d-ba2f-6d4e-4aa3-a930b6c97c07" "Back: Quick Question" %}}
-- {{% resource_link "0c9bd7c2-6f88-e1f3-72bb-45bfb1705096" "Continue: Man vs. Machine: How IBM Built a Jeopardy Champion" %}}
+{{% resource_link "c08c448d-ba2f-6d4e-4aa3-a930b6c97c07" "Back: Quick Question" %}}
