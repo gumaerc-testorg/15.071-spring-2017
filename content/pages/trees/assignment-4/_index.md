@@ -1,6 +1,6 @@
 ---
 content_type: page
-description: ''
+description: Predicting Earnings from Census Data
 draft: false
 learning_resource_types: []
 ocw_type: CourseSection
@@ -16,13 +16,11 @@ video_metadata:
 
 The United States government periodically collects demographic information by conducting a census.
 
-In this problem, we are going to use census information about an individual to predict how much a person earns -- in particular, whether the person earns more than $50,000 per year. This data comes from the {{% resource_link "01e9f774-fbcf-482a-a1bc-b423dbc2f7eb" "UCI Machine Learning Repository" %}}.
+In this problem, we are going to use census information about an individual to predict how much a person earns -- in particular, whether the person earns more than $50,000 per year. This data comes from the {{% resource_link "2b66ae28-e696-46f7-9ee8-2e4dfcb0918d" "UCI Machine Learning Repository" %}}.
 
 The file {{% resource_link "23bdcd00-33c0-4ce7-b2ea-204f161b30e0" "census (CSV - 3.3MB)" %}} contains 1994 census data for 31,978 individuals in the United States.
 
 The dataset includes the following 13 variables:
-
- 
 
 - *age =* the age of the individual in years
 - *workclass =* the classification of the individual's working status (does the person work for the federal government, work for the local government, work without pay, and so on)
@@ -48,8 +46,6 @@ Next, build a logistic regression model to predict the dependent variable "over5
 
 Which variables are significant, or have factors that have at least one significant dummy variable? (Use 0.1 as your significance threshold, so variables with a period or dot in the stars column should be counted too. You might see a warning message here - you can ignore it and proceed. This message is a warning that we might be overfitting our model to the training set.) Select all that apply.
 
-Exercise 1
-
  age 
 
  workclass 
@@ -74,109 +70,17 @@ Exercise 1
 
  ¨C11Cnativecountry 
 
- 
-
-Explanation
-
-To read census.csv, set your working directory to the same directory that census.csv is in, and run the following command:
-
-census = read.csv("census.csv")
-
-We now need to split the data. Load the caTools package, and set the seed to 2000:
-
-library(caTools)
-
-set.seed(2000)
-
-Split the data set according to the over50k variable using filter from the dplyr package:
-
-spl = sample.split(census$over50k, SplitRatio = 0.6)
-
-library(dplyr)
-
-censusTrain = census %>% filter(spl == TRUE)
-
-censusTest = census %>% filter(spl == FALSE)
-
-¨C76C ¨C77C ¨C78C ¨C79C
-
-CheckShow Answer
-
 ## Problem 1.2 - A Logistic Regression Model
 
 What is the accuracy of the model on the testing set? Use a threshold of p = 0.5. (You might see a warning message when you make predictions on the test set - you can safely ignore it.)
-
-Exercise 2
-
- Numerical Response 
-
- 
-
-Explanation
-
-Generate the predictions for the test set:
-
-predictTest = predict(censusglm, newdata = censusTest, type = "response")
-
-Then we can generate the confusion matrix:
-
-table(censusTest$over50k, predictTest >= 0.5)
-
-If we divide the sum of the main diagonal by the sum of all of the entries in the matrix, we obtain the accuracy:
-
-(9051+1888)/(9051+662+1190+1888) = 0.8552107
-
-CheckShow Answer
 
 ## Problem 1.3 - A Logistic Regression Model
 
 What is the accuracy of the baseline model on the testing set?
 
-Exercise 3
-
- Numerical Response 
-
- 
-
-Explanation
-
-We need to first determine the most frequent outcome in the training set. To do that, we table the dependent variable in the training set:
-
-table(censusTrain$over50k)
-
-"\<=50K" is the more frequent outcome (14570 observations), so this is what the baseline predicts. To generate the accuracy of the baseline on the test set, we can table the dependent variable in the test set:
-
-table(censusTest$over50k)
-
-The baseline accuracy is
-
-9713/(9713+3078) = 0.7593621.
-
-CheckShow Answer
-
 ## Problem 1.4 - A Logistic Regression Model
 
 What is the area under the curve (AUC) for the logistic regression model on the test set?
-
-Exercise 4
-
- Numerical Response 
-
- 
-
-Explanation
-
-First, load the ROCR package:
-
-library(ROCR)
-
-Then you can use the following commands to compute the AUC (assuming your test set predictions are called "predictTest"):
-
-ROCRpred = prediction(predictTest, censusTest$over50k)
-
-as.numeric(performance(ROCRpred, "auc")@y.values)
-
-CheckShow Answer
 
 ## Problem 2.1 - A CART Model
 
@@ -186,37 +90,9 @@ Let us now build a CART model to predict "over50k". Use the training set to buil
 
 How many splits does the tree have in total?
 
-Exercise 5
-
- Numerical Response 
-
- 
-
-Explanation
-
-To get started, load the rpart and rpart.plot packages:
-
-library(rpart)
-
-library(rpart.plot)
-
-Estimate the CART tree:
-
-censustree = rpart( over50k ~ . , method="class", data = censusTrain)
-
-Plot the tree:
-
-prp(censustree)
-
-There are four splits in total.
-
-CheckShow Answer
-
 ## Problem 2.2 - A CART Model
 
 Which variable does the tree split on at the first level (the very first split of the tree)?
-
-Exercise 6
 
  age 
 
@@ -242,21 +118,9 @@ Exercise 6
 
  ¨C35Cnativecountry 
 
-Explanation
-
-Plot the tree and examine the first split:
-
-prp(censustree)
-
-The first split uses the variable relationship.
-
-CheckShow Answer
-
 ## Problem 2.3 - A CART Model
 
 Which variables does the tree split on at the second level (immediately after the first split of the tree)? Select all that apply.
-
-Exercise 7
 
  age 
 
@@ -282,45 +146,9 @@ Exercise 7
 
  ¨C47Cnativecountry 
 
- 
-
-Explanation
-
-Plot the tree and examine the second splits:
-
-prp(censustree)
-
-The second splits are on capitalgains and education.
-
-CheckShow Answer
-
 ## Problem 2.4 - A CART Model
 
 What is the accuracy of the model on the testing set?
-
-Exercise 8
-
- Numerical Response 
-
- 
-
-This highlights a very regular phenomenon when comparing CART and logistic regression. CART often performs a little worse than logistic regression in out-of-sample accuracy. However, as is the case here, the CART model is often much simpler to describe and understand.
-
-Explanation
-
-First, generate predictions on the test set using the CART tree:
-
-predictTest = predict(censustree, newdata = censusTest, type = "class")
-
-Then create the confusion matrix:
-
-table(censusTest$over50k, predictTest)
-
-To compute the accuracy, sum the diagonal entries and divide by the sum of all of the terms:
-
-(9243+1596)/(9243+470+1482+1596) = 0.8473927
-
-CheckShow Answer
 
 ## Problem 3.1 - A Random Forest Model
 
@@ -333,14 +161,6 @@ trainSmall = censusTrain\[sample(nrow(censusTrain), 2000), \]
 Let us now build a random forest model to predict "over50k", using the dataset "trainSmall" as the data used to build the model. Set the seed to 1 again right before building the model, and use all of the other variables in the dataset as independent variables. (If you get an error that random forest "can not handle categorical predictors with more than 32 categories", re-build the model without the nativecountry variable as one of the independent variables.)
 
 Then, make predictions using this model on the entire test set. What is the accuracy of the model on the test set, using a threshold of 0.5? (Remember that you don't need a "type" argument when making predictions with a random forest model if you want to use a threshold of 0.5. Also, note that your accuracy might be different from the one reported here, since random forest models can still differ depending on your operating system, even when the random seed is set. )
-
-Exercise 9
-
- Numerical Response 
-
- 
-
-Explanation
 
 To generate the random forest model with all of the variables, just run:
 
@@ -364,8 +184,6 @@ The accuracy of the model should be around
 
 You may be surprised that the test-set accuracy of the random forest model is lower than the test-set accuracies of some of the other, simpler models we've trained. This can occur when the parameters of the random forest have not been tuned via cross-validation and the default parameters are ill suited for the dataset.
 
-CheckShow Answer
-
 ## Problem 4.1 - Selecting cp by Cross-Validation
 
 We now conclude our study of this data set by looking at how CART behaves with different choices of its parameters.
@@ -379,14 +197,6 @@ After you create the cartGrid variable, you can pass it on to the train function
 Also, remember to use the entire training set "censusTrain" when building this model. The train function might take some time to run.
 
 Which value of cp does the train function recommend?
-
-Exercise 10
-
- Numerical Response 
-
- 
-
-Explanation
 
 Before doing anything, load the caret package:
 
@@ -406,12 +216,6 @@ cartGrid = data.frame( .cp = seq(0.002,0.092,0.01))
 
 Finally, run the train function and view the result:
 
-cartCV = train( over50k ~ . , data = censusTrain, method = "rpart", trControl = fitControl, tuneGrid = cartGrid )
-
-¨C155C ¨C156C ¨C157C ¨C158C ¨C159C
-
-CheckShow Answer
-
 ## Problem 4.2 - Selecting cp by Cross-Validation
 
 Recall that the caret package causes categorical independent variables to be split into factor levels. To generate a version of the test set with dummy variables, please run the following command (which assumes your test set is stored in variable "censusTest"):
@@ -419,14 +223,6 @@ Recall that the caret package causes categorical independent variables to be spl
 censusTestMM = as.data.frame(model.matrix(over50k~.+0, data=censusTest))
 
 Use the final model selected via cross-validation to make predictions on censusTestMM. What is the prediction accuracy on the test set?
-
-Exercise 11
-
- Numerical Response 
-
- 
-
-Explanation
 
 Assuming you stored the cross-validation results in a variable called "cartCV", you can access the final selected model with the following command:
 
@@ -444,25 +240,11 @@ table(censusTest$over50k, predictTest)
 
 The accuracy is (9167+1821)/(9167+546+1257+1821) = 0.8590415.
 
-CheckShow Answer
-
 ## Problem 4.3 - Selecting cp by Cross-Validation
 
 Compared to the original accuracy using the default value of cp, this new CART model is an improvement, and so we should clearly favor this new model over the old one -- or should we? Plot the CART tree for this model. How many splits are there?
 
-Exercise 12
-
- Numerical Response 
-
- 
-
 This highlights one important tradeoff in building predictive models. By tuning cp, we improved our accuracy, but our tree became significantly more complex. In some applications, such an improvement in accuracy would be worth the loss in interpretability. In others, we may prefer a less accurate model that is simpler to understand and describe over a more accurate -- but more complicated -- model.
 
-Explanation
-
-If you plot the tree with prp(model), where "model" is the name of your CART tree, you should see that there are 17 splits.
-
-CheckShow Answer
-
-- {{% resource_link "6fc7a0e4-7d44-d24e-fd6c-876af7f8e2de" "Back: Video 7: Cross-Validation" %}}
+-  
 - {{% resource_link "e4031315-c29e-d0c6-413f-d2bd77d67b94" "Continue: Understanding Why People Vote" %}}

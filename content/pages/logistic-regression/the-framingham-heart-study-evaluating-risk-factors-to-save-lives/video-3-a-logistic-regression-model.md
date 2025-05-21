@@ -14,7 +14,7 @@ video_metadata:
 ---
 ## Video 3: A Logistic Regression Model
 
-In this video, we'll use the dataset {{% resource_link "5d689a02-4551-e672-313f-7fd7eb1bee8d" "framingham (CSV)" %}} to build a logistic regression model. Please download this dataset to follow along. This data comes from the {{% resource_link "e60849fa-fdbe-4764-a294-2d31b9bfa07b" "BioLINCC website" %}}.
+In this video, we'll use the dataset {{% resource_link "5d689a02-4551-e672-313f-7fd7eb1bee8d" "framingham (CSV)" %}} to build a logistic regression model. Please download this dataset to follow along. This data comes from the {{% resource_link "1c45f3fe-ff9a-4d1d-8655-449fd8cc3523" "BioLINCC website" %}}.
 
 An R script file with all of the commands used in this lecture can be downloaded here: {{% resource_link "3a73d6c0-252d-a643-5115-cac4a473dc08" "Unit3_Framingham (R)" %}}.
 

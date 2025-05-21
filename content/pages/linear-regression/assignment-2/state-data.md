@@ -1,6 +1,6 @@
 ---
 content_type: page
-description: ''
+description: 2.5 Assignment 2
 draft: false
 learning_resource_types:
 - Assignments
@@ -31,8 +31,6 @@ After you have loaded the data into R, inspect the data set using the command: s
 
 This dataset has 50 observations (one for each US state) and the following 15 variables:
 
- 
-
 - **Population** - the population estimate of the state in 1975
 - **Income** - per capita income in 1974
 - **Illiteracy** - illiteracy rates in 1970, as a percent of the population
@@ -55,43 +53,23 @@ We begin by exploring the data. Plot all of the states' centers with latitude on
 
 In the R command you used to generate this plot, which variable name did you use as the first argument?
 
-Exercise 1
+ A. statedata$y 
 
-&nbsp;statedata$y&nbsp;
+ B. statedata$x 
 
-&nbsp;statedata$x&nbsp;
-
-&nbsp;I used a different variable name.&nbsp;
-
-Explanation
-
-To generate the described plot, you should type plot(statedata$x, statedata$y) in your R console. The first variable here is statedata$x.
-
-CheckShow Answer
+ C. I used a different variable name. 
 
 ## Problem 1.2 - Data Exploration
 
 Using the tapply command, determine which region of the US (West, North Central, South, or Northeast) has the highest average high school graduation rate of all the states in the region:
 
-Exercise 2
+ West 
 
-&nbsp;West&nbsp;
+ North Central 
 
-&nbsp;North Central&nbsp;
+ South 
 
-&nbsp;South&nbsp;
-
-&nbsp;Northeast&nbsp;
-
-Explanation
-
-You can find the average high school graduation rate of all states in each of the regions by typing the following command in your R console:
-
-tapply(statedata$HS.Grad, statedata$state.region, mean)
-
-The highest value is for the West region.
-
-CheckShow Answer
+ Northeast 
 
 ## Problem 1.3 - Data Exploration
 
@@ -99,45 +77,25 @@ Now, make a boxplot of the murder rate by region (for more information about cre
 
 Which region has the highest median murder rate?
 
-Exercise 3
+ Northeast 
 
-&nbsp;Northeast&nbsp;
+ South 
 
-&nbsp;South&nbsp;
+ North Central 
 
-&nbsp;North Central&nbsp;
-
-&nbsp;West&nbsp;
-
-Explanation
-
-To generate the boxplot, you should type boxplot(statedata$Murder ~ statedata$state.region) in your R console. You can see that the region with the highest median murder rate (the one with the highest solid line in the box) is the South.
-
-CheckShow Answer
+ West 
 
 ## Problem 1.4 - Data Exploration
 
 You should see that there is an outlier in the Northeast region of the boxplot you just generated. Which state does this correspond to? (Hint: There are many ways to find the answer to this question, but one way is to use the subset command to only look at the Northeast data.)
 
-Exercise 4
+ Delaware 
 
-&nbsp;Delaware&nbsp;
+ Rhode Island 
 
-&nbsp;Rhode Island&nbsp;
+ Maine 
 
-&nbsp;Maine&nbsp;
-
-&nbsp;New York&nbsp;
-
-Explanation
-
-The correct answer is New York. If you first use the subset command:
-
-NortheastData = subset(statedata, state.region == "Northeast")
-
-You can then look at NortheastData$Murder together with NortheastData$state.abb to identify the outlier.
-
-CheckShow Answer
+ New York 
 
 ## Problem 2.1 - Predicting Life Expectancy - An Initial Model
 
@@ -147,43 +105,17 @@ Build the model with all potential variables included (Population, Income, Illit
 
 What is the coefficient for "Income" in your linear regression model?
 
-Exercise 5
-
-&nbsp;Numerical Response&nbsp;
-
- 
-
-Explanation
-
-You can build the linear regression model with the following command:
-
-LinReg = lm(Life.Exp ~ Population + Income + Illiteracy + Murder + HS.Grad + Frost + Area, data=statedata)
-
-Then, to find the coefficient for income, you can look at the summary of the regression with summary(LinReg).
-
- 
-
-CheckShow Answer
-
 ## Problem 2.2 - Predicting Life Expectancy - An Initial Model
 
 Call the coefficient for income x (the answer to Problem 2.1). What is the interpretation of the coefficient x?
 
-Exercise 6
+ For a one unit increase in income, predicted life expectancy increases by |x| 
 
-&nbsp;For a one unit increase in income, predicted life expectancy increases by |x|&nbsp;
+ For a one unit increase in income, predicted life expectancy decreases by |x| 
 
-&nbsp;For a one unit increase in income, predicted life expectancy decreases by |x|&nbsp;
+ For a one unit increase in predicted life expectancy, income decreases by |x| 
 
-&nbsp;For a one unit increase in predicted life expectancy, income decreases by |x|&nbsp;
-
-&nbsp;For a one unit increase in predicted life expectancy, income increases by |x|&nbsp;
-
-Explanation
-
-If we increase income by one unit, then our model’s prediction will increase by the coefficient of income, x. Because x is negative, this is the same as predicted life expectancy decreasing by |x|.
-
-CheckShow Answer
+ For a one unit increase in predicted life expectancy, income increases by |x| 
 
 ## Problem 2.3 - Predicting Life Expectancy - An Initial Model
 
@@ -193,35 +125,19 @@ plot(statedata$Income, statedata$Life.Exp)
 
 Visually observe the plot. What appears to be the relationship?
 
-Exercise 7
+ Life expectancy is somewhat positively correlated with income. 
 
-&nbsp;Life expectancy is somewhat positively correlated with income.&nbsp;
+ Life expectancy is somewhat negatively correlated with income. 
 
-&nbsp;Life expectancy is somewhat negatively correlated with income.&nbsp;
-
-&nbsp;Life expectancy is not correlated with income.&nbsp;
-
-Explanation
-
-Although the point in the lower right hand corner of the plot appears to be an outlier, we observe a positive linear relationship in the plot.
-
-CheckShow Answer
+ Life expectancy is not correlated with income. 
 
 ## Problem 2.4 - Predicting Life Expectancy - An Initial Model
 
 The model we built does not display the relationship we saw from the plot of life expectancy vs. income. Which of the following explanations seems the most reasonable?
 
-Exercise 8
+ Income is not related to life expectancy. 
 
-&nbsp;Income is not related to life expectancy.&nbsp;
-
-&nbsp;Multicollinearity&nbsp;
-
-Explanation
-
-Although income is an insignificant variable in the model, this does not mean that there is no association between income and life expectancy. However, in the presence of all of the other variables, income does not add statistically significant explanatory power to the model. This means that multicollinearity is probably the issue.
-
-CheckShow Answer
+ Multicollinearity 
 
 ## Problem 3.1 - Predicting Life Expectancy - Refining the Model and Analyzing Predictions
 
@@ -229,53 +145,23 @@ Recall that we discussed the principle of simplicity: that is, a model with fewe
 
 You should be able to find a good model with only 4 independent variables, instead of the original 7. Which variables does this model contain?
 
-Exercise 9
+ Income, HS.Grad, Frost, Murder 
 
-&nbsp;Income, HS.Grad, Frost, Murder&nbsp;
+ HS.Grad, Population, Income, Frost 
 
-&nbsp;HS.Grad, Population, Income, Frost&nbsp;
+ Frost, Murder, HS.Grad, Illiteracy 
 
-&nbsp;Frost, Murder, HS.Grad, Illiteracy&nbsp;
-
-&nbsp;Population, Murder, Frost, HS.Grad&nbsp;
-
-Explanation
-
-We would eliminate the variable "Area" first (since it has the highest p-value, or probability, with a value of 0.9649), by adjusting our lm command to the following:
-
-LinReg = lm(Life.Exp ~ Population + Income + Illiteracy + Murder + HS.Grad + Frost, data=statedata)
-
-Looking at summary(LinReg) now, we would choose to eliminate "Illiteracy" since it now has the highest p-value of 0.9340, using the following command:
-
-LinReg = lm(Life.Exp ~ Population + Income + Murder + HS.Grad + Frost, data=statedata)
-
-Looking at summary(LinReg) again, we would next choose to eliminate "Income", since it has a p-value of 0.9153. This gives the following four variable model:
-
-LinReg = lm(Life.Exp ~ Population + Murder + HS.Grad + Frost, data=statedata)
-
-This model with 4 variables is a good model. However, we can see that the variable "Population" is not quite significant. In practice, it would be up to you whether or not to keep the variable "Population" or eliminate it for a 3-variable model. Population does not add much statistical significance in the presence of murder, high school graduation rate, and frost days. However, for the remainder of this question, we will analyze the 4-variable model.
-
-CheckShow Answer
+ Population, Murder, Frost, HS.Grad 
 
 ## Problem 3.2 - Predicting Life Expectancy - Refining the Model and Analyzing Predictions
 
 Removing insignificant variables changes the Multiple R-squared value of the model. By looking at the summary output for both the initial model (all independent variables) and the simplified model (only 4 independent variables) and using what you learned in class, which of the following correctly explains the change in the Multiple R-squared value?
 
-Exercise 10
+ We expect the "Multiple R-squared" value of the simplified model to be slightly worse than that of the initial model. It can't be better than the "Multiple R-squared" value of the initial model. 
 
-&nbsp;We expect the "Multiple R-squared" value of the simplified model to be slightly worse than that of the initial model. It can't be better than the "Multiple R-squared" value of the initial model.&nbsp;
+ We expect the "Multiple R-squared" value of the simplified model to be slightly better than that of the initial model. It can't be worse than the "Multiple R-squared" value of the initial model.  
 
-&nbsp;We expect the "Multiple R-squared" value of the simplified model to be slightly better than that of the initial model. It can't be worse than the "Multiple R-squared" value of the initial model. &nbsp;
-
-&nbsp;We expect the "Multiple R-squared" of the simplified model to be about the same as the intial model (we have no way of knowing if it will be slightly worse or slightly better than the Multiple R-squared of the intial model).&nbsp;
-
-Explanation
-
-When we remove insignificant variables, the "Multiple R-squared" will always be worse, but only slightly worse. This is due to the nature of a linear regression model. It is always possible for the regression model to make a coefficient zero, which would be the same as removing the variable from the model. The fact that the coefficient is not zero in the intial model means it must be helping the R-squared value, even if it is only a very small improvement. So when we force the variable to be removed, it will decrease the R-squared a little bit. However, this small decrease is worth it to have a simpler model.
-
-On the contrary, when we remove insignificant variables, the "Adjusted R-squred" will frequently be better. This value accounts for the complexity of the model, and thus tends to increase as insignificant variables are removed, and decrease as insignificant variables are added.
-
-CheckShow Answer
+ We expect the "Multiple R-squared" of the simplified model to be about the same as the intial model (we have no way of knowing if it will be slightly worse or slightly better than the Multiple R-squared of the intial model). 
 
 ## Problem 3.3 - Predicting Life Expectancy - Refining the Model and Analyzing Predictions
 
@@ -285,77 +171,45 @@ Take a look at the vector of predictions by using the predict function (since we
 
 Which state do we predict to have the lowest life expectancy? (Hint: use the sort function)
 
-Exercise 11
+ South Carolina 
 
-&nbsp;South Carolina&nbsp;
+ Mississippi 
 
-&nbsp;Mississippi&nbsp;
+ Alabama 
 
-&nbsp;Alabama&nbsp;
-
-&nbsp;Georgia&nbsp;
-
-Explanation
-
-If your simplified 4-variable model is called "LinReg", you can answer this question by typing
-
-sort(predict(LinReg))
-
-in your R console. The first state listed has the lowest predicted life expectancy, which is Alabama.
+ Georgia 
 
 Which state actually has the lowest life expectancy? (Hint: use the which.min function)
 
-Exercise 12
+ South Carolina 
 
-&nbsp;South Carolina&nbsp;
+ Mississippi 
 
-&nbsp;Mississippi&nbsp;
+ Alabama 
 
-&nbsp;Alabama&nbsp;
-
-&nbsp;Georgia&nbsp;
-
-Explanation
-
-You can find the row number of the state with the lowest life expectancy by typing which.min(statedata$Life.Exp) into your R console. This returns 40. The 40th state name in the vector statedata$state.name is South Carolina.
-
-CheckShow Answer
+ Georgia 
 
 ## Problem 3.4 - Predicting Life Expectancy - Refining the Model and Analyzing Predictions
 
 Which state do we predict to have the highest life expectancy?
 
-Exercise 13
+ Massachusetts 
 
-&nbsp;Massachusetts&nbsp;
+ Maine 
 
-&nbsp;Maine&nbsp;
+ Washington 
 
-&nbsp;Washington&nbsp;
-
-&nbsp;Hawaii&nbsp;
-
-Explanation
-
-If your simplified 4-variable model is called "LinReg", you can answer this question by typing "sort(predict(LinReg))" in your R console. The last state listed has the highest predicted life expectancy, which is Washington.
+ Hawaii 
 
 Which state actually has the highest life expectancy?
 
-Exercise 14
+ Massachusetts 
 
-&nbsp;Massachusetts&nbsp;
+ Maine 
 
-&nbsp;Maine&nbsp;
+ Washington 
 
-&nbsp;Washington&nbsp;
-
-&nbsp;Hawaii&nbsp;
-
-Explanation
-
-You can find the row number of the state with the highest life expectancy by typing which.max(statedata$Life.Exp) into your R console. This returns 11. The 11th state name in the vector statedata$state.name is Hawaii.
-
-CheckShow Answer
+ Hawaii 
 
 ## Problem 3.5 - Predicting Life Expectancy - Refining the Model and Analyzing Predictions
 
@@ -363,53 +217,22 @@ Take a look at the vector of residuals (the difference between the predicted and
 
 For which state do we make the smallest absolute error?
 
-Exercise 15
+ Maine 
 
-&nbsp;Maine&nbsp;
+ Florida 
 
-&nbsp;Florida&nbsp;
+ Indiana 
 
-&nbsp;Indiana&nbsp;
-
-&nbsp;Illinois&nbsp;
-
-Explanation
-
-You can look at the sorted list of absolute errors by typing
-
-sort(abs(model$residuals))
-
-into your R console (where "model" is the name of your model). Alternatively, you can compute the residuals manually by typing
-
-sort(abs(statedata$Life.Exp - predict(model)))
-
-in your R console. The smallest absolute error is for Indiana.
+ Illinois 
 
 For which state do we make the largest absolute error?
 
-Exercise 16
+ Hawaii 
 
-&nbsp;Hawaii&nbsp;
+ Maine 
 
-&nbsp;Maine&nbsp;
+ Texas 
 
-&nbsp;Texas&nbsp;
+ South Carolina 
 
-&nbsp;South Carolina&nbsp;
-
-Explanation
-
-You can look at the sorted list of absolute errors by typing
-
-sort(abs(model$residuals))
-
-into your R console (where "model" is the name of your model). Alternatively, you can compute the residuals manually by typing
-
-sort(abs(statedata$Life.Exp - predict(model)))
-
-in your R console. The largest absolute error is for Hawaii.
-
-CheckShow Answer
-
-- {{% resource_link "d64b9247-3ae1-fb23-50f1-b27dc8fbde0b" "Back: Detecting Flu Epidemics via Search Engine Query Data" %}}
-- {{% resource_link "c4464cf4-9ddb-1a4b-c78c-faa6f93b74de" "Continue: Logistic Regression" %}}
+{{% resource_link "d64b9247-3ae1-fb23-50f1-b27dc8fbde0b" "Back: Detecting Flu Epidemics via Search Engine Query Data" %}}

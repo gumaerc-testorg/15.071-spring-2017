@@ -14,7 +14,7 @@ video_metadata:
 ---
 ## Video 3: Bar Charts in R
 
-In this video, we'll use the dataset {{% resource_link "50da9372-31da-991c-be92-6f8538a9b25b" "intl (CSV)" %}}. Please download this dataset before starting the video. This data comes from the {{% resource_link "1cd5004e-1239-4063-a7cb-782042eba827" "MIT International Students Office" %}}.
+In this video, we'll use the dataset {{% resource_link "50da9372-31da-991c-be92-6f8538a9b25b" "intl (CSV)" %}}. Please download this dataset before starting the video. This data comes from the {{% resource_link "d77ed737-65a6-4427-9987-100c654003d6" "MIT International Students Office" %}}.
 
 An R script file with all of the commands used in this recitation can be downloaded here: {{% resource_link "666aaa7f-2146-df6e-575d-ac0b0c89a8e8" "Resource Unit7_Recitation (R)" %}}.
 

@@ -1,6 +1,6 @@
 ---
 content_type: page
-description: ''
+description: Popularity of Music Records
 draft: false
 learning_resource_types: []
 ocw_type: CourseSection
@@ -14,23 +14,21 @@ video_metadata:
 ---
 ## Popularity of Music Records
 
-The music industry has a well-developed market with a global annual revenue around $15 billion. The recording industry is highly competitive and is dominated by three big production companies which make up nearly 82% of the total annual album sales.   
-  
-Artists are at the core of the music industry and record labels provide them with the necessary resources to sell their music on a large scale. A record label incurs numerous costs (studio recording, marketing, distribution, and touring) in exchange for a percentage of the profits from album sales, singles and concert tickets.  
-  
-Unfortunately, the success of an artist's release is highly uncertain: a single may be extremely popular, resulting in widespread radio play and digital downloads, while another single may turn out quite unpopular, and therefore unprofitable.   
-  
-Knowing the competitive nature of the recording industry, record labels face the fundamental decision problem of which musical releases to support to maximize their financial success.   
-  
+The music industry has a well-developed market with a global annual revenue around $15 billion. The recording industry is highly competitive and is dominated by three big production companies which make up nearly 82% of the total annual album sales. 
+
+Artists are at the core of the music industry and record labels provide them with the necessary resources to sell their music on a large scale. A record label incurs numerous costs (studio recording, marketing, distribution, and touring) in exchange for a percentage of the profits from album sales, singles and concert tickets.
+
+Unfortunately, the success of an artist's release is highly uncertain: a single may be extremely popular, resulting in widespread radio play and digital downloads, while another single may turn out quite unpopular, and therefore unprofitable. 
+
+Knowing the competitive nature of the recording industry, record labels face the fundamental decision problem of which musical releases to support to maximize their financial success. 
+
 How can we use analytics to predict the popularity of a song? In this assignment, we challenge ourselves to predict whether a song will reach a spot in the Top 10 of the Billboard Hot 100 Chart.
 
-Taking an analytics approach, we aim to use information about a song's properties to predict its popularity. The dataset {{% resource_link "0657f55b-10c0-9785-3d2b-ee6e5186764d" "songs (CSV)" %}} consists of all songs which made it to the Top 10 of the Billboard Hot 100 Chart from 1990-2010 plus a sample of additional songs that didn't make the Top 10. This data comes from three sources: {{% resource_link "eabb5238-517b-4e6e-ba49-9cba791372e7" "Wikipedia" %}}, {{% resource_link "a3868aac-804d-454f-9099-2c77f6879a2f" "Billboard.com" %}}, and {{% resource_link "a8fa85cb-8f45-4778-91e4-90d76baab904" "EchoNest" %}}.
+Taking an analytics approach, we aim to use information about a song's properties to predict its popularity. The dataset {{% resource_link "0657f55b-10c0-9785-3d2b-ee6e5186764d" "songs (CSV)" %}} consists of all songs which made it to the Top 10 of the Billboard Hot 100 Chart from 1990-2010 plus a sample of additional songs that didn't make the Top 10. This data comes from three sources: {{% resource_link "05db9b2d-4c6f-4dd1-a6fe-38bb521ea816" "Wikipedia" %}}, {{% resource_link "2ba6940e-bf40-4dcf-87a4-233aa222fd8c" "Billboard.com" %}}, and {{% resource_link "5c03d32a-ea97-4754-84a3-46007ba416e1" "EchoNest" %}}.
 
 The variables included in the dataset either describe the artist or the song, or they are associated with the following song attributes: time signature, loudness, key, pitch, tempo, and timbre.
 
 Here's a detailed description of the variables:
-
- 
 
 - **year** = the year the song was released
 - **songtitle** = the title of the song
@@ -51,33 +49,9 @@ Use the read.csv function to load the dataset "songs.csv" into R.
 
 How many observations (songs) are there in total?
 
-Exercise 1
-
-&nbsp;Numerical Response&nbsp;
-
- 
-
-Explanation
-
-First, navigate to the directory on your computer containing the file "songs.csv". You can load the dataset by using the command:
-
-songs = read.csv("songs.csv")
-
-Then, you can count the number of songs by using str(songs), which you can read off the first line on the output, or nrow(songs), which returns the number of rows in the data frame.
-
-CheckShow Answer
-
 ## Problem 1.2 - Understanding the Data
 
 How many songs does the dataset include for which the artist name is "Michael Jackson"?
-
-Exercise 2
-
-&nbsp;Numerical Response&nbsp;
-
- 
-
-Explanation
 
 One way to compute this would be using table():
 
@@ -91,29 +65,11 @@ and then filter the data frame to artistname == "Michael Jackson" and summarize 
 
 songs %>% filter(artistname == "Michael Jackson") %>% summarize(count = n())
 
-CheckShow Answer
-
 ## Problem 2.1 - Creating Our Prediction Model
 
 We wish to predict whether or not a song will make it to the Top 10. To do this, first use the filter function to split the data into a training set "SongsTrain" consisting of all the observations up to and including 2009 song releases, and a testing set "SongsTest", consisting of the 2010 song releases.
 
 How many observations (songs) are in the training set?
-
-Exercise 3
-
-&nbsp;Numerical Response&nbsp;
-
- 
-
-Explanation
-
-SongsTrain = songs %>% filter(year \<= 2009)
-
-SongsTest = songs %>% filter(year == 2010)
-
-The training set has 7201 observations, which can be found by looking at the structure with str(SongsTrain) or by typing nrow(SongsTrain).
-
-CheckShow Answer
 
 ## Problem 2.2 - Creating our Prediction Model
 
@@ -143,14 +99,6 @@ SongsLog1 = glm(Top10 ~ ., data=SongsTrain, family=binomial)
 
 Looking at the summary of your model, excluding the intercept, how many variables are significant at the 5% significance level?
 
-Exercise 4
-
-&nbsp;Numerical Response&nbsp;
-
- 
-
-Explanation
-
 To answer this question, you first need to run the three given commands to remove the variables that we won't use in the model from the datasets:
 
 nonvars = c("year", "songtitle", "artistname", "songID", "artistID")
@@ -163,41 +111,21 @@ Then, you can create the logistic regression model with the following command:
 
 SongsLog1 = glm(Top10 ~ ., data=SongsTrain, family=binomial)
 
-Looking at the stars on the summary(SongsLog1) output, we can see that 20 variables have at least one star next to the p-values, which represents significance at the 5% level.
-
-CheckShow Answer
-
 ## Problem 2.3 - Creating Our Prediction Model
 
 Let's now think about the variables in our dataset related to the confidence of the time signature, key, and tempo (timesignature\_confidence, key\_confidence, and tempo\_confidence). Our model seems to indicate that these confidence variables are significant (rather than the variables timesignature, key, and tempo themselves). What does the model suggest?
 
-Exercise 5
+ The lower our confidence about time signature, key and tempo, the more likely the song is to be in the Top 10 
 
-&nbsp;The lower our confidence about time signature, key and tempo, the more likely the song is to be in the Top 10&nbsp;
-
-&nbsp;The higher our confidence about time signature, key and tempo, the more likely the song is to be in the Top 10&nbsp;
-
-Explanation
-
-If you look at the output summary(SongsLog1), where SongsLog1 is the name of your logistic regression model, you can see that the coefficient estimates for the confidence variables (timesignature\_confidence, key\_confidence, and tempo\_confidence) are positive. This means that higher confidence leads to a higher predicted probability of a Top 10 hit.
-
-CheckShow Answer
+ The higher our confidence about time signature, key and tempo, the more likely the song is to be in the Top 10 
 
 ## Problem 2.4 - Creating Our Prediction Model
 
 In general, if the confidence is low for the time signature, tempo, and key, then the song is more likely to be complex. What does our model suggest in terms of complexity?
 
-Exercise 6
+ Mainstream listeners tend to prefer more complex songs 
 
-&nbsp;Mainstream listeners tend to prefer more complex songs&nbsp;
-
-&nbsp;Mainstream listeners tend to prefer less complex songs&nbsp;
-
-Explanation
-
-Since the coefficient values for timesignature\_confidence, tempo\_confidence, and key\_confidence are all positive, lower confidence leads to a lower predicted probability of a song being a hit. So mainstream listeners tend to prefer less complex songs.
-
-CheckShow Answer
+ Mainstream listeners tend to prefer less complex songs 
 
 ## Problem 2.5 - Creating Our Prediction Model
 
@@ -205,31 +133,15 @@ Songs with heavier instrumentation tend to be louder (have higher values in the 
 
 By inspecting the coefficient of the variable "loudness", what does our model suggest?
 
-Exercise 7
+ Mainstream listeners prefer songs with heavy instrumentation 
 
-&nbsp;Mainstream listeners prefer songs with heavy instrumentation&nbsp;
-
-&nbsp;Mainstream listeners prefer songs with light instrumentation&nbsp;
-
-Explanation
-
-The coefficient estimate for loudness is positive, meaning that mainstream listeners prefer louder songs, which are those with heavier instrumentation.
-
-CheckShow Answer
+ Mainstream listeners prefer songs with light instrumentation 
 
 ## Problem 3.1 - Validating Our Model
 
 Make predictions on the test set using our model. What is the accuracy of our model on the test set, using a threshold of 0.45? (Compute the accuracy as a number between 0 and 1.)
 
 To get the accuracy after you make the predictions, you can use the table(variable1, variable2) command to generate a summary table that counts the number of observations for each of the possible combination of values in variable1 and variable2. You can also do so by using the group\_by and summarize commands in dplyr package.
-
-Exercise 8
-
-&nbsp;Numerical Response&nbsp;
-
- 
-
-Explanation
 
 You can make predictions on the test set by using the command:
 
@@ -245,21 +157,9 @@ SongsTest$Pred = testPredict >= 0.45
 
 SongsTest %>% group\_by(Top10, Pred) %>% summarize(count = n())
 
-The accuracy of the model is (309+15)/(309+15+44+5) = 0.8686
-
-CheckShow Answer
-
 ## Problem 3.2 - Validating Our Model
 
 Let's check if there's any incremental benefit in using our model instead of a baseline model. Given the difficulty of guessing which song is going to be a hit, an easier model would be to pick the most frequent outcome (a song is not a Top 10 hit) for all songs. What would the accuracy of the baseline model be on the test set? (Give your answer as a number between 0 and 1.)
-
-Exercise 9
-
-&nbsp;Numerical Response&nbsp;
-
- 
-
-Explanation
 
 You can compute the baseline accuracy by summarizing the outcome variable in the test set. One way to do this is with table():
 
@@ -269,37 +169,11 @@ Another approach would be to use dplyr:
 
 SongsTest %>% group\_by(Top10) %>% summarize(count = n())
 
-The baseline model would get 314 observations correct, and 59 wrong, for an accuracy of 314/(314+59) = 0.8418231.
-
-CheckShow Answer
-
 ## Problem 3.3 - Validating Our Model
 
 What is the True Positive Rate of our model on the test set, using a threshold of 0.45?
 
-Exercise 10
-
-&nbsp;Numerical Response&nbsp;
-
- 
-
 What is the False Positive Rate of our model on the test set, using a threshold of 0.45?
-
-Exercise 11
-
-&nbsp;Numerical Response&nbsp;
-
- 
-
-Explanation
-
-Using the confusion matrix we obtained before using either table or group\_by/summarize:
-
-table(SongsTest$Top10, testPredict >= 0.45)
-
-We can compute the True Positive Rate to be the number of correctly identified Top10 songs divided by the total number of Top10 songs: 15/(15+44) = 0.2542373, and the False Positive Rate to be the number of non-Top10 songs that were identified as Top10 divided by the total number of non-Top10 songs: 5/(309+5) = 0.01592357.
-
-CheckShow Answer
 
 - {{% resource_link "bafc7d56-02f9-e47a-53ea-0d210aa17805" "Back: Video 5: Test Set Predictions" %}}
 - {{% resource_link "3b462833-7389-a83d-6609-7f7597856e56" "Continue: Predicting the Baseball World Series Champion" %}}

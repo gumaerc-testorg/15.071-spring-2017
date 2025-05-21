@@ -1,6 +1,6 @@
 ---
 content_type: page
-description: ''
+description: 7.5 Assignment 7
 draft: false
 learning_resource_types: []
 ocw_type: CourseSection
@@ -18,8 +18,6 @@ In the crime lecture, we saw how we can use heatmaps to give a 2-dimensional rep
 
 We'll use the parole data {{% resource_link "ee9b52a2-0d6e-bf59-44fb-3da9171fa3e0" "parole (CSV)" %}} from Unit 3. Before, we used this data to predict parole violators. Now, let's try to get a little more insight into this dataset using histograms. As a reminder, the variables in this dataset are:
 
- 
-
 - **male** = 1 if the parolee is male, 0 if female
 - **race** = 1 if the parolee is white, 2 otherwise
 - **age** = the parolee's age in years at the time of release from prison
@@ -28,7 +26,7 @@ We'll use the parole data {{% resource_link "ee9b52a2-0d6e-bf59-44fb-3da9171fa3e
 - **max.sentence** = the maximum sentence length for all charges, in months (limited by the inclusion criteria to not exceed 18 months).
 - **multiple.offenses** = 1 if the parolee was incarcerated for multiple offenses, 0 otherwise.
 - **crime** = a code for the parolee's main crime leading to incarceration. 2 is larceny, 3 is drug-related crime, 4 is driving-related crime, and 1 is any other crime.
-- **violator** \= 1 if the parolee violated the parole, and 0 if the parolee completed the parole without violation.
+- **violator** = 1 if the parolee violated the parole, and 0 if the parolee completed the parole without violation.
 
 ## Problem 1.1 - Loading the Data
 
@@ -42,45 +40,17 @@ parole$crime = as.factor(parole$crime)
 
 What fraction of parole violators are female?
 
-Exercise 1
-
-&nbsp;Numerical Response&nbsp;
-
- 
-
-Explanation
-
-This can be found by using table:
-
-table(parole$male, parole$violator)
-
-The total number of violators is 78, and 14 of them are female.
-
-CheckShow Answer
-
 ## Problem 1.2 - Loading the Data
 
 In this dataset, which crime is the most common in Kentucky?
 
-Exercise 2
+ Larceny 
 
-&nbsp;Larceny&nbsp;
+ Drug-related crime 
 
-&nbsp;Drug-related crime&nbsp;
+ Driving-related crime 
 
-&nbsp;Driving-related crime&nbsp;
-
-&nbsp;Other&nbsp;
-
-Explanation
-
-This can be found by using table:
-
-table(parole$state, parole$crime)
-
-The code 2 corresponds to Kentucky, and the most common crime is 3, which corresponds to Drug-related crime.
-
-CheckShow Answer
+ Other 
 
 ## Problem 2.1 - Creating a Basic Histogram
 
@@ -96,51 +66,25 @@ Note that by default, histograms create bins where the left endpoint is included
 
 What is the age bracket with the most parolees?
 
-Exercise 3
+ 20-24 
 
-&nbsp;20-24&nbsp;
+ 25-29 
 
-&nbsp;25-29&nbsp;
+ 30-34 
 
-&nbsp;30-34&nbsp;
-
-&nbsp;35-39&nbsp;
-
-Explanation
-
-You can generate the histogram with a bin width of 5 with the command:
-
-ggplot(data = parole, aes(x = age)) + geom\_histogram(binwidth=5)
-
-The tallest bar corresponds to the age bracket with the most parolees, which is 20-24.
-
-CheckShow Answer
+ 35-39 
 
 ## Problem 2.2 - Creating a Basic Histogram
 
 Redo the histogram, adding the following argument to the geom\_histogram function: color="blue". What does this do? Select all that apply.
 
-Exercise 4
+ Changes the fill color of the bars 
 
-&nbsp;Changes the fill color of the bars&nbsp;
+ Changes the background color of the plot 
 
-&nbsp;Changes the background color of the plot&nbsp;
+ Changes the outline color of the bars 
 
-&nbsp;Changes the outline color of the bars&nbsp;
-
-&nbsp;Changes the color of the axis labels &nbsp;
-
- 
-
-Explanation
-
-You can generate the histogram by typing:
-
-ggplot(data = parole, aes(x = age)) + geom\_histogram(binwidth=5, color="blue")
-
-Adding the color argument changes the outline color of the bars.
-
-CheckShow Answer
+ Changes the color of the axis labels  
 
 ## Problem 3.1 - Adding Another Dimension
 
@@ -156,43 +100,27 @@ The histogram for female parolees is shown at the top, and the histogram for mal
 
 What is the age bracket with the most female parolees?
 
-Exercise 5
+ 20-24 
 
-&nbsp;20-24&nbsp;
+ 25-29 
 
-&nbsp;25-29&nbsp;
+ 30-34 
 
-&nbsp;30-34&nbsp;
-
-&nbsp;35-39&nbsp;
-
-Explanation
-
-Looking at the histogram at the top, we can see that the tallest bar corresponds to the age bracket 35-39.
-
-CheckShow Answer
+ 35-39 
 
 ## Problem 3.2 - Adding Another Dimension
 
 Now change the facet\_grid argument to be ".~male" instead of "male~.". What does this do?
 
-Exercise 6
+ Creates histograms of the male variable, sorted by the different values of age. 
 
-&nbsp;Creates histograms of the male variable, sorted by the different values of age.&nbsp;
+ Puts the histograms side-by-side instead of on top of each other.  
 
-&nbsp;Puts the histograms side-by-side instead of on top of each other. &nbsp;
-
-&nbsp;This doesn't change anything - the plot looks exactly the same as it did before.&nbsp;
-
-Explanation
+ This doesn't change anything - the plot looks exactly the same as it did before. 
 
 You can create the new plot with the command:
 
 ggplot(data = parole, aes(x = age)) + geom\_histogram(binwidth = 5) + facet\_grid(.~male)
-
-This puts the plots side-by-side instead of on top of each other.
-
-CheckShow Answer
 
 ## Problem 3.3 - Adding Another DImension
 
@@ -206,23 +134,15 @@ Since we didn't specify colors to use, ggplot will use its default color selecti
 
 colorPalette = c("#000000", "#E69F00", "#56B4E9", "#009E73", "#F0E442", "#0072B2", "#D55E00", "#CC79A7")
 
-This is actually a colorblind-friendly palette, desribed on this {{% resource_link "054074fb-05f2-409b-8011-ce1db8fb9d1a" "Cookbook for R page" %}}. Now, generate your histogram again, using colorPalette, with the following command:
+This is actually a colorblind-friendly palette, desribed on this {{% resource_link "d183f31c-b22f-4714-bcb0-d44d30b6c250" "Cookbook for R page" %}}. Now, generate your histogram again, using colorPalette, with the following command:
 
 ggplot(data = parole, aes(x = age, fill = male)) + geom\_histogram(binwidth = 5) + scale\_fill\_manual(values=colorPalette)
 
 What color is the histogram for the female parolees?
 
-Exercise 7
+ Orange 
 
-&nbsp;Orange&nbsp;
-
-&nbsp;Black&nbsp;
-
-Explanation
-
-From the previous question, we saw that the female parolee histogram was much smaller than the male parolee histogram. So it looks like the female histogram is the black-colored one. We can also read this from the legend.
-
-CheckShow Answer
+ Black 
 
 ## Problem 3.4 - Adding Another Dimension
 
@@ -240,41 +160,31 @@ Redo the plot, making both of these changes.
 
 Which of the following buckets contain no female paroles? Select all that apply.
 
-Exercise 8
+ 15-19 
 
-&nbsp;15-19&nbsp;
+ 20-24 
 
-&nbsp;20-24&nbsp;
+ 25-29 
 
-&nbsp;25-29&nbsp;
+ 30-34 
 
-&nbsp;30-34&nbsp;
+ 35-39 
 
-&nbsp;35-39&nbsp;
+ 40-44 
 
-&nbsp;40-44&nbsp;
+ 45-49 
 
-&nbsp;45-49&nbsp;
+ 50-54 
 
-&nbsp;50-54&nbsp;
+ 55-59 
 
-&nbsp;55-59&nbsp;
+ 60-64 
 
-&nbsp;60-64&nbsp;
-
-&nbsp;¨C34C65-69&nbsp;
-
- 
-
-Explanation
+ ¨C34C65-69 
 
 This plot can be generated with the following command:
 
 ggplot(parole, aes(x = age, fill = male)) + geom\_histogram(binwidth = 5, position = "identity", alpha = 0.5) + scale\_fill\_manual(values=colorPalette)
-
-If you look at the plot, you can see that there are no female parolees in the age groups 15-19, 55-59, and 65-69 (the bars have height zero).
-
-CheckShow Answer
 
 ## Problem 4.1 - Time Served
 
@@ -282,51 +192,31 @@ Now let's explore another aspect of the data: the amount of time served by parol
 
 What is the most common length of time served, according to this histogram?
 
-Exercise 9
+ Between 2 and 3 months 
 
-&nbsp;Between 2 and 3 months&nbsp;
+ Between 3 and 4 months 
 
-&nbsp;Between 3 and 4 months&nbsp;
+ Between 4 and 5 months 
 
-&nbsp;Between 4 and 5 months&nbsp;
-
-&nbsp;Between 5 and 6 months&nbsp;
-
-Explanation
-
-You can create this histogram with the following command:
-
-ggplot(data = parole, aes(x = time.served)) + geom\_histogram(binwidth = 1)
-
-The highest bar corresponds to between 4 and 5 months.
-
-CheckShow Answer
+ Between 5 and 6 months 
 
 ## Problem 4.2 - Time Served
 
 Change the binwidth to 0.1 months. Now what is the most common length of time served, according to the histogram?
 
-Exercise 10
+ Between 2.1 and 2.2 months 
 
-&nbsp;Between 2.1 and 2.2 months&nbsp;
+ Between 3.0 and 3.1 months 
 
-&nbsp;Between 3.0 and 3.1 months&nbsp;
+ Between 4.2 and 4.3 months  
 
-&nbsp;Between 4.2 and 4.3 months &nbsp;
-
-&nbsp;Between 4.8 and 4.9 months&nbsp;
-
-Explanation
+ Between 4.8 and 4.9 months 
 
 You can change the binwidth by using the following command:
 
 ggplot(data = parole, aes(x = time.served)) + geom\_histogram(binwidth = .1)
 
-Now, the highest bar corresponds to between 3.0 and 3.1 months.
-
 Be careful when choosing the binwidth - it can significantly affect the interpretation of a histogram! When visualizing histograms, it is always a good idea to vary the bin size in order to understand the data at various granularities.
-
-CheckShow Answer
 
 ## Problem 4.3 - Time Served
 
@@ -334,35 +224,23 @@ Now, suppose we suspect that it is unlikely that each type of crime has the same
 
 Which crime type has no observations where time served is less than one month? Recall that crime type #2 is larceny, #3 is drug-related crime, #4 is driving-related crime, and #1 is any other crime.
 
-Exercise 11
+ Larceny 
 
-&nbsp;Larceny&nbsp;
+ Drug-related 
 
-&nbsp;Drug-related&nbsp;
+ Driving-related 
 
-&nbsp;Driving-related&nbsp;
-
-&nbsp;Other&nbsp;
+ Other 
 
 For which crime does the frequency of 5-6 month prison terms exceed the frequencies of each other term length?
 
-Exercise 12
+ Larceny 
 
-&nbsp;Larceny&nbsp;
+ Drug-related 
 
-&nbsp;Drug-related&nbsp;
+ Driving-related 
 
-&nbsp;Driving-related&nbsp;
-
-&nbsp;Other&nbsp;
-
-Explanation
-
-This histogram can be generated using the command:
-
-ggplot(data = parole, aes(x = time.served)) + geom\_histogram(binwidth = 1) + facet\_grid(crime ~ .)
-
-CheckShow Answer
+ Other 
 
 ## Problem 4.4 - Time Served
 
@@ -370,23 +248,10 @@ Now, instead of faceting the histograms, overlay them. Remember to set the posit
 
 In this case, faceting seems like a better alternative. Why?
 
-Exercise 13
+ With four different groups, it can be hard to tell them apart when they are overlayed.  
 
-&nbsp;With four different groups, it can be hard to tell them apart when they are overlayed. &nbsp;
+ ggplot doesn't let us overlay plots with more than two groups. 
 
-&nbsp;ggplot doesn't let us overlay plots with more than two groups.&nbsp;
+ Overlaying the plots doesn't allow us to observe which crime type is the most common. 
 
-&nbsp;Overlaying the plots doesn't allow us to observe which crime type is the most common.&nbsp;
-
-Explanation
-
-You can generate this plot with the following command:
-
-ggplot(data=parole, aes(x=time.served, fill=crime)) + geom\_histograph(binwidth=1, position="identity", alpha=0.5)
-
-While overlaying the plots is allowed and lets us observe some attributes of the plots like the most common crime type, it can be hard to tell them apart and if they have similar values it can be hard to read.
-
-CheckShow Answer
-
-- {{% resource_link "5d57bafe-1422-b8d9-a742-d6339058ab65" "Back: Video 7: Using Line Charts Instead" %}}
-- {{% resource_link "daafaa58-867c-9765-f1c4-c60a9c0ed426" "Continue: Linear Optimization" %}}
+{{% resource_link "5d57bafe-1422-b8d9-a742-d6339058ab65" "Back: Video 7: Using Line Charts Instead" %}}

@@ -1,6 +1,6 @@
 ---
 content_type: page
-description: ''
+description: 1.5 Assignment 1
 draft: false
 learning_resource_types:
 - Assignments
@@ -15,13 +15,11 @@ video_metadata:
 ---
 ## Stock Dynamics
 
-A stock market is where buyers and sellers trade shares of a company, and is one of the most popular ways for individuals and companies to invest money. The size of the world stock market  is now estimated to be in the trillions. The largest stock market in the world is the New York Stock Exchange (NYSE), located in New York City. About 2,800 companies are listed on the NSYE. In this problem, we'll look at the monthly stock prices of five of these companies: {{% resource_link "1596e21c-71f0-4993-aba7-60adec95b99d" "IBM" %}}, {{% resource_link "6c4f2349-556f-43f2-a184-b6e7addd9ebd" "General Electric (GE)" %}}, {{% resource_link "9a451065-93ab-4fcd-a9ce-3a80d419c35c" "Procter and Gamble" %}}, {{% resource_link "cc3b59bf-80a6-4cb5-a95b-c7af8767c4e2" "Coca Cola" %}}, and {{% resource_link "9b38940b-55de-45f4-be2c-7f69992d4980" "Boeing" %}}. The data used in this problem comes from {{% resource_link "8a7dcace-a2cc-4a14-86b7-002a3cf9dce6" "Infochimps" %}}.
+A stock market is where buyers and sellers trade shares of a company, and is one of the most popular ways for individuals and companies to invest money. The size of the world stock market  is now estimated to be in the trillions. The largest stock market in the world is the New York Stock Exchange (NYSE), located in New York City. About 2,800 companies are listed on the NSYE. In this problem, we'll look at the monthly stock prices of five of these companies: {{% resource_link "bde5e3a8-ece3-4922-b2b2-0196fe5f5ade" "IBM" %}}, {{% resource_link "ea15e163-f815-43c2-8d98-72c34d55739b" "General Electric (GE)" %}}, {{% resource_link "8058647f-634a-4806-8278-4593dd3d8b39" "Procter and Gamble" %}}, {{% resource_link "466f98db-f87f-4898-ac5a-ae7a8e99292a" "Coca Cola" %}}, and {{% resource_link "87ed239c-88f4-42ef-b7fc-1642a0abd864" "Boeing" %}}. The data used in this problem comes from {{% resource_link "738f8bea-497a-43e0-9405-26598ef18476" "Infochimps" %}}.
 
 Download and read the following files into R, using the read.csv function: {{% resource_link "08d083a5-1725-af8b-9880-dca1198098a7" "IBMStock (CSV)" %}}, {{% resource_link "0e654677-e28d-932d-10fc-d75f3884636d" "GEStock (CSV)" %}}, {{% resource_link "5b4baa71-1c24-d261-17a7-29b442529ba5" "ProcterGambleStock (CSV)" %}}, {{% resource_link "4e0afebb-6ca9-c80d-80e6-30e8e9872585" "CocaColaStock (CSV)" %}}, and {{% resource_link "550f7976-b38a-ea3b-0610-72d505e139f1" "BoeingStock (CSV)" %}}. (Do not open these files in any spreadsheet software before completing this problem because it might change the format of the Date field.)
 
 Call the data frames "IBM", "GE", "ProcterGamble", "CocaCola", and "Boeing", respectively. Each data frame has two variables, described as follows:
-
- 
 
 - **Date**: the date of the stock price, always given as the first of the month.
 - **StockPrice**: the average stock price of the company in the given month.
@@ -46,129 +44,33 @@ The first argument to the as.Date function is the variable we want to convert, a
 
 Our five datasets all have the same number of observations. How many observations are there in each data set?
 
-Exercise 1
-
-&nbsp;Numerical Response&nbsp;
-
- 
-
-Explanation
-
-Using the str function, we can see that each data set has 480 observations. We have monthly data for 40 years, so there are 12\*40 = 480 observations.
-
-CheckShow Answer
-
 ## Problem 1.2 - Summary Statistics
 
 What is the earliest year in our datasets?
-
-Exercise 2
-
-&nbsp;Numerical Response&nbsp;
-
- 
-
-Explanation
-
-Using the summary function, the minimum value of the Date variable is January 1, 1970 for any dataset.
-
-CheckShow Answer
 
 ## Problem 1.3 - Summary Statistics
 
 What is the latest year in our datasets?
 
-Exercise 3
-
-&nbsp;Numerical Response&nbsp;
-
- 
-
-Explanation
-
-Using the summary function, the maximum value of the Date variable is December 1, 2009 for any dataset.
-
-CheckShow Answer
-
 ## Problem 1.4 - Summary Statistics
 
 What is the mean stock price of IBM over this time period?
-
-Exercise 4
-
-&nbsp;Numerical Response&nbsp;
-
- 
-
-Explanation
-
-By typing summary(IBM), we can see that the mean value of the IBM StockPrice is 144.38.
-
-CheckShow Answer
 
 ## Problem 1.5 - Summary Statistics
 
 What is the minimum stock price of General Electric (GE) over this time period?
 
-Exercise 5
-
-&nbsp;Numerical Response&nbsp;
-
- 
-
-Explanation
-
-By typing summary(GE), we can see that the minimum value of the GE StockPrice is 9.294.
-
-CheckShow Answer
-
 ## Problem 1.6 - Summary Statistics
 
 What is the maximum stock price of Coca-Cola over this time period?
-
-Exercise 6
-
-&nbsp;Numerical Response&nbsp;
-
- 
-
-Explanation
-
-By typing summary(CocaCola), we can see that the maximum value of the Coca-Cola StockPrice is 146.58.
-
-CheckShow Answer
 
 ## Problem 1.7 - Summary Statistics
 
 What is the median stock price of Boeing over this time period?
 
-Exercise 7
-
-&nbsp;Numerical Response&nbsp;
-
- 
-
-Explanation
-
-By typing summary(Boeing), we can see that the median value of the Boeing StockPrice is 44.88.
-
-CheckShow Answer
-
 ## Problem 1.8 - Summary Statistics
 
 What is the standard deviation of the stock price of Procter & Gamble over this time period?
-
-Exercise 8
-
-&nbsp;Numerical Response&nbsp;
-
- 
-
-Explanation
-
-By typing sd(ProcterGamble$StockPrice), we can see that the standard deviation of the Procter & Gamble StockPrice is 18.19414.
-
-CheckShow Answer
 
 ## Problem 2.1 - Visualizing Stock Dynamics
 
@@ -178,37 +80,7 @@ This plots our observations as points, but we would really like to see a line in
 
 Around what year did Coca-Cola has its highest stock price in this time period?
 
-Exercise 9
-
-&nbsp;1973&nbsp;
-
-&nbsp;1980&nbsp;
-
-&nbsp;1985&nbsp;
-
-&nbsp;1995&nbsp;
-
-&nbsp;2008&nbsp;
-
 Around what year did Coca-Cola has its lowest stock price in this time period?
-
-Exercise 10
-
-&nbsp;1973&nbsp;
-
-&nbsp;1980&nbsp;
-
-&nbsp;1985&nbsp;
-
-&nbsp;1995&nbsp;
-
-&nbsp;2008&nbsp;
-
-Explanation
-
-You can generate the plot using the command plot(CocaCola$Date, CocaCola$StockPrice, type="l"). Looking at the plot, the maximum value of the StockPrice is around 1973, and the minimum value of the StockPrice is around 1980.
-
-CheckShow Answer
 
 ## Problem 2.2 - Visualizing Stock Dynamics
 
@@ -222,21 +94,11 @@ As an alternative choice to changing the colors, you could instead change the li
 
 In March of 2000, the technology bubble burst, and a stock market crash occurred. According to this plot, which company's stock dropped more?
 
-Exercise 11
-
-&nbsp;Coca-Cola&nbsp;
-
-&nbsp;Procter and Gamble&nbsp;
-
-Explanation
-
-You can generate the combined plot for Coca-Cola and Procter & Gamble by using the following commands in R:
+Hint: You can generate the combined plot for Coca-Cola and Procter & Gamble by using the following commands in R:
 
 plot(CocaCola$Date, CocaCola$StockPrice, type="l", col="red")
 
 lines(ProcterGamble$Date, ProcterGamble$StockPrice, col="blue")
-
-Looking at the plot, around 2000 both stocks drop, but Procter and Gamble's stock drops more.
 
 To answer this question and the ones that follow, you may find it useful to draw a vertical line at a certain date. To do this, type the command
 
@@ -244,43 +106,13 @@ abline(v=as.Date(c("2000-03-01")), lwd=2)
 
 in your R console, with the plot still open. This generates a vertical line at the date March 1, 2000. The argument lwd=2 makes the line a little thicker. You can change the date in this command to generate the vertical line in different locations.
 
-CheckShow Answer
-
 ## Problem 2.3 - Visualizing Stock Dynamics
 
 Answer these questions using the plot you generated in the previous problem.
 
 Around 1983, the stock for one of these companies (Coca-Cola or Procter and Gamble) was going up, while the other was going down. Which one was going up?
 
-Exercise 12
-
-&nbsp;Coca-Cola&nbsp;
-
-&nbsp;Procter and Gamble&nbsp;
-
-Explanation
-
-Looking at the plot generated by the commands:
-
-plot(CocaCola$Date, CocaCola$StockPrice, type="l", col="red")
-
-lines(ProcterGamble$Date, ProcterGamble$StockPrice, col="blue")
-
-we can see that around 1983 the stock for Coca-Cola has an upward trend.
-
 In the time period shown in the plot, which stock generally has lower values?
-
-Exercise 13
-
-&nbsp;Coca-Cola&nbsp;
-
-&nbsp;Procter and Gamble&nbsp;
-
-Explanation
-
-Looking at the plot, the red line (for Coca-Cola) is generally lower than the blue line.
-
-CheckShow Answer
 
 ## Problem 3.1 - Visualizing Stock Dynamics 1995-2005
 
@@ -298,20 +130,6 @@ Use this plot to answer the following four questions.
 
 Which stock fell the most right after the technology bubble burst in March 2000?
 
-Exercise 14
-
-&nbsp;Coca-Cola&nbsp;
-
-&nbsp;Procter and Gamble&nbsp;
-
-&nbsp;IBM&nbsp;
-
-&nbsp;General Electric (GE)&nbsp;
-
-&nbsp;Boeing&nbsp;
-
-Explanation
-
 You can create the plot needed to answer the questions in this problem by typing the following commands into your R console:
 
 plot(CocaCola$Date\[301:432\], CocaCola$StockPrice\[301:432\], type="l", col="red", ylim=c(0,210))
@@ -328,51 +146,13 @@ You can add a vertical line to the plot at March 2000 by typing the following co
 
 abline(v=as.Date(c("2000-03-01")), lwd=2)
 
-By looking at this plot, you can see that the stock for General Electric falls significantly more than the other stocks after the technology bubble burst.
-
-CheckShow Answer
-
 ## Problem 3.2 - Visualizing Stock Dynamics 1995-2005
 
 Which stock reaches the highest value in the time period 1995-2005?
 
-Exercise 15
-
-&nbsp;Coca-Cola&nbsp;
-
-&nbsp;Procter and Gamble&nbsp;
-
-&nbsp;IBM&nbsp;
-
-&nbsp;General Electric (GE)&nbsp;
-
-&nbsp;Boeing&nbsp;
-
-Explanation
-
-Looking at the plot (see the previous explanation for how to create the plot), you can see that IBM has the highest value, around 1999.
-
-CheckShow Answer
-
 ## Problem 3.3 - Visualizing Stock Dynamics 1995-2005
 
 In October of 1997, there was a global stock market crash that was caused by an economic crisis in Asia. Comparing September 1997 to November 1997, which companies saw a decreasing trend in their stock price? (Select all that apply.)
-
-Exercise 16
-
-&nbsp;Coca-Cola&nbsp;
-
-&nbsp;Procter and Gamble&nbsp;
-
-&nbsp;IBM&nbsp;
-
-&nbsp;General Electric (GE)&nbsp;
-
-&nbsp;Boeing&nbsp;
-
- 
-
-Explanation
 
 You can create vertical lines at September 1997 and November 1997 with the following commands:
 
@@ -380,31 +160,9 @@ abline(v=as.Date(c("1997-09-01")), lwd=2)
 
 abline(v=as.Date(c("1997-11-01")), lwd=2)
 
-Looking at the plot, two companies had a decreasing trend in stock prices from September 1997 to November 1997: Boeing and Procter & Gamble.
-
-CheckShow Answer
-
 ## Problem 3.4 - Visualizing Stock Dynamics 1995-2005
 
 In the last two years of this time period (2004 and 2005) which stock seems to be performing the best, in terms of increasing stock price?
-
-Exercise 17
-
-&nbsp;Coca-Cola&nbsp;
-
-&nbsp;Procter and Gamble&nbsp;
-
-&nbsp;IBM&nbsp;
-
-&nbsp;General Electric (GE)&nbsp;
-
-&nbsp;Boeing&nbsp;
-
-Explanation
-
-Looking at the plot, you can see that Boeing is steadily increasing from 2004 to the beginning of 2006.
-
-CheckShow Answer
 
 ## Problem 4.1 - Monthly Trends
 
@@ -416,103 +174,15 @@ as the second argument of the tapply function.
 
 For IBM, compare the monthly averages to the overall average stock price. In which months has IBM historically had a higher stock price (on average)? Select all that apply.
 
-Exercise 18
-
-&nbsp;January&nbsp;
-
-&nbsp;February&nbsp;
-
-&nbsp;March&nbsp;
-
-&nbsp;April&nbsp;
-
-&nbsp;May&nbsp;
-
-&nbsp;June&nbsp;
-
-&nbsp;July&nbsp;
-
-&nbsp;August&nbsp;
-
-&nbsp;September&nbsp;
-
-&nbsp;October&nbsp;
-
-&nbsp;¨C70CNovember&nbsp;
-
-&nbsp;¨C71CDecember&nbsp;
-
- 
-
-Explanation
-
-The overall average stock price for IBM is 144.375, which can be computed using the command mean(IBM$StockPrice). Comparing the monthly averages to this, using the command tapply(IBM$StockPrice, months(IBM$Date), mean), we can see that the price has historically been higher than average January - May, and lower than average during the remaining months.
-
-CheckShow Answer
-
 ## Problem 4.2 - Monthly Trends
 
 Repeat the tapply function from the previous problem for each of the other four companies, and use the output to answer the remaining questions.
 
 General Electric and Coca-Cola both have their highest average stock price in the same month. Which month is this?
 
-Exercise 19
-
-&nbsp;January&nbsp;
-
-&nbsp;February&nbsp;
-
-&nbsp;March&nbsp;
-
-&nbsp;April&nbsp;
-
-&nbsp;May&nbsp;
-
-&nbsp;June&nbsp;
-
-&nbsp;July&nbsp;
-
-&nbsp;August&nbsp;
-
-&nbsp;September&nbsp;
-
-&nbsp;October&nbsp;
-
-&nbsp;¨C82CNovember&nbsp;
-
-&nbsp;¨C83CDecember&nbsp;
-
-Explanation
-
-You can see the monthly average stock prices for GE and Coca-Cola by using the commands:
-
-tapply(GE$StockPrice, months(GE$Date), mean)
-
-tapply(CocaCola$StockPrice, months(CocaCola$Date), mean)
-
-General Electric has an average stock price of 64.48 in April, which is higher than any other month. Coca-Cola has an average stock price of 62.69 in April, which is higher than any other month.
-
-CheckShow Answer
-
 ## Problem 4.3 - Monthly Trends
 
 For the months of December and January, every company's average stock is higher in one month and lower in the other. In which month are the stock prices lower?
-
-Exercise 20
-
-&nbsp;December&nbsp;
-
-&nbsp;January&nbsp;
-
-Explanation
-
-IBM has an average price of 140.76 in December, and 150.24 in January, which can be seen with the command:
-
-tapply(IBM$StockPrice, months(IBM$Date), mean)
-
-Having lower stock prices in December is a trend that holds for all five companies.
-
-CheckShow Answer
 
 After seeing these trends, we are ready to buy stock in certain months and sell it in others! But, we should be careful, because one really good or really bad year could skew the average to show a trend that is not really there in general.
 

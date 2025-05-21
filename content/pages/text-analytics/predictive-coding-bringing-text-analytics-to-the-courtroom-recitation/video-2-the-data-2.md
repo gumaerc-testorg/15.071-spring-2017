@@ -14,7 +14,7 @@ video_metadata:
 ---
 ## Video 2: The Data
 
-In this recitation, we'll be using the dataset {{% resource_link "6d2b07bf-20cc-af83-c396-d465e5b7574d" "energy_bids (CSV - 2.0MB)" %}}. Please download and save this dataset to your computer so that you can follow along. This data comes from the 2010 {{% resource_link "ce6450e2-cebe-4c0b-9ac2-0e88ec98747b" "TREC Legal Track" %}}.
+In this recitation, we'll be using the dataset {{% resource_link "6d2b07bf-20cc-af83-c396-d465e5b7574d" "energy_bids (CSV - 2.0MB)" %}}. Please download and save this dataset to your computer so that you can follow along. This data comes from the 2010 {{% resource_link "a3d5d86e-352a-4edd-8230-3607cc3e6b4f" "TREC Legal Track" %}}.
 
 An R script file with all of the commands we will be using in this recitation can be downloaded here: {{% resource_link "011d033b-3863-7b57-5bcd-f6a154a3fcf6" "Resource Unit5_Recitation (R)" %}}.
 
