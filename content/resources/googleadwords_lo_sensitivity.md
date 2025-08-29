@@ -1,7 +1,7 @@
 ---
 content_type: resource
 description: 'Resource:'
-file: /courses/15-071-the-analytics-edge-spring-2017/aef0793c2a092390ac59f2448bcb01dc_GoogleAdWords_LO_Sensitivity.ods
+file: /ol-ocw-studio-app/courses/15-071-the-analytics-edge-spring-2017/aef0793c2a092390ac59f2448bcb01dc_GoogleAdWords_LO_Sensitivity.ods
 file_size: 17203
 file_type: application/vnd.oasis.opendocument.spreadsheet
 learning_resource_types: []

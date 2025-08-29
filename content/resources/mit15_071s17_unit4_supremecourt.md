@@ -1,7 +1,7 @@
 ---
 content_type: resource
 description: ''
-file: /courses/15-071-the-analytics-edge-spring-2017/fcf915a49a9cd84293282f66a1d255f4_MIT15_071S17_Unit4_SupremeCourt.pdf
+file: /ol-ocw-studio-app/courses/15-071-the-analytics-edge-spring-2017/fcf915a49a9cd84293282f66a1d255f4_MIT15_071S17_Unit4_SupremeCourt.pdf
 file_size: 1109985
 file_type: application/pdf
 learning_resource_types: []

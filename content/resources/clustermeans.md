@@ -1,7 +1,7 @@
 ---
 content_type: resource
 description: 'Resource:'
-file: /courses/15-071-the-analytics-edge-spring-2017/f5d06b43b7c6dffc27552d12924b69ee_ClusterMeans.ods
+file: /ol-ocw-studio-app/courses/15-071-the-analytics-edge-spring-2017/f5d06b43b7c6dffc27552d12924b69ee_ClusterMeans.ods
 file_size: 16550
 file_type: application/vnd.oasis.opendocument.spreadsheet
 learning_resource_types: []

@@ -1,7 +1,7 @@
 ---
 content_type: resource
 description: 'Resource:'
-file: /courses/15-071-the-analytics-edge-spring-2017/9edadecb282615e1bb977ad896d46f84_IMRT_SimpleExample_Complete.xlsx
+file: /ol-ocw-studio-app/courses/15-071-the-analytics-edge-spring-2017/9edadecb282615e1bb977ad896d46f84_IMRT_SimpleExample_Complete.xlsx
 file_size: 42091
 file_type: application/vnd.openxmlformats-officedocument.spreadsheetml.sheet
 learning_resource_types: []

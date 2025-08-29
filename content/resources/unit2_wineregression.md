@@ -1,7 +1,7 @@
 ---
 content_type: resource
 description: 'Resource:'
-file: /courses/15-071-the-analytics-edge-spring-2017/4b42530dd2f3fc2cdd30ba7d12315265_Unit2_WineRegression.R
+file: /ol-ocw-studio-app/courses/15-071-the-analytics-edge-spring-2017/4b42530dd2f3fc2cdd30ba7d12315265_Unit2_WineRegression.R
 file_size: 1228
 file_type: application/octet-stream
 learning_resource_types: []

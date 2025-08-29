@@ -1,7 +1,7 @@
 ---
 content_type: resource
 description: 'Resource:'
-file: /courses/15-071-the-analytics-edge-spring-2017/4e0afebb6ca9c80d80e630e8e9872585_CocaColaStock.csv
+file: /ol-ocw-studio-app/courses/15-071-the-analytics-edge-spring-2017/4e0afebb6ca9c80d80e630e8e9872585_CocaColaStock.csv
 file_size: 8661
 file_type: text/comma-separated-values
 learning_resource_types:

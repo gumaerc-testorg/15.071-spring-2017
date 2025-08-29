@@ -1,7 +1,7 @@
 ---
 content_type: resource
 description: ''
-file: /courses/15-071-the-analytics-edge-spring-2017/020a065bc64754f894a0cd639bcbfc50_-mW-DYFyGqg.vtt
+file: /ol-ocw-studio-app/courses/15-071-the-analytics-edge-spring-2017/020a065bc64754f894a0cd639bcbfc50_-mW-DYFyGqg.vtt
 file_size: 6486
 file_type: application/x-subrip
 learning_resource_types: []

@@ -1,7 +1,7 @@
 ---
 content_type: resource
 description: 'Resource:'
-file: /courses/15-071-the-analytics-edge-spring-2017/12e92ec2937a917cf288db31d2d27450_Unit2_Moneyball.R
+file: /ol-ocw-studio-app/courses/15-071-the-analytics-edge-spring-2017/12e92ec2937a917cf288db31d2d27450_Unit2_Moneyball.R
 file_size: 630
 file_type: application/octet-stream
 learning_resource_types: []

@@ -1,7 +1,7 @@
 ---
 content_type: resource
 description: 'Image: Map of the U.S. that indicates location of the city of Chicago.'
-file: /courses/15-071-the-analytics-edge-spring-2017/1b011894db06d27c0885ce6c8f1afa60_ChicagoMap.png
+file: /ol-ocw-studio-app/courses/15-071-the-analytics-edge-spring-2017/1b011894db06d27c0885ce6c8f1afa60_ChicagoMap.png
 file_size: 148329
 file_type: image/png
 image_metadata:

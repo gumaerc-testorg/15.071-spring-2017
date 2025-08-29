@@ -1,7 +1,7 @@
 ---
 content_type: resource
 description: 'Image: '
-file: /courses/15-071-the-analytics-edge-spring-2017/20bb3f28bd041c71199daa89be8bb599_InfoRetrievalFigure2.png
+file: /ol-ocw-studio-app/courses/15-071-the-analytics-edge-spring-2017/20bb3f28bd041c71199daa89be8bb599_InfoRetrievalFigure2.png
 file_size: 43680
 file_type: image/png
 image_metadata:

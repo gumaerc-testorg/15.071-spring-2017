@@ -1,7 +1,7 @@
 ---
 content_type: resource
 description: 'Resource:'
-file: /courses/15-071-the-analytics-edge-spring-2017/cdd1dacd338e534632e1cc15dec3e47d_stopwords.txt
+file: /ol-ocw-studio-app/courses/15-071-the-analytics-edge-spring-2017/cdd1dacd338e534632e1cc15dec3e47d_stopwords.txt
 file_size: 1483
 file_type: text/plain
 learning_resource_types: []

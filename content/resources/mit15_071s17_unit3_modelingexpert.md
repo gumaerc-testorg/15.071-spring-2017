@@ -1,7 +1,7 @@
 ---
 content_type: resource
 description: ''
-file: /courses/15-071-the-analytics-edge-spring-2017/68b9d1390f0a37e67efa5d40a5cfae84_MIT15_071S17_Unit3_ModelingExpert.pdf
+file: /ol-ocw-studio-app/courses/15-071-the-analytics-edge-spring-2017/68b9d1390f0a37e67efa5d40a5cfae84_MIT15_071S17_Unit3_ModelingExpert.pdf
 file_size: 1278339
 file_type: application/pdf
 learning_resource_types: []

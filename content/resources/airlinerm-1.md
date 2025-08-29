@@ -1,7 +1,7 @@
 ---
 content_type: resource
 description: 'Resource:'
-file: /courses/15-071-the-analytics-edge-spring-2017/84a47fbaa58569c885233baeebe1b43a_AirlineRM.xlsx
+file: /ol-ocw-studio-app/courses/15-071-the-analytics-edge-spring-2017/84a47fbaa58569c885233baeebe1b43a_AirlineRM.xlsx
 file_size: 40822
 file_type: application/vnd.openxmlformats-officedocument.spreadsheetml.sheet
 learning_resource_types: []

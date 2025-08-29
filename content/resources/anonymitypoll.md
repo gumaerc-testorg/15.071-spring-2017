@@ -1,7 +1,7 @@
 ---
 content_type: resource
 description: 'Resource:'
-file: /courses/15-071-the-analytics-edge-spring-2017/fc53f44a4ec7c467b2f882a5636b0d3b_AnonymityPoll.csv
+file: /ol-ocw-studio-app/courses/15-071-the-analytics-edge-spring-2017/fc53f44a4ec7c467b2f882a5636b0d3b_AnonymityPoll.csv
 file_size: 58505
 file_type: text/comma-separated-values
 learning_resource_types:

@@ -1,7 +1,7 @@
 ---
 content_type: resource
 description: 'Image: '
-file: /courses/15-071-the-analytics-edge-spring-2017/96516b5e431f1672ee8ca633d2d2e93e_gerrymandering_redwins.png
+file: /ol-ocw-studio-app/courses/15-071-the-analytics-edge-spring-2017/96516b5e431f1672ee8ca633d2d2e93e_gerrymandering_redwins.png
 file_size: 31787
 file_type: image/png
 image_metadata:

@@ -1,7 +1,7 @@
 ---
 content_type: resource
 description: 'Resource:'
-file: /courses/15-071-the-analytics-edge-spring-2017/4b3d86026f29ac088fd4a59adf74a01e_Unit4_SupremeCourt.R
+file: /ol-ocw-studio-app/courses/15-071-the-analytics-edge-spring-2017/4b3d86026f29ac088fd4a59adf74a01e_Unit4_SupremeCourt.R
 file_size: 2377
 file_type: application/octet-stream
 learning_resource_types: []

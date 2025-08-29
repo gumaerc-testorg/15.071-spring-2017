@@ -1,7 +1,7 @@
 ---
 content_type: resource
 description: ''
-file: /courses/15-071-the-analytics-edge-spring-2017/4d30ffe09756f141a716feac14a582c8_MIT15_071S17_Unit7_Crime.pdf
+file: /ol-ocw-studio-app/courses/15-071-the-analytics-edge-spring-2017/4d30ffe09756f141a716feac14a582c8_MIT15_071S17_Unit7_Crime.pdf
 file_size: 600410
 file_type: application/pdf
 learning_resource_types: []

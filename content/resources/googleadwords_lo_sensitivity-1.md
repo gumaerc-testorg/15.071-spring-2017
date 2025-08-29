@@ -1,7 +1,7 @@
 ---
 content_type: resource
 description: 'Resource:'
-file: /courses/15-071-the-analytics-edge-spring-2017/af052305afa761550c990aec992b7b14_GoogleAdWords_LO_Sensitivity.xlsx
+file: /ol-ocw-studio-app/courses/15-071-the-analytics-edge-spring-2017/af052305afa761550c990aec992b7b14_GoogleAdWords_LO_Sensitivity.xlsx
 file_size: 45511
 file_type: application/vnd.openxmlformats-officedocument.spreadsheetml.sheet
 learning_resource_types: []

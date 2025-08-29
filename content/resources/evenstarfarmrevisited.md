@@ -1,7 +1,7 @@
 ---
 content_type: resource
 description: 'Resource:'
-file: /courses/15-071-the-analytics-edge-spring-2017/6cd223a14aec5eb0c21e45ff237283bb_EvenStarFarmRevisited.ods
+file: /ol-ocw-studio-app/courses/15-071-the-analytics-edge-spring-2017/6cd223a14aec5eb0c21e45ff237283bb_EvenStarFarmRevisited.ods
 file_size: 13219
 file_type: application/vnd.oasis.opendocument.spreadsheet
 learning_resource_types:

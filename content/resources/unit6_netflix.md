@@ -1,7 +1,7 @@
 ---
 content_type: resource
 description: 'Resource:'
-file: /courses/15-071-the-analytics-edge-spring-2017/bce720a6728936c3d24dbb2e70cc80bf_Unit6_Netflix.R
+file: /ol-ocw-studio-app/courses/15-071-the-analytics-edge-spring-2017/bce720a6728936c3d24dbb2e70cc80bf_Unit6_Netflix.R
 file_size: 1623
 file_type: application/octet-stream
 learning_resource_types: []
