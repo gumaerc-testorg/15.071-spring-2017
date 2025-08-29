@@ -1,7 +1,7 @@
 ---
 content_type: resource
 description: ''
-file: /courses/15-071-the-analytics-edge-spring-2017/e2479d78ae043e3cea7264cac2c0242b_MIT15_071S17_Unit5_Twitter.pdf
+file: /ol-ocw-studio-app/courses/15-071-the-analytics-edge-spring-2017/e2479d78ae043e3cea7264cac2c0242b_MIT15_071S17_Unit5_Twitter.pdf
 file_size: 1031096
 file_type: application/pdf
 learning_resource_types: []

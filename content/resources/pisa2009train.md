@@ -1,7 +1,7 @@
 ---
 content_type: resource
 description: 'Resource:'
-file: /courses/15-071-the-analytics-edge-spring-2017/e2141a02399a532766818b7092ec92c8_pisa2009train.csv
+file: /ol-ocw-studio-app/courses/15-071-the-analytics-edge-spring-2017/e2141a02399a532766818b7092ec92c8_pisa2009train.csv
 file_size: 247026
 file_type: text/comma-separated-values
 learning_resource_types:

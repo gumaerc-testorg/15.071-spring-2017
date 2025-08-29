@@ -1,7 +1,7 @@
 ---
 content_type: resource
 description: 'Resource:'
-file: /courses/15-071-the-analytics-edge-spring-2017/da45d600699821bf0d2024d5628389ab_ClaimsData.csv.zip
+file: /ol-ocw-studio-app/courses/15-071-the-analytics-edge-spring-2017/da45d600699821bf0d2024d5628389ab_ClaimsData.csv.zip
 file_size: 2285240
 file_type: application/zip
 learning_resource_types: []

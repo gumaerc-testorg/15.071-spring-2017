@@ -1,7 +1,7 @@
 ---
 content_type: resource
 description: 'Resource:'
-file: /courses/15-071-the-analytics-edge-spring-2017/be8dc71f6970d601eb46714a8bed540d_NBA_test.csv
+file: /ol-ocw-studio-app/courses/15-071-the-analytics-edge-spring-2017/be8dc71f6970d601eb46714a8bed540d_NBA_test.csv
 file_size: 2982
 file_type: text/comma-separated-values
 learning_resource_types: []

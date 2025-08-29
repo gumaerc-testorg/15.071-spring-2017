@@ -1,7 +1,7 @@
 ---
 content_type: resource
 description: 'Resource:'
-file: /courses/15-071-the-analytics-edge-spring-2017/a56bc79268299a5d642cee6b3d7da861_Unit3_Recitation.R
+file: /ol-ocw-studio-app/courses/15-071-the-analytics-edge-spring-2017/a56bc79268299a5d642cee6b3d7da861_Unit3_Recitation.R
 file_size: 1582
 file_type: application/octet-stream
 learning_resource_types: []

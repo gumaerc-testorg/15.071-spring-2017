@@ -1,7 +1,7 @@
 ---
 content_type: resource
 description: 'Image: '
-file: /courses/15-071-the-analytics-edge-spring-2017/a716bfa776b2be85f666b0a4e6877f69_New_Mexico_Congressional_Districts.png
+file: /ol-ocw-studio-app/courses/15-071-the-analytics-edge-spring-2017/a716bfa776b2be85f666b0a4e6877f69_New_Mexico_Congressional_Districts.png
 file_size: 37604
 file_type: image/png
 image_metadata:

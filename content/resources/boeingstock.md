@@ -1,7 +1,7 @@
 ---
 content_type: resource
 description: 'Resource:'
-file: /courses/15-071-the-analytics-edge-spring-2017/550f7976b38aea3b061072d505e139f1_BoeingStock.csv
+file: /ol-ocw-studio-app/courses/15-071-the-analytics-edge-spring-2017/550f7976b38aea3b061072d505e139f1_BoeingStock.csv
 file_size: 8634
 file_type: text/comma-separated-values
 learning_resource_types:

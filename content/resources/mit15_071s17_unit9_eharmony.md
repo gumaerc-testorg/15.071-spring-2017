@@ -1,7 +1,7 @@
 ---
 content_type: resource
 description: ''
-file: /courses/15-071-the-analytics-edge-spring-2017/9a6b539841f8c9f7804373dee5cec78b_MIT15_071S17_Unit9_eHarmony.pdf
+file: /ol-ocw-studio-app/courses/15-071-the-analytics-edge-spring-2017/9a6b539841f8c9f7804373dee5cec78b_MIT15_071S17_Unit9_eHarmony.pdf
 file_size: 849566
 file_type: application/pdf
 learning_resource_types: []

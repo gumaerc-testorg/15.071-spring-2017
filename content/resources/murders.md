@@ -1,7 +1,7 @@
 ---
 content_type: resource
 description: 'Resource:'
-file: /courses/15-071-the-analytics-edge-spring-2017/36129924d80acf17557ee219a6c3c79c_murders.csv
+file: /ol-ocw-studio-app/courses/15-071-the-analytics-edge-spring-2017/36129924d80acf17557ee219a6c3c79c_murders.csv
 file_size: 1972
 file_type: text/comma-separated-values
 learning_resource_types: []

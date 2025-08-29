@@ -1,7 +1,7 @@
 ---
 content_type: resource
 description: 'Resource:'
-file: /courses/15-071-the-analytics-edge-spring-2017/163dfd445e974a25ca10f8b6782c0821_GoogleAdWords_LO.ods
+file: /ol-ocw-studio-app/courses/15-071-the-analytics-edge-spring-2017/163dfd445e974a25ca10f8b6782c0821_GoogleAdWords_LO.ods
 file_size: 28033
 file_type: application/vnd.oasis.opendocument.spreadsheet
 learning_resource_types: []

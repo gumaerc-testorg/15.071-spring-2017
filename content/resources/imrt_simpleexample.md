@@ -1,7 +1,7 @@
 ---
 content_type: resource
 description: 'Resource:'
-file: /courses/15-071-the-analytics-edge-spring-2017/4b6d3e73dd08ac4f47d09fd11b42adb6_IMRT_SimpleExample.ods
+file: /ol-ocw-studio-app/courses/15-071-the-analytics-edge-spring-2017/4b6d3e73dd08ac4f47d09fd11b42adb6_IMRT_SimpleExample.ods
 file_size: 12507
 file_type: application/vnd.oasis.opendocument.spreadsheet
 learning_resource_types: []

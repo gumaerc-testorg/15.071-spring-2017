@@ -1,7 +1,7 @@
 ---
 content_type: resource
 description: 'Resource:'
-file: /courses/15-071-the-analytics-edge-spring-2017/17a0cac3bf892ddcf5d2ab6f9bc79a4b_Unit7_Crime.R
+file: /ol-ocw-studio-app/courses/15-071-the-analytics-edge-spring-2017/17a0cac3bf892ddcf5d2ab6f9bc79a4b_Unit7_Crime.R
 file_size: 5985
 file_type: application/octet-stream
 learning_resource_types: []

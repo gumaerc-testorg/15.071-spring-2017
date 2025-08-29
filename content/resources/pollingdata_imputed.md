@@ -1,7 +1,7 @@
 ---
 content_type: resource
 description: 'Resource:'
-file: /courses/15-071-the-analytics-edge-spring-2017/9567137abd96e74164d4a4d90245c561_PollingData_Imputed.csv
+file: /ol-ocw-studio-app/courses/15-071-the-analytics-edge-spring-2017/9567137abd96e74164d4a4d90245c561_PollingData_Imputed.csv
 file_size: 4178
 file_type: text/comma-separated-values
 learning_resource_types: []

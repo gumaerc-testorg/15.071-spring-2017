@@ -1,7 +1,7 @@
 ---
 content_type: resource
 description: 'Resource:'
-file: /courses/15-071-the-analytics-edge-spring-2017/0b29d789102df82347256ff5f1e8a2e5_ORscheduling.ods
+file: /ol-ocw-studio-app/courses/15-071-the-analytics-edge-spring-2017/0b29d789102df82347256ff5f1e8a2e5_ORscheduling.ods
 file_size: 12191
 file_type: application/vnd.oasis.opendocument.spreadsheet
 learning_resource_types: []

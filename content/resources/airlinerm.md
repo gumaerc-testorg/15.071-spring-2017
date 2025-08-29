@@ -1,7 +1,7 @@
 ---
 content_type: resource
 description: 'Resource:'
-file: /courses/15-071-the-analytics-edge-spring-2017/e33cf17dc0727661e68c7055d86615b5_AirlineRM.ods
+file: /ol-ocw-studio-app/courses/15-071-the-analytics-edge-spring-2017/e33cf17dc0727661e68c7055d86615b5_AirlineRM.ods
 file_size: 22882
 file_type: application/vnd.oasis.opendocument.spreadsheet
 learning_resource_types: []

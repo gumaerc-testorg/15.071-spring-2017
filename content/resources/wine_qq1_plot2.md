@@ -1,7 +1,7 @@
 ---
 content_type: resource
 description: 'Image: '
-file: /courses/15-071-the-analytics-edge-spring-2017/53ba2e1c4dece92e46f81091cad607c1_Wine_QQ1_Plot2.png
+file: /ol-ocw-studio-app/courses/15-071-the-analytics-edge-spring-2017/53ba2e1c4dece92e46f81091cad607c1_Wine_QQ1_Plot2.png
 file_size: 17856
 file_type: image/png
 image_metadata:

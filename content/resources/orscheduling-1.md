@@ -1,7 +1,7 @@
 ---
 content_type: resource
 description: 'Resource:'
-file: /courses/15-071-the-analytics-edge-spring-2017/c2d77b4a52ea41b7fbbda781bfb50ed0_ORscheduling.xlsx
+file: /ol-ocw-studio-app/courses/15-071-the-analytics-edge-spring-2017/c2d77b4a52ea41b7fbbda781bfb50ed0_ORscheduling.xlsx
 file_size: 42618
 file_type: application/vnd.openxmlformats-officedocument.spreadsheetml.sheet
 learning_resource_types: []

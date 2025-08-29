@@ -1,7 +1,7 @@
 ---
 content_type: resource
 description: 'Resource:'
-file: /courses/15-071-the-analytics-edge-spring-2017/5bb3aaa2f054659994cfda27ac3e7599_NCES_Data_Use_Agreement.txt
+file: /ol-ocw-studio-app/courses/15-071-the-analytics-edge-spring-2017/5bb3aaa2f054659994cfda27ac3e7599_NCES_Data_Use_Agreement.txt
 file_size: 1105
 file_type: text/plain
 learning_resource_types:
