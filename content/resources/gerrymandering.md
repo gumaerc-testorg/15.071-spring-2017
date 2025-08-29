@@ -1,7 +1,7 @@
 ---
 content_type: resource
 description: 'Resource:'
-file: /courses/15-071-the-analytics-edge-spring-2017/e584a070e342e7b633663ac538a60f69_Gerrymandering.ods
+file: /ol-ocw-studio-app/courses/15-071-the-analytics-edge-spring-2017/e584a070e342e7b633663ac538a60f69_Gerrymandering.ods
 file_size: 26173
 file_type: application/vnd.oasis.opendocument.spreadsheet
 learning_resource_types:

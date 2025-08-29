@@ -1,7 +1,7 @@
 ---
 content_type: resource
 description: ''
-file: /courses/15-071-the-analytics-edge-spring-2017/a1132d6c3b097727fdb6c0d04b6cbb5e_MIT15_071S17_Unit1_Recitation.pdf
+file: /ol-ocw-studio-app/courses/15-071-the-analytics-edge-spring-2017/a1132d6c3b097727fdb6c0d04b6cbb5e_MIT15_071S17_Unit1_Recitation.pdf
 file_size: 2156036
 file_type: application/pdf
 learning_resource_types: []

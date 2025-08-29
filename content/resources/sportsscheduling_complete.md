@@ -1,7 +1,7 @@
 ---
 content_type: resource
 description: 'Resource:'
-file: /courses/15-071-the-analytics-edge-spring-2017/4689ae72d42c3f0af3efb10e8f6a3532_SportsScheduling_Complete.ods
+file: /ol-ocw-studio-app/courses/15-071-the-analytics-edge-spring-2017/4689ae72d42c3f0af3efb10e8f6a3532_SportsScheduling_Complete.ods
 file_size: 10880
 file_type: application/vnd.oasis.opendocument.spreadsheet
 learning_resource_types: []

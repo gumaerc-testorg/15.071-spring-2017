@@ -1,7 +1,7 @@
 ---
 content_type: resource
 description: 'Image: '
-file: /courses/15-071-the-analytics-edge-spring-2017/bed89f26444014011197fb58867992c7_Week7_Crime_QQ4_1.png
+file: /ol-ocw-studio-app/courses/15-071-the-analytics-edge-spring-2017/bed89f26444014011197fb58867992c7_Week7_Crime_QQ4_1.png
 file_size: 44581
 file_type: image/png
 image_metadata:

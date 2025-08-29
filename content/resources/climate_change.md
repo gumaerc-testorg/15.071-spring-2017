@@ -1,7 +1,7 @@
 ---
 content_type: resource
 description: 'Resource:'
-file: /courses/15-071-the-analytics-edge-spring-2017/3b53e75d1ddb97bd98f40ae5bbee2475_climate_change.csv
+file: /ol-ocw-studio-app/courses/15-071-the-analytics-edge-spring-2017/3b53e75d1ddb97bd98f40ae5bbee2475_climate_change.csv
 file_size: 23386
 file_type: text/comma-separated-values
 learning_resource_types:

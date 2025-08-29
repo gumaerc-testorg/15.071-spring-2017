@@ -1,7 +1,7 @@
 ---
 content_type: resource
 description: 'Image: '
-file: /courses/15-071-the-analytics-edge-spring-2017/b2eea6fba57db424a4844f679aee4bc9_QQ2_SupremeCourt.png
+file: /ol-ocw-studio-app/courses/15-071-the-analytics-edge-spring-2017/b2eea6fba57db424a4844f679aee4bc9_QQ2_SupremeCourt.png
 file_size: 45489
 file_type: image/png
 image_metadata:
