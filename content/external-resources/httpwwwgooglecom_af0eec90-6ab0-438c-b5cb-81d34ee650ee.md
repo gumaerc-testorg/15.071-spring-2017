@@ -1,11 +1,10 @@
 ---
 content_type: external-resource
-external_url: http://www.pg.com/
+external_url: http://www.google.com/
 has_external_license_warning: true
 license: https://en.wikipedia.org/wiki/All_rights_reserved
-status: valid
-title: Procter and Gamble
-uid: 8058647f-634a-4806-8278-4593dd3d8b39
-url_status_code: 200
+status: ''
+title: http://www.google.com"
+uid: af0eec90-6ab0-438c-b5cb-81d34ee650ee
 wayback_url: ''
 ---
